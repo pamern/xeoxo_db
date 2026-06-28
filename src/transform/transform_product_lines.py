@@ -2,6 +2,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from src.transform.func_transform_color import normalizeColor
+from src.transform.func_transform_material import normalize_material
 from src.utils.loggers import get_logger
 from src.utils.normalizers import normalize_price, normalize_text
 
@@ -65,25 +67,53 @@ def read_raw_product_lines() -> pd.DataFrame:
     return df
 
 
-def fill_default_text(series: pd.Series, default_value: str) -> pd.Series:
-    return series.fillna("").map(normalize_text).replace("", default_value)
+def normalize_nullable_text(series: pd.Series) -> pd.Series:
+    return series.map(normalize_text)
 
 
 def transform_product_lines(df: pd.DataFrame) -> pd.DataFrame:
     transformed_df = df.copy()
 
-    transformed_df["material_name"] = fill_default_text(
-        transformed_df["material_name"],
-        DEFAULT_MATERIAL_NAME,
+    transformed_df["description"] = normalize_nullable_text(
+        transformed_df["description"]
     )
-    transformed_df["usage_context"] = fill_default_text(
-        transformed_df["usage_context"],
-        DEFAULT_USAGE_CONTEXT,
+    transformed_df["design_style"] = normalize_nullable_text(
+        transformed_df["design_style"]
+    )
+    transformed_df["usage_context"] = normalize_nullable_text(
+        transformed_df["usage_context"]
+    )
+    transformed_df["thumbnail_url"] = normalize_nullable_text(
+        transformed_df["thumbnail_url"]
+    )
+    transformed_df["gallery_urls"] = normalize_nullable_text(
+        transformed_df["gallery_urls"]
+    )
+    transformed_df["error"] = normalize_nullable_text(
+        transformed_df["error"]
     )
 
     transformed_df["price"] = transformed_df["raw_price_text"].fillna("").map(
         normalize_price
     )
+
+    normalized_colors = transformed_df["raw_color"].map(normalizeColor)
+    normalized_colors_df = pd.DataFrame(normalized_colors.tolist())
+
+    transformed_df["raw_color"] = normalized_colors_df["raw_color"]
+    transformed_df["color_name"] = normalized_colors_df["color_name"]
+    transformed_df["color_group"] = normalized_colors_df["color_group"]
+
+    normalized_materials = transformed_df["material_name"].map(
+        normalize_material
+    )
+    normalized_materials_df = pd.DataFrame(normalized_materials.tolist())
+
+    transformed_df["raw_material"] = normalized_materials_df["raw_material"]
+    transformed_df["material_name"] = normalized_materials_df["material_name"]
+    transformed_df["short_description"] = normalized_materials_df[
+        "short_description"
+    ]
 
     transformed_df = transformed_df[
         [
@@ -94,9 +124,13 @@ def transform_product_lines(df: pd.DataFrame) -> pd.DataFrame:
             "product_url",
             "slug",
             "description",
+            "raw_material",
             "material_name",
+            "short_description",
             "design_style",
             "raw_color",
+            "color_name",
+            "color_group",
             "usage_context",
             "price",
             "thumbnail_url",

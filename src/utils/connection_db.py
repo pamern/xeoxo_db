@@ -1,39 +1,104 @@
-from sqlalchemy import create_engine, text
-from src.config.settings import DATABASE_URL, DB_SCHEMA
+import os
+from pathlib import Path
+
+from dotenv import load_dotenv
+from supabase import Client, create_client
 
 
-def get_engine():
-    """
-    Tạo SQLAlchemy engine để pandas hoặc script load data dùng lại.
-    """
-    return create_engine(DATABASE_URL)
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+ENV_FILE = PROJECT_ROOT / ".env"
+DEFAULT_BUCKET_NAME = "product-media"
 
 
-def test_connection():
-    """
-    Test kết nối database.
-    """
-    engine = get_engine()
-
-    with engine.connect() as conn:
-        result = conn.execute(text("SELECT current_database(), current_user;"))
-        row = result.fetchone()
-
-    print("Connected successfully")
-    print("Database:", row[0])
-    print("User:", row[1])
+def load_env() -> None:
+    load_dotenv(ENV_FILE)
 
 
-def execute_sql_file(sql_file_path):
-    """
-    Chạy một file SQL, ví dụ tạo bảng.
-    """
-    engine = get_engine()
+def _infer_project_ref() -> str | None:
+    project_ref = os.getenv("SUPABASE_PROJECT_REF")
+    if project_ref:
+        return project_ref
 
-    with open(sql_file_path, "r", encoding="utf-8") as file:
-        sql = file.read()
+    supabase_user = os.getenv("SUPABASE_USER")
+    if supabase_user and "." in supabase_user:
+        _, ref = supabase_user.split(".", 1)
+        return ref or None
 
-    with engine.begin() as conn:
-        conn.execute(text(sql))
+    return None
 
-    print(f"Executed SQL file: {sql_file_path}")
+
+def get_supabase_url() -> str:
+    load_env()
+
+    supabase_url = os.getenv("SUPABASE_URL")
+    if supabase_url:
+        return supabase_url
+
+    project_ref = _infer_project_ref()
+    if project_ref:
+        return f"https://{project_ref}.supabase.co"
+
+    raise ValueError(
+        "Missing SUPABASE_URL in .env and cannot infer project ref. "
+        "Set SUPABASE_URL or SUPABASE_PROJECT_REF."
+    )
+
+
+def get_supabase_key() -> str:
+    load_env()
+
+    service_role_key = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
+    if service_role_key:
+        return service_role_key
+
+    secret_key = os.getenv("SUPABASE_SECRET_KEY")
+    if secret_key:
+        return secret_key
+
+    anon_key = os.getenv("SUPABASE_ANON_KEY")
+    if anon_key:
+        return anon_key
+
+    publishable_key = os.getenv("SUPABASE_PUBLISHABLE_KEY")
+    if publishable_key:
+        return publishable_key
+
+    raise ValueError(
+        "Missing Supabase API key in .env. Expected one of: "
+        "SUPABASE_SERVICE_ROLE_KEY, SUPABASE_SECRET_KEY, "
+        "SUPABASE_ANON_KEY, SUPABASE_PUBLISHABLE_KEY."
+    )
+
+
+def get_supabase_client() -> Client:
+    return create_client(get_supabase_url(), get_supabase_key())
+
+
+def get_bucket_name(default: str = DEFAULT_BUCKET_NAME) -> str:
+    load_env()
+    return (
+        os.getenv("SUPABASE_BUCKET_NAME")
+        or os.getenv("SUPABASE_BUCKET")
+        or default
+    )
+
+
+def get_overwrite_flag(default: bool = False) -> bool:
+    load_env()
+    return os.getenv("OVERWRITE", str(default)).lower() == "true"
+
+
+def test_connection() -> None:
+    client = get_supabase_client()
+    bucket_name = get_bucket_name()
+
+    buckets = client.storage.list_buckets()
+    bucket_names = [
+        bucket.get("name") if isinstance(bucket, dict) else getattr(bucket, "name", None)
+        for bucket in buckets
+    ]
+
+    print("Connected to Supabase successfully")
+    print("Supabase URL:", get_supabase_url())
+    print("Configured bucket:", bucket_name)
+    print("Available buckets:", [name for name in bucket_names if name])

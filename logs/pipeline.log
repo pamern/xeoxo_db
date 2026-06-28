@@ -3868,3 +3868,43 @@ PermissionError: [Errno 13] Permission denied: 'D:\\Projects\\Y2026_Sources\\xeo
 2026-06-27 16:10:54 | INFO | __main__ | Loaded 141 raw product lines from D:\Projects\Y2026_Sources\xeoxo-database\data\raw\product_lines.csv
 2026-06-27 16:10:54 | INFO | __main__ | Created file: D:\Projects\Y2026_Sources\xeoxo-database\data\staging\product_lines.csv
 2026-06-27 16:10:54 | INFO | __main__ | Total transformed product lines: 141
+2026-06-28 17:47:37 | INFO | __main__ | Starting product lines transform
+2026-06-28 17:47:37 | INFO | __main__ | Loaded 141 raw product lines from D:\Projects\Y2026_Sources\xeoxo-database\data\raw\product_lines.csv
+2026-06-28 17:47:37 | INFO | __main__ | Created file: D:\Projects\Y2026_Sources\xeoxo-database\data\staging\product_lines.csv
+2026-06-28 17:47:37 | INFO | __main__ | Total transformed product lines: 141
+2026-06-28 17:53:43 | INFO | __main__ | Starting product lines transform
+2026-06-28 17:53:43 | INFO | __main__ | Loaded 141 raw product lines from D:\Projects\Y2026_Sources\xeoxo-database\data\raw\product_lines.csv
+2026-06-28 17:53:43 | INFO | __main__ | Created file: D:\Projects\Y2026_Sources\xeoxo-database\data\staging\product_lines.csv
+2026-06-28 17:53:43 | INFO | __main__ | Total transformed product lines: 141
+2026-06-28 18:22:40 | INFO | __main__ | Starting product lines transform
+2026-06-28 18:22:40 | INFO | __main__ | Loaded 141 raw product lines from D:\Projects\Y2026_Sources\xeoxo-database\data\raw\product_lines.csv
+2026-06-28 18:22:40 | INFO | __main__ | Created file: D:\Projects\Y2026_Sources\xeoxo-database\data\staging\product_lines.csv
+2026-06-28 18:22:40 | INFO | __main__ | Total transformed product lines: 141
+2026-06-28 18:23:50 | INFO | __main__ | Starting product lines transform
+2026-06-28 18:23:50 | INFO | __main__ | Loaded 141 raw product lines from D:\Projects\Y2026_Sources\xeoxo-database\data\raw\product_lines.csv
+2026-06-28 18:23:50 | INFO | __main__ | Created file: D:\Projects\Y2026_Sources\xeoxo-database\data\staging\product_lines.csv
+2026-06-28 18:23:50 | INFO | __main__ | Total transformed product lines: 141
+2026-06-28 18:33:17 | INFO | __main__ | Starting product lines transform
+2026-06-28 18:33:17 | INFO | __main__ | Loaded 141 raw product lines from D:\Projects\Y2026_Sources\xeoxo-database\data\raw\product_lines.csv
+2026-06-28 18:33:17 | INFO | __main__ | Created file: D:\Projects\Y2026_Sources\xeoxo-database\data\staging\product_lines.csv
+2026-06-28 18:33:17 | INFO | __main__ | Total transformed product lines: 141
+2026-06-28 22:31:08 | INFO | __main__ | Starting product lines transform
+2026-06-28 22:31:08 | INFO | __main__ | Loaded 141 raw product lines from D:\Projects\Y2026_Sources\xeoxo-database\data\raw\product_lines.csv
+2026-06-28 22:31:09 | INFO | __main__ | Created file: D:\Projects\Y2026_Sources\xeoxo-database\data\staging\product_lines.csv
+2026-06-28 22:31:09 | INFO | __main__ | Total transformed product lines: 141
+2026-06-28 22:39:35 | INFO | __main__ | Starting product lines transform
+2026-06-28 22:39:35 | INFO | __main__ | Loaded 141 raw product lines from D:\Projects\Y2026_Sources\xeoxo-database\data\raw\product_lines.csv
+2026-06-28 22:39:35 | INFO | __main__ | Created file: D:\Projects\Y2026_Sources\xeoxo-database\data\staging\product_lines.csv
+2026-06-28 22:39:35 | INFO | __main__ | Total transformed product lines: 141
+2026-06-28 22:43:36 | INFO | __main__ | Starting product lines transform
+2026-06-28 22:43:36 | INFO | __main__ | Loaded 141 raw product lines from D:\Projects\Y2026_Sources\xeoxo-database\data\raw\product_lines.csv
+2026-06-28 22:43:37 | INFO | __main__ | Created file: D:\Projects\Y2026_Sources\xeoxo-database\data\staging\product_lines.csv
+2026-06-28 22:43:37 | INFO | __main__ | Total transformed product lines: 141
+2026-06-28 22:44:30 | INFO | __main__ | Starting product lines transform
+2026-06-28 22:44:30 | INFO | __main__ | Loaded 141 raw product lines from D:\Projects\Y2026_Sources\xeoxo-database\data\raw\product_lines.csv
+2026-06-28 22:44:30 | INFO | __main__ | Created file: D:\Projects\Y2026_Sources\xeoxo-database\data\staging\product_lines.csv
+2026-06-28 22:44:30 | INFO | __main__ | Total transformed product lines: 141
+2026-06-28 23:02:08 | INFO | __main__ | Starting product lines transform
+2026-06-28 23:02:08 | INFO | __main__ | Loaded 141 raw product lines from D:\Projects\Y2026_Sources\xeoxo-database\data\raw\product_lines.csv
+2026-06-28 23:02:08 | INFO | __main__ | Created file: D:\Projects\Y2026_Sources\xeoxo-database\data\staging\product_lines.csv
+2026-06-28 23:02:08 | INFO | __main__ | Total transformed product lines: 141
