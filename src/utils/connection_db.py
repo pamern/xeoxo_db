@@ -74,6 +74,48 @@ def get_supabase_client() -> Client:
     return create_client(get_supabase_url(), get_supabase_key())
 
 
+def get_postgres_connection_kwargs() -> dict[str, str | int]:
+    load_env()
+
+    database_url = os.getenv("SUPABASE_DB_URL") or os.getenv("DATABASE_URL")
+    if database_url:
+        return {"conninfo": database_url}
+
+    host = os.getenv("SUPABASE_HOST")
+    port = os.getenv("SUPABASE_PORT")
+    dbname = os.getenv("SUPABASE_NAME")
+    user = os.getenv("SUPABASE_USER")
+    password = os.getenv("SUPABASE_PASSWORD")
+    sslmode = os.getenv("SUPABASE_DB_SSLMODE", "require")
+
+    missing = [
+        name
+        for name, value in {
+            "SUPABASE_HOST": host,
+            "SUPABASE_PORT": port,
+            "SUPABASE_NAME": dbname,
+            "SUPABASE_USER": user,
+            "SUPABASE_PASSWORD": password,
+        }.items()
+        if not value
+    ]
+
+    if missing:
+        raise ValueError(
+            "Missing PostgreSQL connection settings in .env: "
+            f"{', '.join(missing)}"
+        )
+
+    return {
+        "host": host,
+        "port": int(port),
+        "dbname": dbname,
+        "user": user,
+        "password": password,
+        "sslmode": sslmode,
+    }
+
+
 def get_bucket_name(default: str = DEFAULT_BUCKET_NAME) -> str:
     load_env()
     return (
