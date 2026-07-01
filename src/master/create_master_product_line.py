@@ -61,7 +61,7 @@ def build_master_product_line(df: pd.DataFrame) -> pd.DataFrame:
 
     working_df = working_df[working_df["error"].isna()].copy()
     working_df = working_df.dropna(
-        subset=["collection_name", "product_name", "slug", "material_name"]
+        subset=["collection_name", "product_name", "slug"]
     )
 
     master_df = pd.DataFrame(

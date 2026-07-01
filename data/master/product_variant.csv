@@ -1,0 +1,814 @@
+﻿sku,product_line_id,parent_line_name,component_order,component_name,chart_name,size_name,price,status
+XV-PL068-C01-L,68,Chân Váy Lam Khanh,1,Chân Váy Lam Khanh,Bảng size váy XÉO XỌ,L,2450000,ACTIVE
+XV-PL068-C01-M,68,Chân Váy Lam Khanh,1,Chân Váy Lam Khanh,Bảng size váy XÉO XỌ,M,2450000,ACTIVE
+XV-PL068-C01-S,68,Chân Váy Lam Khanh,1,Chân Váy Lam Khanh,Bảng size váy XÉO XỌ,S,2450000,ACTIVE
+XV-PL068-C01-XL,68,Chân Váy Lam Khanh,1,Chân Váy Lam Khanh,Bảng size váy XÉO XỌ,XL,2450000,ACTIVE
+XV-PL068-C01-XS,68,Chân Váy Lam Khanh,1,Chân Váy Lam Khanh,Bảng size váy XÉO XỌ,XS,2450000,ACTIVE
+XV-PL135-C01-L,135,Chân váy Hương Kiều,1,Chân váy Hương Kiều,Bảng size váy XÉO XỌ,L,1350000,ACTIVE
+XV-PL135-C01-M,135,Chân váy Hương Kiều,1,Chân váy Hương Kiều,Bảng size váy XÉO XỌ,M,1350000,ACTIVE
+XV-PL135-C01-S,135,Chân váy Hương Kiều,1,Chân váy Hương Kiều,Bảng size váy XÉO XỌ,S,1350000,ACTIVE
+XV-PL135-C01-XL,135,Chân váy Hương Kiều,1,Chân váy Hương Kiều,Bảng size váy XÉO XỌ,XL,1350000,ACTIVE
+XV-PL135-C01-XS,135,Chân váy Hương Kiều,1,Chân váy Hương Kiều,Bảng size váy XÉO XỌ,XS,1350000,ACTIVE
+XV-PL138-C01-OS,138,Hồng Sa,1,Hồng Sa,,,5890000,ACTIVE
+XV-PL139-C01-OS,139,Mộng Kỳ,1,Mộng Kỳ,,,7590000,ACTIVE
+XV-PL099-C01-OS,99,Quần Mộng Chi,1,Quần Mộng Chi,,,850000,ACTIVE
+XV-PL100-C01-OS,100,Quần Nhật Thư,1,Quần Nhật Thư,,,825000,ACTIVE
+XV-PL132-C01-OS,132,Quần Thục Khuê,1,Quần Thục Khuê,,,950000,ACTIVE
+XV-PL076-C01-OS,76,Quần Đan Châu,1,Quần Đan Châu,,,1350000,ACTIVE
+XV-PL077-C01-OS,77,Quần Đan Cẩn,1,Quần Đan Cẩn,,,1350000,ACTIVE
+XV-PL078-C01-OS,78,Quần Đan Vân,1,Quần Đan Vân,,,1350000,ACTIVE
+XV-PL079-C01-OS,79,Set Hà Chi,1,Set Hà Chi,,,1250000,ACTIVE
+XV-PL080-C01-OS,80,Set Hà Như,1,Set Hà Như,,,1250000,ACTIVE
+XV-PL140-C01-OS,140,Tinh Sa,1,Tinh Sa,,,6550000,ACTIVE
+XV-PL069-C01-OS,69,Yếm Dạ Thư,1,Dạ Thư,,,2350000,ACTIVE
+XV-PL069-C02-OS,69,Yếm Dạ Thư,2,Quần dập ly màu đỏ tím,,,1350000,ACTIVE
+XV-PL141-C01-OS,141,Ánh Diễm,1,Ánh Diễm,,,6340000,ACTIVE
+XV-PL081-C01-OS,81,Áo Bách Đơn,1,Áo Bách Đơn,,,850000,ACTIVE
+XV-PL034-C01-OS,34,Áo Choàng Hoa Kim,1,Áo Choàng Hoa Kim,,,990000,ACTIVE
+XV-PL035-C01-OS,35,Áo Choàng Hoa Kiều,1,Áo Choàng Hoa Kiều,,,990000,ACTIVE
+XV-PL036-C01-OS,36,Áo Choàng Hoa Nhiên,1,Áo Choàng Hoa Nhiên,,,990000,ACTIVE
+XV-PL037-C01-OS,37,Áo Choàng Hoa Nhu,1,Áo Choàng Hoa Nhu,,,990000,ACTIVE
+XV-PL101-C01-OS,101,Áo Choàng Hồng Mây,1,Áo Choàng Hồng Mây,,,890000,ACTIVE
+XV-PL102-C01-OS,102,Áo Choàng Ngọc Mây,1,Áo Choàng Ngọc Mây,,,890000,ACTIVE
+XV-PL023-C01-OS,23,Áo Choàng Nhật Bình Yên Chi,1,Áo Choàng Nhật Bình Yên Chi,,,14450000,ACTIVE
+XV-PL110-C01-L,110,Áo Dài Dao Vinh,1,Áo Dài Dao Vinh,Bảng size áo dài nam XÉO XỌ,L,2450000,ACTIVE
+XV-PL110-C01-M,110,Áo Dài Dao Vinh,1,Áo Dài Dao Vinh,Bảng size áo dài nam XÉO XỌ,M,2450000,ACTIVE
+XV-PL110-C01-S,110,Áo Dài Dao Vinh,1,Áo Dài Dao Vinh,Bảng size áo dài nam XÉO XỌ,S,2450000,ACTIVE
+XV-PL110-C01-XL,110,Áo Dài Dao Vinh,1,Áo Dài Dao Vinh,Bảng size áo dài nam XÉO XỌ,XL,2450000,ACTIVE
+XV-PL111-C01-L,111,Áo Dài Minh Tịnh,1,Áo Dài Minh Tịnh,Bảng size áo dài nam XÉO XỌ,L,2250000,ACTIVE
+XV-PL111-C01-M,111,Áo Dài Minh Tịnh,1,Áo Dài Minh Tịnh,Bảng size áo dài nam XÉO XỌ,M,2250000,ACTIVE
+XV-PL111-C01-S,111,Áo Dài Minh Tịnh,1,Áo Dài Minh Tịnh,Bảng size áo dài nam XÉO XỌ,S,2250000,ACTIVE
+XV-PL111-C01-XL,111,Áo Dài Minh Tịnh,1,Áo Dài Minh Tịnh,Bảng size áo dài nam XÉO XỌ,XL,2250000,ACTIVE
+XV-PL112-C01-L,112,Áo Dài Phong Tường,1,Áo Dài Phong Tường,Bảng size áo dài nam XÉO XỌ,L,2990000,ACTIVE
+XV-PL112-C01-M,112,Áo Dài Phong Tường,1,Áo Dài Phong Tường,Bảng size áo dài nam XÉO XỌ,M,2990000,ACTIVE
+XV-PL112-C01-S,112,Áo Dài Phong Tường,1,Áo Dài Phong Tường,Bảng size áo dài nam XÉO XỌ,S,2990000,ACTIVE
+XV-PL112-C01-XL,112,Áo Dài Phong Tường,1,Áo Dài Phong Tường,Bảng size áo dài nam XÉO XỌ,XL,2990000,ACTIVE
+XV-PL113-C01-L,113,Áo Dài Vũ Lăng,1,Áo Dài Vũ Lăng,Bảng size áo dài nam XÉO XỌ,L,2450000,ACTIVE
+XV-PL113-C01-M,113,Áo Dài Vũ Lăng,1,Áo Dài Vũ Lăng,Bảng size áo dài nam XÉO XỌ,M,2450000,ACTIVE
+XV-PL113-C01-S,113,Áo Dài Vũ Lăng,1,Áo Dài Vũ Lăng,Bảng size áo dài nam XÉO XỌ,S,2450000,ACTIVE
+XV-PL113-C01-XL,113,Áo Dài Vũ Lăng,1,Áo Dài Vũ Lăng,Bảng size áo dài nam XÉO XỌ,XL,2450000,ACTIVE
+XV-PL114-C01-L,114,Áo Dài Yên Lăng,1,Áo Dài Yên Lăng,Bảng size áo dài nam XÉO XỌ,L,2880000,ACTIVE
+XV-PL114-C01-M,114,Áo Dài Yên Lăng,1,Áo Dài Yên Lăng,Bảng size áo dài nam XÉO XỌ,M,2880000,ACTIVE
+XV-PL114-C01-S,114,Áo Dài Yên Lăng,1,Áo Dài Yên Lăng,Bảng size áo dài nam XÉO XỌ,S,2880000,ACTIVE
+XV-PL114-C01-XL,114,Áo Dài Yên Lăng,1,Áo Dài Yên Lăng,Bảng size áo dài nam XÉO XỌ,XL,2880000,ACTIVE
+XV-PL136-C01-OS,136,Áo Hương Kiều,1,Áo Hương Kiều,,,1950000,ACTIVE
+XV-PL038-C01-OS,38,Áo Hạ Cẩm,1,Áo Hạ Cẩm,,,1050000,ACTIVE
+XV-PL039-C01-OS,39,Áo Hạ Miên,1,Áo Hạ Miên,,,1050000,ACTIVE
+XV-PL040-C01-OS,40,Áo Hạ Như,1,Áo Hạ Như,,,1050000,ACTIVE
+XV-PL041-C01-OS,41,Áo Hạ Sương,1,Áo Hạ Sương,,,1050000,ACTIVE
+XV-PL082-C01-OS,82,Áo Hồng Đơn,1,Áo Hồng Đơn,,,850000,ACTIVE
+XV-PL083-C01-OS,83,Áo Khuê Đơn,1,Áo Khuê Đơn,,,850000,ACTIVE
+XV-PL070-C01-OS,70,Áo Lam Khanh,1,Áo Lam Khanh,,,1490000,ACTIVE
+XV-PL103-C01-OS,103,Áo Mộng Chi,1,Áo Mộng Chi,,,900000,ACTIVE
+XV-PL104-C01-OS,104,Áo Nhật Thư,1,Áo Nhật Thư,,,825000,ACTIVE
+XV-PL084-C01-OS,84,Áo Quý Chiêu,1,Áo Quý Chiêu,,,590000,ACTIVE
+XV-PL085-C01-OS,85,Áo Quý Châu,1,Áo Quý Châu,,,590000,ACTIVE
+XV-PL086-C01-OS,86,Áo Quý Kim,1,Áo Quý Kim,,,590000,ACTIVE
+XV-PL087-C01-OS,87,Áo Quý Lam,1,Áo Quý Lam,,,590000,ACTIVE
+XV-PL088-C01-OS,88,Áo Quý Như,1,Áo Quý Như,,,590000,ACTIVE
+XV-PL089-C01-OS,89,Áo Quý Sa,1,Áo Quý Sa,,,590000,ACTIVE
+XV-PL090-C01-OS,90,Áo Quý Vân,1,Áo Quý Vân,,,590000,ACTIVE
+XV-PL133-C01-OS,133,Áo Thục Khuê,1,Áo Thục Khuê,,,850000,ACTIVE
+XV-PL137-C01-OS,137,Áo Thục Nghi,1,Áo Thục Nghi,,,3850000,ACTIVE
+XV-PL024-C01-OS,24,Áo choàng Tràng Ngọc Khê,1,Áo choàng Tràng Ngọc Khê,,,8250000,ACTIVE
+XV-PL115-C01-L,115,Áo dài Bách Hiên,1,Áo dài Bách Hiên,Bảng size áo dài nữ XÉO XỌ,L,2850000,ACTIVE
+XV-PL115-C01-M,115,Áo dài Bách Hiên,1,Áo dài Bách Hiên,Bảng size áo dài nữ XÉO XỌ,M,2850000,ACTIVE
+XV-PL115-C01-S,115,Áo dài Bách Hiên,1,Áo dài Bách Hiên,Bảng size áo dài nữ XÉO XỌ,S,2850000,ACTIVE
+XV-PL115-C01-XL,115,Áo dài Bách Hiên,1,Áo dài Bách Hiên,Bảng size áo dài nữ XÉO XỌ,XL,2850000,ACTIVE
+XV-PL115-C01-XS,115,Áo dài Bách Hiên,1,Áo dài Bách Hiên,Bảng size áo dài nữ XÉO XỌ,XS,2850000,ACTIVE
+XV-PL055-C01-L,55,Áo dài Chi Nhạn,1,Áo dài Chi Nhạn,Bảng size áo dài nữ XÉO XỌ,L,4100000,ACTIVE
+XV-PL055-C01-M,55,Áo dài Chi Nhạn,1,Áo dài Chi Nhạn,Bảng size áo dài nữ XÉO XỌ,M,4100000,ACTIVE
+XV-PL055-C01-S,55,Áo dài Chi Nhạn,1,Áo dài Chi Nhạn,Bảng size áo dài nữ XÉO XỌ,S,4100000,ACTIVE
+XV-PL055-C01-XL,55,Áo dài Chi Nhạn,1,Áo dài Chi Nhạn,Bảng size áo dài nữ XÉO XỌ,XL,4100000,ACTIVE
+XV-PL055-C01-XS,55,Áo dài Chi Nhạn,1,Áo dài Chi Nhạn,Bảng size áo dài nữ XÉO XỌ,XS,4100000,ACTIVE
+XV-PL055-C02-L,55,Áo dài Chi Nhạn,2,Quần metalic màu vàng tươi (GD vàng - 42),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL055-C02-M,55,Áo dài Chi Nhạn,2,Quần metalic màu vàng tươi (GD vàng - 42),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL055-C02-S,55,Áo dài Chi Nhạn,2,Quần metalic màu vàng tươi (GD vàng - 42),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL055-C02-XL,55,Áo dài Chi Nhạn,2,Quần metalic màu vàng tươi (GD vàng - 42),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL055-C02-XS,55,Áo dài Chi Nhạn,2,Quần metalic màu vàng tươi (GD vàng - 42),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL012-C01-L,12,Áo dài Chiêu Phụng,1,Áo dài Chiêu Phụng,Bảng size áo dài nữ XÉO XỌ,L,4450000,ACTIVE
+XV-PL012-C01-M,12,Áo dài Chiêu Phụng,1,Áo dài Chiêu Phụng,Bảng size áo dài nữ XÉO XỌ,M,4450000,ACTIVE
+XV-PL012-C01-S,12,Áo dài Chiêu Phụng,1,Áo dài Chiêu Phụng,Bảng size áo dài nữ XÉO XỌ,S,4450000,ACTIVE
+XV-PL012-C01-XL,12,Áo dài Chiêu Phụng,1,Áo dài Chiêu Phụng,Bảng size áo dài nữ XÉO XỌ,XL,4450000,ACTIVE
+XV-PL012-C01-XS,12,Áo dài Chiêu Phụng,1,Áo dài Chiêu Phụng,Bảng size áo dài nữ XÉO XỌ,XS,4450000,ACTIVE
+XV-PL012-C02-L,12,Áo dài Chiêu Phụng,2,Quần metalic màu nâu (GD vàng - 13),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL012-C02-M,12,Áo dài Chiêu Phụng,2,Quần metalic màu nâu (GD vàng - 13),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL012-C02-S,12,Áo dài Chiêu Phụng,2,Quần metalic màu nâu (GD vàng - 13),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL012-C02-XL,12,Áo dài Chiêu Phụng,2,Quần metalic màu nâu (GD vàng - 13),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL012-C02-XS,12,Áo dài Chiêu Phụng,2,Quần metalic màu nâu (GD vàng - 13),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL001-C01-L,1,Áo dài Chu Bảo,1,Áo dài Chu Bảo,Bảng size áo dài nữ XÉO XỌ,L,3000000,ACTIVE
+XV-PL001-C01-M,1,Áo dài Chu Bảo,1,Áo dài Chu Bảo,Bảng size áo dài nữ XÉO XỌ,M,3000000,ACTIVE
+XV-PL001-C01-S,1,Áo dài Chu Bảo,1,Áo dài Chu Bảo,Bảng size áo dài nữ XÉO XỌ,S,3000000,ACTIVE
+XV-PL001-C01-XL,1,Áo dài Chu Bảo,1,Áo dài Chu Bảo,Bảng size áo dài nữ XÉO XỌ,XL,3000000,ACTIVE
+XV-PL001-C01-XS,1,Áo dài Chu Bảo,1,Áo dài Chu Bảo,Bảng size áo dài nữ XÉO XỌ,XS,3000000,ACTIVE
+XV-PL001-C02-L,1,Áo dài Chu Bảo,2,Quần AD metalic màu xanh cốm (GD vàng - 33),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL001-C02-M,1,Áo dài Chu Bảo,2,Quần AD metalic màu xanh cốm (GD vàng - 33),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL001-C02-S,1,Áo dài Chu Bảo,2,Quần AD metalic màu xanh cốm (GD vàng - 33),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL001-C02-XL,1,Áo dài Chu Bảo,2,Quần AD metalic màu xanh cốm (GD vàng - 33),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL001-C02-XS,1,Áo dài Chu Bảo,2,Quần AD metalic màu xanh cốm (GD vàng - 33),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL025-C01-L,25,Áo dài Chu Phong,1,Áo dài Chu Phong,Bảng size áo dài nữ XÉO XỌ,L,2850000,ACTIVE
+XV-PL025-C01-M,25,Áo dài Chu Phong,1,Áo dài Chu Phong,Bảng size áo dài nữ XÉO XỌ,M,2850000,ACTIVE
+XV-PL025-C01-S,25,Áo dài Chu Phong,1,Áo dài Chu Phong,Bảng size áo dài nữ XÉO XỌ,S,2850000,ACTIVE
+XV-PL025-C01-XL,25,Áo dài Chu Phong,1,Áo dài Chu Phong,Bảng size áo dài nữ XÉO XỌ,XL,2850000,ACTIVE
+XV-PL025-C01-XS,25,Áo dài Chu Phong,1,Áo dài Chu Phong,Bảng size áo dài nữ XÉO XỌ,XS,2850000,ACTIVE
+XV-PL002-C01-L,2,Áo dài Châu Hân – Mãn Kim,1,Áo dài Châu Hân,Bảng size áo dài nữ XÉO XỌ,L,3850000,ACTIVE
+XV-PL002-C01-M,2,Áo dài Châu Hân – Mãn Kim,1,Áo dài Châu Hân,Bảng size áo dài nữ XÉO XỌ,M,3850000,ACTIVE
+XV-PL002-C01-S,2,Áo dài Châu Hân – Mãn Kim,1,Áo dài Châu Hân,Bảng size áo dài nữ XÉO XỌ,S,3850000,ACTIVE
+XV-PL002-C01-XL,2,Áo dài Châu Hân – Mãn Kim,1,Áo dài Châu Hân,Bảng size áo dài nữ XÉO XỌ,XL,3850000,ACTIVE
+XV-PL002-C01-XS,2,Áo dài Châu Hân – Mãn Kim,1,Áo dài Châu Hân,Bảng size áo dài nữ XÉO XỌ,XS,3850000,ACTIVE
+XV-PL002-C02-L,2,Áo dài Châu Hân – Mãn Kim,2,Áo dài Mãn Kim,Bảng size áo dài nữ XÉO XỌ,L,3000000,ACTIVE
+XV-PL002-C02-M,2,Áo dài Châu Hân – Mãn Kim,2,Áo dài Mãn Kim,Bảng size áo dài nữ XÉO XỌ,M,3000000,ACTIVE
+XV-PL002-C02-S,2,Áo dài Châu Hân – Mãn Kim,2,Áo dài Mãn Kim,Bảng size áo dài nữ XÉO XỌ,S,3000000,ACTIVE
+XV-PL002-C02-XL,2,Áo dài Châu Hân – Mãn Kim,2,Áo dài Mãn Kim,Bảng size áo dài nữ XÉO XỌ,XL,3000000,ACTIVE
+XV-PL002-C02-XS,2,Áo dài Châu Hân – Mãn Kim,2,Áo dài Mãn Kim,Bảng size áo dài nữ XÉO XỌ,XS,3000000,ACTIVE
+XV-PL002-C03-L,2,Áo dài Châu Hân – Mãn Kim,3,Quần AD metalic màu tím,Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL002-C03-M,2,Áo dài Châu Hân – Mãn Kim,3,Quần AD metalic màu tím,Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL002-C03-S,2,Áo dài Châu Hân – Mãn Kim,3,Quần AD metalic màu tím,Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL002-C03-XL,2,Áo dài Châu Hân – Mãn Kim,3,Quần AD metalic màu tím,Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL002-C03-XS,2,Áo dài Châu Hân – Mãn Kim,3,Quần AD metalic màu tím,Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL026-C01-L,26,Áo dài Châu Phượng,1,Áo dài Châu Phượng,Bảng size áo dài nữ XÉO XỌ,L,5700000,ACTIVE
+XV-PL026-C01-M,26,Áo dài Châu Phượng,1,Áo dài Châu Phượng,Bảng size áo dài nữ XÉO XỌ,M,5700000,ACTIVE
+XV-PL026-C01-S,26,Áo dài Châu Phượng,1,Áo dài Châu Phượng,Bảng size áo dài nữ XÉO XỌ,S,5700000,ACTIVE
+XV-PL026-C01-XL,26,Áo dài Châu Phượng,1,Áo dài Châu Phượng,Bảng size áo dài nữ XÉO XỌ,XL,5700000,ACTIVE
+XV-PL026-C01-XS,26,Áo dài Châu Phượng,1,Áo dài Châu Phượng,Bảng size áo dài nữ XÉO XỌ,XS,5700000,ACTIVE
+XV-PL026-C02-L,26,Áo dài Châu Phượng,2,Quần Châu Đoan,Bảng size áo dài nữ XÉO XỌ,L,850000,ACTIVE
+XV-PL026-C02-M,26,Áo dài Châu Phượng,2,Quần Châu Đoan,Bảng size áo dài nữ XÉO XỌ,M,850000,ACTIVE
+XV-PL026-C02-S,26,Áo dài Châu Phượng,2,Quần Châu Đoan,Bảng size áo dài nữ XÉO XỌ,S,850000,ACTIVE
+XV-PL026-C02-XL,26,Áo dài Châu Phượng,2,Quần Châu Đoan,Bảng size áo dài nữ XÉO XỌ,XL,850000,ACTIVE
+XV-PL026-C02-XS,26,Áo dài Châu Phượng,2,Quần Châu Đoan,Bảng size áo dài nữ XÉO XỌ,XS,850000,ACTIVE
+XV-PL013-C01-L,13,Áo dài Châu Phụng,1,Áo dài Châu Phụng,Bảng size áo dài nữ XÉO XỌ,L,4450000,ACTIVE
+XV-PL013-C01-M,13,Áo dài Châu Phụng,1,Áo dài Châu Phụng,Bảng size áo dài nữ XÉO XỌ,M,4450000,ACTIVE
+XV-PL013-C01-S,13,Áo dài Châu Phụng,1,Áo dài Châu Phụng,Bảng size áo dài nữ XÉO XỌ,S,4450000,ACTIVE
+XV-PL013-C01-XL,13,Áo dài Châu Phụng,1,Áo dài Châu Phụng,Bảng size áo dài nữ XÉO XỌ,XL,4450000,ACTIVE
+XV-PL013-C01-XS,13,Áo dài Châu Phụng,1,Áo dài Châu Phụng,Bảng size áo dài nữ XÉO XỌ,XS,4450000,ACTIVE
+XV-PL013-C02-L,13,Áo dài Châu Phụng,2,Quần lụa trơn màu xanh coban (2103 - 65),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL013-C02-M,13,Áo dài Châu Phụng,2,Quần lụa trơn màu xanh coban (2103 - 65),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL013-C02-S,13,Áo dài Châu Phụng,2,Quần lụa trơn màu xanh coban (2103 - 65),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL013-C02-XL,13,Áo dài Châu Phụng,2,Quần lụa trơn màu xanh coban (2103 - 65),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL013-C02-XS,13,Áo dài Châu Phụng,2,Quần lụa trơn màu xanh coban (2103 - 65),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL003-C01-L,3,Áo dài Cát Điệp,1,Áo dài Cát Điệp,Bảng size áo dài nữ XÉO XỌ,L,3550000,ACTIVE
+XV-PL003-C01-M,3,Áo dài Cát Điệp,1,Áo dài Cát Điệp,Bảng size áo dài nữ XÉO XỌ,M,3550000,ACTIVE
+XV-PL003-C01-S,3,Áo dài Cát Điệp,1,Áo dài Cát Điệp,Bảng size áo dài nữ XÉO XỌ,S,3550000,ACTIVE
+XV-PL003-C01-XL,3,Áo dài Cát Điệp,1,Áo dài Cát Điệp,Bảng size áo dài nữ XÉO XỌ,XL,3550000,ACTIVE
+XV-PL003-C01-XS,3,Áo dài Cát Điệp,1,Áo dài Cát Điệp,Bảng size áo dài nữ XÉO XỌ,XS,3550000,ACTIVE
+XV-PL003-C02-L,3,Áo dài Cát Điệp,2,Quần AD metalic màu hồng tím đậm (GD vàng - 99),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL003-C02-M,3,Áo dài Cát Điệp,2,Quần AD metalic màu hồng tím đậm (GD vàng - 99),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL003-C02-S,3,Áo dài Cát Điệp,2,Quần AD metalic màu hồng tím đậm (GD vàng - 99),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL003-C02-XL,3,Áo dài Cát Điệp,2,Quần AD metalic màu hồng tím đậm (GD vàng - 99),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL003-C02-XS,3,Áo dài Cát Điệp,2,Quần AD metalic màu hồng tím đậm (GD vàng - 99),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL027-C01-L,27,Áo dài Cẩm Dao – Dao Phụng,1,Áo dài Cẩm Dao,Bảng size áo dài nữ XÉO XỌ,L,4850000,ACTIVE
+XV-PL027-C01-M,27,Áo dài Cẩm Dao – Dao Phụng,1,Áo dài Cẩm Dao,Bảng size áo dài nữ XÉO XỌ,M,4850000,ACTIVE
+XV-PL027-C01-S,27,Áo dài Cẩm Dao – Dao Phụng,1,Áo dài Cẩm Dao,Bảng size áo dài nữ XÉO XỌ,S,4850000,ACTIVE
+XV-PL027-C01-XL,27,Áo dài Cẩm Dao – Dao Phụng,1,Áo dài Cẩm Dao,Bảng size áo dài nữ XÉO XỌ,XL,4850000,ACTIVE
+XV-PL027-C01-XS,27,Áo dài Cẩm Dao – Dao Phụng,1,Áo dài Cẩm Dao,Bảng size áo dài nữ XÉO XỌ,XS,4850000,ACTIVE
+XV-PL027-C02-L,27,Áo dài Cẩm Dao – Dao Phụng,2,Áo dài Dao Phụng,Bảng size áo dài nữ XÉO XỌ,L,2950000,ACTIVE
+XV-PL027-C02-M,27,Áo dài Cẩm Dao – Dao Phụng,2,Áo dài Dao Phụng,Bảng size áo dài nữ XÉO XỌ,M,2950000,ACTIVE
+XV-PL027-C02-S,27,Áo dài Cẩm Dao – Dao Phụng,2,Áo dài Dao Phụng,Bảng size áo dài nữ XÉO XỌ,S,2950000,ACTIVE
+XV-PL027-C02-XL,27,Áo dài Cẩm Dao – Dao Phụng,2,Áo dài Dao Phụng,Bảng size áo dài nữ XÉO XỌ,XL,2950000,ACTIVE
+XV-PL027-C02-XS,27,Áo dài Cẩm Dao – Dao Phụng,2,Áo dài Dao Phụng,Bảng size áo dài nữ XÉO XỌ,XS,2950000,ACTIVE
+XV-PL027-C03-L,27,Áo dài Cẩm Dao – Dao Phụng,3,Quần Khuê Đơn,Bảng size áo dài nữ XÉO XỌ,L,1350000,ACTIVE
+XV-PL027-C03-M,27,Áo dài Cẩm Dao – Dao Phụng,3,Quần Khuê Đơn,Bảng size áo dài nữ XÉO XỌ,M,1350000,ACTIVE
+XV-PL027-C03-S,27,Áo dài Cẩm Dao – Dao Phụng,3,Quần Khuê Đơn,Bảng size áo dài nữ XÉO XỌ,S,1350000,ACTIVE
+XV-PL027-C03-XL,27,Áo dài Cẩm Dao – Dao Phụng,3,Quần Khuê Đơn,Bảng size áo dài nữ XÉO XỌ,XL,1350000,ACTIVE
+XV-PL027-C03-XS,27,Áo dài Cẩm Dao – Dao Phụng,3,Quần Khuê Đơn,Bảng size áo dài nữ XÉO XỌ,XS,1350000,ACTIVE
+XV-PL056-C01-L,56,Áo dài Cẩm Tuyền,1,Áo dài Cẩm Tuyền,Bảng size áo dài nữ XÉO XỌ,L,3900000,ACTIVE
+XV-PL056-C01-M,56,Áo dài Cẩm Tuyền,1,Áo dài Cẩm Tuyền,Bảng size áo dài nữ XÉO XỌ,M,3900000,ACTIVE
+XV-PL056-C01-S,56,Áo dài Cẩm Tuyền,1,Áo dài Cẩm Tuyền,Bảng size áo dài nữ XÉO XỌ,S,3900000,ACTIVE
+XV-PL056-C01-XL,56,Áo dài Cẩm Tuyền,1,Áo dài Cẩm Tuyền,Bảng size áo dài nữ XÉO XỌ,XL,3900000,ACTIVE
+XV-PL056-C01-XS,56,Áo dài Cẩm Tuyền,1,Áo dài Cẩm Tuyền,Bảng size áo dài nữ XÉO XỌ,XS,3900000,ACTIVE
+XV-PL056-C02-L,56,Áo dài Cẩm Tuyền,2,Quần kim sa Ngân Hương,Bảng size áo dài nữ XÉO XỌ,L,1550000,ACTIVE
+XV-PL056-C02-M,56,Áo dài Cẩm Tuyền,2,Quần kim sa Ngân Hương,Bảng size áo dài nữ XÉO XỌ,M,1550000,ACTIVE
+XV-PL056-C02-S,56,Áo dài Cẩm Tuyền,2,Quần kim sa Ngân Hương,Bảng size áo dài nữ XÉO XỌ,S,1550000,ACTIVE
+XV-PL056-C02-XL,56,Áo dài Cẩm Tuyền,2,Quần kim sa Ngân Hương,Bảng size áo dài nữ XÉO XỌ,XL,1550000,ACTIVE
+XV-PL056-C02-XS,56,Áo dài Cẩm Tuyền,2,Quần kim sa Ngân Hương,Bảng size áo dài nữ XÉO XỌ,XS,1550000,ACTIVE
+XV-PL028-C01-L,28,Áo dài Dao Phụng – Liên Phụng,1,Áo dài Dao Phụng,Bảng size áo dài nữ XÉO XỌ,L,2950000,ACTIVE
+XV-PL028-C01-M,28,Áo dài Dao Phụng – Liên Phụng,1,Áo dài Dao Phụng,Bảng size áo dài nữ XÉO XỌ,M,2950000,ACTIVE
+XV-PL028-C01-S,28,Áo dài Dao Phụng – Liên Phụng,1,Áo dài Dao Phụng,Bảng size áo dài nữ XÉO XỌ,S,2950000,ACTIVE
+XV-PL028-C01-XL,28,Áo dài Dao Phụng – Liên Phụng,1,Áo dài Dao Phụng,Bảng size áo dài nữ XÉO XỌ,XL,2950000,ACTIVE
+XV-PL028-C01-XS,28,Áo dài Dao Phụng – Liên Phụng,1,Áo dài Dao Phụng,Bảng size áo dài nữ XÉO XỌ,XS,2950000,ACTIVE
+XV-PL028-C02-L,28,Áo dài Dao Phụng – Liên Phụng,2,Áo dài Liên Phụng,Bảng size áo dài nữ XÉO XỌ,L,2950000,ACTIVE
+XV-PL028-C02-M,28,Áo dài Dao Phụng – Liên Phụng,2,Áo dài Liên Phụng,Bảng size áo dài nữ XÉO XỌ,M,2950000,ACTIVE
+XV-PL028-C02-S,28,Áo dài Dao Phụng – Liên Phụng,2,Áo dài Liên Phụng,Bảng size áo dài nữ XÉO XỌ,S,2950000,ACTIVE
+XV-PL028-C02-XL,28,Áo dài Dao Phụng – Liên Phụng,2,Áo dài Liên Phụng,Bảng size áo dài nữ XÉO XỌ,XL,2950000,ACTIVE
+XV-PL028-C02-XS,28,Áo dài Dao Phụng – Liên Phụng,2,Áo dài Liên Phụng,Bảng size áo dài nữ XÉO XỌ,XS,2950000,ACTIVE
+XV-PL028-C03-L,28,Áo dài Dao Phụng – Liên Phụng,3,Quần AD metalic màu hồng nhạt - 13,Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL028-C03-M,28,Áo dài Dao Phụng – Liên Phụng,3,Quần AD metalic màu hồng nhạt - 13,Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL028-C03-S,28,Áo dài Dao Phụng – Liên Phụng,3,Quần AD metalic màu hồng nhạt - 13,Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL028-C03-XL,28,Áo dài Dao Phụng – Liên Phụng,3,Quần AD metalic màu hồng nhạt - 13,Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL028-C03-XS,28,Áo dài Dao Phụng – Liên Phụng,3,Quần AD metalic màu hồng nhạt - 13,Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL057-C01-L,57,Áo dài Diên Kim,1,Áo dài Diên Kim,Bảng size áo dài nữ XÉO XỌ,L,2800000,ACTIVE
+XV-PL057-C01-M,57,Áo dài Diên Kim,1,Áo dài Diên Kim,Bảng size áo dài nữ XÉO XỌ,M,2800000,ACTIVE
+XV-PL057-C01-S,57,Áo dài Diên Kim,1,Áo dài Diên Kim,Bảng size áo dài nữ XÉO XỌ,S,2800000,ACTIVE
+XV-PL057-C01-XL,57,Áo dài Diên Kim,1,Áo dài Diên Kim,Bảng size áo dài nữ XÉO XỌ,XL,2800000,ACTIVE
+XV-PL057-C01-XS,57,Áo dài Diên Kim,1,Áo dài Diên Kim,Bảng size áo dài nữ XÉO XỌ,XS,2800000,ACTIVE
+XV-PL057-C02-L,57,Áo dài Diên Kim,2,Quần kim sa (Vàng Hồng),Bảng size áo dài nữ XÉO XỌ,L,1490000,ACTIVE
+XV-PL057-C02-M,57,Áo dài Diên Kim,2,Quần kim sa (Vàng Hồng),Bảng size áo dài nữ XÉO XỌ,M,1490000,ACTIVE
+XV-PL057-C02-S,57,Áo dài Diên Kim,2,Quần kim sa (Vàng Hồng),Bảng size áo dài nữ XÉO XỌ,S,1490000,ACTIVE
+XV-PL057-C02-XL,57,Áo dài Diên Kim,2,Quần kim sa (Vàng Hồng),Bảng size áo dài nữ XÉO XỌ,XL,1490000,ACTIVE
+XV-PL057-C02-XS,57,Áo dài Diên Kim,2,Quần kim sa (Vàng Hồng),Bảng size áo dài nữ XÉO XỌ,XS,1490000,ACTIVE
+XV-PL004-C01-L,4,Áo dài Diệu Liên,1,Áo dài Diệu Liên,Bảng size áo dài nữ XÉO XỌ,L,3550000,ACTIVE
+XV-PL004-C01-M,4,Áo dài Diệu Liên,1,Áo dài Diệu Liên,Bảng size áo dài nữ XÉO XỌ,M,3550000,ACTIVE
+XV-PL004-C01-S,4,Áo dài Diệu Liên,1,Áo dài Diệu Liên,Bảng size áo dài nữ XÉO XỌ,S,3550000,ACTIVE
+XV-PL004-C01-XL,4,Áo dài Diệu Liên,1,Áo dài Diệu Liên,Bảng size áo dài nữ XÉO XỌ,XL,3550000,ACTIVE
+XV-PL004-C01-XS,4,Áo dài Diệu Liên,1,Áo dài Diệu Liên,Bảng size áo dài nữ XÉO XỌ,XS,3550000,ACTIVE
+XV-PL004-C02-L,4,Áo dài Diệu Liên,2,Quần AD metalic màu xanh mint (GD vàng - 70),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL004-C02-M,4,Áo dài Diệu Liên,2,Quần AD metalic màu xanh mint (GD vàng - 70),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL004-C02-S,4,Áo dài Diệu Liên,2,Quần AD metalic màu xanh mint (GD vàng - 70),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL004-C02-XL,4,Áo dài Diệu Liên,2,Quần AD metalic màu xanh mint (GD vàng - 70),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL004-C02-XS,4,Áo dài Diệu Liên,2,Quần AD metalic màu xanh mint (GD vàng - 70),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL116-C01-L,116,Áo dài Gia Hỷ,1,Áo dài Gia Hỷ,Bảng size áo dài nữ XÉO XỌ,L,2550000,ACTIVE
+XV-PL116-C01-M,116,Áo dài Gia Hỷ,1,Áo dài Gia Hỷ,Bảng size áo dài nữ XÉO XỌ,M,2550000,ACTIVE
+XV-PL116-C01-S,116,Áo dài Gia Hỷ,1,Áo dài Gia Hỷ,Bảng size áo dài nữ XÉO XỌ,S,2550000,ACTIVE
+XV-PL116-C01-XL,116,Áo dài Gia Hỷ,1,Áo dài Gia Hỷ,Bảng size áo dài nữ XÉO XỌ,XL,2550000,ACTIVE
+XV-PL116-C01-XS,116,Áo dài Gia Hỷ,1,Áo dài Gia Hỷ,Bảng size áo dài nữ XÉO XỌ,XS,2550000,ACTIVE
+XV-PL014-C01-L,14,Áo dài Hoàng Phụng,1,Áo dài Hoàng Phụng,Bảng size áo dài nữ XÉO XỌ,L,4450000,ACTIVE
+XV-PL014-C01-M,14,Áo dài Hoàng Phụng,1,Áo dài Hoàng Phụng,Bảng size áo dài nữ XÉO XỌ,M,4450000,ACTIVE
+XV-PL014-C01-S,14,Áo dài Hoàng Phụng,1,Áo dài Hoàng Phụng,Bảng size áo dài nữ XÉO XỌ,S,4450000,ACTIVE
+XV-PL014-C01-XL,14,Áo dài Hoàng Phụng,1,Áo dài Hoàng Phụng,Bảng size áo dài nữ XÉO XỌ,XL,4450000,ACTIVE
+XV-PL014-C01-XS,14,Áo dài Hoàng Phụng,1,Áo dài Hoàng Phụng,Bảng size áo dài nữ XÉO XỌ,XS,4450000,ACTIVE
+XV-PL014-C02-L,14,Áo dài Hoàng Phụng,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL014-C02-M,14,Áo dài Hoàng Phụng,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL014-C02-S,14,Áo dài Hoàng Phụng,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL014-C02-XL,14,Áo dài Hoàng Phụng,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL014-C02-XS,14,Áo dài Hoàng Phụng,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL058-C01-L,58,Áo dài Huỳnh Dao,1,Áo dài Huỳnh Dao,Bảng size áo dài nữ XÉO XỌ,L,3700000,ACTIVE
+XV-PL058-C01-M,58,Áo dài Huỳnh Dao,1,Áo dài Huỳnh Dao,Bảng size áo dài nữ XÉO XỌ,M,3700000,ACTIVE
+XV-PL058-C01-S,58,Áo dài Huỳnh Dao,1,Áo dài Huỳnh Dao,Bảng size áo dài nữ XÉO XỌ,S,3700000,ACTIVE
+XV-PL058-C01-XL,58,Áo dài Huỳnh Dao,1,Áo dài Huỳnh Dao,Bảng size áo dài nữ XÉO XỌ,XL,3700000,ACTIVE
+XV-PL058-C01-XS,58,Áo dài Huỳnh Dao,1,Áo dài Huỳnh Dao,Bảng size áo dài nữ XÉO XỌ,XS,3700000,ACTIVE
+XV-PL058-C02-L,58,Áo dài Huỳnh Dao,2,Quần AD metalic màu xanh biển (Hoye 88118 - 15),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL058-C02-M,58,Áo dài Huỳnh Dao,2,Quần AD metalic màu xanh biển (Hoye 88118 - 15),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL058-C02-S,58,Áo dài Huỳnh Dao,2,Quần AD metalic màu xanh biển (Hoye 88118 - 15),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL058-C02-XL,58,Áo dài Huỳnh Dao,2,Quần AD metalic màu xanh biển (Hoye 88118 - 15),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL058-C02-XS,58,Áo dài Huỳnh Dao,2,Quần AD metalic màu xanh biển (Hoye 88118 - 15),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL015-C01-L,15,Áo dài Hồ Phụng,1,Áo dài Hồ Phụng,Bảng size áo dài nữ XÉO XỌ,L,4450000,ACTIVE
+XV-PL015-C01-M,15,Áo dài Hồ Phụng,1,Áo dài Hồ Phụng,Bảng size áo dài nữ XÉO XỌ,M,4450000,ACTIVE
+XV-PL015-C01-S,15,Áo dài Hồ Phụng,1,Áo dài Hồ Phụng,Bảng size áo dài nữ XÉO XỌ,S,4450000,ACTIVE
+XV-PL015-C01-XL,15,Áo dài Hồ Phụng,1,Áo dài Hồ Phụng,Bảng size áo dài nữ XÉO XỌ,XL,4450000,ACTIVE
+XV-PL015-C01-XS,15,Áo dài Hồ Phụng,1,Áo dài Hồ Phụng,Bảng size áo dài nữ XÉO XỌ,XS,4450000,ACTIVE
+XV-PL015-C02-L,15,Áo dài Hồ Phụng,2,Quần metalic màu nâu (GD vàng - 13),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL015-C02-M,15,Áo dài Hồ Phụng,2,Quần metalic màu nâu (GD vàng - 13),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL015-C02-S,15,Áo dài Hồ Phụng,2,Quần metalic màu nâu (GD vàng - 13),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL015-C02-XL,15,Áo dài Hồ Phụng,2,Quần metalic màu nâu (GD vàng - 13),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL015-C02-XS,15,Áo dài Hồ Phụng,2,Quần metalic màu nâu (GD vàng - 13),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL029-C01-L,29,Áo dài Hồng Ân – Hồng Duyên,1,Áo dài Hồng Ân,Bảng size áo dài nữ XÉO XỌ,L,3950000,ACTIVE
+XV-PL029-C01-M,29,Áo dài Hồng Ân – Hồng Duyên,1,Áo dài Hồng Ân,Bảng size áo dài nữ XÉO XỌ,M,3950000,ACTIVE
+XV-PL029-C01-S,29,Áo dài Hồng Ân – Hồng Duyên,1,Áo dài Hồng Ân,Bảng size áo dài nữ XÉO XỌ,S,3950000,ACTIVE
+XV-PL029-C01-XL,29,Áo dài Hồng Ân – Hồng Duyên,1,Áo dài Hồng Ân,Bảng size áo dài nữ XÉO XỌ,XL,3950000,ACTIVE
+XV-PL029-C01-XS,29,Áo dài Hồng Ân – Hồng Duyên,1,Áo dài Hồng Ân,Bảng size áo dài nữ XÉO XỌ,XS,3950000,ACTIVE
+XV-PL029-C02-L,29,Áo dài Hồng Ân – Hồng Duyên,2,Áo dài Hồng Duyên,Bảng size áo dài nữ XÉO XỌ,L,3050000,ACTIVE
+XV-PL029-C02-M,29,Áo dài Hồng Ân – Hồng Duyên,2,Áo dài Hồng Duyên,Bảng size áo dài nữ XÉO XỌ,M,3050000,ACTIVE
+XV-PL029-C02-S,29,Áo dài Hồng Ân – Hồng Duyên,2,Áo dài Hồng Duyên,Bảng size áo dài nữ XÉO XỌ,S,3050000,ACTIVE
+XV-PL029-C02-XL,29,Áo dài Hồng Ân – Hồng Duyên,2,Áo dài Hồng Duyên,Bảng size áo dài nữ XÉO XỌ,XL,3050000,ACTIVE
+XV-PL029-C02-XS,29,Áo dài Hồng Ân – Hồng Duyên,2,Áo dài Hồng Duyên,Bảng size áo dài nữ XÉO XỌ,XS,3050000,ACTIVE
+XV-PL029-C03-L,29,Áo dài Hồng Ân – Hồng Duyên,3,Quần Châu Đoan,Bảng size áo dài nữ XÉO XỌ,L,850000,ACTIVE
+XV-PL029-C03-M,29,Áo dài Hồng Ân – Hồng Duyên,3,Quần Châu Đoan,Bảng size áo dài nữ XÉO XỌ,M,850000,ACTIVE
+XV-PL029-C03-S,29,Áo dài Hồng Ân – Hồng Duyên,3,Quần Châu Đoan,Bảng size áo dài nữ XÉO XỌ,S,850000,ACTIVE
+XV-PL029-C03-XL,29,Áo dài Hồng Ân – Hồng Duyên,3,Quần Châu Đoan,Bảng size áo dài nữ XÉO XỌ,XL,850000,ACTIVE
+XV-PL029-C03-XS,29,Áo dài Hồng Ân – Hồng Duyên,3,Quần Châu Đoan,Bảng size áo dài nữ XÉO XỌ,XS,850000,ACTIVE
+XV-PL016-C01-L,16,Áo dài Hữu Phương,1,Áo dài Hữu Phương,Bảng size áo dài nữ XÉO XỌ,L,4450000,ACTIVE
+XV-PL016-C01-M,16,Áo dài Hữu Phương,1,Áo dài Hữu Phương,Bảng size áo dài nữ XÉO XỌ,M,4450000,ACTIVE
+XV-PL016-C01-S,16,Áo dài Hữu Phương,1,Áo dài Hữu Phương,Bảng size áo dài nữ XÉO XỌ,S,4450000,ACTIVE
+XV-PL016-C01-XL,16,Áo dài Hữu Phương,1,Áo dài Hữu Phương,Bảng size áo dài nữ XÉO XỌ,XL,4450000,ACTIVE
+XV-PL016-C01-XS,16,Áo dài Hữu Phương,1,Áo dài Hữu Phương,Bảng size áo dài nữ XÉO XỌ,XS,4450000,ACTIVE
+XV-PL016-C02-L,16,Áo dài Hữu Phương,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL016-C02-M,16,Áo dài Hữu Phương,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL016-C02-S,16,Áo dài Hữu Phương,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL016-C02-XL,16,Áo dài Hữu Phương,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL016-C02-XS,16,Áo dài Hữu Phương,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL059-C01-L,59,Áo dài Kim Ánh,1,Áo dài Kim Ánh,Bảng size áo dài nữ XÉO XỌ,L,3300000,ACTIVE
+XV-PL059-C01-M,59,Áo dài Kim Ánh,1,Áo dài Kim Ánh,Bảng size áo dài nữ XÉO XỌ,M,3300000,ACTIVE
+XV-PL059-C01-S,59,Áo dài Kim Ánh,1,Áo dài Kim Ánh,Bảng size áo dài nữ XÉO XỌ,S,3300000,ACTIVE
+XV-PL059-C01-XL,59,Áo dài Kim Ánh,1,Áo dài Kim Ánh,Bảng size áo dài nữ XÉO XỌ,XL,3300000,ACTIVE
+XV-PL059-C01-XS,59,Áo dài Kim Ánh,1,Áo dài Kim Ánh,Bảng size áo dài nữ XÉO XỌ,XS,3300000,ACTIVE
+XV-PL059-C02-L,59,Áo dài Kim Ánh,2,Quần kim sa (Đỏ),Bảng size áo dài nữ XÉO XỌ,L,1490000,ACTIVE
+XV-PL059-C02-M,59,Áo dài Kim Ánh,2,Quần kim sa (Đỏ),Bảng size áo dài nữ XÉO XỌ,M,1490000,ACTIVE
+XV-PL059-C02-S,59,Áo dài Kim Ánh,2,Quần kim sa (Đỏ),Bảng size áo dài nữ XÉO XỌ,S,1490000,ACTIVE
+XV-PL059-C02-XL,59,Áo dài Kim Ánh,2,Quần kim sa (Đỏ),Bảng size áo dài nữ XÉO XỌ,XL,1490000,ACTIVE
+XV-PL059-C02-XS,59,Áo dài Kim Ánh,2,Quần kim sa (Đỏ),Bảng size áo dài nữ XÉO XỌ,XS,1490000,ACTIVE
+XV-PL060-C01-L,60,Áo dài Lưu Ngọc,1,Áo dài Lưu Ngọc,Bảng size áo dài nữ XÉO XỌ,L,3200000,ACTIVE
+XV-PL060-C01-M,60,Áo dài Lưu Ngọc,1,Áo dài Lưu Ngọc,Bảng size áo dài nữ XÉO XỌ,M,3200000,ACTIVE
+XV-PL060-C01-S,60,Áo dài Lưu Ngọc,1,Áo dài Lưu Ngọc,Bảng size áo dài nữ XÉO XỌ,S,3200000,ACTIVE
+XV-PL060-C01-XL,60,Áo dài Lưu Ngọc,1,Áo dài Lưu Ngọc,Bảng size áo dài nữ XÉO XỌ,XL,3200000,ACTIVE
+XV-PL060-C01-XS,60,Áo dài Lưu Ngọc,1,Áo dài Lưu Ngọc,Bảng size áo dài nữ XÉO XỌ,XS,3200000,ACTIVE
+XV-PL060-C02-L,60,Áo dài Lưu Ngọc,2,Quần AD metalic màu hồng tím đậm (GD vàng - 99),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL060-C02-M,60,Áo dài Lưu Ngọc,2,Quần AD metalic màu hồng tím đậm (GD vàng - 99),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL060-C02-S,60,Áo dài Lưu Ngọc,2,Quần AD metalic màu hồng tím đậm (GD vàng - 99),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL060-C02-XL,60,Áo dài Lưu Ngọc,2,Quần AD metalic màu hồng tím đậm (GD vàng - 99),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL060-C02-XS,60,Áo dài Lưu Ngọc,2,Quần AD metalic màu hồng tím đậm (GD vàng - 99),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL117-C01-L,117,Áo dài Lục Nguyên,1,Áo dài Lục Nguyên,Bảng size áo dài nam XÉO XỌ,L,2850000,ACTIVE
+XV-PL117-C01-M,117,Áo dài Lục Nguyên,1,Áo dài Lục Nguyên,Bảng size áo dài nam XÉO XỌ,M,2850000,ACTIVE
+XV-PL117-C01-S,117,Áo dài Lục Nguyên,1,Áo dài Lục Nguyên,Bảng size áo dài nam XÉO XỌ,S,2850000,ACTIVE
+XV-PL117-C01-XL,117,Áo dài Lục Nguyên,1,Áo dài Lục Nguyên,Bảng size áo dài nam XÉO XỌ,XL,2850000,ACTIVE
+XV-PL118-C01-L,118,Áo dài Lục Nhạn,1,Áo dài Lục Nhạn,Bảng size áo dài nữ XÉO XỌ,L,2550000,ACTIVE
+XV-PL118-C01-M,118,Áo dài Lục Nhạn,1,Áo dài Lục Nhạn,Bảng size áo dài nữ XÉO XỌ,M,2550000,ACTIVE
+XV-PL118-C01-S,118,Áo dài Lục Nhạn,1,Áo dài Lục Nhạn,Bảng size áo dài nữ XÉO XỌ,S,2550000,ACTIVE
+XV-PL118-C01-XL,118,Áo dài Lục Nhạn,1,Áo dài Lục Nhạn,Bảng size áo dài nữ XÉO XỌ,XL,2550000,ACTIVE
+XV-PL118-C01-XS,118,Áo dài Lục Nhạn,1,Áo dài Lục Nhạn,Bảng size áo dài nữ XÉO XỌ,XS,2550000,ACTIVE
+XV-PL061-C01-L,61,Áo dài Mai Chiêu,1,Áo dài Mai Chiêu,Bảng size áo dài nữ XÉO XỌ,L,3800000,ACTIVE
+XV-PL061-C01-M,61,Áo dài Mai Chiêu,1,Áo dài Mai Chiêu,Bảng size áo dài nữ XÉO XỌ,M,3800000,ACTIVE
+XV-PL061-C01-S,61,Áo dài Mai Chiêu,1,Áo dài Mai Chiêu,Bảng size áo dài nữ XÉO XỌ,S,3800000,ACTIVE
+XV-PL061-C01-XL,61,Áo dài Mai Chiêu,1,Áo dài Mai Chiêu,Bảng size áo dài nữ XÉO XỌ,XL,3800000,ACTIVE
+XV-PL061-C01-XS,61,Áo dài Mai Chiêu,1,Áo dài Mai Chiêu,Bảng size áo dài nữ XÉO XỌ,XS,3800000,ACTIVE
+XV-PL061-C02-L,61,Áo dài Mai Chiêu,2,Quần AD metalic màu xanh coban (GD vàng - 92),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL061-C02-M,61,Áo dài Mai Chiêu,2,Quần AD metalic màu xanh coban (GD vàng - 92),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL061-C02-S,61,Áo dài Mai Chiêu,2,Quần AD metalic màu xanh coban (GD vàng - 92),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL061-C02-XL,61,Áo dài Mai Chiêu,2,Quần AD metalic màu xanh coban (GD vàng - 92),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL061-C02-XS,61,Áo dài Mai Chiêu,2,Quần AD metalic màu xanh coban (GD vàng - 92),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL005-C01-L,5,Áo dài Mãn Kim,1,Áo dài Mãn Kim,Bảng size áo dài nữ XÉO XỌ,L,3000000,ACTIVE
+XV-PL005-C01-M,5,Áo dài Mãn Kim,1,Áo dài Mãn Kim,Bảng size áo dài nữ XÉO XỌ,M,3000000,ACTIVE
+XV-PL005-C01-S,5,Áo dài Mãn Kim,1,Áo dài Mãn Kim,Bảng size áo dài nữ XÉO XỌ,S,3000000,ACTIVE
+XV-PL005-C01-XL,5,Áo dài Mãn Kim,1,Áo dài Mãn Kim,Bảng size áo dài nữ XÉO XỌ,XL,3000000,ACTIVE
+XV-PL005-C01-XS,5,Áo dài Mãn Kim,1,Áo dài Mãn Kim,Bảng size áo dài nữ XÉO XỌ,XS,3000000,ACTIVE
+XV-PL005-C02-L,5,Áo dài Mãn Kim,2,Quần AD metalic màu hồng sen (GD vàng - 103),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL005-C02-M,5,Áo dài Mãn Kim,2,Quần AD metalic màu hồng sen (GD vàng - 103),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL005-C02-S,5,Áo dài Mãn Kim,2,Quần AD metalic màu hồng sen (GD vàng - 103),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL005-C02-XL,5,Áo dài Mãn Kim,2,Quần AD metalic màu hồng sen (GD vàng - 103),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL005-C02-XS,5,Áo dài Mãn Kim,2,Quần AD metalic màu hồng sen (GD vàng - 103),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL006-C01-L,6,Áo dài Mãn Như,1,Áo dài Mãn Như,Bảng size áo dài nữ XÉO XỌ,L,3000000,ACTIVE
+XV-PL006-C01-M,6,Áo dài Mãn Như,1,Áo dài Mãn Như,Bảng size áo dài nữ XÉO XỌ,M,3000000,ACTIVE
+XV-PL006-C01-S,6,Áo dài Mãn Như,1,Áo dài Mãn Như,Bảng size áo dài nữ XÉO XỌ,S,3000000,ACTIVE
+XV-PL006-C01-XL,6,Áo dài Mãn Như,1,Áo dài Mãn Như,Bảng size áo dài nữ XÉO XỌ,XL,3000000,ACTIVE
+XV-PL006-C01-XS,6,Áo dài Mãn Như,1,Áo dài Mãn Như,Bảng size áo dài nữ XÉO XỌ,XS,3000000,ACTIVE
+XV-PL006-C02-L,6,Áo dài Mãn Như,2,Quần metalic màu vàng tươi (GD vàng - 42),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL006-C02-M,6,Áo dài Mãn Như,2,Quần metalic màu vàng tươi (GD vàng - 42),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL006-C02-S,6,Áo dài Mãn Như,2,Quần metalic màu vàng tươi (GD vàng - 42),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL006-C02-XL,6,Áo dài Mãn Như,2,Quần metalic màu vàng tươi (GD vàng - 42),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL006-C02-XS,6,Áo dài Mãn Như,2,Quần metalic màu vàng tươi (GD vàng - 42),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL007-C01-L,7,Áo dài Mãn Đào,1,Áo dài Mãn Đào,Bảng size áo dài nữ XÉO XỌ,L,3000000,ACTIVE
+XV-PL007-C01-M,7,Áo dài Mãn Đào,1,Áo dài Mãn Đào,Bảng size áo dài nữ XÉO XỌ,M,3000000,ACTIVE
+XV-PL007-C01-S,7,Áo dài Mãn Đào,1,Áo dài Mãn Đào,Bảng size áo dài nữ XÉO XỌ,S,3000000,ACTIVE
+XV-PL007-C01-XL,7,Áo dài Mãn Đào,1,Áo dài Mãn Đào,Bảng size áo dài nữ XÉO XỌ,XL,3000000,ACTIVE
+XV-PL007-C01-XS,7,Áo dài Mãn Đào,1,Áo dài Mãn Đào,Bảng size áo dài nữ XÉO XỌ,XS,3000000,ACTIVE
+XV-PL007-C02-L,7,Áo dài Mãn Đào,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL007-C02-M,7,Áo dài Mãn Đào,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL007-C02-S,7,Áo dài Mãn Đào,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL007-C02-XL,7,Áo dài Mãn Đào,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL007-C02-XS,7,Áo dài Mãn Đào,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL119-C01-L,119,Áo dài Mạc Nguy,1,Áo dài Mạc Nguy,Bảng size áo dài nữ XÉO XỌ,L,3750000,ACTIVE
+XV-PL119-C01-M,119,Áo dài Mạc Nguy,1,Áo dài Mạc Nguy,Bảng size áo dài nữ XÉO XỌ,M,3750000,ACTIVE
+XV-PL119-C01-S,119,Áo dài Mạc Nguy,1,Áo dài Mạc Nguy,Bảng size áo dài nữ XÉO XỌ,S,3750000,ACTIVE
+XV-PL119-C01-XL,119,Áo dài Mạc Nguy,1,Áo dài Mạc Nguy,Bảng size áo dài nữ XÉO XỌ,XL,3750000,ACTIVE
+XV-PL119-C01-XS,119,Áo dài Mạc Nguy,1,Áo dài Mạc Nguy,Bảng size áo dài nữ XÉO XỌ,XS,3750000,ACTIVE
+XV-PL120-C01-L,120,Áo dài Mạc Trúc,1,Áo dài Mạc Trúc,Bảng size áo dài nữ XÉO XỌ,L,2550000,ACTIVE
+XV-PL120-C01-M,120,Áo dài Mạc Trúc,1,Áo dài Mạc Trúc,Bảng size áo dài nữ XÉO XỌ,M,2550000,ACTIVE
+XV-PL120-C01-S,120,Áo dài Mạc Trúc,1,Áo dài Mạc Trúc,Bảng size áo dài nữ XÉO XỌ,S,2550000,ACTIVE
+XV-PL120-C01-XL,120,Áo dài Mạc Trúc,1,Áo dài Mạc Trúc,Bảng size áo dài nữ XÉO XỌ,XL,2550000,ACTIVE
+XV-PL120-C01-XS,120,Áo dài Mạc Trúc,1,Áo dài Mạc Trúc,Bảng size áo dài nữ XÉO XỌ,XS,2550000,ACTIVE
+XV-PL030-C01-L,30,Áo dài Mộc Cẩn – Diêu Hà,1,Áo dài Mộc Cẩn,Bảng size áo dài nữ XÉO XỌ,L,8850000,ACTIVE
+XV-PL030-C01-M,30,Áo dài Mộc Cẩn – Diêu Hà,1,Áo dài Mộc Cẩn,Bảng size áo dài nữ XÉO XỌ,M,8850000,ACTIVE
+XV-PL030-C01-S,30,Áo dài Mộc Cẩn – Diêu Hà,1,Áo dài Mộc Cẩn,Bảng size áo dài nữ XÉO XỌ,S,8850000,ACTIVE
+XV-PL030-C01-XL,30,Áo dài Mộc Cẩn – Diêu Hà,1,Áo dài Mộc Cẩn,Bảng size áo dài nữ XÉO XỌ,XL,8850000,ACTIVE
+XV-PL030-C01-XS,30,Áo dài Mộc Cẩn – Diêu Hà,1,Áo dài Mộc Cẩn,Bảng size áo dài nữ XÉO XỌ,XS,8850000,ACTIVE
+XV-PL030-C02-L,30,Áo dài Mộc Cẩn – Diêu Hà,2,Áo dài Nạp Diêu Hà,Bảng size áo dài nữ XÉO XỌ,L,2550000,ACTIVE
+XV-PL030-C02-M,30,Áo dài Mộc Cẩn – Diêu Hà,2,Áo dài Nạp Diêu Hà,Bảng size áo dài nữ XÉO XỌ,M,2550000,ACTIVE
+XV-PL030-C02-S,30,Áo dài Mộc Cẩn – Diêu Hà,2,Áo dài Nạp Diêu Hà,Bảng size áo dài nữ XÉO XỌ,S,2550000,ACTIVE
+XV-PL030-C02-XL,30,Áo dài Mộc Cẩn – Diêu Hà,2,Áo dài Nạp Diêu Hà,Bảng size áo dài nữ XÉO XỌ,XL,2550000,ACTIVE
+XV-PL030-C02-XS,30,Áo dài Mộc Cẩn – Diêu Hà,2,Áo dài Nạp Diêu Hà,Bảng size áo dài nữ XÉO XỌ,XS,2550000,ACTIVE
+XV-PL030-C03-L,30,Áo dài Mộc Cẩn – Diêu Hà,3,Quần Khuê Đơn,Bảng size áo dài nữ XÉO XỌ,L,1350000,ACTIVE
+XV-PL030-C03-M,30,Áo dài Mộc Cẩn – Diêu Hà,3,Quần Khuê Đơn,Bảng size áo dài nữ XÉO XỌ,M,1350000,ACTIVE
+XV-PL030-C03-S,30,Áo dài Mộc Cẩn – Diêu Hà,3,Quần Khuê Đơn,Bảng size áo dài nữ XÉO XỌ,S,1350000,ACTIVE
+XV-PL030-C03-XL,30,Áo dài Mộc Cẩn – Diêu Hà,3,Quần Khuê Đơn,Bảng size áo dài nữ XÉO XỌ,XL,1350000,ACTIVE
+XV-PL030-C03-XS,30,Áo dài Mộc Cẩn – Diêu Hà,3,Quần Khuê Đơn,Bảng size áo dài nữ XÉO XỌ,XS,1350000,ACTIVE
+XV-PL017-C01-L,17,Áo dài Mộc Thước,1,Áo dài Mộc Thước,Bảng size áo dài nữ XÉO XỌ,L,4450000,ACTIVE
+XV-PL017-C01-M,17,Áo dài Mộc Thước,1,Áo dài Mộc Thước,Bảng size áo dài nữ XÉO XỌ,M,4450000,ACTIVE
+XV-PL017-C01-S,17,Áo dài Mộc Thước,1,Áo dài Mộc Thước,Bảng size áo dài nữ XÉO XỌ,S,4450000,ACTIVE
+XV-PL017-C01-XL,17,Áo dài Mộc Thước,1,Áo dài Mộc Thước,Bảng size áo dài nữ XÉO XỌ,XL,4450000,ACTIVE
+XV-PL017-C01-XS,17,Áo dài Mộc Thước,1,Áo dài Mộc Thước,Bảng size áo dài nữ XÉO XỌ,XS,4450000,ACTIVE
+XV-PL017-C02-L,17,Áo dài Mộc Thước,2,Quần AD metalic màu hồng phấn (GD vàng - 35),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL017-C02-M,17,Áo dài Mộc Thước,2,Quần AD metalic màu hồng phấn (GD vàng - 35),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL017-C02-S,17,Áo dài Mộc Thước,2,Quần AD metalic màu hồng phấn (GD vàng - 35),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL017-C02-XL,17,Áo dài Mộc Thước,2,Quần AD metalic màu hồng phấn (GD vàng - 35),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL017-C02-XS,17,Áo dài Mộc Thước,2,Quần AD metalic màu hồng phấn (GD vàng - 35),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL031-C01-L,31,Áo dài Mộng Đan – Hồng Duyên,1,Áo dài Mộng Đan,Bảng size áo dài nữ XÉO XỌ,L,4850000,ACTIVE
+XV-PL031-C01-M,31,Áo dài Mộng Đan – Hồng Duyên,1,Áo dài Mộng Đan,Bảng size áo dài nữ XÉO XỌ,M,4850000,ACTIVE
+XV-PL031-C01-S,31,Áo dài Mộng Đan – Hồng Duyên,1,Áo dài Mộng Đan,Bảng size áo dài nữ XÉO XỌ,S,4850000,ACTIVE
+XV-PL031-C01-XL,31,Áo dài Mộng Đan – Hồng Duyên,1,Áo dài Mộng Đan,Bảng size áo dài nữ XÉO XỌ,XL,4850000,ACTIVE
+XV-PL031-C01-XS,31,Áo dài Mộng Đan – Hồng Duyên,1,Áo dài Mộng Đan,Bảng size áo dài nữ XÉO XỌ,XS,4850000,ACTIVE
+XV-PL031-C02-L,31,Áo dài Mộng Đan – Hồng Duyên,2,Áo dài Hồng Duyên,Bảng size áo dài nữ XÉO XỌ,L,3050000,ACTIVE
+XV-PL031-C02-M,31,Áo dài Mộng Đan – Hồng Duyên,2,Áo dài Hồng Duyên,Bảng size áo dài nữ XÉO XỌ,M,3050000,ACTIVE
+XV-PL031-C02-S,31,Áo dài Mộng Đan – Hồng Duyên,2,Áo dài Hồng Duyên,Bảng size áo dài nữ XÉO XỌ,S,3050000,ACTIVE
+XV-PL031-C02-XL,31,Áo dài Mộng Đan – Hồng Duyên,2,Áo dài Hồng Duyên,Bảng size áo dài nữ XÉO XỌ,XL,3050000,ACTIVE
+XV-PL031-C02-XS,31,Áo dài Mộng Đan – Hồng Duyên,2,Áo dài Hồng Duyên,Bảng size áo dài nữ XÉO XỌ,XS,3050000,ACTIVE
+XV-PL031-C03-L,31,Áo dài Mộng Đan – Hồng Duyên,3,Quần Châu Đoan,Bảng size áo dài nữ XÉO XỌ,L,850000,ACTIVE
+XV-PL031-C03-M,31,Áo dài Mộng Đan – Hồng Duyên,3,Quần Châu Đoan,Bảng size áo dài nữ XÉO XỌ,M,850000,ACTIVE
+XV-PL031-C03-S,31,Áo dài Mộng Đan – Hồng Duyên,3,Quần Châu Đoan,Bảng size áo dài nữ XÉO XỌ,S,850000,ACTIVE
+XV-PL031-C03-XL,31,Áo dài Mộng Đan – Hồng Duyên,3,Quần Châu Đoan,Bảng size áo dài nữ XÉO XỌ,XL,850000,ACTIVE
+XV-PL031-C03-XS,31,Áo dài Mộng Đan – Hồng Duyên,3,Quần Châu Đoan,Bảng size áo dài nữ XÉO XỌ,XS,850000,ACTIVE
+XV-PL018-C01-L,18,Áo dài Nam Phụng,1,Áo dài Nam Phụng,Bảng size áo dài nam XÉO XỌ,L,4450000,ACTIVE
+XV-PL018-C01-M,18,Áo dài Nam Phụng,1,Áo dài Nam Phụng,Bảng size áo dài nam XÉO XỌ,M,4450000,ACTIVE
+XV-PL018-C01-S,18,Áo dài Nam Phụng,1,Áo dài Nam Phụng,Bảng size áo dài nam XÉO XỌ,S,4450000,ACTIVE
+XV-PL018-C01-XL,18,Áo dài Nam Phụng,1,Áo dài Nam Phụng,Bảng size áo dài nam XÉO XỌ,XL,4450000,ACTIVE
+XV-PL018-C02-L,18,Áo dài Nam Phụng,2,Quần AD metalic màu xanh cốm,Bảng size áo dài nam XÉO XỌ,L,750000,ACTIVE
+XV-PL018-C02-M,18,Áo dài Nam Phụng,2,Quần AD metalic màu xanh cốm,Bảng size áo dài nam XÉO XỌ,M,750000,ACTIVE
+XV-PL018-C02-S,18,Áo dài Nam Phụng,2,Quần AD metalic màu xanh cốm,Bảng size áo dài nam XÉO XỌ,S,750000,ACTIVE
+XV-PL018-C02-XL,18,Áo dài Nam Phụng,2,Quần AD metalic màu xanh cốm,Bảng size áo dài nam XÉO XỌ,XL,750000,ACTIVE
+XV-PL121-C01-L,121,Áo dài Nguyên Phong,1,Áo dài Nguyên Phong,Bảng size áo dài nữ XÉO XỌ,L,2550000,ACTIVE
+XV-PL121-C01-M,121,Áo dài Nguyên Phong,1,Áo dài Nguyên Phong,Bảng size áo dài nữ XÉO XỌ,M,2550000,ACTIVE
+XV-PL121-C01-S,121,Áo dài Nguyên Phong,1,Áo dài Nguyên Phong,Bảng size áo dài nữ XÉO XỌ,S,2550000,ACTIVE
+XV-PL121-C01-XL,121,Áo dài Nguyên Phong,1,Áo dài Nguyên Phong,Bảng size áo dài nữ XÉO XỌ,XL,2550000,ACTIVE
+XV-PL121-C01-XS,121,Áo dài Nguyên Phong,1,Áo dài Nguyên Phong,Bảng size áo dài nữ XÉO XỌ,XS,2550000,ACTIVE
+XV-PL032-C01-L,32,Áo dài Ngọc Bảo – Mãn Duyên,1,Áo dài Ngọc Bảo,Bảng size áo dài nữ XÉO XỌ,L,4450000,ACTIVE
+XV-PL032-C01-M,32,Áo dài Ngọc Bảo – Mãn Duyên,1,Áo dài Ngọc Bảo,Bảng size áo dài nữ XÉO XỌ,M,4450000,ACTIVE
+XV-PL032-C01-S,32,Áo dài Ngọc Bảo – Mãn Duyên,1,Áo dài Ngọc Bảo,Bảng size áo dài nữ XÉO XỌ,S,4450000,ACTIVE
+XV-PL032-C01-XL,32,Áo dài Ngọc Bảo – Mãn Duyên,1,Áo dài Ngọc Bảo,Bảng size áo dài nữ XÉO XỌ,XL,4450000,ACTIVE
+XV-PL032-C01-XS,32,Áo dài Ngọc Bảo – Mãn Duyên,1,Áo dài Ngọc Bảo,Bảng size áo dài nữ XÉO XỌ,XS,4450000,ACTIVE
+XV-PL032-C02-L,32,Áo dài Ngọc Bảo – Mãn Duyên,2,Áo dài Mãn Duyên,Bảng size áo dài nữ XÉO XỌ,L,4350000,ACTIVE
+XV-PL032-C02-M,32,Áo dài Ngọc Bảo – Mãn Duyên,2,Áo dài Mãn Duyên,Bảng size áo dài nữ XÉO XỌ,M,4350000,ACTIVE
+XV-PL032-C02-S,32,Áo dài Ngọc Bảo – Mãn Duyên,2,Áo dài Mãn Duyên,Bảng size áo dài nữ XÉO XỌ,S,4350000,ACTIVE
+XV-PL032-C02-XL,32,Áo dài Ngọc Bảo – Mãn Duyên,2,Áo dài Mãn Duyên,Bảng size áo dài nữ XÉO XỌ,XL,4350000,ACTIVE
+XV-PL032-C02-XS,32,Áo dài Ngọc Bảo – Mãn Duyên,2,Áo dài Mãn Duyên,Bảng size áo dài nữ XÉO XỌ,XS,4350000,ACTIVE
+XV-PL032-C03-L,32,Áo dài Ngọc Bảo – Mãn Duyên,3,Quần AD metalic màu hồng đỗ nhạt,Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL032-C03-M,32,Áo dài Ngọc Bảo – Mãn Duyên,3,Quần AD metalic màu hồng đỗ nhạt,Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL032-C03-S,32,Áo dài Ngọc Bảo – Mãn Duyên,3,Quần AD metalic màu hồng đỗ nhạt,Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL032-C03-XL,32,Áo dài Ngọc Bảo – Mãn Duyên,3,Quần AD metalic màu hồng đỗ nhạt,Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL032-C03-XS,32,Áo dài Ngọc Bảo – Mãn Duyên,3,Quần AD metalic màu hồng đỗ nhạt,Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL122-C01-L,122,Áo dài Ngọc Chẩm,1,Áo dài Ngọc Chẩm,Bảng size áo dài nam XÉO XỌ,L,3850000,ACTIVE
+XV-PL122-C01-M,122,Áo dài Ngọc Chẩm,1,Áo dài Ngọc Chẩm,Bảng size áo dài nam XÉO XỌ,M,3850000,ACTIVE
+XV-PL122-C01-S,122,Áo dài Ngọc Chẩm,1,Áo dài Ngọc Chẩm,Bảng size áo dài nam XÉO XỌ,S,3850000,ACTIVE
+XV-PL122-C01-XL,122,Áo dài Ngọc Chẩm,1,Áo dài Ngọc Chẩm,Bảng size áo dài nam XÉO XỌ,XL,3850000,ACTIVE
+XV-PL071-C01-L,71,Áo dài Ngọc Khê – Yên Hoàng,1,Áo dài Ngọc Khê,Bảng size áo dài nữ XÉO XỌ,L,3350000,ACTIVE
+XV-PL071-C01-M,71,Áo dài Ngọc Khê – Yên Hoàng,1,Áo dài Ngọc Khê,Bảng size áo dài nữ XÉO XỌ,M,3350000,ACTIVE
+XV-PL071-C01-S,71,Áo dài Ngọc Khê – Yên Hoàng,1,Áo dài Ngọc Khê,Bảng size áo dài nữ XÉO XỌ,S,3350000,ACTIVE
+XV-PL071-C01-XL,71,Áo dài Ngọc Khê – Yên Hoàng,1,Áo dài Ngọc Khê,Bảng size áo dài nữ XÉO XỌ,XL,3350000,ACTIVE
+XV-PL071-C01-XS,71,Áo dài Ngọc Khê – Yên Hoàng,1,Áo dài Ngọc Khê,Bảng size áo dài nữ XÉO XỌ,XS,3350000,ACTIVE
+XV-PL071-C02-L,71,Áo dài Ngọc Khê – Yên Hoàng,2,Áo dài Yên Hoàng,Bảng size áo dài nữ XÉO XỌ,L,0,ACTIVE
+XV-PL071-C02-M,71,Áo dài Ngọc Khê – Yên Hoàng,2,Áo dài Yên Hoàng,Bảng size áo dài nữ XÉO XỌ,M,0,ACTIVE
+XV-PL071-C02-S,71,Áo dài Ngọc Khê – Yên Hoàng,2,Áo dài Yên Hoàng,Bảng size áo dài nữ XÉO XỌ,S,0,ACTIVE
+XV-PL071-C02-XL,71,Áo dài Ngọc Khê – Yên Hoàng,2,Áo dài Yên Hoàng,Bảng size áo dài nữ XÉO XỌ,XL,0,ACTIVE
+XV-PL071-C02-XS,71,Áo dài Ngọc Khê – Yên Hoàng,2,Áo dài Yên Hoàng,Bảng size áo dài nữ XÉO XỌ,XS,0,ACTIVE
+XV-PL071-C03-L,71,Áo dài Ngọc Khê – Yên Hoàng,3,Quần La Kim,Bảng size áo dài nữ XÉO XỌ,L,1250000,ACTIVE
+XV-PL071-C03-M,71,Áo dài Ngọc Khê – Yên Hoàng,3,Quần La Kim,Bảng size áo dài nữ XÉO XỌ,M,1250000,ACTIVE
+XV-PL071-C03-S,71,Áo dài Ngọc Khê – Yên Hoàng,3,Quần La Kim,Bảng size áo dài nữ XÉO XỌ,S,1250000,ACTIVE
+XV-PL071-C03-XL,71,Áo dài Ngọc Khê – Yên Hoàng,3,Quần La Kim,Bảng size áo dài nữ XÉO XỌ,XL,1250000,ACTIVE
+XV-PL071-C03-XS,71,Áo dài Ngọc Khê – Yên Hoàng,3,Quần La Kim,Bảng size áo dài nữ XÉO XỌ,XS,1250000,ACTIVE
+XV-PL062-C01-L,62,Áo dài Ngọc Nhu,1,Áo dài Ngọc Nhu,Bảng size áo dài nữ XÉO XỌ,L,4100000,ACTIVE
+XV-PL062-C01-M,62,Áo dài Ngọc Nhu,1,Áo dài Ngọc Nhu,Bảng size áo dài nữ XÉO XỌ,M,4100000,ACTIVE
+XV-PL062-C01-S,62,Áo dài Ngọc Nhu,1,Áo dài Ngọc Nhu,Bảng size áo dài nữ XÉO XỌ,S,4100000,ACTIVE
+XV-PL062-C01-XL,62,Áo dài Ngọc Nhu,1,Áo dài Ngọc Nhu,Bảng size áo dài nữ XÉO XỌ,XL,4100000,ACTIVE
+XV-PL062-C01-XS,62,Áo dài Ngọc Nhu,1,Áo dài Ngọc Nhu,Bảng size áo dài nữ XÉO XỌ,XS,4100000,ACTIVE
+XV-PL062-C02-L,62,Áo dài Ngọc Nhu,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL062-C02-M,62,Áo dài Ngọc Nhu,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL062-C02-S,62,Áo dài Ngọc Nhu,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL062-C02-XL,62,Áo dài Ngọc Nhu,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL062-C02-XS,62,Áo dài Ngọc Nhu,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL019-C01-L,19,Áo dài Nhu Phụng,1,Áo dài Nhu Phụng,Bảng size áo dài nữ XÉO XỌ,L,4450000,ACTIVE
+XV-PL019-C01-M,19,Áo dài Nhu Phụng,1,Áo dài Nhu Phụng,Bảng size áo dài nữ XÉO XỌ,M,4450000,ACTIVE
+XV-PL019-C01-S,19,Áo dài Nhu Phụng,1,Áo dài Nhu Phụng,Bảng size áo dài nữ XÉO XỌ,S,4450000,ACTIVE
+XV-PL019-C01-XL,19,Áo dài Nhu Phụng,1,Áo dài Nhu Phụng,Bảng size áo dài nữ XÉO XỌ,XL,4450000,ACTIVE
+XV-PL019-C01-XS,19,Áo dài Nhu Phụng,1,Áo dài Nhu Phụng,Bảng size áo dài nữ XÉO XỌ,XS,4450000,ACTIVE
+XV-PL019-C02-L,19,Áo dài Nhu Phụng,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL019-C02-M,19,Áo dài Nhu Phụng,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL019-C02-S,19,Áo dài Nhu Phụng,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL019-C02-XL,19,Áo dài Nhu Phụng,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL019-C02-XS,19,Áo dài Nhu Phụng,2,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL123-C01-L,123,Áo dài Nhã Lam,1,Áo dài Nhã Lam,Bảng size áo dài nam XÉO XỌ,L,2850000,ACTIVE
+XV-PL123-C01-M,123,Áo dài Nhã Lam,1,Áo dài Nhã Lam,Bảng size áo dài nam XÉO XỌ,M,2850000,ACTIVE
+XV-PL123-C01-S,123,Áo dài Nhã Lam,1,Áo dài Nhã Lam,Bảng size áo dài nam XÉO XỌ,S,2850000,ACTIVE
+XV-PL123-C01-XL,123,Áo dài Nhã Lam,1,Áo dài Nhã Lam,Bảng size áo dài nam XÉO XỌ,XL,2850000,ACTIVE
+XV-PL063-C01-L,63,Áo dài Phách Linh,1,Áo dài Phách Linh,Bảng size áo dài nữ XÉO XỌ,L,3500000,ACTIVE
+XV-PL063-C01-M,63,Áo dài Phách Linh,1,Áo dài Phách Linh,Bảng size áo dài nữ XÉO XỌ,M,3500000,ACTIVE
+XV-PL063-C01-S,63,Áo dài Phách Linh,1,Áo dài Phách Linh,Bảng size áo dài nữ XÉO XỌ,S,3500000,ACTIVE
+XV-PL063-C01-XL,63,Áo dài Phách Linh,1,Áo dài Phách Linh,Bảng size áo dài nữ XÉO XỌ,XL,3500000,ACTIVE
+XV-PL063-C01-XS,63,Áo dài Phách Linh,1,Áo dài Phách Linh,Bảng size áo dài nữ XÉO XỌ,XS,3500000,ACTIVE
+XV-PL063-C02-L,63,Áo dài Phách Linh,2,Quần AD metalic màu xanh ngọc (GD vàng - 98),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL063-C02-M,63,Áo dài Phách Linh,2,Quần AD metalic màu xanh ngọc (GD vàng - 98),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL063-C02-S,63,Áo dài Phách Linh,2,Quần AD metalic màu xanh ngọc (GD vàng - 98),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL063-C02-XL,63,Áo dài Phách Linh,2,Quần AD metalic màu xanh ngọc (GD vàng - 98),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL063-C02-XS,63,Áo dài Phách Linh,2,Quần AD metalic màu xanh ngọc (GD vàng - 98),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL124-C01-L,124,Áo dài Phụng Viên,1,Áo dài Phụng Viên,Bảng size áo dài nam XÉO XỌ,L,2850000,ACTIVE
+XV-PL124-C01-M,124,Áo dài Phụng Viên,1,Áo dài Phụng Viên,Bảng size áo dài nam XÉO XỌ,M,2850000,ACTIVE
+XV-PL124-C01-S,124,Áo dài Phụng Viên,1,Áo dài Phụng Viên,Bảng size áo dài nam XÉO XỌ,S,2850000,ACTIVE
+XV-PL124-C01-XL,124,Áo dài Phụng Viên,1,Áo dài Phụng Viên,Bảng size áo dài nam XÉO XỌ,XL,2850000,ACTIVE
+XV-PL064-C01-L,64,Áo dài Sương Mai,1,Áo dài Sương Mai,Bảng size áo dài nữ XÉO XỌ,L,3300000,ACTIVE
+XV-PL064-C01-M,64,Áo dài Sương Mai,1,Áo dài Sương Mai,Bảng size áo dài nữ XÉO XỌ,M,3300000,ACTIVE
+XV-PL064-C01-S,64,Áo dài Sương Mai,1,Áo dài Sương Mai,Bảng size áo dài nữ XÉO XỌ,S,3300000,ACTIVE
+XV-PL064-C01-XL,64,Áo dài Sương Mai,1,Áo dài Sương Mai,Bảng size áo dài nữ XÉO XỌ,XL,3300000,ACTIVE
+XV-PL064-C01-XS,64,Áo dài Sương Mai,1,Áo dài Sương Mai,Bảng size áo dài nữ XÉO XỌ,XS,3300000,ACTIVE
+XV-PL064-C02-L,64,Áo dài Sương Mai,2,Quần AD metalic màu vàng nhạt (GD vàng - 32),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL064-C02-M,64,Áo dài Sương Mai,2,Quần AD metalic màu vàng nhạt (GD vàng - 32),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL064-C02-S,64,Áo dài Sương Mai,2,Quần AD metalic màu vàng nhạt (GD vàng - 32),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL064-C02-XL,64,Áo dài Sương Mai,2,Quần AD metalic màu vàng nhạt (GD vàng - 32),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL064-C02-XS,64,Áo dài Sương Mai,2,Quần AD metalic màu vàng nhạt (GD vàng - 32),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL125-C01-L,125,Áo dài Sắc Kỳ,1,Áo dài Sắc Kỳ,Bảng size áo dài nữ XÉO XỌ,L,1990740,ACTIVE
+XV-PL125-C01-M,125,Áo dài Sắc Kỳ,1,Áo dài Sắc Kỳ,Bảng size áo dài nữ XÉO XỌ,M,1990740,ACTIVE
+XV-PL125-C01-S,125,Áo dài Sắc Kỳ,1,Áo dài Sắc Kỳ,Bảng size áo dài nữ XÉO XỌ,S,1990740,ACTIVE
+XV-PL125-C01-XL,125,Áo dài Sắc Kỳ,1,Áo dài Sắc Kỳ,Bảng size áo dài nữ XÉO XỌ,XL,1990740,ACTIVE
+XV-PL125-C01-XS,125,Áo dài Sắc Kỳ,1,Áo dài Sắc Kỳ,Bảng size áo dài nữ XÉO XỌ,XS,1990740,ACTIVE
+XV-PL072-C01-L,72,Áo dài Thanh Khê – Yên Lam,1,Áo dài Thanh Khê,Bảng size áo dài nữ XÉO XỌ,L,3350000,ACTIVE
+XV-PL072-C01-M,72,Áo dài Thanh Khê – Yên Lam,1,Áo dài Thanh Khê,Bảng size áo dài nữ XÉO XỌ,M,3350000,ACTIVE
+XV-PL072-C01-S,72,Áo dài Thanh Khê – Yên Lam,1,Áo dài Thanh Khê,Bảng size áo dài nữ XÉO XỌ,S,3350000,ACTIVE
+XV-PL072-C01-XL,72,Áo dài Thanh Khê – Yên Lam,1,Áo dài Thanh Khê,Bảng size áo dài nữ XÉO XỌ,XL,3350000,ACTIVE
+XV-PL072-C01-XS,72,Áo dài Thanh Khê – Yên Lam,1,Áo dài Thanh Khê,Bảng size áo dài nữ XÉO XỌ,XS,3350000,ACTIVE
+XV-PL072-C02-L,72,Áo dài Thanh Khê – Yên Lam,2,Áo dài Yên Lam,Bảng size áo dài nữ XÉO XỌ,L,0,ACTIVE
+XV-PL072-C02-M,72,Áo dài Thanh Khê – Yên Lam,2,Áo dài Yên Lam,Bảng size áo dài nữ XÉO XỌ,M,0,ACTIVE
+XV-PL072-C02-S,72,Áo dài Thanh Khê – Yên Lam,2,Áo dài Yên Lam,Bảng size áo dài nữ XÉO XỌ,S,0,ACTIVE
+XV-PL072-C02-XL,72,Áo dài Thanh Khê – Yên Lam,2,Áo dài Yên Lam,Bảng size áo dài nữ XÉO XỌ,XL,0,ACTIVE
+XV-PL072-C02-XS,72,Áo dài Thanh Khê – Yên Lam,2,Áo dài Yên Lam,Bảng size áo dài nữ XÉO XỌ,XS,0,ACTIVE
+XV-PL072-C03-L,72,Áo dài Thanh Khê – Yên Lam,3,Quần La Ngọc,Bảng size áo dài nữ XÉO XỌ,L,1250000,ACTIVE
+XV-PL072-C03-M,72,Áo dài Thanh Khê – Yên Lam,3,Quần La Ngọc,Bảng size áo dài nữ XÉO XỌ,M,1250000,ACTIVE
+XV-PL072-C03-S,72,Áo dài Thanh Khê – Yên Lam,3,Quần La Ngọc,Bảng size áo dài nữ XÉO XỌ,S,1250000,ACTIVE
+XV-PL072-C03-XL,72,Áo dài Thanh Khê – Yên Lam,3,Quần La Ngọc,Bảng size áo dài nữ XÉO XỌ,XL,1250000,ACTIVE
+XV-PL072-C03-XS,72,Áo dài Thanh Khê – Yên Lam,3,Quần La Ngọc,Bảng size áo dài nữ XÉO XỌ,XS,1250000,ACTIVE
+XV-PL065-C01-L,65,Áo dài Thanh Kỳ,1,Áo dài Thanh Kỳ,Bảng size áo dài nữ XÉO XỌ,L,5500000,ACTIVE
+XV-PL065-C01-M,65,Áo dài Thanh Kỳ,1,Áo dài Thanh Kỳ,Bảng size áo dài nữ XÉO XỌ,M,5500000,ACTIVE
+XV-PL065-C01-S,65,Áo dài Thanh Kỳ,1,Áo dài Thanh Kỳ,Bảng size áo dài nữ XÉO XỌ,S,5500000,ACTIVE
+XV-PL065-C01-XL,65,Áo dài Thanh Kỳ,1,Áo dài Thanh Kỳ,Bảng size áo dài nữ XÉO XỌ,XL,5500000,ACTIVE
+XV-PL065-C01-XS,65,Áo dài Thanh Kỳ,1,Áo dài Thanh Kỳ,Bảng size áo dài nữ XÉO XỌ,XS,5500000,ACTIVE
+XV-PL065-C02-L,65,Áo dài Thanh Kỳ,2,Quần AD metalic màu xanh mint (GD vàng - 70),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL065-C02-M,65,Áo dài Thanh Kỳ,2,Quần AD metalic màu xanh mint (GD vàng - 70),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL065-C02-S,65,Áo dài Thanh Kỳ,2,Quần AD metalic màu xanh mint (GD vàng - 70),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL065-C02-XL,65,Áo dài Thanh Kỳ,2,Quần AD metalic màu xanh mint (GD vàng - 70),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL065-C02-XS,65,Áo dài Thanh Kỳ,2,Quần AD metalic màu xanh mint (GD vàng - 70),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL033-C01-L,33,Áo dài Thiên Hà,1,Áo dài Thiên Hà,Bảng size áo dài nữ XÉO XỌ,L,2850000,ACTIVE
+XV-PL033-C01-M,33,Áo dài Thiên Hà,1,Áo dài Thiên Hà,Bảng size áo dài nữ XÉO XỌ,M,2850000,ACTIVE
+XV-PL033-C01-S,33,Áo dài Thiên Hà,1,Áo dài Thiên Hà,Bảng size áo dài nữ XÉO XỌ,S,2850000,ACTIVE
+XV-PL033-C01-XL,33,Áo dài Thiên Hà,1,Áo dài Thiên Hà,Bảng size áo dài nữ XÉO XỌ,XL,2850000,ACTIVE
+XV-PL033-C01-XS,33,Áo dài Thiên Hà,1,Áo dài Thiên Hà,Bảng size áo dài nữ XÉO XỌ,XS,2850000,ACTIVE
+XV-PL020-C01-L,20,Áo dài Thiên Thước,1,Áo dài Thiên Thước,Bảng size áo dài nữ XÉO XỌ,L,4450000,ACTIVE
+XV-PL020-C01-M,20,Áo dài Thiên Thước,1,Áo dài Thiên Thước,Bảng size áo dài nữ XÉO XỌ,M,4450000,ACTIVE
+XV-PL020-C01-S,20,Áo dài Thiên Thước,1,Áo dài Thiên Thước,Bảng size áo dài nữ XÉO XỌ,S,4450000,ACTIVE
+XV-PL020-C01-XL,20,Áo dài Thiên Thước,1,Áo dài Thiên Thước,Bảng size áo dài nữ XÉO XỌ,XL,4450000,ACTIVE
+XV-PL020-C01-XS,20,Áo dài Thiên Thước,1,Áo dài Thiên Thước,Bảng size áo dài nữ XÉO XỌ,XS,4450000,ACTIVE
+XV-PL020-C02-L,20,Áo dài Thiên Thước,2,Quần AD metalic màu hồng phấn (GD vàng - 35),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL020-C02-M,20,Áo dài Thiên Thước,2,Quần AD metalic màu hồng phấn (GD vàng - 35),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL020-C02-S,20,Áo dài Thiên Thước,2,Quần AD metalic màu hồng phấn (GD vàng - 35),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL020-C02-XL,20,Áo dài Thiên Thước,2,Quần AD metalic màu hồng phấn (GD vàng - 35),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL020-C02-XS,20,Áo dài Thiên Thước,2,Quần AD metalic màu hồng phấn (GD vàng - 35),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL126-C01-L,126,Áo dài Thái Vũ,1,Áo dài Thái Vũ,Bảng size áo dài nam XÉO XỌ,L,2250000,ACTIVE
+XV-PL126-C01-M,126,Áo dài Thái Vũ,1,Áo dài Thái Vũ,Bảng size áo dài nam XÉO XỌ,M,2250000,ACTIVE
+XV-PL126-C01-S,126,Áo dài Thái Vũ,1,Áo dài Thái Vũ,Bảng size áo dài nam XÉO XỌ,S,2250000,ACTIVE
+XV-PL126-C01-XL,126,Áo dài Thái Vũ,1,Áo dài Thái Vũ,Bảng size áo dài nam XÉO XỌ,XL,2250000,ACTIVE
+XV-PL008-C01-L,8,Áo dài Thư Bảo,1,Áo dài Thư Bảo,Bảng size áo dài nữ XÉO XỌ,L,3000000,ACTIVE
+XV-PL008-C01-M,8,Áo dài Thư Bảo,1,Áo dài Thư Bảo,Bảng size áo dài nữ XÉO XỌ,M,3000000,ACTIVE
+XV-PL008-C01-S,8,Áo dài Thư Bảo,1,Áo dài Thư Bảo,Bảng size áo dài nữ XÉO XỌ,S,3000000,ACTIVE
+XV-PL008-C01-XL,8,Áo dài Thư Bảo,1,Áo dài Thư Bảo,Bảng size áo dài nữ XÉO XỌ,XL,3000000,ACTIVE
+XV-PL008-C01-XS,8,Áo dài Thư Bảo,1,Áo dài Thư Bảo,Bảng size áo dài nữ XÉO XỌ,XS,3000000,ACTIVE
+XV-PL008-C02-L,8,Áo dài Thư Bảo,2,Quần AD metalic màu tím,Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL008-C02-M,8,Áo dài Thư Bảo,2,Quần AD metalic màu tím,Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL008-C02-S,8,Áo dài Thư Bảo,2,Quần AD metalic màu tím,Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL008-C02-XL,8,Áo dài Thư Bảo,2,Quần AD metalic màu tím,Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL008-C02-XS,8,Áo dài Thư Bảo,2,Quần AD metalic màu tím,Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL127-C01-L,127,Áo dài Thạch Nhiên,1,Áo dài Thạch Nhiên,Bảng size áo dài nữ XÉO XỌ,L,2550000,ACTIVE
+XV-PL127-C01-M,127,Áo dài Thạch Nhiên,1,Áo dài Thạch Nhiên,Bảng size áo dài nữ XÉO XỌ,M,2550000,ACTIVE
+XV-PL127-C01-S,127,Áo dài Thạch Nhiên,1,Áo dài Thạch Nhiên,Bảng size áo dài nữ XÉO XỌ,S,2550000,ACTIVE
+XV-PL127-C01-XL,127,Áo dài Thạch Nhiên,1,Áo dài Thạch Nhiên,Bảng size áo dài nữ XÉO XỌ,XL,2550000,ACTIVE
+XV-PL127-C01-XS,127,Áo dài Thạch Nhiên,1,Áo dài Thạch Nhiên,Bảng size áo dài nữ XÉO XỌ,XS,2550000,ACTIVE
+XV-PL009-C01-L,9,Áo dài Tiêu Hồng,1,Áo dài Tiêu Hồng,Bảng size áo dài nữ XÉO XỌ,L,3550000,ACTIVE
+XV-PL009-C01-M,9,Áo dài Tiêu Hồng,1,Áo dài Tiêu Hồng,Bảng size áo dài nữ XÉO XỌ,M,3550000,ACTIVE
+XV-PL009-C01-S,9,Áo dài Tiêu Hồng,1,Áo dài Tiêu Hồng,Bảng size áo dài nữ XÉO XỌ,S,3550000,ACTIVE
+XV-PL009-C01-XL,9,Áo dài Tiêu Hồng,1,Áo dài Tiêu Hồng,Bảng size áo dài nữ XÉO XỌ,XL,3550000,ACTIVE
+XV-PL009-C01-XS,9,Áo dài Tiêu Hồng,1,Áo dài Tiêu Hồng,Bảng size áo dài nữ XÉO XỌ,XS,3550000,ACTIVE
+XV-PL009-C02-L,9,Áo dài Tiêu Hồng,2,Quần AD metalic màu hồng phấn (GD vàng - 35),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL009-C02-M,9,Áo dài Tiêu Hồng,2,Quần AD metalic màu hồng phấn (GD vàng - 35),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL009-C02-S,9,Áo dài Tiêu Hồng,2,Quần AD metalic màu hồng phấn (GD vàng - 35),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL009-C02-XL,9,Áo dài Tiêu Hồng,2,Quần AD metalic màu hồng phấn (GD vàng - 35),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL009-C02-XS,9,Áo dài Tiêu Hồng,2,Quần AD metalic màu hồng phấn (GD vàng - 35),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL128-C01-L,128,Áo dài Trường Lam,1,Áo dài Trường Lam,Bảng size áo dài nữ XÉO XỌ,L,2550000,ACTIVE
+XV-PL128-C01-M,128,Áo dài Trường Lam,1,Áo dài Trường Lam,Bảng size áo dài nữ XÉO XỌ,M,2550000,ACTIVE
+XV-PL128-C01-S,128,Áo dài Trường Lam,1,Áo dài Trường Lam,Bảng size áo dài nữ XÉO XỌ,S,2550000,ACTIVE
+XV-PL128-C01-XL,128,Áo dài Trường Lam,1,Áo dài Trường Lam,Bảng size áo dài nữ XÉO XỌ,XL,2550000,ACTIVE
+XV-PL128-C01-XS,128,Áo dài Trường Lam,1,Áo dài Trường Lam,Bảng size áo dài nữ XÉO XỌ,XS,2550000,ACTIVE
+XV-PL129-C01-L,129,Áo dài Trường Liên,1,Áo dài Trường Liên,Bảng size áo dài nam XÉO XỌ,L,3250000,ACTIVE
+XV-PL129-C01-M,129,Áo dài Trường Liên,1,Áo dài Trường Liên,Bảng size áo dài nam XÉO XỌ,M,3250000,ACTIVE
+XV-PL129-C01-S,129,Áo dài Trường Liên,1,Áo dài Trường Liên,Bảng size áo dài nam XÉO XỌ,S,3250000,ACTIVE
+XV-PL129-C01-XL,129,Áo dài Trường Liên,1,Áo dài Trường Liên,Bảng size áo dài nam XÉO XỌ,XL,3250000,ACTIVE
+XV-PL073-C01-L,73,Áo dài Tú Khê – Yên Như,1,Áo dài Tú Khê,Bảng size áo dài nữ XÉO XỌ,L,3350000,ACTIVE
+XV-PL073-C01-M,73,Áo dài Tú Khê – Yên Như,1,Áo dài Tú Khê,Bảng size áo dài nữ XÉO XỌ,M,3350000,ACTIVE
+XV-PL073-C01-S,73,Áo dài Tú Khê – Yên Như,1,Áo dài Tú Khê,Bảng size áo dài nữ XÉO XỌ,S,3350000,ACTIVE
+XV-PL073-C01-XL,73,Áo dài Tú Khê – Yên Như,1,Áo dài Tú Khê,Bảng size áo dài nữ XÉO XỌ,XL,3350000,ACTIVE
+XV-PL073-C01-XS,73,Áo dài Tú Khê – Yên Như,1,Áo dài Tú Khê,Bảng size áo dài nữ XÉO XỌ,XS,3350000,ACTIVE
+XV-PL073-C02-L,73,Áo dài Tú Khê – Yên Như,2,Áo dài Yên Như,Bảng size áo dài nữ XÉO XỌ,L,0,ACTIVE
+XV-PL073-C02-M,73,Áo dài Tú Khê – Yên Như,2,Áo dài Yên Như,Bảng size áo dài nữ XÉO XỌ,M,0,ACTIVE
+XV-PL073-C02-S,73,Áo dài Tú Khê – Yên Như,2,Áo dài Yên Như,Bảng size áo dài nữ XÉO XỌ,S,0,ACTIVE
+XV-PL073-C02-XL,73,Áo dài Tú Khê – Yên Như,2,Áo dài Yên Như,Bảng size áo dài nữ XÉO XỌ,XL,0,ACTIVE
+XV-PL073-C02-XS,73,Áo dài Tú Khê – Yên Như,2,Áo dài Yên Như,Bảng size áo dài nữ XÉO XỌ,XS,0,ACTIVE
+XV-PL073-C03-L,73,Áo dài Tú Khê – Yên Như,3,Quần La Ngọc,Bảng size áo dài nữ XÉO XỌ,L,1250000,ACTIVE
+XV-PL073-C03-M,73,Áo dài Tú Khê – Yên Như,3,Quần La Ngọc,Bảng size áo dài nữ XÉO XỌ,M,1250000,ACTIVE
+XV-PL073-C03-S,73,Áo dài Tú Khê – Yên Như,3,Quần La Ngọc,Bảng size áo dài nữ XÉO XỌ,S,1250000,ACTIVE
+XV-PL073-C03-XL,73,Áo dài Tú Khê – Yên Như,3,Quần La Ngọc,Bảng size áo dài nữ XÉO XỌ,XL,1250000,ACTIVE
+XV-PL073-C03-XS,73,Áo dài Tú Khê – Yên Như,3,Quần La Ngọc,Bảng size áo dài nữ XÉO XỌ,XS,1250000,ACTIVE
+XV-PL010-C01-L,10,Áo dài Tú Điệp,1,Áo dài Tú Điệp,Bảng size áo dài nữ XÉO XỌ,L,3550000,ACTIVE
+XV-PL010-C01-M,10,Áo dài Tú Điệp,1,Áo dài Tú Điệp,Bảng size áo dài nữ XÉO XỌ,M,3550000,ACTIVE
+XV-PL010-C01-S,10,Áo dài Tú Điệp,1,Áo dài Tú Điệp,Bảng size áo dài nữ XÉO XỌ,S,3550000,ACTIVE
+XV-PL010-C01-XL,10,Áo dài Tú Điệp,1,Áo dài Tú Điệp,Bảng size áo dài nữ XÉO XỌ,XL,3550000,ACTIVE
+XV-PL010-C01-XS,10,Áo dài Tú Điệp,1,Áo dài Tú Điệp,Bảng size áo dài nữ XÉO XỌ,XS,3550000,ACTIVE
+XV-PL010-C02-L,10,Áo dài Tú Điệp,2,Quần AD metalic màu xanh coban (GD vàng - 92),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL010-C02-M,10,Áo dài Tú Điệp,2,Quần AD metalic màu xanh coban (GD vàng - 92),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL010-C02-S,10,Áo dài Tú Điệp,2,Quần AD metalic màu xanh coban (GD vàng - 92),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL010-C02-XL,10,Áo dài Tú Điệp,2,Quần AD metalic màu xanh coban (GD vàng - 92),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL010-C02-XS,10,Áo dài Tú Điệp,2,Quần AD metalic màu xanh coban (GD vàng - 92),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL066-C01-L,66,Áo dài Tố Nhu,1,Áo dài Tố Nhu,Bảng size áo dài nữ XÉO XỌ,L,4100000,ACTIVE
+XV-PL066-C01-M,66,Áo dài Tố Nhu,1,Áo dài Tố Nhu,Bảng size áo dài nữ XÉO XỌ,M,4100000,ACTIVE
+XV-PL066-C01-S,66,Áo dài Tố Nhu,1,Áo dài Tố Nhu,Bảng size áo dài nữ XÉO XỌ,S,4100000,ACTIVE
+XV-PL066-C01-XL,66,Áo dài Tố Nhu,1,Áo dài Tố Nhu,Bảng size áo dài nữ XÉO XỌ,XL,4100000,ACTIVE
+XV-PL066-C01-XS,66,Áo dài Tố Nhu,1,Áo dài Tố Nhu,Bảng size áo dài nữ XÉO XỌ,XS,4100000,ACTIVE
+XV-PL066-C02-L,66,Áo dài Tố Nhu,2,Quần AD metalic màu xanh cốm,Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL066-C02-M,66,Áo dài Tố Nhu,2,Quần AD metalic màu xanh cốm,Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL066-C02-S,66,Áo dài Tố Nhu,2,Quần AD metalic màu xanh cốm,Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL066-C02-XL,66,Áo dài Tố Nhu,2,Quần AD metalic màu xanh cốm,Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL066-C02-XS,66,Áo dài Tố Nhu,2,Quần AD metalic màu xanh cốm,Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL074-C01-L,74,Áo dài Vân Khê – Yên Hải,1,Áo dài Vân Khê,Bảng size áo dài nữ XÉO XỌ,L,3350000,ACTIVE
+XV-PL074-C01-M,74,Áo dài Vân Khê – Yên Hải,1,Áo dài Vân Khê,Bảng size áo dài nữ XÉO XỌ,M,3350000,ACTIVE
+XV-PL074-C01-S,74,Áo dài Vân Khê – Yên Hải,1,Áo dài Vân Khê,Bảng size áo dài nữ XÉO XỌ,S,3350000,ACTIVE
+XV-PL074-C01-XL,74,Áo dài Vân Khê – Yên Hải,1,Áo dài Vân Khê,Bảng size áo dài nữ XÉO XỌ,XL,3350000,ACTIVE
+XV-PL074-C01-XS,74,Áo dài Vân Khê – Yên Hải,1,Áo dài Vân Khê,Bảng size áo dài nữ XÉO XỌ,XS,3350000,ACTIVE
+XV-PL074-C02-L,74,Áo dài Vân Khê – Yên Hải,2,Áo dài Yên Hải,Bảng size áo dài nữ XÉO XỌ,L,0,ACTIVE
+XV-PL074-C02-M,74,Áo dài Vân Khê – Yên Hải,2,Áo dài Yên Hải,Bảng size áo dài nữ XÉO XỌ,M,0,ACTIVE
+XV-PL074-C02-S,74,Áo dài Vân Khê – Yên Hải,2,Áo dài Yên Hải,Bảng size áo dài nữ XÉO XỌ,S,0,ACTIVE
+XV-PL074-C02-XL,74,Áo dài Vân Khê – Yên Hải,2,Áo dài Yên Hải,Bảng size áo dài nữ XÉO XỌ,XL,0,ACTIVE
+XV-PL074-C02-XS,74,Áo dài Vân Khê – Yên Hải,2,Áo dài Yên Hải,Bảng size áo dài nữ XÉO XỌ,XS,0,ACTIVE
+XV-PL074-C03-L,74,Áo dài Vân Khê – Yên Hải,3,Quần La Cẩn,Bảng size áo dài nữ XÉO XỌ,L,1250000,ACTIVE
+XV-PL074-C03-M,74,Áo dài Vân Khê – Yên Hải,3,Quần La Cẩn,Bảng size áo dài nữ XÉO XỌ,M,1250000,ACTIVE
+XV-PL074-C03-S,74,Áo dài Vân Khê – Yên Hải,3,Quần La Cẩn,Bảng size áo dài nữ XÉO XỌ,S,1250000,ACTIVE
+XV-PL074-C03-XL,74,Áo dài Vân Khê – Yên Hải,3,Quần La Cẩn,Bảng size áo dài nữ XÉO XỌ,XL,1250000,ACTIVE
+XV-PL074-C03-XS,74,Áo dài Vân Khê – Yên Hải,3,Quần La Cẩn,Bảng size áo dài nữ XÉO XỌ,XS,1250000,ACTIVE
+XV-PL130-C01-L,130,Áo dài Văn Lễ,1,Áo dài Văn Lễ,Bảng size áo dài nam XÉO XỌ,L,2550000,ACTIVE
+XV-PL130-C01-M,130,Áo dài Văn Lễ,1,Áo dài Văn Lễ,Bảng size áo dài nam XÉO XỌ,M,2550000,ACTIVE
+XV-PL130-C01-S,130,Áo dài Văn Lễ,1,Áo dài Văn Lễ,Bảng size áo dài nam XÉO XỌ,S,2550000,ACTIVE
+XV-PL130-C01-XL,130,Áo dài Văn Lễ,1,Áo dài Văn Lễ,Bảng size áo dài nam XÉO XỌ,XL,2550000,ACTIVE
+XV-PL131-C01-L,131,Áo dài Văn Phiến,1,Áo dài Văn Phiến,Bảng size áo dài nữ XÉO XỌ,L,2950000,ACTIVE
+XV-PL131-C01-M,131,Áo dài Văn Phiến,1,Áo dài Văn Phiến,Bảng size áo dài nữ XÉO XỌ,M,2950000,ACTIVE
+XV-PL131-C01-S,131,Áo dài Văn Phiến,1,Áo dài Văn Phiến,Bảng size áo dài nữ XÉO XỌ,S,2950000,ACTIVE
+XV-PL131-C01-XL,131,Áo dài Văn Phiến,1,Áo dài Văn Phiến,Bảng size áo dài nữ XÉO XỌ,XL,2950000,ACTIVE
+XV-PL131-C01-XS,131,Áo dài Văn Phiến,1,Áo dài Văn Phiến,Bảng size áo dài nữ XÉO XỌ,XS,2950000,ACTIVE
+XV-PL067-C01-L,67,Áo dài Vũ Nhiên,1,Áo dài Vũ Nhiên,Bảng size áo dài nữ XÉO XỌ,L,4000000,ACTIVE
+XV-PL067-C01-M,67,Áo dài Vũ Nhiên,1,Áo dài Vũ Nhiên,Bảng size áo dài nữ XÉO XỌ,M,4000000,ACTIVE
+XV-PL067-C01-S,67,Áo dài Vũ Nhiên,1,Áo dài Vũ Nhiên,Bảng size áo dài nữ XÉO XỌ,S,4000000,ACTIVE
+XV-PL067-C01-XL,67,Áo dài Vũ Nhiên,1,Áo dài Vũ Nhiên,Bảng size áo dài nữ XÉO XỌ,XL,4000000,ACTIVE
+XV-PL067-C01-XS,67,Áo dài Vũ Nhiên,1,Áo dài Vũ Nhiên,Bảng size áo dài nữ XÉO XỌ,XS,4000000,ACTIVE
+XV-PL067-C02-L,67,Áo dài Vũ Nhiên,2,Quần AD metalic màu xanh cốm (GD vàng - 33),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL067-C02-M,67,Áo dài Vũ Nhiên,2,Quần AD metalic màu xanh cốm (GD vàng - 33),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL067-C02-S,67,Áo dài Vũ Nhiên,2,Quần AD metalic màu xanh cốm (GD vàng - 33),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL067-C02-XL,67,Áo dài Vũ Nhiên,2,Quần AD metalic màu xanh cốm (GD vàng - 33),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL067-C02-XS,67,Áo dài Vũ Nhiên,2,Quần AD metalic màu xanh cốm (GD vàng - 33),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL021-C01-L,21,Áo dài Yên Phụng,1,Áo dài Yên Phụng,Bảng size áo dài nữ XÉO XỌ,L,4450000,ACTIVE
+XV-PL021-C01-M,21,Áo dài Yên Phụng,1,Áo dài Yên Phụng,Bảng size áo dài nữ XÉO XỌ,M,4450000,ACTIVE
+XV-PL021-C01-S,21,Áo dài Yên Phụng,1,Áo dài Yên Phụng,Bảng size áo dài nữ XÉO XỌ,S,4450000,ACTIVE
+XV-PL021-C01-XL,21,Áo dài Yên Phụng,1,Áo dài Yên Phụng,Bảng size áo dài nữ XÉO XỌ,XL,4450000,ACTIVE
+XV-PL021-C01-XS,21,Áo dài Yên Phụng,1,Áo dài Yên Phụng,Bảng size áo dài nữ XÉO XỌ,XS,4450000,ACTIVE
+XV-PL021-C02-L,21,Áo dài Yên Phụng,2,Quần lụa trơn cốm màu 76,Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL021-C02-M,21,Áo dài Yên Phụng,2,Quần lụa trơn cốm màu 76,Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL021-C02-S,21,Áo dài Yên Phụng,2,Quần lụa trơn cốm màu 76,Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL021-C02-XL,21,Áo dài Yên Phụng,2,Quần lụa trơn cốm màu 76,Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL021-C02-XS,21,Áo dài Yên Phụng,2,Quần lụa trơn cốm màu 76,Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL011-C01-L,11,Áo dài Đan Niên,1,Áo dài Đan Niên,Bảng size áo dài nữ XÉO XỌ,L,3000000,ACTIVE
+XV-PL011-C01-M,11,Áo dài Đan Niên,1,Áo dài Đan Niên,Bảng size áo dài nữ XÉO XỌ,M,3000000,ACTIVE
+XV-PL011-C01-S,11,Áo dài Đan Niên,1,Áo dài Đan Niên,Bảng size áo dài nữ XÉO XỌ,S,3000000,ACTIVE
+XV-PL011-C01-XL,11,Áo dài Đan Niên,1,Áo dài Đan Niên,Bảng size áo dài nữ XÉO XỌ,XL,3000000,ACTIVE
+XV-PL011-C01-XS,11,Áo dài Đan Niên,1,Áo dài Đan Niên,Bảng size áo dài nữ XÉO XỌ,XS,3000000,ACTIVE
+XV-PL011-C02-L,11,Áo dài Đan Niên,2,Quần AD metalic màu xanh bơ (GD vàng - 36),Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL011-C02-M,11,Áo dài Đan Niên,2,Quần AD metalic màu xanh bơ (GD vàng - 36),Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL011-C02-S,11,Áo dài Đan Niên,2,Quần AD metalic màu xanh bơ (GD vàng - 36),Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL011-C02-XL,11,Áo dài Đan Niên,2,Quần AD metalic màu xanh bơ (GD vàng - 36),Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL011-C02-XS,11,Áo dài Đan Niên,2,Quần AD metalic màu xanh bơ (GD vàng - 36),Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL022-C01-L,22,Áo dài Đan Phụng,1,Áo dài Đan Phụng,Bảng size áo dài nữ XÉO XỌ,L,4450000,ACTIVE
+XV-PL022-C01-M,22,Áo dài Đan Phụng,1,Áo dài Đan Phụng,Bảng size áo dài nữ XÉO XỌ,M,4450000,ACTIVE
+XV-PL022-C01-S,22,Áo dài Đan Phụng,1,Áo dài Đan Phụng,Bảng size áo dài nữ XÉO XỌ,S,4450000,ACTIVE
+XV-PL022-C01-XL,22,Áo dài Đan Phụng,1,Áo dài Đan Phụng,Bảng size áo dài nữ XÉO XỌ,XL,4450000,ACTIVE
+XV-PL022-C01-XS,22,Áo dài Đan Phụng,1,Áo dài Đan Phụng,Bảng size áo dài nữ XÉO XỌ,XS,4450000,ACTIVE
+XV-PL022-C02-L,22,Áo dài Đan Phụng,2,Quần AD metalic màu xanh lá đậm,Bảng size áo dài nữ XÉO XỌ,L,750000,ACTIVE
+XV-PL022-C02-M,22,Áo dài Đan Phụng,2,Quần AD metalic màu xanh lá đậm,Bảng size áo dài nữ XÉO XỌ,M,750000,ACTIVE
+XV-PL022-C02-S,22,Áo dài Đan Phụng,2,Quần AD metalic màu xanh lá đậm,Bảng size áo dài nữ XÉO XỌ,S,750000,ACTIVE
+XV-PL022-C02-XL,22,Áo dài Đan Phụng,2,Quần AD metalic màu xanh lá đậm,Bảng size áo dài nữ XÉO XỌ,XL,750000,ACTIVE
+XV-PL022-C02-XS,22,Áo dài Đan Phụng,2,Quần AD metalic màu xanh lá đậm,Bảng size áo dài nữ XÉO XỌ,XS,750000,ACTIVE
+XV-PL091-C01-L,91,Đầm Chi Huỳnh,1,Đầm Chi Huỳnh,Bảng size váy XÉO XỌ,L,1650000,ACTIVE
+XV-PL091-C01-M,91,Đầm Chi Huỳnh,1,Đầm Chi Huỳnh,Bảng size váy XÉO XỌ,M,1650000,ACTIVE
+XV-PL091-C01-S,91,Đầm Chi Huỳnh,1,Đầm Chi Huỳnh,Bảng size váy XÉO XỌ,S,1650000,ACTIVE
+XV-PL091-C01-XL,91,Đầm Chi Huỳnh,1,Đầm Chi Huỳnh,Bảng size váy XÉO XỌ,XL,1650000,ACTIVE
+XV-PL091-C01-XS,91,Đầm Chi Huỳnh,1,Đầm Chi Huỳnh,Bảng size váy XÉO XỌ,XS,1650000,ACTIVE
+XV-PL092-C01-L,92,Đầm Chi Mạn,1,Đầm Chi Mạn,Bảng size váy XÉO XỌ,L,1650000,ACTIVE
+XV-PL092-C01-M,92,Đầm Chi Mạn,1,Đầm Chi Mạn,Bảng size váy XÉO XỌ,M,1650000,ACTIVE
+XV-PL092-C01-S,92,Đầm Chi Mạn,1,Đầm Chi Mạn,Bảng size váy XÉO XỌ,S,1650000,ACTIVE
+XV-PL092-C01-XL,92,Đầm Chi Mạn,1,Đầm Chi Mạn,Bảng size váy XÉO XỌ,XL,1650000,ACTIVE
+XV-PL092-C01-XS,92,Đầm Chi Mạn,1,Đầm Chi Mạn,Bảng size váy XÉO XỌ,XS,1650000,ACTIVE
+XV-PL042-C01-L,42,Đầm Châu Khuê,1,Đầm Châu Khuê,Bảng size váy XÉO XỌ,L,1450000,ACTIVE
+XV-PL042-C01-M,42,Đầm Châu Khuê,1,Đầm Châu Khuê,Bảng size váy XÉO XỌ,M,1450000,ACTIVE
+XV-PL042-C01-S,42,Đầm Châu Khuê,1,Đầm Châu Khuê,Bảng size váy XÉO XỌ,S,1450000,ACTIVE
+XV-PL042-C01-XL,42,Đầm Châu Khuê,1,Đầm Châu Khuê,Bảng size váy XÉO XỌ,XL,1450000,ACTIVE
+XV-PL042-C01-XS,42,Đầm Châu Khuê,1,Đầm Châu Khuê,Bảng size váy XÉO XỌ,XS,1450000,ACTIVE
+XV-PL105-C01-L,105,Đầm Diệu Thanh,1,Đầm Diệu Thanh,Bảng size váy XÉO XỌ,L,1550000,ACTIVE
+XV-PL105-C01-M,105,Đầm Diệu Thanh,1,Đầm Diệu Thanh,Bảng size váy XÉO XỌ,M,1550000,ACTIVE
+XV-PL105-C01-S,105,Đầm Diệu Thanh,1,Đầm Diệu Thanh,Bảng size váy XÉO XỌ,S,1550000,ACTIVE
+XV-PL105-C01-XL,105,Đầm Diệu Thanh,1,Đầm Diệu Thanh,Bảng size váy XÉO XỌ,XL,1550000,ACTIVE
+XV-PL105-C01-XS,105,Đầm Diệu Thanh,1,Đầm Diệu Thanh,Bảng size váy XÉO XỌ,XS,1550000,ACTIVE
+XV-PL106-C01-L,106,Đầm Lan Kiều,1,Đầm Lan Kiều,Bảng size váy XÉO XỌ,L,1650000,ACTIVE
+XV-PL106-C01-M,106,Đầm Lan Kiều,1,Đầm Lan Kiều,Bảng size váy XÉO XỌ,M,1650000,ACTIVE
+XV-PL106-C01-S,106,Đầm Lan Kiều,1,Đầm Lan Kiều,Bảng size váy XÉO XỌ,S,1650000,ACTIVE
+XV-PL106-C01-XL,106,Đầm Lan Kiều,1,Đầm Lan Kiều,Bảng size váy XÉO XỌ,XL,1650000,ACTIVE
+XV-PL106-C01-XS,106,Đầm Lan Kiều,1,Đầm Lan Kiều,Bảng size váy XÉO XỌ,XS,1650000,ACTIVE
+XV-PL093-C01-L,93,Đầm Lưu Châu,1,Đầm Lưu Châu,Bảng size váy XÉO XỌ,L,1650000,ACTIVE
+XV-PL093-C01-M,93,Đầm Lưu Châu,1,Đầm Lưu Châu,Bảng size váy XÉO XỌ,M,1650000,ACTIVE
+XV-PL093-C01-S,93,Đầm Lưu Châu,1,Đầm Lưu Châu,Bảng size váy XÉO XỌ,S,1650000,ACTIVE
+XV-PL093-C01-XL,93,Đầm Lưu Châu,1,Đầm Lưu Châu,Bảng size váy XÉO XỌ,XL,1650000,ACTIVE
+XV-PL093-C01-XS,93,Đầm Lưu Châu,1,Đầm Lưu Châu,Bảng size váy XÉO XỌ,XS,1650000,ACTIVE
+XV-PL043-C01-L,43,Đầm Lưu Mây,1,Đầm Lưu Mây,Bảng size váy XÉO XỌ,L,1650000,ACTIVE
+XV-PL043-C01-M,43,Đầm Lưu Mây,1,Đầm Lưu Mây,Bảng size váy XÉO XỌ,M,1650000,ACTIVE
+XV-PL043-C01-S,43,Đầm Lưu Mây,1,Đầm Lưu Mây,Bảng size váy XÉO XỌ,S,1650000,ACTIVE
+XV-PL043-C01-XL,43,Đầm Lưu Mây,1,Đầm Lưu Mây,Bảng size váy XÉO XỌ,XL,1650000,ACTIVE
+XV-PL043-C01-XS,43,Đầm Lưu Mây,1,Đầm Lưu Mây,Bảng size váy XÉO XỌ,XS,1650000,ACTIVE
+XV-PL094-C01-L,94,Đầm Lưu Quỳnh,1,Đầm Lưu Quỳnh,Bảng size váy XÉO XỌ,L,1650000,ACTIVE
+XV-PL094-C01-M,94,Đầm Lưu Quỳnh,1,Đầm Lưu Quỳnh,Bảng size váy XÉO XỌ,M,1650000,ACTIVE
+XV-PL094-C01-S,94,Đầm Lưu Quỳnh,1,Đầm Lưu Quỳnh,Bảng size váy XÉO XỌ,S,1650000,ACTIVE
+XV-PL094-C01-XL,94,Đầm Lưu Quỳnh,1,Đầm Lưu Quỳnh,Bảng size váy XÉO XỌ,XL,1650000,ACTIVE
+XV-PL094-C01-XS,94,Đầm Lưu Quỳnh,1,Đầm Lưu Quỳnh,Bảng size váy XÉO XỌ,XS,1650000,ACTIVE
+XV-PL044-C01-L,44,Đầm Lạc Hạ,1,Đầm Lạc Hạ,Bảng size váy XÉO XỌ,L,1450000,ACTIVE
+XV-PL044-C01-M,44,Đầm Lạc Hạ,1,Đầm Lạc Hạ,Bảng size váy XÉO XỌ,M,1450000,ACTIVE
+XV-PL044-C01-S,44,Đầm Lạc Hạ,1,Đầm Lạc Hạ,Bảng size váy XÉO XỌ,S,1450000,ACTIVE
+XV-PL044-C01-XL,44,Đầm Lạc Hạ,1,Đầm Lạc Hạ,Bảng size váy XÉO XỌ,XL,1450000,ACTIVE
+XV-PL044-C01-XS,44,Đầm Lạc Hạ,1,Đầm Lạc Hạ,Bảng size váy XÉO XỌ,XS,1450000,ACTIVE
+XV-PL045-C01-L,45,Đầm Miểu Vi,1,Đầm Miểu Vi,Bảng size váy XÉO XỌ,L,1250000,ACTIVE
+XV-PL045-C01-M,45,Đầm Miểu Vi,1,Đầm Miểu Vi,Bảng size váy XÉO XỌ,M,1250000,ACTIVE
+XV-PL045-C01-S,45,Đầm Miểu Vi,1,Đầm Miểu Vi,Bảng size váy XÉO XỌ,S,1250000,ACTIVE
+XV-PL045-C01-XL,45,Đầm Miểu Vi,1,Đầm Miểu Vi,Bảng size váy XÉO XỌ,XL,1250000,ACTIVE
+XV-PL045-C01-XS,45,Đầm Miểu Vi,1,Đầm Miểu Vi,Bảng size váy XÉO XỌ,XS,1250000,ACTIVE
+XV-PL095-C01-L,95,Đầm Ngọc Tiêu,1,Đầm Ngọc Tiêu,Bảng size váy XÉO XỌ,L,1450000,ACTIVE
+XV-PL095-C01-M,95,Đầm Ngọc Tiêu,1,Đầm Ngọc Tiêu,Bảng size váy XÉO XỌ,M,1450000,ACTIVE
+XV-PL095-C01-S,95,Đầm Ngọc Tiêu,1,Đầm Ngọc Tiêu,Bảng size váy XÉO XỌ,S,1450000,ACTIVE
+XV-PL095-C01-XL,95,Đầm Ngọc Tiêu,1,Đầm Ngọc Tiêu,Bảng size váy XÉO XỌ,XL,1450000,ACTIVE
+XV-PL095-C01-XS,95,Đầm Ngọc Tiêu,1,Đầm Ngọc Tiêu,Bảng size váy XÉO XỌ,XS,1450000,ACTIVE
+XV-PL096-C01-L,96,Đầm Nhã Quy,1,Đầm Nhã Quy,Bảng size váy XÉO XỌ,L,1650000,ACTIVE
+XV-PL096-C01-M,96,Đầm Nhã Quy,1,Đầm Nhã Quy,Bảng size váy XÉO XỌ,M,1650000,ACTIVE
+XV-PL096-C01-S,96,Đầm Nhã Quy,1,Đầm Nhã Quy,Bảng size váy XÉO XỌ,S,1650000,ACTIVE
+XV-PL096-C01-XL,96,Đầm Nhã Quy,1,Đầm Nhã Quy,Bảng size váy XÉO XỌ,XL,1650000,ACTIVE
+XV-PL096-C01-XS,96,Đầm Nhã Quy,1,Đầm Nhã Quy,Bảng size váy XÉO XỌ,XS,1650000,ACTIVE
+XV-PL097-C01-L,97,Đầm Phù Ân,1,Đầm Phù Ân,Bảng size váy XÉO XỌ,L,2950000,ACTIVE
+XV-PL097-C01-M,97,Đầm Phù Ân,1,Đầm Phù Ân,Bảng size váy XÉO XỌ,M,2950000,ACTIVE
+XV-PL097-C01-S,97,Đầm Phù Ân,1,Đầm Phù Ân,Bảng size váy XÉO XỌ,S,2950000,ACTIVE
+XV-PL097-C01-XL,97,Đầm Phù Ân,1,Đầm Phù Ân,Bảng size váy XÉO XỌ,XL,2950000,ACTIVE
+XV-PL097-C01-XS,97,Đầm Phù Ân,1,Đầm Phù Ân,Bảng size váy XÉO XỌ,XS,2950000,ACTIVE
+XV-PL098-C01-L,98,Đầm Phương Thanh,1,Đầm Phương Thanh,Bảng size váy XÉO XỌ,L,1650000,ACTIVE
+XV-PL098-C01-M,98,Đầm Phương Thanh,1,Đầm Phương Thanh,Bảng size váy XÉO XỌ,M,1650000,ACTIVE
+XV-PL098-C01-S,98,Đầm Phương Thanh,1,Đầm Phương Thanh,Bảng size váy XÉO XỌ,S,1650000,ACTIVE
+XV-PL098-C01-XL,98,Đầm Phương Thanh,1,Đầm Phương Thanh,Bảng size váy XÉO XỌ,XL,1650000,ACTIVE
+XV-PL098-C01-XS,98,Đầm Phương Thanh,1,Đầm Phương Thanh,Bảng size váy XÉO XỌ,XS,1650000,ACTIVE
+XV-PL107-C01-L,107,Đầm Phấn Hy,1,Đầm Phấn Hy,Bảng size váy XÉO XỌ,L,1250000,ACTIVE
+XV-PL107-C01-M,107,Đầm Phấn Hy,1,Đầm Phấn Hy,Bảng size váy XÉO XỌ,M,1250000,ACTIVE
+XV-PL107-C01-S,107,Đầm Phấn Hy,1,Đầm Phấn Hy,Bảng size váy XÉO XỌ,S,1250000,ACTIVE
+XV-PL107-C01-XL,107,Đầm Phấn Hy,1,Đầm Phấn Hy,Bảng size váy XÉO XỌ,XL,1250000,ACTIVE
+XV-PL107-C01-XS,107,Đầm Phấn Hy,1,Đầm Phấn Hy,Bảng size váy XÉO XỌ,XS,1250000,ACTIVE
+XV-PL108-C01-L,108,Đầm Thanh Quy,1,Đầm Thanh Quy,Bảng size váy XÉO XỌ,L,1950000,ACTIVE
+XV-PL108-C01-M,108,Đầm Thanh Quy,1,Đầm Thanh Quy,Bảng size váy XÉO XỌ,M,1950000,ACTIVE
+XV-PL108-C01-S,108,Đầm Thanh Quy,1,Đầm Thanh Quy,Bảng size váy XÉO XỌ,S,1950000,ACTIVE
+XV-PL108-C01-XL,108,Đầm Thanh Quy,1,Đầm Thanh Quy,Bảng size váy XÉO XỌ,XL,1950000,ACTIVE
+XV-PL108-C01-XS,108,Đầm Thanh Quy,1,Đầm Thanh Quy,Bảng size váy XÉO XỌ,XS,1950000,ACTIVE
+XV-PL134-C01-L,134,Đầm Thanh Tiêu,1,Đầm Thanh Tiêu,Bảng size váy XÉO XỌ,L,1250000,ACTIVE
+XV-PL134-C01-M,134,Đầm Thanh Tiêu,1,Đầm Thanh Tiêu,Bảng size váy XÉO XỌ,M,1250000,ACTIVE
+XV-PL134-C01-S,134,Đầm Thanh Tiêu,1,Đầm Thanh Tiêu,Bảng size váy XÉO XỌ,S,1250000,ACTIVE
+XV-PL134-C01-XL,134,Đầm Thanh Tiêu,1,Đầm Thanh Tiêu,Bảng size váy XÉO XỌ,XL,1250000,ACTIVE
+XV-PL134-C01-XS,134,Đầm Thanh Tiêu,1,Đầm Thanh Tiêu,Bảng size váy XÉO XỌ,XS,1250000,ACTIVE
+XV-PL046-C01-L,46,Đầm Thii Châu,1,Đầm Thii Châu,Bảng size váy XÉO XỌ,L,950000,ACTIVE
+XV-PL046-C01-M,46,Đầm Thii Châu,1,Đầm Thii Châu,Bảng size váy XÉO XỌ,M,950000,ACTIVE
+XV-PL046-C01-S,46,Đầm Thii Châu,1,Đầm Thii Châu,Bảng size váy XÉO XỌ,S,950000,ACTIVE
+XV-PL046-C01-XL,46,Đầm Thii Châu,1,Đầm Thii Châu,Bảng size váy XÉO XỌ,XL,950000,ACTIVE
+XV-PL046-C01-XS,46,Đầm Thii Châu,1,Đầm Thii Châu,Bảng size váy XÉO XỌ,XS,950000,ACTIVE
+XV-PL047-C01-L,47,Đầm Thii Huỳnh,1,Đầm Thii Huỳnh,Bảng size váy XÉO XỌ,L,950000,ACTIVE
+XV-PL047-C01-M,47,Đầm Thii Huỳnh,1,Đầm Thii Huỳnh,Bảng size váy XÉO XỌ,M,950000,ACTIVE
+XV-PL047-C01-S,47,Đầm Thii Huỳnh,1,Đầm Thii Huỳnh,Bảng size váy XÉO XỌ,S,950000,ACTIVE
+XV-PL047-C01-XL,47,Đầm Thii Huỳnh,1,Đầm Thii Huỳnh,Bảng size váy XÉO XỌ,XL,950000,ACTIVE
+XV-PL047-C01-XS,47,Đầm Thii Huỳnh,1,Đầm Thii Huỳnh,Bảng size váy XÉO XỌ,XS,950000,ACTIVE
+XV-PL048-C01-L,48,Đầm Thii Hồng,1,Đầm Thii Hồng,Bảng size váy XÉO XỌ,L,950000,ACTIVE
+XV-PL048-C01-M,48,Đầm Thii Hồng,1,Đầm Thii Hồng,Bảng size váy XÉO XỌ,M,950000,ACTIVE
+XV-PL048-C01-S,48,Đầm Thii Hồng,1,Đầm Thii Hồng,Bảng size váy XÉO XỌ,S,950000,ACTIVE
+XV-PL048-C01-XL,48,Đầm Thii Hồng,1,Đầm Thii Hồng,Bảng size váy XÉO XỌ,XL,950000,ACTIVE
+XV-PL048-C01-XS,48,Đầm Thii Hồng,1,Đầm Thii Hồng,Bảng size váy XÉO XỌ,XS,950000,ACTIVE
+XV-PL049-C01-L,49,Đầm Thii Liên,1,Đầm Thii Liên,Bảng size váy XÉO XỌ,L,950000,ACTIVE
+XV-PL049-C01-M,49,Đầm Thii Liên,1,Đầm Thii Liên,Bảng size váy XÉO XỌ,M,950000,ACTIVE
+XV-PL049-C01-S,49,Đầm Thii Liên,1,Đầm Thii Liên,Bảng size váy XÉO XỌ,S,950000,ACTIVE
+XV-PL049-C01-XL,49,Đầm Thii Liên,1,Đầm Thii Liên,Bảng size váy XÉO XỌ,XL,950000,ACTIVE
+XV-PL049-C01-XS,49,Đầm Thii Liên,1,Đầm Thii Liên,Bảng size váy XÉO XỌ,XS,950000,ACTIVE
+XV-PL050-C01-L,50,Đầm Thii Mây,1,Đầm Thii Mây,Bảng size váy XÉO XỌ,L,950000,ACTIVE
+XV-PL050-C01-M,50,Đầm Thii Mây,1,Đầm Thii Mây,Bảng size váy XÉO XỌ,M,950000,ACTIVE
+XV-PL050-C01-S,50,Đầm Thii Mây,1,Đầm Thii Mây,Bảng size váy XÉO XỌ,S,950000,ACTIVE
+XV-PL050-C01-XL,50,Đầm Thii Mây,1,Đầm Thii Mây,Bảng size váy XÉO XỌ,XL,950000,ACTIVE
+XV-PL050-C01-XS,50,Đầm Thii Mây,1,Đầm Thii Mây,Bảng size váy XÉO XỌ,XS,950000,ACTIVE
+XV-PL051-C01-L,51,Đầm Thii Mộng,1,Đầm Thii Mộng,Bảng size váy XÉO XỌ,L,950000,ACTIVE
+XV-PL051-C01-M,51,Đầm Thii Mộng,1,Đầm Thii Mộng,Bảng size váy XÉO XỌ,M,950000,ACTIVE
+XV-PL051-C01-S,51,Đầm Thii Mộng,1,Đầm Thii Mộng,Bảng size váy XÉO XỌ,S,950000,ACTIVE
+XV-PL051-C01-XL,51,Đầm Thii Mộng,1,Đầm Thii Mộng,Bảng size váy XÉO XỌ,XL,950000,ACTIVE
+XV-PL051-C01-XS,51,Đầm Thii Mộng,1,Đầm Thii Mộng,Bảng size váy XÉO XỌ,XS,950000,ACTIVE
+XV-PL052-C01-L,52,Đầm Thii Ngọc,1,Đầm Thii Ngọc,Bảng size váy XÉO XỌ,L,950000,ACTIVE
+XV-PL052-C01-M,52,Đầm Thii Ngọc,1,Đầm Thii Ngọc,Bảng size váy XÉO XỌ,M,950000,ACTIVE
+XV-PL052-C01-S,52,Đầm Thii Ngọc,1,Đầm Thii Ngọc,Bảng size váy XÉO XỌ,S,950000,ACTIVE
+XV-PL052-C01-XL,52,Đầm Thii Ngọc,1,Đầm Thii Ngọc,Bảng size váy XÉO XỌ,XL,950000,ACTIVE
+XV-PL052-C01-XS,52,Đầm Thii Ngọc,1,Đầm Thii Ngọc,Bảng size váy XÉO XỌ,XS,950000,ACTIVE
+XV-PL053-C01-L,53,Đầm Thii Nhạn,1,Đầm Thii Nhạn,Bảng size váy XÉO XỌ,L,950000,ACTIVE
+XV-PL053-C01-M,53,Đầm Thii Nhạn,1,Đầm Thii Nhạn,Bảng size váy XÉO XỌ,M,950000,ACTIVE
+XV-PL053-C01-S,53,Đầm Thii Nhạn,1,Đầm Thii Nhạn,Bảng size váy XÉO XỌ,S,950000,ACTIVE
+XV-PL053-C01-XL,53,Đầm Thii Nhạn,1,Đầm Thii Nhạn,Bảng size váy XÉO XỌ,XL,950000,ACTIVE
+XV-PL053-C01-XS,53,Đầm Thii Nhạn,1,Đầm Thii Nhạn,Bảng size váy XÉO XỌ,XS,950000,ACTIVE
+XV-PL054-C01-L,54,Đầm Thii Đan,1,Đầm Thii Đan,Bảng size váy XÉO XỌ,L,950000,ACTIVE
+XV-PL054-C01-M,54,Đầm Thii Đan,1,Đầm Thii Đan,Bảng size váy XÉO XỌ,M,950000,ACTIVE
+XV-PL054-C01-S,54,Đầm Thii Đan,1,Đầm Thii Đan,Bảng size váy XÉO XỌ,S,950000,ACTIVE
+XV-PL054-C01-XL,54,Đầm Thii Đan,1,Đầm Thii Đan,Bảng size váy XÉO XỌ,XL,950000,ACTIVE
+XV-PL054-C01-XS,54,Đầm Thii Đan,1,Đầm Thii Đan,Bảng size váy XÉO XỌ,XS,950000,ACTIVE
+XV-PL109-C01-L,109,Đầm Trúc Mây,1,Đầm Trúc Mây,Bảng size váy XÉO XỌ,L,1650000,ACTIVE
+XV-PL109-C01-M,109,Đầm Trúc Mây,1,Đầm Trúc Mây,Bảng size váy XÉO XỌ,M,1650000,ACTIVE
+XV-PL109-C01-S,109,Đầm Trúc Mây,1,Đầm Trúc Mây,Bảng size váy XÉO XỌ,S,1650000,ACTIVE
+XV-PL109-C01-XL,109,Đầm Trúc Mây,1,Đầm Trúc Mây,Bảng size váy XÉO XỌ,XL,1650000,ACTIVE
+XV-PL109-C01-XS,109,Đầm Trúc Mây,1,Đầm Trúc Mây,Bảng size váy XÉO XỌ,XS,1650000,ACTIVE
+XV-PL075-C01-L,75,Đầm Uyên Đan,1,Đầm Uyên Đan,Bảng size váy XÉO XỌ,L,1650000,ACTIVE
+XV-PL075-C01-M,75,Đầm Uyên Đan,1,Đầm Uyên Đan,Bảng size váy XÉO XỌ,M,1650000,ACTIVE
+XV-PL075-C01-S,75,Đầm Uyên Đan,1,Đầm Uyên Đan,Bảng size váy XÉO XỌ,S,1650000,ACTIVE
+XV-PL075-C01-XL,75,Đầm Uyên Đan,1,Đầm Uyên Đan,Bảng size váy XÉO XỌ,XL,1650000,ACTIVE
+XV-PL075-C01-XS,75,Đầm Uyên Đan,1,Đầm Uyên Đan,Bảng size váy XÉO XỌ,XS,1650000,ACTIVE

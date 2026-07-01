@@ -1,142 +1,200 @@
-﻿parent_line_name,parent_product_url,component_order,component_name,component_price_text,component_price,component_type,is_required,crawl_at
-Áo Mộng Chi,https://xeoxo.com/vn/san-pham/ao-mong-chi/,1,Ao,900000,900000,AO,True,2026-06-27 15:59:02
-Quần Mộng Chi,https://xeoxo.com/vn/san-pham/quan-mong-chi/,1,Quan,850000,850000,QUAN,True,2026-06-27 15:59:03
-Quần Nhật Thư,https://xeoxo.com/vn/san-pham/quan-nhat-thu/,1,Quan,825000,825000,QUAN,True,2026-06-27 15:59:05
-Áo Nhật Thư,https://xeoxo.com/vn/san-pham/ao-nhat-thu/,1,Ao,825000,825000,AO,True,2026-06-27 15:59:06
-Đầm Trúc Mây,https://xeoxo.com/vn/san-pham/dam-truc-may/,1,Dam,1650000,1650000,DAM,True,2026-06-27 15:59:08
-Đầm Thanh Quy,https://xeoxo.com/vn/san-pham/dam-thanh-quy/,1,Dam,1950000,1950000,DAM,True,2026-06-27 15:59:09
-Đầm Diệu Thanh,https://xeoxo.com/vn/san-pham/dam-dieu-thanh/,1,Dam,1550000,1550000,DAM,True,2026-06-27 15:59:11
-Đầm Lan Kiều,https://xeoxo.com/vn/san-pham/dam-lan-kieu/,1,Dam,1650000,1650000,DAM,True,2026-06-27 15:59:12
-Đầm Phấn Hy,https://xeoxo.com/vn/san-pham/dam-phan-hy/,1,Dam,1250000,1250000,DAM,True,2026-06-27 15:59:14
-Áo Choàng Ngọc Mây,https://xeoxo.com/vn/san-pham/ao-choang-ngoc-may/,1,Ao choang,890000,890000,AO,True,2026-06-27 15:59:15
-Áo Choàng Hồng Mây,https://xeoxo.com/vn/san-pham/ao-choang-hong-may/,1,Ao choang,890000,890000,AO,True,2026-06-27 15:59:16
-Đầm Uyên Đan,https://xeoxo.com/vn/san-pham/dam-uyen-dan/,1,Dam,1650000,1650000,DAM,True,2026-06-27 15:59:18
-Yếm Dạ Thư,https://xeoxo.com/vn/san-pham/yem-da-thu/,1,Yem,3700000,3700000,YEM,True,2026-06-27 15:59:19
-Áo dài Ngọc Khê – Yên Hoàng,https://xeoxo.com/vn/san-pham/ao-dai-ngoc-khe-yen-hoang/,1,Ao dai,4600000,4600000,AO,True,2026-06-27 15:59:21
-Áo dài Tú Khê – Yên Như,https://xeoxo.com/vn/san-pham/ao-dai-tu-khe-yen-nhu/,1,Ao dai,4600000,4600000,AO,True,2026-06-27 15:59:22
-Áo dài Vân Khê – Yên Hải,https://xeoxo.com/vn/san-pham/ao-dai-van-khe-yen-hai/,1,Ao dai,4600000,4600000,AO,True,2026-06-27 15:59:23
-Áo dài Thanh Khê – Yên Lam,https://xeoxo.com/vn/san-pham/ao-dai-thanh-khe-yen-lam/,1,Ao dai,4600000,4600000,AO,True,2026-06-27 15:59:25
-Áo Lam Khanh,https://xeoxo.com/vn/san-pham/ao-lam-khanh/,1,Ao,1490000,1490000,AO,True,2026-06-27 15:59:26
-Chân Váy Lam Khanh,https://xeoxo.com/vn/san-pham/chan-vay-lam-khanh/,1,Chan vay,2450000,2450000,VAY,True,2026-06-27 15:59:27
-Áo Choàng Nhật Bình Yên Chi,https://xeoxo.com/vn/san-pham/ao-choang-nhat-binh-yen-chi/,1,Ao choang,14450000,14450000,AO,True,2026-06-27 15:59:28
-Áo choàng Tràng Ngọc Khê,https://xeoxo.com/vn/san-pham/ao-choang-trang-ngoc-khe/,1,Ao choang,8250000,8250000,AO,True,2026-06-27 15:59:30
-Áo dài Cẩm Dao – Dao Phụng,https://xeoxo.com/vn/san-pham/ao-dai-cam-dao-dao-phung/,1,Ao dai,9150000,9150000,AO,True,2026-06-27 15:59:31
-Áo dài Dao Phụng – Liên Phụng,https://xeoxo.com/vn/san-pham/ao-dai-dao-phung-lien-phung/,1,Ao dai,6650000,6650000,AO,True,2026-06-27 15:59:32
-Áo dài Hồng Ân – Hồng Duyên,https://xeoxo.com/vn/san-pham/ao-dai-hong-an-hong-duyen-sao-chep/,1,Ao dai,7850000,7850000,AO,True,2026-06-27 15:59:33
-Áo dài Mộng Đan – Hồng Duyên,https://xeoxo.com/vn/san-pham/ao-dai-mong-dan-hong-duyen/,1,Ao dai,8750000,8750000,AO,True,2026-06-27 15:59:35
-Áo dài Châu Phượng,https://xeoxo.com/vn/san-pham/ao-dai-chau-phuong/,1,Ao dai,6550000,6550000,AO,True,2026-06-27 15:59:36
-Áo dài Ngọc Bảo – Mãn Duyên,https://xeoxo.com/vn/san-pham/ao-dai-ngoc-bao-man-duyen/,1,Ao dai,9550000,9550000,AO,True,2026-06-27 15:59:37
-Áo dài Mộc Cẩn – Diêu Hà,https://xeoxo.com/vn/san-pham/ao-dai-moc-can-dieu-ha/,1,Ao dai,12750000,12750000,AO,True,2026-06-27 15:59:38
-Áo dài Chu Phong,https://xeoxo.com/vn/san-pham/ao-dai-chu-phong/,1,Ao dai,2850000,2850000,AO,True,2026-06-27 15:59:39
-Áo dài Thiên Hà,https://xeoxo.com/vn/san-pham/ao-dai-thien-ha/,1,Ao dai,2850000,2850000,AO,True,2026-06-27 15:59:40
-Đầm Lưu Quỳnh,https://xeoxo.com/vn/san-pham/dam-luu-quynh/,1,Dam,1650000,1650000,DAM,True,2026-06-27 15:59:41
-Đầm Lưu Châu,https://xeoxo.com/vn/san-pham/dam-luu-chau/,1,Dam,1650000,1650000,DAM,True,2026-06-27 15:59:43
-Đầm Phù Ân,https://xeoxo.com/vn/san-pham/dam-phu-an/,1,Dam,2950000,2950000,DAM,True,2026-06-27 15:59:44
-Đầm Ngọc Tiêu,https://xeoxo.com/vn/san-pham/dam-ngoc-tieu/,1,Dam,1450000,1450000,DAM,True,2026-06-27 15:59:45
-Đầm Nhã Quy,https://xeoxo.com/vn/san-pham/dam-nha-quy/,1,Dam,1650000,1650000,DAM,True,2026-06-27 15:59:46
-Quần Đan Châu,https://xeoxo.com/vn/san-pham/quan-dan-chau/,1,Quan,1350000,1350000,QUAN,True,2026-06-27 15:59:48
-Quần Đan Vân,https://xeoxo.com/vn/san-pham/quan-dan-van/,1,Quan,1350000,1350000,QUAN,True,2026-06-27 15:59:49
-Quần Đan Cẩn,https://xeoxo.com/vn/san-pham/quan-dan-can/,1,Quan,1350000,1350000,QUAN,True,2026-06-27 15:59:50
-Áo Bách Đơn,https://xeoxo.com/vn/san-pham/ao-bach-don/,1,Ao,850000,850000,AO,True,2026-06-27 15:59:51
-Áo Hồng Đơn,https://xeoxo.com/vn/san-pham/ao-hong-don/,1,Ao,850000,850000,AO,True,2026-06-27 15:59:53
-Áo Khuê Đơn,https://xeoxo.com/vn/san-pham/ao-khue-don/,1,Ao,850000,850000,AO,True,2026-06-27 15:59:54
-Đầm Phương Thanh,https://xeoxo.com/vn/san-pham/dam-phuong-thanh/,1,Dam,1650000,1650000,DAM,True,2026-06-27 15:59:55
-Đầm Chi Huỳnh,https://xeoxo.com/vn/san-pham/dam-chi-huynh/,1,Dam,1650000,1650000,DAM,True,2026-06-27 15:59:56
-Đầm Chi Mạn,https://xeoxo.com/vn/san-pham/dam-chi-man/,1,Dam,1650000,1650000,DAM,True,2026-06-27 15:59:57
-Set Hà Chi,https://xeoxo.com/vn/san-pham/set-ha-chi-2/,1,Set,1250000,1250000,SET,True,2026-06-27 15:59:58
-Set Hà Như,https://xeoxo.com/vn/san-pham/set-ha-chi/,1,Set,1250000,1250000,SET,True,2026-06-27 15:59:59
-Áo Quý Châu,https://xeoxo.com/vn/san-pham/ao-quy-chau/,1,Ao,590000,590000,AO,True,2026-06-27 16:00:01
-Áo Quý Kim,https://xeoxo.com/vn/san-pham/ao-quy-kim/,1,Ao,590000,590000,AO,True,2026-06-27 16:00:02
-Áo Quý Sa,https://xeoxo.com/vn/san-pham/ao-quy-sa/,1,Ao,590000,590000,AO,True,2026-06-27 16:00:03
-Áo Quý Chiêu,https://xeoxo.com/vn/san-pham/ao-quy-chieu/,1,Ao,590000,590000,AO,True,2026-06-27 16:00:05
-Áo Quý Như,https://xeoxo.com/vn/san-pham/ao-quy-nhu/,1,Ao,590000,590000,AO,True,2026-06-27 16:00:06
-Áo Quý Vân,https://xeoxo.com/vn/san-pham/ao-quy-van/,1,Ao,590000,590000,AO,True,2026-06-27 16:00:07
-Áo Quý Lam,https://xeoxo.com/vn/san-pham/ao-quy-lam/,1,Ao,590000,590000,AO,True,2026-06-27 16:00:08
-Áo Hạ Cẩm,https://xeoxo.com/vn/san-pham/ao-ha-cam/,1,Ao,1050000,1050000,AO,True,2026-06-27 16:00:10
-Áo Hạ Miên,https://xeoxo.com/vn/san-pham/ao-ha-mien/,1,Ao,1050000,1050000,AO,True,2026-06-27 16:00:11
-Áo Hạ Như,https://xeoxo.com/vn/san-pham/ao-ha-nhu/,1,Ao,1050000,1050000,AO,True,2026-06-27 16:00:12
-Áo Hạ Sương,https://xeoxo.com/vn/san-pham/ao-ha-suong/,1,Ao,1050000,1050000,AO,True,2026-06-27 16:00:13
-Áo Choàng Hoa Nhiên,https://xeoxo.com/vn/san-pham/ao-choang-hoa-nhien/,1,Ao choang,990000,990000,AO,True,2026-06-27 16:00:14
-Áo Choàng Hoa Kim,https://xeoxo.com/vn/san-pham/ao-choang-hoa-kim/,1,Ao choang,990000,990000,AO,True,2026-06-27 16:00:15
-Áo Choàng Hoa Nhu,https://xeoxo.com/vn/san-pham/ao-choang-hoa-nhu/,1,Ao choang,990000,990000,AO,True,2026-06-27 16:00:17
-Áo Choàng Hoa Kiều,https://xeoxo.com/vn/san-pham/ao-choang-hoa-kieu/,1,Ao choang,990000,990000,AO,True,2026-06-27 16:00:18
-Đầm Lưu Mây,https://xeoxo.com/vn/san-pham/dam-luu-may/,1,Dam,1650000,1650000,DAM,True,2026-06-27 16:00:19
-Đầm Châu Khuê,https://xeoxo.com/vn/san-pham/dam-chau-khue/,1,Dam,1450000,1450000,DAM,True,2026-06-27 16:00:20
-Quần Thục Khuê,https://xeoxo.com/vn/san-pham/quan-thuc-khue/,1,Quan,950000,950000,QUAN,True,2026-06-27 16:00:22
-Áo Thục Khuê,https://xeoxo.com/vn/san-pham/ao-thuc-khue/,1,Ao,850000,850000,AO,True,2026-06-27 16:00:24
-Đầm Lạc Hạ,https://xeoxo.com/vn/san-pham/dam-lac-ha/,1,Dam,1450000,1450000,DAM,True,2026-06-27 16:00:25
-Đầm Thanh Tiêu,https://xeoxo.com/vn/san-pham/dam-thanh-tieu/,1,Dam,1250000,1250000,DAM,True,2026-06-27 16:00:26
-Đầm Miểu Vi,https://xeoxo.com/vn/san-pham/dam-mieu-vi/,1,Dam,1250000,1250000,DAM,True,2026-06-27 16:00:27
-Đầm Thii Mây,https://xeoxo.com/vn/san-pham/dam-thii-may/,1,Dam,950000,950000,DAM,True,2026-06-27 16:00:29
-Đầm Thii Liên,https://xeoxo.com/vn/san-pham/dam-thii-lien/,1,Dam,950000,950000,DAM,True,2026-06-27 16:00:30
-Đầm Thii Hồng,https://xeoxo.com/vn/san-pham/dam-thii-hong/,1,Dam,950000,950000,DAM,True,2026-06-27 16:00:31
-Đầm Thii Huỳnh,https://xeoxo.com/vn/san-pham/dam-thii-huynh/,1,Dam,950000,950000,DAM,True,2026-06-27 16:00:32
-Đầm Thii Ngọc,https://xeoxo.com/vn/san-pham/dam-thii-ngoc/,1,Dam,950000,950000,DAM,True,2026-06-27 16:00:34
-Đầm Thii Châu,https://xeoxo.com/vn/san-pham/dam-thii-chau/,1,Dam,950000,950000,DAM,True,2026-06-27 16:00:35
-Đầm Thii Đan,https://xeoxo.com/vn/san-pham/dam-thii-dan/,1,Dam,950000,950000,DAM,True,2026-06-27 16:00:36
-Đầm Thii Mộng,https://xeoxo.com/vn/san-pham/dam-thii-mong/,1,Dam,950000,950000,DAM,True,2026-06-27 16:00:38
-Đầm Thii Nhạn,https://xeoxo.com/vn/san-pham/dam-thii-nhan/,1,Dam,950000,950000,DAM,True,2026-06-27 16:00:39
-Áo dài Cát Điệp,https://xeoxo.com/vn/san-pham/ao-dai-cat-diep/,1,Ao dai,4300000,4300000,AO,True,2026-06-27 16:00:40
-Áo dài Chu Bảo,https://xeoxo.com/vn/san-pham/ao-dai-chu-bao/,1,Ao dai,3750000,3750000,AO,True,2026-06-27 16:00:41
-Áo dài Đan Niên,https://xeoxo.com/vn/san-pham/ao-dai-dan-nien/,1,Ao dai,3750000,3750000,AO,True,2026-06-27 16:00:43
-Áo dài Mãn Kim,https://xeoxo.com/vn/san-pham/ao-dai-man-kim/,1,Ao dai,3750000,3750000,AO,True,2026-06-27 16:00:44
-Áo dài Châu Hân – Mãn Kim,https://xeoxo.com/vn/san-pham/ao-dai-chau-han-man-kim/,1,Ao dai,7600000,7600000,AO,True,2026-06-27 16:00:45
-Áo dài Thư Bảo,https://xeoxo.com/vn/san-pham/ao-dai-thu-bao/,1,Ao dai,3750000,3750000,AO,True,2026-06-27 16:00:46
-Áo dài Diệu Liên,https://xeoxo.com/vn/san-pham/ao-dai-dieu-lien/,1,Ao dai,4300000,4300000,AO,True,2026-06-27 16:00:48
-Áo dài Mãn Đào,https://xeoxo.com/vn/san-pham/ao-dai-man-dao/,1,Ao dai,3750000,3750000,AO,True,2026-06-27 16:00:49
-Áo dài Tiêu Hồng,https://xeoxo.com/vn/san-pham/ao-dai-tieu-hong/,1,Ao dai,4300000,4300000,AO,True,2026-06-27 16:00:50
-Áo dài Tú Điệp,https://xeoxo.com/vn/san-pham/ao-dai-tu-diep/,1,Ao dai,4300000,4300000,AO,True,2026-06-27 16:00:52
-Áo dài Mãn Như,https://xeoxo.com/vn/san-pham/ao-dai-man-nhu/,1,Ao dai,3750000,3750000,AO,True,2026-06-27 16:00:53
-Áo Thục Nghi,https://xeoxo.com/vn/san-pham/ao-thuc-nghi/,1,Ao,3850000,3850000,AO,True,2026-06-27 16:00:54
-Chân váy Hương Kiều,https://xeoxo.com/vn/san-pham/chan-vay-huong-kieu/,1,Chan vay,1350000,1350000,VAY,True,2026-06-27 16:00:55
-Áo Hương Kiều,https://xeoxo.com/vn/san-pham/ao-huong-kieu/,1,Ao,1950000,1950000,AO,True,2026-06-27 16:00:56
-Tinh Sa,https://xeoxo.com/vn/san-pham/tinh-sa/,1,Tinh Sa,6550000,6550000,KHAC,True,2026-06-27 16:00:58
-Ánh Diễm,https://xeoxo.com/vn/san-pham/anh-diem/,1,Ánh Diễm,6340000,6340000,KHAC,True,2026-06-27 16:00:59
-Mộng Kỳ,https://xeoxo.com/vn/san-pham/mong-ky/,1,Mộng Kỳ,7590000,7590000,KHAC,True,2026-06-27 16:01:01
-Hồng Sa,https://xeoxo.com/vn/san-pham/hong-sa/,1,Hồng Sa,5890000,5890000,KHAC,True,2026-06-27 16:01:02
-Áo dài Thiên Thước,https://xeoxo.com/vn/san-pham/ao-dai-thien-thuoc/,1,Ao dai,5200000,5200000,AO,True,2026-06-27 16:01:03
-Áo dài Hữu Phương,https://xeoxo.com/vn/san-pham/ao-dai-huu-phuong/,1,Ao dai,5200000,5200000,AO,True,2026-06-27 16:01:04
-Áo dài Mộc Thước,https://xeoxo.com/vn/san-pham/ao-dai-moc-thuoc/,1,Ao dai,5200000,5200000,AO,True,2026-06-27 16:01:05
-Áo dài Hồ Phụng,https://xeoxo.com/vn/san-pham/ao-dai-ho-phung/,1,Ao dai,5200000,5200000,AO,True,2026-06-27 16:01:07
-Áo dài Nam Phụng,https://xeoxo.com/vn/san-pham/ao-dai-nam-phung/,1,Ao dai,5200000,5200000,AO,True,2026-06-27 16:01:08
-Áo dài Yên Phụng,https://xeoxo.com/vn/san-pham/ao-dai-yen-phung/,1,Ao dai,5200000,5200000,AO,True,2026-06-27 16:01:09
-Áo dài Châu Phụng,https://xeoxo.com/vn/san-pham/ao-dai-chau-phung/,1,Ao dai,5200000,5200000,AO,True,2026-06-27 16:01:10
-Áo dài Nhu Phụng,https://xeoxo.com/vn/san-pham/ao-dai-nhu-phung/,1,Ao dai,5200000,5200000,AO,True,2026-06-27 16:01:11
-Áo dài Hoàng Phụng,https://xeoxo.com/vn/san-pham/ao-dai-hoang-phung/,1,Ao dai,5200000,5200000,AO,True,2026-06-27 16:01:12
-Áo dài Chiêu Phụng,https://xeoxo.com/vn/san-pham/ao-dai-chieu-phung/,1,Ao dai,5200000,5200000,AO,True,2026-06-27 16:01:13
-Áo dài Đan Phụng,https://xeoxo.com/vn/san-pham/ao-dai-dan-phung/,1,Ao dai,5200000,5200000,AO,True,2026-06-27 16:01:14
-Áo dài Chi Nhạn,https://xeoxo.com/vn/san-pham/ao-dai-chi-nhan/,1,Ao dai,4850000,4850000,AO,True,2026-06-27 16:01:16
-Áo dài Diên Kim,https://xeoxo.com/vn/san-pham/ao-dai-dien-kim/,1,Ao dai,4290000,4290000,AO,True,2026-06-27 16:01:17
-Áo dài Cẩm Tuyền,https://xeoxo.com/vn/san-pham/ao-dai-cam-tuyen/,1,Ao dai,5450000,5450000,AO,True,2026-06-27 16:01:18
-Áo dài Kim Ánh,https://xeoxo.com/vn/san-pham/ao-dai-kim-anh/,1,Ao dai,4790000,4790000,AO,True,2026-06-27 16:01:19
-Áo dài Lưu Ngọc,https://xeoxo.com/vn/san-pham/ao-dai-luu-ngoc/,1,Ao dai,3950000,3950000,AO,True,2026-06-27 16:01:20
-Áo dài Huỳnh Dao,https://xeoxo.com/vn/san-pham/ao-dai-huynh-dao/,1,Ao dai,4450000,4450000,AO,True,2026-06-27 16:01:22
-Áo dài Thanh Kỳ,https://xeoxo.com/vn/san-pham/ao-dai-thanh-ky/,1,Ao dai,6250000,6250000,AO,True,2026-06-27 16:01:23
-Áo dài Mai Chiêu,https://xeoxo.com/vn/san-pham/ao-dai-mai-chieu/,1,Ao dai,4550000,4550000,AO,True,2026-06-27 16:01:24
-Áo dài Ngọc Nhu,https://xeoxo.com/vn/san-pham/ao-dai-ngoc-nhu/,1,Ao dai,4850000,4850000,AO,True,2026-06-27 16:01:25
-Áo dài Phách Linh,https://xeoxo.com/vn/san-pham/ao-dai-phach-linh/,1,Ao dai,4250000,4250000,AO,True,2026-06-27 16:01:26
-Áo dài Sương Mai,https://xeoxo.com/vn/san-pham/ao-dai-suong-mai/,1,Ao dai,4050000,4050000,AO,True,2026-06-27 16:01:28
-Áo dài Tố Nhu,https://xeoxo.com/vn/san-pham/ao-dai-to-nhu/,1,Ao dai,4850000,4850000,AO,True,2026-06-27 16:01:29
-Áo dài Vũ Nhiên,https://xeoxo.com/vn/san-pham/ao-dai-vu-nhien/,1,Ao dai,4750000,4750000,AO,True,2026-06-27 16:01:30
-Áo dài Lục Nhạn,https://xeoxo.com/vn/san-pham/ao-dai-luc-nhan/,1,Ao dai,2550000,2550000,AO,True,2026-06-27 16:01:31
-Áo dài Mạc Nguy,https://xeoxo.com/vn/san-pham/ao-dai-mac-nguy/,1,Ao dai,3750000,3750000,AO,True,2026-06-27 16:01:33
-Áo dài Bách Hiên,https://xeoxo.com/vn/san-pham/ao-dai-bach-hien/,1,Ao dai,2850000,2850000,AO,True,2026-06-27 16:01:34
-Áo dài Trường Liên,https://xeoxo.com/vn/san-pham/ao-dai-truong-lien/,1,Ao dai,3250000,3250000,AO,True,2026-06-27 16:01:35
-Áo dài Phụng Viên,https://xeoxo.com/vn/san-pham/ao-dai-phung-vien/,1,Ao dai,2850000,2850000,AO,True,2026-06-27 16:01:36
-Áo dài Nhã Lam,https://xeoxo.com/vn/san-pham/ao-dai-nha-lam/,1,Ao dai,2850000,2850000,AO,True,2026-06-27 16:01:38
-Áo dài Lục Nguyên,https://xeoxo.com/vn/san-pham/ao-dai-luc-nguyen/,1,Ao dai,2850000,2850000,AO,True,2026-06-27 16:01:39
-Áo dài Văn Phiến,https://xeoxo.com/vn/san-pham/ao-dai-van-phien/,1,Ao dai,2950000,2950000,AO,True,2026-06-27 16:01:40
-Áo dài Thạch Nhiên,https://xeoxo.com/vn/san-pham/ao-dai-thach-nhien/,1,Ao dai,2550000,2550000,AO,True,2026-06-27 16:01:41
-Áo dài Mạc Trúc,https://xeoxo.com/vn/san-pham/ao-dai-mac-truc/,1,Ao dai,2550000,2550000,AO,True,2026-06-27 16:01:42
-Áo dài Trường Lam,https://xeoxo.com/vn/san-pham/ao-dai-truong-lam/,1,Ao dai,2550000,2550000,AO,True,2026-06-27 16:01:43
-Áo dài Gia Hỷ,https://xeoxo.com/vn/san-pham/ao-dai-gia-hy/,1,Ao dai,2550000,2550000,AO,True,2026-06-27 16:01:44
-Áo dài Nguyên Phong,https://xeoxo.com/vn/san-pham/ao-dai-nguyen-phong/,1,Ao dai,2550000,2550000,AO,True,2026-06-27 16:01:46
-Áo dài Văn Lễ,https://xeoxo.com/vn/san-pham/ao-dai-van-le/,1,Ao dai,2550000,2550000,AO,True,2026-06-27 16:01:47
-Áo Dài Dao Vinh,https://xeoxo.com/vn/san-pham/ao-dai-dao-vinh/,1,Ao dai,2450000,2450000,AO,True,2026-06-27 16:01:48
-Áo Dài Vũ Lăng,https://xeoxo.com/vn/san-pham/ao-dai-vu-lang/,1,Ao dai,2450000,2450000,AO,True,2026-06-27 16:01:50
-Áo Dài Minh Tịnh,https://xeoxo.com/vn/san-pham/ao-dai-minh-tinh/,1,Ao dai,2250000,2250000,AO,True,2026-06-27 16:01:51
-Áo Dài Yên Lăng,https://xeoxo.com/vn/san-pham/ao-dai-yen-lang/,1,Ao dai,2880000,2880000,AO,True,2026-06-27 16:01:52
-Áo Dài Phong Tường,https://xeoxo.com/vn/san-pham/ao-dai-phong-tuong/,1,Ao dai,2990000,2990000,AO,True,2026-06-27 16:01:53
-Áo dài Ngọc Chẩm,https://xeoxo.com/vn/san-pham/ao-dai-ngoc-cham/,1,Ao dai,3850000,3850000,AO,True,2026-06-27 16:01:54
-Áo dài Thái Vũ,https://xeoxo.com/vn/san-pham/ao-dai-thai-vu/,1,Ao dai,2250000,2250000,AO,True,2026-06-27 16:01:55
-Áo dài Sắc Kỳ,https://xeoxo.com/vn/san-pham/ao-dai-sac-ky/,1,Ao dai,1990740,1990740,AO,True,2026-06-27 16:01:57
+﻿parent_line_name,parent_product_url,component_order,source_component_product_id,component_name,component_url,component_price_text,component_price,component_type,is_required,crawl_at
+Áo Mộng Chi,https://xeoxo.com/vn/san-pham/ao-mong-chi/,1,,Áo Mộng Chi,https://xeoxo.com/vn/san-pham/ao-mong-chi/,900000,900000,AO,True,2026-06-27 15:59:02
+Quần Mộng Chi,https://xeoxo.com/vn/san-pham/quan-mong-chi/,1,,Quần Mộng Chi,https://xeoxo.com/vn/san-pham/quan-mong-chi/,850000,850000,QUAN,True,2026-06-27 15:59:03
+Quần Nhật Thư,https://xeoxo.com/vn/san-pham/quan-nhat-thu/,1,,Quần Nhật Thư,https://xeoxo.com/vn/san-pham/quan-nhat-thu/,825000,825000,QUAN,True,2026-06-27 15:59:05
+Áo Nhật Thư,https://xeoxo.com/vn/san-pham/ao-nhat-thu/,1,,Áo Nhật Thư,https://xeoxo.com/vn/san-pham/ao-nhat-thu/,825000,825000,AO,True,2026-06-27 15:59:06
+Đầm Trúc Mây,https://xeoxo.com/vn/san-pham/dam-truc-may/,1,,Đầm Trúc Mây,https://xeoxo.com/vn/san-pham/dam-truc-may/,1650000,1650000,DAM,True,2026-06-27 15:59:08
+Đầm Thanh Quy,https://xeoxo.com/vn/san-pham/dam-thanh-quy/,1,,Đầm Thanh Quy,https://xeoxo.com/vn/san-pham/dam-thanh-quy/,1950000,1950000,DAM,True,2026-06-27 15:59:09
+Đầm Diệu Thanh,https://xeoxo.com/vn/san-pham/dam-dieu-thanh/,1,,Đầm Diệu Thanh,https://xeoxo.com/vn/san-pham/dam-dieu-thanh/,1550000,1550000,DAM,True,2026-06-27 15:59:11
+Đầm Lan Kiều,https://xeoxo.com/vn/san-pham/dam-lan-kieu/,1,,Đầm Lan Kiều,https://xeoxo.com/vn/san-pham/dam-lan-kieu/,1650000,1650000,DAM,True,2026-06-27 15:59:12
+Đầm Phấn Hy,https://xeoxo.com/vn/san-pham/dam-phan-hy/,1,,Đầm Phấn Hy,https://xeoxo.com/vn/san-pham/dam-phan-hy/,1250000,1250000,DAM,True,2026-06-27 15:59:14
+Áo Choàng Ngọc Mây,https://xeoxo.com/vn/san-pham/ao-choang-ngoc-may/,1,,Áo Choàng Ngọc Mây,https://xeoxo.com/vn/san-pham/ao-choang-ngoc-may/,890000,890000,AO,True,2026-06-27 15:59:15
+Áo Choàng Hồng Mây,https://xeoxo.com/vn/san-pham/ao-choang-hong-may/,1,,Áo Choàng Hồng Mây,https://xeoxo.com/vn/san-pham/ao-choang-hong-may/,890000,890000,AO,True,2026-06-27 15:59:16
+Đầm Uyên Đan,https://xeoxo.com/vn/san-pham/dam-uyen-dan/,1,,Đầm Uyên Đan,https://xeoxo.com/vn/san-pham/dam-uyen-dan/,1650000,1650000,DAM,True,2026-06-27 15:59:18
+Yếm Dạ Thư,https://xeoxo.com/vn/san-pham/yem-da-thu/,1,0,Dạ Thư,https://xeoxo.com/vn/san-pham/da-thu/,2.350.000 VND,2350000,KHAC,True,2026-06-27 15:59:19
+Yếm Dạ Thư,https://xeoxo.com/vn/san-pham/yem-da-thu/,2,0,Quần dập ly màu đỏ tím,https://xeoxo.com/vn/san-pham/quan-dap-ly-mau-do-tim/,1.350.000 VND,1350000,QUAN,True,2026-06-27 15:59:19
+Áo dài Ngọc Khê – Yên Hoàng,https://xeoxo.com/vn/san-pham/ao-dai-ngoc-khe-yen-hoang/,1,0,Áo dài Ngọc Khê,https://xeoxo.com/vn/san-pham/ad-ngoc-khe/,3.350.000 VND,3350000,AO,True,2026-06-27 15:59:21
+Áo dài Ngọc Khê – Yên Hoàng,https://xeoxo.com/vn/san-pham/ao-dai-ngoc-khe-yen-hoang/,2,0,Áo dài Yên Hoàng,https://xeoxo.com/vn/san-pham/ad-yen-hoang/,0 VND,0,AO,True,2026-06-27 15:59:21
+Áo dài Ngọc Khê – Yên Hoàng,https://xeoxo.com/vn/san-pham/ao-dai-ngoc-khe-yen-hoang/,3,0,Quần La Kim,https://xeoxo.com/vn/san-pham/quan-la-kim/,1.250.000 VND,1250000,QUAN,True,2026-06-27 15:59:21
+Áo dài Tú Khê – Yên Như,https://xeoxo.com/vn/san-pham/ao-dai-tu-khe-yen-nhu/,1,0,Áo dài Tú Khê,https://xeoxo.com/vn/san-pham/ad-tu-khe/,3.350.000 VND,3350000,AO,True,2026-06-27 15:59:22
+Áo dài Tú Khê – Yên Như,https://xeoxo.com/vn/san-pham/ao-dai-tu-khe-yen-nhu/,2,0,Áo dài Yên Như,https://xeoxo.com/vn/san-pham/ad-yen-nhu/,0 VND,0,AO,True,2026-06-27 15:59:22
+Áo dài Tú Khê – Yên Như,https://xeoxo.com/vn/san-pham/ao-dai-tu-khe-yen-nhu/,3,0,Quần La Ngọc,https://xeoxo.com/vn/san-pham/quan-la-ngoc/,1.250.000 VND,1250000,QUAN,True,2026-06-27 15:59:22
+Áo dài Vân Khê – Yên Hải,https://xeoxo.com/vn/san-pham/ao-dai-van-khe-yen-hai/,1,0,Áo dài Vân Khê,https://xeoxo.com/vn/san-pham/ad-van-khe/,3.350.000 VND,3350000,AO,True,2026-06-27 15:59:23
+Áo dài Vân Khê – Yên Hải,https://xeoxo.com/vn/san-pham/ao-dai-van-khe-yen-hai/,2,0,Áo dài Yên Hải,https://xeoxo.com/vn/san-pham/ad-yen-hai/,0 VND,0,AO,True,2026-06-27 15:59:23
+Áo dài Vân Khê – Yên Hải,https://xeoxo.com/vn/san-pham/ao-dai-van-khe-yen-hai/,3,0,Quần La Cẩn,https://xeoxo.com/vn/san-pham/quan-la-can/,1.250.000 VND,1250000,QUAN,True,2026-06-27 15:59:23
+Áo dài Thanh Khê – Yên Lam,https://xeoxo.com/vn/san-pham/ao-dai-thanh-khe-yen-lam/,1,0,Áo dài Thanh Khê,https://xeoxo.com/vn/san-pham/ad-thanh-khe/,3.350.000 VND,3350000,AO,True,2026-06-27 15:59:25
+Áo dài Thanh Khê – Yên Lam,https://xeoxo.com/vn/san-pham/ao-dai-thanh-khe-yen-lam/,2,0,Áo dài Yên Lam,https://xeoxo.com/vn/san-pham/ad-yen-lam/,0 VND,0,AO,True,2026-06-27 15:59:25
+Áo dài Thanh Khê – Yên Lam,https://xeoxo.com/vn/san-pham/ao-dai-thanh-khe-yen-lam/,3,0,Quần La Ngọc,https://xeoxo.com/vn/san-pham/quan-la-ngoc/,1.250.000 VND,1250000,QUAN,True,2026-06-27 15:59:25
+Áo Lam Khanh,https://xeoxo.com/vn/san-pham/ao-lam-khanh/,1,,Áo Lam Khanh,https://xeoxo.com/vn/san-pham/ao-lam-khanh/,1490000,1490000,AO,True,2026-06-27 15:59:26
+Chân Váy Lam Khanh,https://xeoxo.com/vn/san-pham/chan-vay-lam-khanh/,1,,Chân Váy Lam Khanh,https://xeoxo.com/vn/san-pham/chan-vay-lam-khanh/,2450000,2450000,VAY,True,2026-06-27 15:59:27
+Áo Choàng Nhật Bình Yên Chi,https://xeoxo.com/vn/san-pham/ao-choang-nhat-binh-yen-chi/,1,,Áo Choàng Nhật Bình Yên Chi,https://xeoxo.com/vn/san-pham/ao-choang-nhat-binh-yen-chi/,14450000,14450000,AO,True,2026-06-27 15:59:28
+Áo choàng Tràng Ngọc Khê,https://xeoxo.com/vn/san-pham/ao-choang-trang-ngoc-khe/,1,,Áo choàng Tràng Ngọc Khê,https://xeoxo.com/vn/san-pham/ao-choang-trang-ngoc-khe/,8250000,8250000,AO,True,2026-06-27 15:59:30
+Áo dài Cẩm Dao – Dao Phụng,https://xeoxo.com/vn/san-pham/ao-dai-cam-dao-dao-phung/,1,0,Áo dài Cẩm Dao,https://xeoxo.com/vn/san-pham/ad-cam-dao/,4.850.000 VND,4850000,AO,True,2026-06-27 15:59:31
+Áo dài Cẩm Dao – Dao Phụng,https://xeoxo.com/vn/san-pham/ao-dai-cam-dao-dao-phung/,2,0,Áo dài Dao Phụng,https://xeoxo.com/vn/san-pham/ad-dao-phung/,2.950.000 VND,2950000,AO,True,2026-06-27 15:59:31
+Áo dài Cẩm Dao – Dao Phụng,https://xeoxo.com/vn/san-pham/ao-dai-cam-dao-dao-phung/,3,0,Quần Khuê Đơn,https://xeoxo.com/vn/san-pham/quan-khue-don/,1.350.000 VND,1350000,QUAN,True,2026-06-27 15:59:31
+Áo dài Dao Phụng – Liên Phụng,https://xeoxo.com/vn/san-pham/ao-dai-dao-phung-lien-phung/,1,0,Áo dài Dao Phụng,https://xeoxo.com/vn/san-pham/ad-dao-phung/,2.950.000 VND,2950000,AO,True,2026-06-27 15:59:32
+Áo dài Dao Phụng – Liên Phụng,https://xeoxo.com/vn/san-pham/ao-dai-dao-phung-lien-phung/,2,0,Áo dài Liên Phụng,https://xeoxo.com/vn/san-pham/ad-lien-phung/,2.950.000 VND,2950000,AO,True,2026-06-27 15:59:32
+Áo dài Dao Phụng – Liên Phụng,https://xeoxo.com/vn/san-pham/ao-dai-dao-phung-lien-phung/,3,0,Quần AD metalic màu hồng nhạt - 13,https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-hong-nhat-13/,750.000 VND,750000,QUAN,True,2026-06-27 15:59:32
+Áo dài Hồng Ân – Hồng Duyên,https://xeoxo.com/vn/san-pham/ao-dai-hong-an-hong-duyen-sao-chep/,1,0,Áo dài Hồng Ân,https://xeoxo.com/vn/san-pham/ad-hong-an/,3.950.000 VND,3950000,AO,True,2026-06-27 15:59:33
+Áo dài Hồng Ân – Hồng Duyên,https://xeoxo.com/vn/san-pham/ao-dai-hong-an-hong-duyen-sao-chep/,2,0,Áo dài Hồng Duyên,https://xeoxo.com/vn/san-pham/ad-hong-duyen/,3.050.000 VND,3050000,AO,True,2026-06-27 15:59:33
+Áo dài Hồng Ân – Hồng Duyên,https://xeoxo.com/vn/san-pham/ao-dai-hong-an-hong-duyen-sao-chep/,3,0,Quần Châu Đoan,https://xeoxo.com/vn/san-pham/quan-chau-doan/,850.000 VND,850000,QUAN,True,2026-06-27 15:59:33
+Áo dài Mộng Đan – Hồng Duyên,https://xeoxo.com/vn/san-pham/ao-dai-mong-dan-hong-duyen/,1,0,Áo dài Mộng Đan,https://xeoxo.com/vn/san-pham/ad-mong-dan/,4.850.000 VND,4850000,AO,True,2026-06-27 15:59:35
+Áo dài Mộng Đan – Hồng Duyên,https://xeoxo.com/vn/san-pham/ao-dai-mong-dan-hong-duyen/,2,0,Áo dài Hồng Duyên,https://xeoxo.com/vn/san-pham/ad-hong-duyen/,3.050.000 VND,3050000,AO,True,2026-06-27 15:59:35
+Áo dài Mộng Đan – Hồng Duyên,https://xeoxo.com/vn/san-pham/ao-dai-mong-dan-hong-duyen/,3,0,Quần Châu Đoan,https://xeoxo.com/vn/san-pham/quan-chau-doan/,850.000 VND,850000,QUAN,True,2026-06-27 15:59:35
+Áo dài Châu Phượng,https://xeoxo.com/vn/san-pham/ao-dai-chau-phuong/,1,0,Áo dài Châu Phượng,https://xeoxo.com/vn/san-pham/ad-chau-phuong/,5.700.000 VND,5700000,AO,True,2026-06-27 15:59:36
+Áo dài Châu Phượng,https://xeoxo.com/vn/san-pham/ao-dai-chau-phuong/,2,0,Quần Châu Đoan,https://xeoxo.com/vn/san-pham/quan-chau-doan/,850.000 VND,850000,QUAN,True,2026-06-27 15:59:36
+Áo dài Ngọc Bảo – Mãn Duyên,https://xeoxo.com/vn/san-pham/ao-dai-ngoc-bao-man-duyen/,1,0,Áo dài Ngọc Bảo,https://xeoxo.com/vn/san-pham/ad-ngoc-bao/,4.450.000 VND,4450000,AO,True,2026-06-27 15:59:37
+Áo dài Ngọc Bảo – Mãn Duyên,https://xeoxo.com/vn/san-pham/ao-dai-ngoc-bao-man-duyen/,2,0,Áo dài Mãn Duyên,https://xeoxo.com/vn/san-pham/ad-man-duyen/,4.350.000 VND,4350000,AO,True,2026-06-27 15:59:37
+Áo dài Ngọc Bảo – Mãn Duyên,https://xeoxo.com/vn/san-pham/ao-dai-ngoc-bao-man-duyen/,3,0,Quần AD metalic màu hồng đỗ nhạt,https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-hong-do-nhat/,750.000 VND,750000,QUAN,True,2026-06-27 15:59:37
+Áo dài Mộc Cẩn – Diêu Hà,https://xeoxo.com/vn/san-pham/ao-dai-moc-can-dieu-ha/,1,0,Áo dài Mộc Cẩn,https://xeoxo.com/vn/san-pham/ad-moc-can/,8.850.000 VND,8850000,AO,True,2026-06-27 15:59:38
+Áo dài Mộc Cẩn – Diêu Hà,https://xeoxo.com/vn/san-pham/ao-dai-moc-can-dieu-ha/,2,0,Áo dài Nạp Diêu Hà,https://xeoxo.com/vn/san-pham/ad-nap-dieu-ha/,2.550.000 VND,2550000,AO,True,2026-06-27 15:59:38
+Áo dài Mộc Cẩn – Diêu Hà,https://xeoxo.com/vn/san-pham/ao-dai-moc-can-dieu-ha/,3,0,Quần Khuê Đơn,https://xeoxo.com/vn/san-pham/quan-khue-don/,1.350.000 VND,1350000,QUAN,True,2026-06-27 15:59:38
+Áo dài Chu Phong,https://xeoxo.com/vn/san-pham/ao-dai-chu-phong/,1,,Áo dài Chu Phong,https://xeoxo.com/vn/san-pham/ao-dai-chu-phong/,2850000,2850000,AO,True,2026-06-27 15:59:39
+Áo dài Thiên Hà,https://xeoxo.com/vn/san-pham/ao-dai-thien-ha/,1,,Áo dài Thiên Hà,https://xeoxo.com/vn/san-pham/ao-dai-thien-ha/,2850000,2850000,AO,True,2026-06-27 15:59:40
+Đầm Lưu Quỳnh,https://xeoxo.com/vn/san-pham/dam-luu-quynh/,1,,Đầm Lưu Quỳnh,https://xeoxo.com/vn/san-pham/dam-luu-quynh/,1650000,1650000,DAM,True,2026-06-27 15:59:41
+Đầm Lưu Châu,https://xeoxo.com/vn/san-pham/dam-luu-chau/,1,,Đầm Lưu Châu,https://xeoxo.com/vn/san-pham/dam-luu-chau/,1650000,1650000,DAM,True,2026-06-27 15:59:43
+Đầm Phù Ân,https://xeoxo.com/vn/san-pham/dam-phu-an/,1,,Đầm Phù Ân,https://xeoxo.com/vn/san-pham/dam-phu-an/,2950000,2950000,DAM,True,2026-06-27 15:59:44
+Đầm Ngọc Tiêu,https://xeoxo.com/vn/san-pham/dam-ngoc-tieu/,1,,Đầm Ngọc Tiêu,https://xeoxo.com/vn/san-pham/dam-ngoc-tieu/,1450000,1450000,DAM,True,2026-06-27 15:59:45
+Đầm Nhã Quy,https://xeoxo.com/vn/san-pham/dam-nha-quy/,1,,Đầm Nhã Quy,https://xeoxo.com/vn/san-pham/dam-nha-quy/,1650000,1650000,DAM,True,2026-06-27 15:59:46
+Quần Đan Châu,https://xeoxo.com/vn/san-pham/quan-dan-chau/,1,,Quần Đan Châu,https://xeoxo.com/vn/san-pham/quan-dan-chau/,1350000,1350000,QUAN,True,2026-06-27 15:59:48
+Quần Đan Vân,https://xeoxo.com/vn/san-pham/quan-dan-van/,1,,Quần Đan Vân,https://xeoxo.com/vn/san-pham/quan-dan-van/,1350000,1350000,QUAN,True,2026-06-27 15:59:49
+Quần Đan Cẩn,https://xeoxo.com/vn/san-pham/quan-dan-can/,1,,Quần Đan Cẩn,https://xeoxo.com/vn/san-pham/quan-dan-can/,1350000,1350000,QUAN,True,2026-06-27 15:59:50
+Áo Bách Đơn,https://xeoxo.com/vn/san-pham/ao-bach-don/,1,,Áo Bách Đơn,https://xeoxo.com/vn/san-pham/ao-bach-don/,850000,850000,AO,True,2026-06-27 15:59:51
+Áo Hồng Đơn,https://xeoxo.com/vn/san-pham/ao-hong-don/,1,,Áo Hồng Đơn,https://xeoxo.com/vn/san-pham/ao-hong-don/,850000,850000,AO,True,2026-06-27 15:59:53
+Áo Khuê Đơn,https://xeoxo.com/vn/san-pham/ao-khue-don/,1,,Áo Khuê Đơn,https://xeoxo.com/vn/san-pham/ao-khue-don/,850000,850000,AO,True,2026-06-27 15:59:54
+Đầm Phương Thanh,https://xeoxo.com/vn/san-pham/dam-phuong-thanh/,1,,Đầm Phương Thanh,https://xeoxo.com/vn/san-pham/dam-phuong-thanh/,1650000,1650000,DAM,True,2026-06-27 15:59:55
+Đầm Chi Huỳnh,https://xeoxo.com/vn/san-pham/dam-chi-huynh/,1,,Đầm Chi Huỳnh,https://xeoxo.com/vn/san-pham/dam-chi-huynh/,1650000,1650000,DAM,True,2026-06-27 15:59:56
+Đầm Chi Mạn,https://xeoxo.com/vn/san-pham/dam-chi-man/,1,,Đầm Chi Mạn,https://xeoxo.com/vn/san-pham/dam-chi-man/,1650000,1650000,DAM,True,2026-06-27 15:59:57
+Set Hà Chi,https://xeoxo.com/vn/san-pham/set-ha-chi-2/,1,,Set Hà Chi,https://xeoxo.com/vn/san-pham/set-ha-chi-2/,1250000,1250000,SET,True,2026-06-27 15:59:58
+Set Hà Như,https://xeoxo.com/vn/san-pham/set-ha-chi/,1,,Set Hà Như,https://xeoxo.com/vn/san-pham/set-ha-chi/,1250000,1250000,SET,True,2026-06-27 15:59:59
+Áo Quý Châu,https://xeoxo.com/vn/san-pham/ao-quy-chau/,1,,Áo Quý Châu,https://xeoxo.com/vn/san-pham/ao-quy-chau/,590000,590000,AO,True,2026-06-27 16:00:01
+Áo Quý Kim,https://xeoxo.com/vn/san-pham/ao-quy-kim/,1,,Áo Quý Kim,https://xeoxo.com/vn/san-pham/ao-quy-kim/,590000,590000,AO,True,2026-06-27 16:00:02
+Áo Quý Sa,https://xeoxo.com/vn/san-pham/ao-quy-sa/,1,,Áo Quý Sa,https://xeoxo.com/vn/san-pham/ao-quy-sa/,590000,590000,AO,True,2026-06-27 16:00:03
+Áo Quý Chiêu,https://xeoxo.com/vn/san-pham/ao-quy-chieu/,1,,Áo Quý Chiêu,https://xeoxo.com/vn/san-pham/ao-quy-chieu/,590000,590000,AO,True,2026-06-27 16:00:05
+Áo Quý Như,https://xeoxo.com/vn/san-pham/ao-quy-nhu/,1,,Áo Quý Như,https://xeoxo.com/vn/san-pham/ao-quy-nhu/,590000,590000,AO,True,2026-06-27 16:00:06
+Áo Quý Vân,https://xeoxo.com/vn/san-pham/ao-quy-van/,1,,Áo Quý Vân,https://xeoxo.com/vn/san-pham/ao-quy-van/,590000,590000,AO,True,2026-06-27 16:00:07
+Áo Quý Lam,https://xeoxo.com/vn/san-pham/ao-quy-lam/,1,,Áo Quý Lam,https://xeoxo.com/vn/san-pham/ao-quy-lam/,590000,590000,AO,True,2026-06-27 16:00:08
+Áo Hạ Cẩm,https://xeoxo.com/vn/san-pham/ao-ha-cam/,1,,Áo Hạ Cẩm,https://xeoxo.com/vn/san-pham/ao-ha-cam/,1050000,1050000,AO,True,2026-06-27 16:00:10
+Áo Hạ Miên,https://xeoxo.com/vn/san-pham/ao-ha-mien/,1,,Áo Hạ Miên,https://xeoxo.com/vn/san-pham/ao-ha-mien/,1050000,1050000,AO,True,2026-06-27 16:00:11
+Áo Hạ Như,https://xeoxo.com/vn/san-pham/ao-ha-nhu/,1,,Áo Hạ Như,https://xeoxo.com/vn/san-pham/ao-ha-nhu/,1050000,1050000,AO,True,2026-06-27 16:00:12
+Áo Hạ Sương,https://xeoxo.com/vn/san-pham/ao-ha-suong/,1,,Áo Hạ Sương,https://xeoxo.com/vn/san-pham/ao-ha-suong/,1050000,1050000,AO,True,2026-06-27 16:00:13
+Áo Choàng Hoa Nhiên,https://xeoxo.com/vn/san-pham/ao-choang-hoa-nhien/,1,,Áo Choàng Hoa Nhiên,https://xeoxo.com/vn/san-pham/ao-choang-hoa-nhien/,990000,990000,AO,True,2026-06-27 16:00:14
+Áo Choàng Hoa Kim,https://xeoxo.com/vn/san-pham/ao-choang-hoa-kim/,1,,Áo Choàng Hoa Kim,https://xeoxo.com/vn/san-pham/ao-choang-hoa-kim/,990000,990000,AO,True,2026-06-27 16:00:15
+Áo Choàng Hoa Nhu,https://xeoxo.com/vn/san-pham/ao-choang-hoa-nhu/,1,,Áo Choàng Hoa Nhu,https://xeoxo.com/vn/san-pham/ao-choang-hoa-nhu/,990000,990000,AO,True,2026-06-27 16:00:17
+Áo Choàng Hoa Kiều,https://xeoxo.com/vn/san-pham/ao-choang-hoa-kieu/,1,,Áo Choàng Hoa Kiều,https://xeoxo.com/vn/san-pham/ao-choang-hoa-kieu/,990000,990000,AO,True,2026-06-27 16:00:18
+Đầm Lưu Mây,https://xeoxo.com/vn/san-pham/dam-luu-may/,1,,Đầm Lưu Mây,https://xeoxo.com/vn/san-pham/dam-luu-may/,1650000,1650000,DAM,True,2026-06-27 16:00:19
+Đầm Châu Khuê,https://xeoxo.com/vn/san-pham/dam-chau-khue/,1,,Đầm Châu Khuê,https://xeoxo.com/vn/san-pham/dam-chau-khue/,1450000,1450000,DAM,True,2026-06-27 16:00:20
+Quần Thục Khuê,https://xeoxo.com/vn/san-pham/quan-thuc-khue/,1,,Quần Thục Khuê,https://xeoxo.com/vn/san-pham/quan-thuc-khue/,950000,950000,QUAN,True,2026-06-27 16:00:22
+Áo Thục Khuê,https://xeoxo.com/vn/san-pham/ao-thuc-khue/,1,,Áo Thục Khuê,https://xeoxo.com/vn/san-pham/ao-thuc-khue/,850000,850000,AO,True,2026-06-27 16:00:24
+Đầm Lạc Hạ,https://xeoxo.com/vn/san-pham/dam-lac-ha/,1,,Đầm Lạc Hạ,https://xeoxo.com/vn/san-pham/dam-lac-ha/,1450000,1450000,DAM,True,2026-06-27 16:00:25
+Đầm Thanh Tiêu,https://xeoxo.com/vn/san-pham/dam-thanh-tieu/,1,,Đầm Thanh Tiêu,https://xeoxo.com/vn/san-pham/dam-thanh-tieu/,1250000,1250000,DAM,True,2026-06-27 16:00:26
+Đầm Miểu Vi,https://xeoxo.com/vn/san-pham/dam-mieu-vi/,1,,Đầm Miểu Vi,https://xeoxo.com/vn/san-pham/dam-mieu-vi/,1250000,1250000,DAM,True,2026-06-27 16:00:27
+Đầm Thii Mây,https://xeoxo.com/vn/san-pham/dam-thii-may/,1,,Đầm Thii Mây,https://xeoxo.com/vn/san-pham/dam-thii-may/,950000,950000,DAM,True,2026-06-27 16:00:29
+Đầm Thii Liên,https://xeoxo.com/vn/san-pham/dam-thii-lien/,1,,Đầm Thii Liên,https://xeoxo.com/vn/san-pham/dam-thii-lien/,950000,950000,DAM,True,2026-06-27 16:00:30
+Đầm Thii Hồng,https://xeoxo.com/vn/san-pham/dam-thii-hong/,1,,Đầm Thii Hồng,https://xeoxo.com/vn/san-pham/dam-thii-hong/,950000,950000,DAM,True,2026-06-27 16:00:31
+Đầm Thii Huỳnh,https://xeoxo.com/vn/san-pham/dam-thii-huynh/,1,,Đầm Thii Huỳnh,https://xeoxo.com/vn/san-pham/dam-thii-huynh/,950000,950000,DAM,True,2026-06-27 16:00:32
+Đầm Thii Ngọc,https://xeoxo.com/vn/san-pham/dam-thii-ngoc/,1,,Đầm Thii Ngọc,https://xeoxo.com/vn/san-pham/dam-thii-ngoc/,950000,950000,DAM,True,2026-06-27 16:00:34
+Đầm Thii Châu,https://xeoxo.com/vn/san-pham/dam-thii-chau/,1,,Đầm Thii Châu,https://xeoxo.com/vn/san-pham/dam-thii-chau/,950000,950000,DAM,True,2026-06-27 16:00:35
+Đầm Thii Đan,https://xeoxo.com/vn/san-pham/dam-thii-dan/,1,,Đầm Thii Đan,https://xeoxo.com/vn/san-pham/dam-thii-dan/,950000,950000,DAM,True,2026-06-27 16:00:36
+Đầm Thii Mộng,https://xeoxo.com/vn/san-pham/dam-thii-mong/,1,,Đầm Thii Mộng,https://xeoxo.com/vn/san-pham/dam-thii-mong/,950000,950000,DAM,True,2026-06-27 16:00:38
+Đầm Thii Nhạn,https://xeoxo.com/vn/san-pham/dam-thii-nhan/,1,,Đầm Thii Nhạn,https://xeoxo.com/vn/san-pham/dam-thii-nhan/,950000,950000,DAM,True,2026-06-27 16:00:39
+Áo dài Cát Điệp,https://xeoxo.com/vn/san-pham/ao-dai-cat-diep/,1,0,Áo dài Cát Điệp,https://xeoxo.com/vn/san-pham/ad-cat-diep/,3.550.000 VND,3550000,AO,True,2026-06-27 16:00:40
+Áo dài Cát Điệp,https://xeoxo.com/vn/san-pham/ao-dai-cat-diep/,2,0,Quần AD metalic màu hồng tím đậm (GD vàng - 99),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-hong-tim-dam/,750.000 VND,750000,QUAN,True,2026-06-27 16:00:40
+Áo dài Chu Bảo,https://xeoxo.com/vn/san-pham/ao-dai-chu-bao/,1,0,Áo dài Chu Bảo,https://xeoxo.com/vn/san-pham/ad-chu-bao/,3.000.000 VND,3000000,AO,True,2026-06-27 16:00:41
+Áo dài Chu Bảo,https://xeoxo.com/vn/san-pham/ao-dai-chu-bao/,2,0,Quần AD metalic màu xanh cốm (GD vàng - 33),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-com-2/,750.000 VND,750000,QUAN,True,2026-06-27 16:00:41
+Áo dài Đan Niên,https://xeoxo.com/vn/san-pham/ao-dai-dan-nien/,1,0,Áo dài Đan Niên,https://xeoxo.com/vn/san-pham/ad-dan-nien/,3.000.000 VND,3000000,AO,True,2026-06-27 16:00:43
+Áo dài Đan Niên,https://xeoxo.com/vn/san-pham/ao-dai-dan-nien/,2,0,Quần AD metalic màu xanh bơ (GD vàng - 36),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-vang-chanh/,750.000 VND,750000,QUAN,True,2026-06-27 16:00:43
+Áo dài Mãn Kim,https://xeoxo.com/vn/san-pham/ao-dai-man-kim/,1,0,Áo dài Mãn Kim,https://xeoxo.com/vn/san-pham/ad-man-kim/,3.000.000 VND,3000000,AO,True,2026-06-27 16:00:44
+Áo dài Mãn Kim,https://xeoxo.com/vn/san-pham/ao-dai-man-kim/,2,0,Quần AD metalic màu hồng sen (GD vàng - 103),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-hong-tim-2/,750.000 VND,750000,QUAN,True,2026-06-27 16:00:44
+Áo dài Châu Hân – Mãn Kim,https://xeoxo.com/vn/san-pham/ao-dai-chau-han-man-kim/,1,0,Áo dài Châu Hân,https://xeoxo.com/vn/san-pham/ad-chau-han/,3.850.000 VND,3850000,AO,True,2026-06-27 16:00:45
+Áo dài Châu Hân – Mãn Kim,https://xeoxo.com/vn/san-pham/ao-dai-chau-han-man-kim/,2,0,Áo dài Mãn Kim,https://xeoxo.com/vn/san-pham/ad-man-kim/,3.000.000 VND,3000000,AO,True,2026-06-27 16:00:45
+Áo dài Châu Hân – Mãn Kim,https://xeoxo.com/vn/san-pham/ao-dai-chau-han-man-kim/,3,0,Quần AD metalic màu tím,https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-tim/,750.000 VND,750000,QUAN,True,2026-06-27 16:00:45
+Áo dài Thư Bảo,https://xeoxo.com/vn/san-pham/ao-dai-thu-bao/,1,0,Áo dài Thư Bảo,https://xeoxo.com/vn/san-pham/ad-thu-bao/,3.000.000 VND,3000000,AO,True,2026-06-27 16:00:46
+Áo dài Thư Bảo,https://xeoxo.com/vn/san-pham/ao-dai-thu-bao/,2,0,Quần AD metalic màu tím,https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-tim/,750.000 VND,750000,QUAN,True,2026-06-27 16:00:46
+Áo dài Diệu Liên,https://xeoxo.com/vn/san-pham/ao-dai-dieu-lien/,1,0,Áo dài Diệu Liên,https://xeoxo.com/vn/san-pham/ad-dieu-lien/,3.550.000 VND,3550000,AO,True,2026-06-27 16:00:48
+Áo dài Diệu Liên,https://xeoxo.com/vn/san-pham/ao-dai-dieu-lien/,2,0,Quần AD metalic màu xanh mint (GD vàng - 70),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-mint/,750.000 VND,750000,QUAN,True,2026-06-27 16:00:48
+Áo dài Mãn Đào,https://xeoxo.com/vn/san-pham/ao-dai-man-dao/,1,0,Áo dài Mãn Đào,https://xeoxo.com/vn/san-pham/ad-man-dao/,3.000.000 VND,3000000,AO,True,2026-06-27 16:00:49
+Áo dài Mãn Đào,https://xeoxo.com/vn/san-pham/ao-dai-man-dao/,2,0,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-bien-nhat/,750.000 VND,750000,QUAN,True,2026-06-27 16:00:49
+Áo dài Tiêu Hồng,https://xeoxo.com/vn/san-pham/ao-dai-tieu-hong/,1,0,Áo dài Tiêu Hồng,https://xeoxo.com/vn/san-pham/ad-tieu-hong/,3.550.000 VND,3550000,AO,True,2026-06-27 16:00:50
+Áo dài Tiêu Hồng,https://xeoxo.com/vn/san-pham/ao-dai-tieu-hong/,2,0,Quần AD metalic màu hồng phấn (GD vàng - 35),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-hong-phan-gd-vang-35/,750.000 VND,750000,QUAN,True,2026-06-27 16:00:50
+Áo dài Tú Điệp,https://xeoxo.com/vn/san-pham/ao-dai-tu-diep/,1,0,Áo dài Tú Điệp,https://xeoxo.com/vn/san-pham/ad-tu-diep/,3.550.000 VND,3550000,AO,True,2026-06-27 16:00:52
+Áo dài Tú Điệp,https://xeoxo.com/vn/san-pham/ao-dai-tu-diep/,2,0,Quần AD metalic màu xanh coban (GD vàng - 92),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-coban-gd-vang-92/,750.000 VND,750000,QUAN,True,2026-06-27 16:00:52
+Áo dài Mãn Như,https://xeoxo.com/vn/san-pham/ao-dai-man-nhu/,1,0,Áo dài Mãn Như,https://xeoxo.com/vn/san-pham/ad-man-thu/,3.000.000 VND,3000000,AO,True,2026-06-27 16:00:53
+Áo dài Mãn Như,https://xeoxo.com/vn/san-pham/ao-dai-man-nhu/,2,0,Quần metalic màu vàng tươi (GD vàng - 42),https://xeoxo.com/vn/san-pham/quan-metalic-mau-vang-tuoi-gd-vang-42/,750.000 VND,750000,QUAN,True,2026-06-27 16:00:53
+Áo Thục Nghi,https://xeoxo.com/vn/san-pham/ao-thuc-nghi/,1,,Áo Thục Nghi,https://xeoxo.com/vn/san-pham/ao-thuc-nghi/,3850000,3850000,AO,True,2026-06-27 16:00:54
+Chân váy Hương Kiều,https://xeoxo.com/vn/san-pham/chan-vay-huong-kieu/,1,,Chân váy Hương Kiều,https://xeoxo.com/vn/san-pham/chan-vay-huong-kieu/,1350000,1350000,VAY,True,2026-06-27 16:00:55
+Áo Hương Kiều,https://xeoxo.com/vn/san-pham/ao-huong-kieu/,1,,Áo Hương Kiều,https://xeoxo.com/vn/san-pham/ao-huong-kieu/,1950000,1950000,AO,True,2026-06-27 16:00:56
+Tinh Sa,https://xeoxo.com/vn/san-pham/tinh-sa/,1,,Tinh Sa,https://xeoxo.com/vn/san-pham/tinh-sa/,6550000,6550000,KHAC,True,2026-06-27 16:00:58
+Ánh Diễm,https://xeoxo.com/vn/san-pham/anh-diem/,1,,Ánh Diễm,https://xeoxo.com/vn/san-pham/anh-diem/,6340000,6340000,KHAC,True,2026-06-27 16:00:59
+Mộng Kỳ,https://xeoxo.com/vn/san-pham/mong-ky/,1,,Mộng Kỳ,https://xeoxo.com/vn/san-pham/mong-ky/,7590000,7590000,KHAC,True,2026-06-27 16:01:01
+Hồng Sa,https://xeoxo.com/vn/san-pham/hong-sa/,1,,Hồng Sa,https://xeoxo.com/vn/san-pham/hong-sa/,5890000,5890000,KHAC,True,2026-06-27 16:01:02
+Áo dài Thiên Thước,https://xeoxo.com/vn/san-pham/ao-dai-thien-thuoc/,1,0,Áo dài Thiên Thước,https://xeoxo.com/vn/san-pham/ad-thien-thuoc/,4.450.000 VND,4450000,AO,True,2026-06-27 16:01:03
+Áo dài Thiên Thước,https://xeoxo.com/vn/san-pham/ao-dai-thien-thuoc/,2,0,Quần AD metalic màu hồng phấn (GD vàng - 35),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-hong-phan-gd-vang-35/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:03
+Áo dài Hữu Phương,https://xeoxo.com/vn/san-pham/ao-dai-huu-phuong/,1,0,Áo dài Hữu Phương,https://xeoxo.com/vn/san-pham/ad-huu-phuong/,4.450.000 VND,4450000,AO,True,2026-06-27 16:01:04
+Áo dài Hữu Phương,https://xeoxo.com/vn/san-pham/ao-dai-huu-phuong/,2,0,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-bien-nhat/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:04
+Áo dài Mộc Thước,https://xeoxo.com/vn/san-pham/ao-dai-moc-thuoc/,1,0,Áo dài Mộc Thước,https://xeoxo.com/vn/san-pham/ad-moc-thuoc/,4.450.000 VND,4450000,AO,True,2026-06-27 16:01:05
+Áo dài Mộc Thước,https://xeoxo.com/vn/san-pham/ao-dai-moc-thuoc/,2,0,Quần AD metalic màu hồng phấn (GD vàng - 35),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-hong-phan-gd-vang-35/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:05
+Áo dài Hồ Phụng,https://xeoxo.com/vn/san-pham/ao-dai-ho-phung/,1,0,Áo dài Hồ Phụng,https://xeoxo.com/vn/san-pham/ad-ho-phung/,4.450.000 VND,4450000,AO,True,2026-06-27 16:01:07
+Áo dài Hồ Phụng,https://xeoxo.com/vn/san-pham/ao-dai-ho-phung/,2,0,Quần metalic màu nâu (GD vàng - 13),https://xeoxo.com/vn/san-pham/quan-metalic-mau-nau-gd-vang-13/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:07
+Áo dài Nam Phụng,https://xeoxo.com/vn/san-pham/ao-dai-nam-phung/,1,0,Áo dài Nam Phụng,https://xeoxo.com/vn/san-pham/ad-nam-phung/,4.450.000 VND,4450000,AO,True,2026-06-27 16:01:08
+Áo dài Nam Phụng,https://xeoxo.com/vn/san-pham/ao-dai-nam-phung/,2,0,Quần AD metalic màu xanh cốm,https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-com/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:08
+Áo dài Yên Phụng,https://xeoxo.com/vn/san-pham/ao-dai-yen-phung/,1,0,Áo dài Yên Phụng,https://xeoxo.com/vn/san-pham/ad-yen-phung/,4.450.000 VND,4450000,AO,True,2026-06-27 16:01:09
+Áo dài Yên Phụng,https://xeoxo.com/vn/san-pham/ao-dai-yen-phung/,2,0,Quần lụa trơn cốm màu 76,https://xeoxo.com/vn/san-pham/quan-lua-tron-xanh-com-76/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:09
+Áo dài Châu Phụng,https://xeoxo.com/vn/san-pham/ao-dai-chau-phung/,1,0,Áo dài Châu Phụng,https://xeoxo.com/vn/san-pham/ad-chau-phung/,4.450.000 VND,4450000,AO,True,2026-06-27 16:01:10
+Áo dài Châu Phụng,https://xeoxo.com/vn/san-pham/ao-dai-chau-phung/,2,0,Quần lụa trơn màu xanh coban (2103 - 65),https://xeoxo.com/vn/san-pham/quan-lua-tron-mau-xanh-coban-2103-65/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:10
+Áo dài Nhu Phụng,https://xeoxo.com/vn/san-pham/ao-dai-nhu-phung/,1,0,Áo dài Nhu Phụng,https://xeoxo.com/vn/san-pham/ad-nhu-phung/,4.450.000 VND,4450000,AO,True,2026-06-27 16:01:11
+Áo dài Nhu Phụng,https://xeoxo.com/vn/san-pham/ao-dai-nhu-phung/,2,0,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-bien-nhat/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:11
+Áo dài Hoàng Phụng,https://xeoxo.com/vn/san-pham/ao-dai-hoang-phung/,1,0,Áo dài Hoàng Phụng,https://xeoxo.com/vn/san-pham/ad-hoang-phung/,4.450.000 VND,4450000,AO,True,2026-06-27 16:01:12
+Áo dài Hoàng Phụng,https://xeoxo.com/vn/san-pham/ao-dai-hoang-phung/,2,0,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-bien-nhat/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:12
+Áo dài Chiêu Phụng,https://xeoxo.com/vn/san-pham/ao-dai-chieu-phung/,1,0,Áo dài Chiêu Phụng,https://xeoxo.com/vn/san-pham/ad-chieu-phung/,4.450.000 VND,4450000,AO,True,2026-06-27 16:01:13
+Áo dài Chiêu Phụng,https://xeoxo.com/vn/san-pham/ao-dai-chieu-phung/,2,0,Quần metalic màu nâu (GD vàng - 13),https://xeoxo.com/vn/san-pham/quan-metalic-mau-nau-gd-vang-13/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:13
+Áo dài Đan Phụng,https://xeoxo.com/vn/san-pham/ao-dai-dan-phung/,1,0,Áo dài Đan Phụng,https://xeoxo.com/vn/san-pham/ad-dan-phung/,4.450.000 VND,4450000,AO,True,2026-06-27 16:01:14
+Áo dài Đan Phụng,https://xeoxo.com/vn/san-pham/ao-dai-dan-phung/,2,0,Quần AD metalic màu xanh lá đậm,https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-la-dam/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:14
+Áo dài Chi Nhạn,https://xeoxo.com/vn/san-pham/ao-dai-chi-nhan/,1,0,Áo dài Chi Nhạn,https://xeoxo.com/vn/san-pham/ad-chi-nhan/,4.100.000 VND,4100000,AO,True,2026-06-27 16:01:16
+Áo dài Chi Nhạn,https://xeoxo.com/vn/san-pham/ao-dai-chi-nhan/,2,0,Quần metalic màu vàng tươi (GD vàng - 42),https://xeoxo.com/vn/san-pham/quan-metalic-mau-vang-tuoi-gd-vang-42/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:16
+Áo dài Diên Kim,https://xeoxo.com/vn/san-pham/ao-dai-dien-kim/,1,0,Áo dài Diên Kim,https://xeoxo.com/vn/san-pham/ad-dien-kim/,2.800.000 VND,2800000,AO,True,2026-06-27 16:01:17
+Áo dài Diên Kim,https://xeoxo.com/vn/san-pham/ao-dai-dien-kim/,2,0,Quần kim sa (Vàng Hồng),https://xeoxo.com/vn/san-pham/quan-kim-sa-vang-hong/,1.490.000 VND,1490000,QUAN,True,2026-06-27 16:01:17
+Áo dài Cẩm Tuyền,https://xeoxo.com/vn/san-pham/ao-dai-cam-tuyen/,1,0,Áo dài Cẩm Tuyền,https://xeoxo.com/vn/san-pham/ad-cam-tuyen/,3.900.000 VND,3900000,AO,True,2026-06-27 16:01:18
+Áo dài Cẩm Tuyền,https://xeoxo.com/vn/san-pham/ao-dai-cam-tuyen/,2,0,Quần kim sa Ngân Hương,https://xeoxo.com/vn/san-pham/quan-kim-sa-ngan-huong/,1.550.000 VND,1550000,QUAN,True,2026-06-27 16:01:18
+Áo dài Kim Ánh,https://xeoxo.com/vn/san-pham/ao-dai-kim-anh/,1,0,Áo dài Kim Ánh,https://xeoxo.com/vn/san-pham/ad-kim-anh/,3.300.000 VND,3300000,AO,True,2026-06-27 16:01:19
+Áo dài Kim Ánh,https://xeoxo.com/vn/san-pham/ao-dai-kim-anh/,2,0,Quần kim sa (Đỏ),https://xeoxo.com/vn/san-pham/quan-kim-sa-do/,1.490.000 VND,1490000,QUAN,True,2026-06-27 16:01:19
+Áo dài Lưu Ngọc,https://xeoxo.com/vn/san-pham/ao-dai-luu-ngoc/,1,0,Áo dài Lưu Ngọc,https://xeoxo.com/vn/san-pham/ad-luu-ngoc/,3.200.000 VND,3200000,AO,True,2026-06-27 16:01:20
+Áo dài Lưu Ngọc,https://xeoxo.com/vn/san-pham/ao-dai-luu-ngoc/,2,0,Quần AD metalic màu hồng tím đậm (GD vàng - 99),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-hong-tim-dam/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:20
+Áo dài Huỳnh Dao,https://xeoxo.com/vn/san-pham/ao-dai-huynh-dao/,1,0,Áo dài Huỳnh Dao,https://xeoxo.com/vn/san-pham/ad-huynh-dao/,3.700.000 VND,3700000,AO,True,2026-06-27 16:01:22
+Áo dài Huỳnh Dao,https://xeoxo.com/vn/san-pham/ao-dai-huynh-dao/,2,0,Quần AD metalic màu xanh biển (Hoye 88118 - 15),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-bien-2/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:22
+Áo dài Thanh Kỳ,https://xeoxo.com/vn/san-pham/ao-dai-thanh-ky/,1,0,Áo dài Thanh Kỳ,https://xeoxo.com/vn/san-pham/ad-thanh-ky/,5.500.000 VND,5500000,AO,True,2026-06-27 16:01:23
+Áo dài Thanh Kỳ,https://xeoxo.com/vn/san-pham/ao-dai-thanh-ky/,2,0,Quần AD metalic màu xanh mint (GD vàng - 70),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-mint/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:23
+Áo dài Mai Chiêu,https://xeoxo.com/vn/san-pham/ao-dai-mai-chieu/,1,0,Áo dài Mai Chiêu,https://xeoxo.com/vn/san-pham/ad-mai-chieu/,3.800.000 VND,3800000,AO,True,2026-06-27 16:01:24
+Áo dài Mai Chiêu,https://xeoxo.com/vn/san-pham/ao-dai-mai-chieu/,2,0,Quần AD metalic màu xanh coban (GD vàng - 92),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-coban-gd-vang-92/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:24
+Áo dài Ngọc Nhu,https://xeoxo.com/vn/san-pham/ao-dai-ngoc-nhu/,1,0,Áo dài Ngọc Nhu,https://xeoxo.com/vn/san-pham/ad-ngoc-nhu/,4.100.000 VND,4100000,AO,True,2026-06-27 16:01:25
+Áo dài Ngọc Nhu,https://xeoxo.com/vn/san-pham/ao-dai-ngoc-nhu/,2,0,Quần AD metalic màu xanh biển nhạt (GD vàng - 25),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-bien-nhat/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:25
+Áo dài Phách Linh,https://xeoxo.com/vn/san-pham/ao-dai-phach-linh/,1,0,Áo dài Phách Linh,https://xeoxo.com/vn/san-pham/ad-phach-linh/,3.500.000 VND,3500000,AO,True,2026-06-27 16:01:26
+Áo dài Phách Linh,https://xeoxo.com/vn/san-pham/ao-dai-phach-linh/,2,0,Quần AD metalic màu xanh ngọc (GD vàng - 98),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-ngoc/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:26
+Áo dài Sương Mai,https://xeoxo.com/vn/san-pham/ao-dai-suong-mai/,1,0,Áo dài Sương Mai,https://xeoxo.com/vn/san-pham/ad-suong-mai/,3.300.000 VND,3300000,AO,True,2026-06-27 16:01:28
+Áo dài Sương Mai,https://xeoxo.com/vn/san-pham/ao-dai-suong-mai/,2,0,Quần AD metalic màu vàng nhạt (GD vàng - 32),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-vang-nhat/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:28
+Áo dài Tố Nhu,https://xeoxo.com/vn/san-pham/ao-dai-to-nhu/,1,0,Áo dài Tố Nhu,https://xeoxo.com/vn/san-pham/ad-to-nhu/,4.100.000 VND,4100000,AO,True,2026-06-27 16:01:29
+Áo dài Tố Nhu,https://xeoxo.com/vn/san-pham/ao-dai-to-nhu/,2,0,Quần AD metalic màu xanh cốm,https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-com/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:29
+Áo dài Vũ Nhiên,https://xeoxo.com/vn/san-pham/ao-dai-vu-nhien/,1,0,Áo dài Vũ Nhiên,https://xeoxo.com/vn/san-pham/ad-vu-nhien/,4.000.000 VND,4000000,AO,True,2026-06-27 16:01:30
+Áo dài Vũ Nhiên,https://xeoxo.com/vn/san-pham/ao-dai-vu-nhien/,2,0,Quần AD metalic màu xanh cốm (GD vàng - 33),https://xeoxo.com/vn/san-pham/quan-ad-metalic-mau-xanh-com-2/,750.000 VND,750000,QUAN,True,2026-06-27 16:01:30
+Áo dài Lục Nhạn,https://xeoxo.com/vn/san-pham/ao-dai-luc-nhan/,1,,Áo dài Lục Nhạn,https://xeoxo.com/vn/san-pham/ao-dai-luc-nhan/,2550000,2550000,AO,True,2026-06-27 16:01:31
+Áo dài Mạc Nguy,https://xeoxo.com/vn/san-pham/ao-dai-mac-nguy/,1,,Áo dài Mạc Nguy,https://xeoxo.com/vn/san-pham/ao-dai-mac-nguy/,3750000,3750000,AO,True,2026-06-27 16:01:33
+Áo dài Bách Hiên,https://xeoxo.com/vn/san-pham/ao-dai-bach-hien/,1,,Áo dài Bách Hiên,https://xeoxo.com/vn/san-pham/ao-dai-bach-hien/,2850000,2850000,AO,True,2026-06-27 16:01:34
+Áo dài Trường Liên,https://xeoxo.com/vn/san-pham/ao-dai-truong-lien/,1,,Áo dài Trường Liên,https://xeoxo.com/vn/san-pham/ao-dai-truong-lien/,3250000,3250000,AO,True,2026-06-27 16:01:35
+Áo dài Phụng Viên,https://xeoxo.com/vn/san-pham/ao-dai-phung-vien/,1,,Áo dài Phụng Viên,https://xeoxo.com/vn/san-pham/ao-dai-phung-vien/,2850000,2850000,AO,True,2026-06-27 16:01:36
+Áo dài Nhã Lam,https://xeoxo.com/vn/san-pham/ao-dai-nha-lam/,1,,Áo dài Nhã Lam,https://xeoxo.com/vn/san-pham/ao-dai-nha-lam/,2850000,2850000,AO,True,2026-06-27 16:01:38
+Áo dài Lục Nguyên,https://xeoxo.com/vn/san-pham/ao-dai-luc-nguyen/,1,,Áo dài Lục Nguyên,https://xeoxo.com/vn/san-pham/ao-dai-luc-nguyen/,2850000,2850000,AO,True,2026-06-27 16:01:39
+Áo dài Văn Phiến,https://xeoxo.com/vn/san-pham/ao-dai-van-phien/,1,,Áo dài Văn Phiến,https://xeoxo.com/vn/san-pham/ao-dai-van-phien/,2950000,2950000,AO,True,2026-06-27 16:01:40
+Áo dài Thạch Nhiên,https://xeoxo.com/vn/san-pham/ao-dai-thach-nhien/,1,,Áo dài Thạch Nhiên,https://xeoxo.com/vn/san-pham/ao-dai-thach-nhien/,2550000,2550000,AO,True,2026-06-27 16:01:41
+Áo dài Mạc Trúc,https://xeoxo.com/vn/san-pham/ao-dai-mac-truc/,1,,Áo dài Mạc Trúc,https://xeoxo.com/vn/san-pham/ao-dai-mac-truc/,2550000,2550000,AO,True,2026-06-27 16:01:42
+Áo dài Trường Lam,https://xeoxo.com/vn/san-pham/ao-dai-truong-lam/,1,,Áo dài Trường Lam,https://xeoxo.com/vn/san-pham/ao-dai-truong-lam/,2550000,2550000,AO,True,2026-06-27 16:01:43
+Áo dài Gia Hỷ,https://xeoxo.com/vn/san-pham/ao-dai-gia-hy/,1,,Áo dài Gia Hỷ,https://xeoxo.com/vn/san-pham/ao-dai-gia-hy/,2550000,2550000,AO,True,2026-06-27 16:01:44
+Áo dài Nguyên Phong,https://xeoxo.com/vn/san-pham/ao-dai-nguyen-phong/,1,,Áo dài Nguyên Phong,https://xeoxo.com/vn/san-pham/ao-dai-nguyen-phong/,2550000,2550000,AO,True,2026-06-27 16:01:46
+Áo dài Văn Lễ,https://xeoxo.com/vn/san-pham/ao-dai-van-le/,1,,Áo dài Văn Lễ,https://xeoxo.com/vn/san-pham/ao-dai-van-le/,2550000,2550000,AO,True,2026-06-27 16:01:47
+Áo Dài Dao Vinh,https://xeoxo.com/vn/san-pham/ao-dai-dao-vinh/,1,,Áo Dài Dao Vinh,https://xeoxo.com/vn/san-pham/ao-dai-dao-vinh/,2450000,2450000,AO,True,2026-06-27 16:01:48
+Áo Dài Vũ Lăng,https://xeoxo.com/vn/san-pham/ao-dai-vu-lang/,1,,Áo Dài Vũ Lăng,https://xeoxo.com/vn/san-pham/ao-dai-vu-lang/,2450000,2450000,AO,True,2026-06-27 16:01:50
+Áo Dài Minh Tịnh,https://xeoxo.com/vn/san-pham/ao-dai-minh-tinh/,1,,Áo Dài Minh Tịnh,https://xeoxo.com/vn/san-pham/ao-dai-minh-tinh/,2250000,2250000,AO,True,2026-06-27 16:01:51
+Áo Dài Yên Lăng,https://xeoxo.com/vn/san-pham/ao-dai-yen-lang/,1,,Áo Dài Yên Lăng,https://xeoxo.com/vn/san-pham/ao-dai-yen-lang/,2880000,2880000,AO,True,2026-06-27 16:01:52
+Áo Dài Phong Tường,https://xeoxo.com/vn/san-pham/ao-dai-phong-tuong/,1,,Áo Dài Phong Tường,https://xeoxo.com/vn/san-pham/ao-dai-phong-tuong/,2990000,2990000,AO,True,2026-06-27 16:01:53
+Áo dài Ngọc Chẩm,https://xeoxo.com/vn/san-pham/ao-dai-ngoc-cham/,1,,Áo dài Ngọc Chẩm,https://xeoxo.com/vn/san-pham/ao-dai-ngoc-cham/,3850000,3850000,AO,True,2026-06-27 16:01:54
+Áo dài Thái Vũ,https://xeoxo.com/vn/san-pham/ao-dai-thai-vu/,1,,Áo dài Thái Vũ,https://xeoxo.com/vn/san-pham/ao-dai-thai-vu/,2250000,2250000,AO,True,2026-06-27 16:01:55
+Áo dài Sắc Kỳ,https://xeoxo.com/vn/san-pham/ao-dai-sac-ky/,1,,Áo dài Sắc Kỳ,https://xeoxo.com/vn/san-pham/ao-dai-sac-ky/,1990740,1990740,AO,True,2026-06-27 16:01:57
