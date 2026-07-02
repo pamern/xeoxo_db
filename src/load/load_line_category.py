@@ -27,6 +27,12 @@ SET_CATEGORY_MAP = {
     "set ha chi": ["Áo sơ mi", "Chân váy"],
     "set ha nhu": ["Áo sơ mi", "Chân váy"],
 }
+LINE_CATEGORY_OVERRIDES = {
+    ("Xuân Diệm Khai Hoa", "Hồng Sa"): ["Áo dài"],
+    ("Xuân Diệm Khai Hoa", "Ánh Diễm"): ["Áo dài"],
+    ("Xuân Diệm Khai Hoa", "Mộng Kỳ"): ["Đầm dạo phố"],
+    ("Xuân Diệm Khai Hoa", "Tinh Sa"): ["Đầm dạo phố"],
+}
 
 
 def normalize_text(value: object) -> str | None:
@@ -101,9 +107,14 @@ def chunk_records(records: list[dict], size: int) -> list[list[dict]]:
 
 
 def infer_line_categories(row: dict) -> list[str]:
+    collection_name = normalize_text(row.get("collection_name")) or ""
     line_name = normalize_text(row.get("line_name")) or ""
     design_style = normalize_text(row.get("design_style")) or ""
     usage_context = normalize_text(row.get("usage_context")) or ""
+
+    override_categories = LINE_CATEGORY_OVERRIDES.get((collection_name, line_name))
+    if override_categories is not None:
+        return override_categories
 
     line_fold = fold_text(line_name)
     style_fold = fold_text(design_style)

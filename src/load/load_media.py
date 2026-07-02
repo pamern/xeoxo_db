@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 import sys
+import argparse
 
 import pandas as pd
 
@@ -9,7 +10,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.utils.connection_db import get_postgres_connection_kwargs
+from src.utils.load_connection import (
+    add_loader_connection_args,
+    build_connection_kwargs,
+    describe_connection,
+)
 
 try:
     import psycopg
@@ -212,8 +217,10 @@ def update_media(
         cursor.execute(query, params)
 
 
-def sync_media(media_df: pd.DataFrame) -> tuple[int, int, int]:
-    connection_kwargs = get_postgres_connection_kwargs()
+def sync_media(
+    media_df: pd.DataFrame,
+    connection_kwargs: dict[str, str | int],
+) -> tuple[int, int, int]:
 
     with psycopg.connect(**connection_kwargs) as connection:
         existing_by_storage_key = fetch_existing_media(connection)
@@ -254,7 +261,9 @@ def print_summary(
     inserted_count: int,
     updated_count: int,
     skipped_count: int,
+    connection_target: str,
 ) -> None:
+    print(f"Target database: {connection_target}")
     print(f"Input file: {INPUT_FILE}")
     print(f"Total master media rows: {len(media_df)}")
     print(f"Inserted: {inserted_count}")
@@ -266,14 +275,29 @@ def print_summary(
         print(media_df.head(10).to_string(index=False))
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Load catalog.media from data/master/media.csv.",
+    )
+    add_loader_connection_args(parser)
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
+    connection_kwargs = build_connection_kwargs(args)
+    connection_target = describe_connection(connection_kwargs)
     media_df = read_master_media(INPUT_FILE)
-    inserted_count, updated_count, skipped_count = sync_media(media_df)
+    inserted_count, updated_count, skipped_count = sync_media(
+        media_df,
+        connection_kwargs=connection_kwargs,
+    )
     print_summary(
         media_df=media_df,
         inserted_count=inserted_count,
         updated_count=updated_count,
         skipped_count=skipped_count,
+        connection_target=connection_target,
     )
 
 

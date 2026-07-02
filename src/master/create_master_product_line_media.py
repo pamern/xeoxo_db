@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 import re
@@ -11,7 +12,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.utils.connection_db import get_postgres_connection_kwargs
+from src.utils.load_connection import (
+    add_loader_connection_args,
+    build_connection_kwargs,
+    describe_connection,
+)
 
 try:
     import psycopg
@@ -125,8 +130,9 @@ def read_staging_product_lines(input_file: Path) -> pd.DataFrame:
     return working_df
 
 
-def fetch_existing_product_lines() -> dict[tuple[str, str], dict]:
-    connection_kwargs = get_postgres_connection_kwargs()
+def fetch_existing_product_lines(
+    connection_kwargs: dict[str, str | int],
+) -> dict[tuple[str, str], dict]:
     query = """
         SELECT
             pl.product_line_id,
@@ -157,8 +163,9 @@ def fetch_existing_product_lines() -> dict[tuple[str, str], dict]:
     return product_lines_by_key
 
 
-def fetch_existing_media() -> dict[str, dict]:
-    connection_kwargs = get_postgres_connection_kwargs()
+def fetch_existing_media(
+    connection_kwargs: dict[str, str | int],
+) -> dict[str, dict]:
     query = """
         SELECT
             media_id,
@@ -291,13 +298,27 @@ def print_summary(df: pd.DataFrame, output_file: Path) -> None:
         print(df.head(10).to_string(index=False))
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description=(
+            "Create data/master/product_line_media.csv from staging product lines "
+            "and existing catalog.product_line/catalog.media records."
+        ),
+    )
+    add_loader_connection_args(parser)
+    return parser.parse_args()
+
+
 def main() -> None:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+    args = parse_args()
+    connection_kwargs = build_connection_kwargs(args)
+    connection_target = describe_connection(connection_kwargs)
     staging_df = read_staging_product_lines(INPUT_FILE)
-    product_lines_by_key = fetch_existing_product_lines()
-    media_by_storage_key = fetch_existing_media()
+    product_lines_by_key = fetch_existing_product_lines(connection_kwargs)
+    media_by_storage_key = fetch_existing_media(connection_kwargs)
 
     master_df = build_master_product_line_media(
         staging_df=staging_df,
@@ -305,6 +326,7 @@ def main() -> None:
         media_by_storage_key=media_by_storage_key,
     )
     save_master_product_line_media(master_df, OUTPUT_FILE)
+    print(f"Target database: {connection_target}")
     print_summary(master_df, OUTPUT_FILE)
 
 

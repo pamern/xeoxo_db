@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 from pathlib import Path
 import sys
 
@@ -9,7 +10,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.utils.connection_db import get_postgres_connection_kwargs
+from src.utils.load_connection import (
+    add_loader_connection_args,
+    build_connection_kwargs,
+    describe_connection,
+)
 
 try:
     import psycopg
@@ -22,6 +27,18 @@ except ImportError as exc:  # pragma: no cover - runtime dependency guard
 
 INPUT_FILE = PROJECT_ROOT / "data" / "master" / "size_option.csv"
 BATCH_SIZE = 500
+SIZE_ORDER = {
+    "XXS": 0,
+    "XS": 1,
+    "S": 2,
+    "M": 3,
+    "L": 4,
+    "XL": 5,
+    "XXL": 6,
+    "2XL": 7,
+    "3XL": 8,
+    "4XL": 9,
+}
 
 
 def normalize_text(value: object) -> str | None:
@@ -38,19 +55,9 @@ def normalize_text(value: object) -> str | None:
     return text
 
 
-def normalize_display_order(value: object) -> int:
-    if value is None or pd.isna(value):
-        raise ValueError("display_order must not be null")
-
-    try:
-        display_order = int(value)
-    except (TypeError, ValueError) as exc:
-        raise ValueError(f"Invalid display_order value: {value!r}") from exc
-
-    if display_order <= 0:
-        raise ValueError(f"display_order must be > 0, got {display_order}")
-
-    return display_order
+def size_sort_key(size_name: str | None) -> tuple[int, str]:
+    normalized = normalize_text(size_name) or ""
+    return (SIZE_ORDER.get(normalized.upper(), 999), normalized)
 
 
 def read_master_size_options(input_file: Path) -> pd.DataFrame:
@@ -61,7 +68,6 @@ def read_master_size_options(input_file: Path) -> pd.DataFrame:
     required_columns = {
         "chart_name",
         "size_name",
-        "display_order",
         "description",
     }
     missing_columns = required_columns - set(df.columns)
@@ -75,20 +81,18 @@ def read_master_size_options(input_file: Path) -> pd.DataFrame:
     working_df["chart_name"] = working_df["chart_name"].map(normalize_text)
     working_df["size_name"] = working_df["size_name"].map(normalize_text)
     working_df["description"] = working_df["description"].map(normalize_text)
-    working_df["display_order"] = working_df["display_order"].map(
-        normalize_display_order
-    )
 
     working_df = working_df.dropna(subset=["chart_name", "size_name"])
     working_df = (
-        working_df.sort_values(
-            by=["chart_name", "display_order", "size_name"],
-            kind="stable",
+        working_df.assign(
+            _size_sort_key=working_df["size_name"].map(size_sort_key)
         )
+        .sort_values(by=["chart_name", "_size_sort_key"], kind="stable")
         .drop_duplicates(
             subset=["chart_name", "size_name"],
             keep="first",
         )
+        .drop(columns=["_size_sort_key"])
         .reset_index(drop=True)
     )
 
@@ -96,7 +100,6 @@ def read_master_size_options(input_file: Path) -> pd.DataFrame:
         [
             "chart_name",
             "size_name",
-            "display_order",
             "description",
         ]
     ]
@@ -135,7 +138,6 @@ def fetch_existing_size_options(
             size_option_id,
             size_chart_id,
             size_name,
-            display_order,
             description
         FROM catalog.size_option
     """
@@ -165,7 +167,6 @@ def build_size_option_payload(
     return {
         "size_chart_id": size_chart_id,
         "size_name": normalize_text(row["size_name"]),
-        "display_order": normalize_display_order(row["display_order"]),
         "description": normalize_text(row["description"]),
     }
 
@@ -174,7 +175,7 @@ def build_update_payload(incoming: dict, existing: dict) -> dict | None:
     changed_fields: dict = {}
 
     for key, value in incoming.items():
-        if key in {"size_chart_id", "display_order"}:
+        if key == "size_chart_id":
             existing_value = existing.get(key)
             incoming_value = value
         else:
@@ -198,13 +199,11 @@ def insert_size_option_batch(
         INSERT INTO catalog.size_option (
             size_chart_id,
             size_name,
-            display_order,
             description
         )
         VALUES (
             %(size_chart_id)s,
             %(size_name)s,
-            %(display_order)s,
             %(description)s
         )
     """
@@ -234,9 +233,10 @@ def update_size_option(
         cursor.execute(query, params)
 
 
-def sync_size_options(size_options_df: pd.DataFrame) -> tuple[int, int, int]:
-    connection_kwargs = get_postgres_connection_kwargs()
-
+def sync_size_options(
+    size_options_df: pd.DataFrame,
+    connection_kwargs: dict[str, str | int],
+) -> tuple[int, int, int]:
     with psycopg.connect(**connection_kwargs) as connection:
         size_charts_by_name = fetch_existing_size_charts(connection)
         existing_size_options = fetch_existing_size_options(connection)
@@ -293,11 +293,13 @@ def sync_size_options(size_options_df: pd.DataFrame) -> tuple[int, int, int]:
 
 def print_summary(
     size_options_df: pd.DataFrame,
+    connection_label: str,
     inserted_count: int,
     updated_count: int,
     skipped_count: int,
 ) -> None:
     print(f"Input file: {INPUT_FILE}")
+    print(f"Target database: {connection_label}")
     print(f"Total master size options: {len(size_options_df)}")
     print(f"Inserted: {inserted_count}")
     print(f"Updated: {updated_count}")
@@ -308,14 +310,28 @@ def print_summary(
         print(size_options_df.head(10).to_string(index=False))
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Insert/update master size options into catalog.size_option."
+    )
+    add_loader_connection_args(parser)
+    return parser.parse_args()
+
+
 def main() -> None:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+    args = parse_args()
+    connection_kwargs = build_connection_kwargs(args)
     size_options_df = read_master_size_options(INPUT_FILE)
-    inserted_count, updated_count, skipped_count = sync_size_options(size_options_df)
+    inserted_count, updated_count, skipped_count = sync_size_options(
+        size_options_df,
+        connection_kwargs,
+    )
     print_summary(
         size_options_df=size_options_df,
+        connection_label=describe_connection(connection_kwargs),
         inserted_count=inserted_count,
         updated_count=updated_count,
         skipped_count=skipped_count,

@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import argparse
+import re
 from pathlib import Path
 import sys
 
@@ -9,7 +11,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.utils.connection_db import get_postgres_connection_kwargs
+from src.utils.load_connection import (
+    add_loader_connection_args,
+    build_connection_kwargs,
+    describe_connection,
+)
 
 try:
     import psycopg
@@ -41,9 +47,17 @@ def normalize_text(value: object) -> str | None:
 def normalize_color_code(value: object) -> str | None:
     color_code = normalize_text(value)
     if not color_code:
-        return None
+        raise ValueError("color_code must not be null")
 
-    return color_code.upper()
+    if re.fullmatch(r"[A-Fa-f0-9]{6}", color_code):
+        color_code = f"#{color_code}"
+
+    color_code = color_code.upper()
+
+    if not re.fullmatch(r"#[A-F0-9]{6}", color_code):
+        raise ValueError(f"Invalid color_code value: {value!r}")
+
+    return color_code
 
 
 def read_master_colors(input_file: Path) -> pd.DataFrame:
@@ -51,7 +65,7 @@ def read_master_colors(input_file: Path) -> pd.DataFrame:
         raise FileNotFoundError(f"Input file not found: {input_file}")
 
     df = pd.read_csv(input_file)
-    required_columns = {"color_name", "color_group"}
+    required_columns = {"color_name", "color_group", "color_code"}
     missing_columns = required_columns - set(df.columns)
 
     if missing_columns:
@@ -69,7 +83,7 @@ def read_master_colors(input_file: Path) -> pd.DataFrame:
     )
     working_df["media_id"] = None
 
-    working_df = working_df.dropna(subset=["color_name"])
+    working_df = working_df.dropna(subset=["color_name", "color_code"])
     working_df = (
         working_df.sort_values(by=["color_name", "color_group"], kind="stable")
         .drop_duplicates(subset=["color_name"], keep="first")
@@ -179,9 +193,10 @@ def update_color(
         cursor.execute(query, params)
 
 
-def sync_colors(colors_df: pd.DataFrame) -> tuple[int, int, int]:
-    connection_kwargs = get_postgres_connection_kwargs()
-
+def sync_colors(
+    colors_df: pd.DataFrame,
+    connection_kwargs: dict[str, str | int],
+) -> tuple[int, int, int]:
     with psycopg.connect(**connection_kwargs) as connection:
         existing_by_name = fetch_existing_colors(connection)
 
@@ -218,11 +233,13 @@ def sync_colors(colors_df: pd.DataFrame) -> tuple[int, int, int]:
 
 def print_summary(
     colors_df: pd.DataFrame,
+    connection_label: str,
     inserted_count: int,
     updated_count: int,
     skipped_count: int,
 ) -> None:
     print(f"Input file: {INPUT_FILE}")
+    print(f"Target database: {connection_label}")
     print(f"Total master colors: {len(colors_df)}")
     print(f"Inserted: {inserted_count}")
     print(f"Updated: {updated_count}")
@@ -233,11 +250,25 @@ def print_summary(
         print(colors_df.head(10).to_string(index=False))
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Insert/update master colors into catalog.color."
+    )
+    add_loader_connection_args(parser)
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
+    connection_kwargs = build_connection_kwargs(args)
     colors_df = read_master_colors(INPUT_FILE)
-    inserted_count, updated_count, skipped_count = sync_colors(colors_df)
+    inserted_count, updated_count, skipped_count = sync_colors(
+        colors_df,
+        connection_kwargs,
+    )
     print_summary(
         colors_df=colors_df,
+        connection_label=describe_connection(connection_kwargs),
         inserted_count=inserted_count,
         updated_count=updated_count,
         skipped_count=skipped_count,

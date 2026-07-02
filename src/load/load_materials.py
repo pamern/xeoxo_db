@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 from pathlib import Path
 import sys
 
@@ -9,7 +10,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.utils.connection_db import get_postgres_connection_kwargs
+from src.utils.load_connection import (
+    add_loader_connection_args,
+    build_connection_kwargs,
+    describe_connection,
+)
 
 try:
     import psycopg
@@ -176,9 +181,10 @@ def update_material(
         cursor.execute(query, params)
 
 
-def sync_materials(materials_df: pd.DataFrame) -> tuple[int, int, int]:
-    connection_kwargs = get_postgres_connection_kwargs()
-
+def sync_materials(
+    materials_df: pd.DataFrame,
+    connection_kwargs: dict[str, str | int],
+) -> tuple[int, int, int]:
     with psycopg.connect(**connection_kwargs) as connection:
         existing_by_name = fetch_existing_materials(connection)
 
@@ -215,11 +221,13 @@ def sync_materials(materials_df: pd.DataFrame) -> tuple[int, int, int]:
 
 def print_summary(
     materials_df: pd.DataFrame,
+    connection_label: str,
     inserted_count: int,
     updated_count: int,
     skipped_count: int,
 ) -> None:
     print(f"Input file: {INPUT_FILE}")
+    print(f"Target database: {connection_label}")
     print(f"Total master materials: {len(materials_df)}")
     print(f"Inserted: {inserted_count}")
     print(f"Updated: {updated_count}")
@@ -230,11 +238,25 @@ def print_summary(
         print(materials_df.head(10).to_string(index=False))
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Insert/update master materials into catalog.material."
+    )
+    add_loader_connection_args(parser)
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
+    connection_kwargs = build_connection_kwargs(args)
     materials_df = read_master_materials(INPUT_FILE)
-    inserted_count, updated_count, skipped_count = sync_materials(materials_df)
+    inserted_count, updated_count, skipped_count = sync_materials(
+        materials_df,
+        connection_kwargs,
+    )
     print_summary(
         materials_df=materials_df,
+        connection_label=describe_connection(connection_kwargs),
         inserted_count=inserted_count,
         updated_count=updated_count,
         skipped_count=skipped_count,

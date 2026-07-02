@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 import sys
+import argparse
 
 import pandas as pd
 
@@ -9,7 +10,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.utils.connection_db import get_postgres_connection_kwargs
+from src.utils.load_connection import (
+    add_loader_connection_args,
+    build_connection_kwargs,
+    describe_connection,
+)
 
 try:
     import psycopg
@@ -22,7 +27,7 @@ except ImportError as exc:  # pragma: no cover - runtime dependency guard
 
 INPUT_FILE = PROJECT_ROOT / "data" / "master" / "product_line_media.csv"
 BATCH_SIZE = 500
-ALLOWED_MEDIA_ROLES = {"Main", "Gallery", "Detail", "Lookbook"}
+ALLOWED_MEDIA_ROLES = {"MAIN", "GALLERY", "DETAIL", "LOOKBOOK"}
 
 
 def normalize_text(value: object) -> str | None:
@@ -58,7 +63,7 @@ def normalize_media_role(value: object) -> str:
     if not media_role:
         raise ValueError("media_role must not be null")
 
-    normalized = media_role.capitalize()
+    normalized = media_role.strip().upper()
     if normalized not in ALLOWED_MEDIA_ROLES:
         raise ValueError(
             f"Invalid media_role: {media_role!r}. Expected one of {sorted(ALLOWED_MEDIA_ROLES)}"
@@ -254,8 +259,10 @@ def update_product_line_media(
         cursor.execute(query, params)
 
 
-def sync_product_line_media(product_line_media_df: pd.DataFrame) -> tuple[int, int, int]:
-    connection_kwargs = get_postgres_connection_kwargs()
+def sync_product_line_media(
+    product_line_media_df: pd.DataFrame,
+    connection_kwargs: dict[str, str | int],
+) -> tuple[int, int, int]:
 
     with psycopg.connect(**connection_kwargs) as connection:
         existing_product_line_ids = fetch_existing_product_lines(connection)
@@ -326,7 +333,9 @@ def print_summary(
     inserted_count: int,
     updated_count: int,
     skipped_count: int,
+    connection_target: str,
 ) -> None:
+    print(f"Target database: {connection_target}")
     print(f"Input file: {INPUT_FILE}")
     print(f"Total master product_line_media rows: {len(product_line_media_df)}")
     print(f"Inserted: {inserted_count}")
@@ -338,19 +347,32 @@ def print_summary(
         print(product_line_media_df.head(10).to_string(index=False))
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Load catalog.product_line_media from data/master/product_line_media.csv.",
+    )
+    add_loader_connection_args(parser)
+    return parser.parse_args()
+
+
 def main() -> None:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+    args = parse_args()
+    connection_kwargs = build_connection_kwargs(args)
+    connection_target = describe_connection(connection_kwargs)
     product_line_media_df = read_master_product_line_media(INPUT_FILE)
     inserted_count, updated_count, skipped_count = sync_product_line_media(
-        product_line_media_df
+        product_line_media_df,
+        connection_kwargs=connection_kwargs,
     )
     print_summary(
         product_line_media_df=product_line_media_df,
         inserted_count=inserted_count,
         updated_count=updated_count,
         skipped_count=skipped_count,
+        connection_target=connection_target,
     )
 
 
