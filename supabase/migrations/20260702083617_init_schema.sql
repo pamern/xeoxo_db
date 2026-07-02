@@ -27,13 +27,6 @@ COMMENT ON SCHEMA inventory IS
 'Quản lý tồn kho sản phẩm theo chi nhánh và biến thể.';
 
 
--- Khuyến mãi
-CREATE SCHEMA IF NOT EXISTS promotion;
-
-COMMENT ON SCHEMA promotion IS
-'Quản lý chương trình khuyến mãi và phạm vi áp dụng.';
-
-
 -- Giỏ hàng, đơn hàng, thanh toán, giao hàng, đổi trả
 CREATE SCHEMA IF NOT EXISTS sales;
 

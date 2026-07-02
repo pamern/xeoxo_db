@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 from datetime import date
 from pathlib import Path
 import json
@@ -12,7 +13,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.utils.connection_db import get_postgres_connection_kwargs
+from src.utils.load_connection import (
+    add_loader_connection_args,
+    build_connection_kwargs,
+    describe_connection,
+)
 
 try:
     import psycopg
@@ -51,10 +56,11 @@ def normalize_season(value: object) -> str:
 
     normalized = season.strip().lower()
     allowed = {
-        "spring": "Spring",
-        "summer": "Summer",
-        "fall": "Fall",
-        "winter": "Winter",
+        "spring": "SPRING",
+        "summer": "SUMMER",
+        "fall": "AUTUMN",
+        "autumn": "AUTUMN",
+        "winter": "WINTER",
     }
     if normalized not in allowed:
         raise ValueError(
@@ -160,6 +166,7 @@ def read_master_collections(input_file: Path) -> pd.DataFrame:
         "collection_name",
         "slug",
         "description",
+        "cultural_story",
         "season",
         "launch_date",
         "status",
@@ -175,6 +182,7 @@ def read_master_collections(input_file: Path) -> pd.DataFrame:
     working_df["collection_name"] = working_df["collection_name"].map(normalize_text)
     working_df["slug"] = working_df["slug"].map(normalize_text)
     working_df["description"] = working_df["description"].map(normalize_text)
+    working_df["cultural_story"] = working_df["cultural_story"].map(normalize_text)
     working_df["media_url"] = (
         working_df["media_url"].map(normalize_text)
         if "media_url" in working_df.columns
@@ -189,7 +197,14 @@ def read_master_collections(input_file: Path) -> pd.DataFrame:
     working_df["launch_date"] = working_df["launch_date"].map(normalize_launch_date)
     working_df["status"] = working_df["status"].map(normalize_status)
 
-    working_df = working_df.dropna(subset=["collection_name", "slug", "season", "status"])
+    working_df = working_df.dropna(
+        subset=[
+            "collection_name",
+            "slug",
+            "season",
+            "status",
+        ]
+    )
     working_df = (
         working_df.sort_values(by=["collection_name", "slug"], kind="stable")
         .drop_duplicates(subset=["collection_name"], keep="first")
@@ -374,8 +389,10 @@ def update_collection(
         cursor.execute(query, params)
 
 
-def sync_collections(collections_df: pd.DataFrame) -> tuple[int, int, int]:
-    connection_kwargs = get_postgres_connection_kwargs()
+def sync_collections(
+    collections_df: pd.DataFrame,
+    connection_kwargs: dict[str, str | int],
+) -> tuple[int, int, int]:
     master_media_by_storage_key = read_master_media(MEDIA_INPUT_FILE)
 
     with psycopg.connect(**connection_kwargs) as connection:
@@ -449,11 +466,13 @@ def sync_collections(collections_df: pd.DataFrame) -> tuple[int, int, int]:
 
 def print_summary(
     collections_df: pd.DataFrame,
+    connection_label: str,
     inserted_count: int,
     updated_count: int,
     skipped_count: int,
 ) -> None:
     print(f"Input file: {INPUT_FILE}")
+    print(f"Target database: {connection_label}")
     print(f"Total master collections: {len(collections_df)}")
     print(f"Inserted: {inserted_count}")
     print(f"Updated: {updated_count}")
@@ -471,14 +490,28 @@ def print_summary(
         print(preview_df.head(10).to_string(index=False))
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Insert/update master collections into catalog.collection."
+    )
+    add_loader_connection_args(parser)
+    return parser.parse_args()
+
+
 def main() -> None:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+    args = parse_args()
+    connection_kwargs = build_connection_kwargs(args)
     collections_df = read_master_collections(INPUT_FILE)
-    inserted_count, updated_count, skipped_count = sync_collections(collections_df)
+    inserted_count, updated_count, skipped_count = sync_collections(
+        collections_df,
+        connection_kwargs,
+    )
     print_summary(
         collections_df=collections_df,
+        connection_label=describe_connection(connection_kwargs),
         inserted_count=inserted_count,
         updated_count=updated_count,
         skipped_count=skipped_count,

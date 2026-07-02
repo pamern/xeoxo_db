@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
 import sys
@@ -10,7 +11,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.utils.connection_db import get_postgres_connection_kwargs
+from src.utils.load_connection import (
+    add_loader_connection_args,
+    build_connection_kwargs,
+    describe_connection,
+)
 
 try:
     import psycopg
@@ -99,6 +104,7 @@ def read_master_product_variants(input_file: Path) -> pd.DataFrame:
     required_columns = {
         "sku",
         "product_line_id",
+        "parent_line_name",
         "component_order",
         "chart_name",
         "size_name",
@@ -112,7 +118,7 @@ def read_master_product_variants(input_file: Path) -> pd.DataFrame:
         )
 
     working_df = df.copy()
-    for column in ["sku", "chart_name", "size_name", "status"]:
+    for column in ["sku", "parent_line_name", "chart_name", "size_name", "status"]:
         working_df[column] = working_df[column].map(normalize_text)
 
     working_df["product_line_id"] = working_df["product_line_id"].map(normalize_int)
@@ -120,10 +126,10 @@ def read_master_product_variants(input_file: Path) -> pd.DataFrame:
     working_df["price"] = working_df["price"].map(normalize_decimal)
     working_df["status"] = working_df["status"].map(normalize_status)
 
-    working_df = working_df.dropna(subset=["sku", "product_line_id", "component_order"])
+    working_df = working_df.dropna(subset=["sku", "component_order"])
     working_df = (
         working_df.sort_values(
-            by=["product_line_id", "component_order", "size_name", "sku"],
+            by=["parent_line_name", "product_line_id", "component_order", "size_name", "sku"],
             kind="stable",
         )
         .drop_duplicates(subset=["sku"], keep="first")
@@ -134,6 +140,7 @@ def read_master_product_variants(input_file: Path) -> pd.DataFrame:
         [
             "sku",
             "product_line_id",
+            "parent_line_name",
             "component_order",
             "chart_name",
             "size_name",
@@ -149,13 +156,16 @@ def chunk_records(records: list[dict], size: int) -> list[list[dict]]:
 
 def fetch_existing_components(
     connection: psycopg.Connection,
-) -> dict[tuple[int, int], dict]:
+) -> tuple[dict[tuple[int, int], dict], dict[tuple[str, int], dict]]:
     query = """
         SELECT
-            component_id,
-            product_line_id,
-            display_order
-        FROM catalog.product_component
+            pc.component_id,
+            pc.product_line_id,
+            pc.display_order,
+            pl.line_name
+        FROM catalog.product_component pc
+        INNER JOIN catalog.product_line pl
+            ON pl.product_line_id = pc.product_line_id
     """
 
     with connection.cursor(row_factory=dict_row) as cursor:
@@ -163,17 +173,25 @@ def fetch_existing_components(
         rows = cursor.fetchall()
 
     components_by_key: dict[tuple[int, int], dict] = {}
+    components_by_line_name: dict[tuple[str, int], dict] = {}
     for row in rows:
         product_line_id = row.get("product_line_id")
         display_order = row.get("display_order")
-        if product_line_id is None or display_order is None:
+        line_name = normalize_text(row.get("line_name"))
+        if display_order is None:
             continue
 
-        key = (int(product_line_id), int(display_order))
-        if key not in components_by_key:
-            components_by_key[key] = row
+        if product_line_id is not None:
+            key = (int(product_line_id), int(display_order))
+            if key not in components_by_key:
+                components_by_key[key] = row
 
-    return components_by_key
+        if line_name:
+            line_key = (line_name, int(display_order))
+            if line_key not in components_by_line_name:
+                components_by_line_name[line_key] = row
+
+    return components_by_key, components_by_line_name
 
 
 def fetch_existing_size_options(
@@ -312,11 +330,12 @@ def update_product_variant(
         cursor.execute(query, params)
 
 
-def sync_product_variants(product_variants_df: pd.DataFrame) -> tuple[int, int, int]:
-    connection_kwargs = get_postgres_connection_kwargs()
-
+def sync_product_variants(
+    product_variants_df: pd.DataFrame,
+    connection_kwargs: dict[str, str | int],
+) -> tuple[int, int, int]:
     with psycopg.connect(**connection_kwargs) as connection:
-        components_by_key = fetch_existing_components(connection)
+        components_by_key, components_by_line_name = fetch_existing_components(connection)
         size_options_by_key = fetch_existing_size_options(connection)
         existing_variants = fetch_existing_product_variants(connection)
 
@@ -328,18 +347,19 @@ def sync_product_variants(product_variants_df: pd.DataFrame) -> tuple[int, int, 
         for record in product_variants_df.to_dict(orient="records"):
             sku = normalize_text(record["sku"])
             product_line_id = normalize_int(record["product_line_id"])
+            parent_line_name = normalize_text(record["parent_line_name"])
             component_order = normalize_int(record["component_order"])
             chart_name = normalize_text(record["chart_name"])
             size_name = normalize_text(record["size_name"])
 
-            component = (
-                components_by_key.get((product_line_id, component_order))
-                if product_line_id is not None and component_order is not None
-                else None
-            )
+            component = None
+            if product_line_id is not None and component_order is not None:
+                component = components_by_key.get((product_line_id, component_order))
+            if component is None and parent_line_name and component_order is not None:
+                component = components_by_line_name.get((parent_line_name, component_order))
             if component is None:
                 unresolved_components.append(
-                    (sku or "", product_line_id or 0, component_order or 0)
+                    (sku or "", parent_line_name or str(product_line_id or 0), component_order or 0)
                 )
                 continue
 
@@ -398,11 +418,13 @@ def sync_product_variants(product_variants_df: pd.DataFrame) -> tuple[int, int, 
 
 def print_summary(
     product_variants_df: pd.DataFrame,
+    connection_label: str,
     inserted_count: int,
     updated_count: int,
     skipped_count: int,
 ) -> None:
     print(f"Input file: {INPUT_FILE}")
+    print(f"Target database: {connection_label}")
     print(f"Total master product variants: {len(product_variants_df)}")
     print(f"Inserted: {inserted_count}")
     print(f"Updated: {updated_count}")
@@ -416,16 +438,28 @@ def print_summary(
         print(preview_df.head(10).to_string(index=False))
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Insert/update master product variants into catalog.product_variant."
+    )
+    add_loader_connection_args(parser)
+    return parser.parse_args()
+
+
 def main() -> None:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+    args = parse_args()
+    connection_kwargs = build_connection_kwargs(args)
     product_variants_df = read_master_product_variants(INPUT_FILE)
     inserted_count, updated_count, skipped_count = sync_product_variants(
-        product_variants_df
+        product_variants_df,
+        connection_kwargs,
     )
     print_summary(
         product_variants_df=product_variants_df,
+        connection_label=describe_connection(connection_kwargs),
         inserted_count=inserted_count,
         updated_count=updated_count,
         skipped_count=skipped_count,

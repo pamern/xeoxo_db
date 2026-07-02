@@ -56,9 +56,9 @@ def normalize_department(value: object) -> str | None:
 
     normalized = department.strip().lower()
     allowed = {
-        "men": "Men",
-        "women": "Women",
-        "kids": "Kids",
+        "men": "MEN",
+        "women": "WOMEN",
+        "kids": "KIDS",
     }
     if normalized not in allowed:
         raise ValueError(

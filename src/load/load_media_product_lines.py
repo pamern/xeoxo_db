@@ -94,6 +94,27 @@ def parse_gallery_urls(value: object) -> list[str]:
     return cleaned_urls
 
 
+def dedupe_gallery_urls(
+    thumbnail_url: str | None,
+    gallery_urls: list[str],
+) -> list[str]:
+    deduped_urls: list[str] = []
+    seen_urls: set[str] = set()
+
+    if thumbnail_url:
+        seen_urls.add(thumbnail_url)
+
+    for url in gallery_urls:
+        normalized = normalize_text(url)
+        if not normalized or normalized in seen_urls:
+            continue
+
+        seen_urls.add(normalized)
+        deduped_urls.append(normalized)
+
+    return deduped_urls
+
+
 def get_extension_from_mime(mime_type: str | None, source_url: str | None) -> str:
     if mime_type:
         guessed = mimetypes.guess_extension(mime_type.split(";")[0].strip())
@@ -303,7 +324,10 @@ def build_media_candidates(df: pd.DataFrame) -> list[dict]:
         if not product_slug or not product_name:
             continue
 
-        gallery_urls = parse_gallery_urls(row.get("gallery_urls"))
+        gallery_urls = dedupe_gallery_urls(
+            thumbnail_url=thumbnail_url,
+            gallery_urls=parse_gallery_urls(row.get("gallery_urls")),
+        )
         for index, url in enumerate(gallery_urls, start=1):
             candidates.append(
                 {

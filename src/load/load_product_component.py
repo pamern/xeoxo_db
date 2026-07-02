@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 from pathlib import Path
 import re
 import sys
@@ -10,7 +11,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.utils.connection_db import get_postgres_connection_kwargs
+from src.utils.load_connection import (
+    add_loader_connection_args,
+    build_connection_kwargs,
+    describe_connection,
+)
 
 try:
     import psycopg
@@ -71,7 +76,14 @@ def normalize_component_type(value: object) -> str:
     if not component_type:
         raise ValueError("component_type must not be null")
 
-    return component_type.lower().capitalize()
+    normalized = component_type.strip().upper()
+    allowed = {"AO", "QUAN", "DAM", "SET", "VAY", "KHAC"}
+    if normalized not in allowed:
+        raise ValueError(
+            f"Invalid component_type: {component_type!r}. Expected one of {sorted(allowed)}"
+        )
+
+    return normalized
 
 
 def normalize_component_name(value: object) -> str | None:
@@ -342,8 +354,10 @@ def update_product_component(
         cursor.execute(query, params)
 
 
-def sync_product_components(components_df: pd.DataFrame) -> tuple[int, int, int]:
-    connection_kwargs = get_postgres_connection_kwargs()
+def sync_product_components(
+    components_df: pd.DataFrame,
+    connection_kwargs: dict[str, str | int],
+) -> tuple[int, int, int]:
     staging_product_lines = read_staging_product_lines(PRODUCT_LINES_FILE)
 
     with psycopg.connect(**connection_kwargs) as connection:
@@ -439,11 +453,13 @@ def sync_product_components(components_df: pd.DataFrame) -> tuple[int, int, int]
 
 def print_summary(
     components_df: pd.DataFrame,
+    connection_label: str,
     inserted_count: int,
     updated_count: int,
     skipped_count: int,
 ) -> None:
     print(f"Input file: {INPUT_FILE}")
+    print(f"Target database: {connection_label}")
     print(f"Total raw product components: {len(components_df)}")
     print(f"Inserted: {inserted_count}")
     print(f"Updated: {updated_count}")
@@ -454,14 +470,28 @@ def print_summary(
         print(components_df.head(10).to_string(index=False))
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Insert/update raw product components into catalog.product_component."
+    )
+    add_loader_connection_args(parser)
+    return parser.parse_args()
+
+
 def main() -> None:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+    args = parse_args()
+    connection_kwargs = build_connection_kwargs(args)
     components_df = read_raw_product_components(INPUT_FILE)
-    inserted_count, updated_count, skipped_count = sync_product_components(components_df)
+    inserted_count, updated_count, skipped_count = sync_product_components(
+        components_df,
+        connection_kwargs,
+    )
     print_summary(
         components_df=components_df,
+        connection_label=describe_connection(connection_kwargs),
         inserted_count=inserted_count,
         updated_count=updated_count,
         skipped_count=skipped_count,

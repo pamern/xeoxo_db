@@ -1,38 +1,38 @@
-﻿color_name,color_group
-Be,Be
-Cam,Cam
-Hồng cam,Cam
-Hồng,Hồng
-Hồng nhạt,Hồng
-Hồng phấn,Hồng
-Hồng phấn nhạt,Hồng
-Hồng sen,Hồng
-Hồng đậm,Hồng
-Kem,Kem
-Trắng kem,Kem
-Vàng nâu,Nâu
-Trắng,Trắng
-Trắng xám,Trắng
-Hồng tím,Tím
-Tím,Tím
-Tím nhạt,Tím
-Vàng,Vàng
-Vàng kem,Vàng
-Vàng nhạt,Vàng
-Xanh,Xanh
-Xanh biển,Xanh
-Xanh biển nhạt,Xanh
-Xanh coban,Xanh
-Xanh cốm,Xanh
-Xanh lam,Xanh
-Xanh lá,Xanh
-Xanh lục,Xanh
-Xanh ngọc,Xanh
-Xanh oliu,Xanh
-Xanh xám,Xám
-Xám bạc,Xám
-Đen,Đen
-Hồng đỗ,Đỏ
-Đỏ,Đỏ
-Đỏ mận,Đỏ
-Đỏ đậm,Đỏ
+﻿color_name,color_group,color_code
+Be,Be,#D8C3A5
+Cam,Cam,#F28C28
+Hồng cam,Cam,#F4A08A
+Hồng,Hồng,#E88DA1
+Hồng nhạt,Hồng,#F6C1CC
+Hồng phấn,Hồng,#F4B6C2
+Hồng phấn nhạt,Hồng,#F8D7DF
+Hồng sen,Hồng,#D96C8A
+Hồng đậm,Hồng,#C75A7C
+Kem,Kem,#F3E5C8
+Trắng kem,Kem,#F8F1E3
+Vàng nâu,Nâu,#B88A3B
+Trắng,Trắng,#FFFFFF
+Trắng xám,Trắng,#E5E5E0
+Hồng tím,Tím,#C97BB8
+Tím,Tím,#8E6BBE
+Tím nhạt,Tím,#C8B4E3
+Vàng,Vàng,#E3B23C
+Vàng kem,Vàng,#F0D98A
+Vàng nhạt,Vàng,#F6E27A
+Xanh,Xanh,#3F7FBF
+Xanh biển,Xanh,#2F6FA3
+Xanh biển nhạt,Xanh,#8CBFD9
+Xanh coban,Xanh,#0047AB
+Xanh cốm,Xanh,#9DC183
+Xanh lam,Xanh,#1F5AA6
+Xanh lá,Xanh,#4F8A3C
+Xanh lục,Xanh,#2E8B57
+Xanh ngọc,Xanh,#48A9A6
+Xanh oliu,Xanh,#708238
+Xanh xám,Xám,#7E8F99
+Xám bạc,Xám,#BFC5CC
+Đen,Đen,#1F1F1F
+Hồng đỗ,Đỏ,#A63D57
+Đỏ,Đỏ,#C62828
+Đỏ mận,Đỏ,#7B1E3A
+Đỏ đậm,Đỏ,#8B1E2D
