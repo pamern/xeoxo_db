@@ -1,0 +1,814 @@
+branch_id,branch_name,collection_id,collection_name,collection_slug,product_line_id,line_name,product_line_slug,inventory_state,variant_id,component_id,size_option_id,size_name,quantity
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,1,Áo dài Chu Bảo,,IN_STOCK,98,30,13,L,20
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,1,Áo dài Chu Bảo,,IN_STOCK,99,30,12,M,9
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,1,Áo dài Chu Bảo,,IN_STOCK,100,30,11,S,4
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,1,Áo dài Chu Bảo,,IN_STOCK,101,30,14,XL,27
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,1,Áo dài Chu Bảo,,IN_STOCK,102,30,10,XS,28
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,1,Áo dài Chu Bảo,,IN_STOCK,103,31,13,L,16
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,1,Áo dài Chu Bảo,,IN_STOCK,104,31,12,M,11
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,1,Áo dài Chu Bảo,,IN_STOCK,105,31,11,S,25
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,1,Áo dài Chu Bảo,,IN_STOCK,106,31,14,XL,26
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,1,Áo dài Chu Bảo,,IN_STOCK,107,31,10,XS,11
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,2,Áo dài Châu Hân – Mãn Kim,,FULL_OUT,113,19,13,L,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,2,Áo dài Châu Hân – Mãn Kim,,FULL_OUT,114,19,12,M,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,2,Áo dài Châu Hân – Mãn Kim,,FULL_OUT,115,19,11,S,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,2,Áo dài Châu Hân – Mãn Kim,,FULL_OUT,116,19,14,XL,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,2,Áo dài Châu Hân – Mãn Kim,,FULL_OUT,117,19,10,XS,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,2,Áo dài Châu Hân – Mãn Kim,,FULL_OUT,118,20,13,L,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,2,Áo dài Châu Hân – Mãn Kim,,FULL_OUT,119,20,12,M,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,2,Áo dài Châu Hân – Mãn Kim,,FULL_OUT,120,20,11,S,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,2,Áo dài Châu Hân – Mãn Kim,,FULL_OUT,121,20,14,XL,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,2,Áo dài Châu Hân – Mãn Kim,,FULL_OUT,122,20,10,XS,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,2,Áo dài Châu Hân – Mãn Kim,,FULL_OUT,123,21,13,L,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,2,Áo dài Châu Hân – Mãn Kim,,FULL_OUT,124,21,12,M,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,2,Áo dài Châu Hân – Mãn Kim,,FULL_OUT,125,21,11,S,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,2,Áo dài Châu Hân – Mãn Kim,,FULL_OUT,126,21,14,XL,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,2,Áo dài Châu Hân – Mãn Kim,,FULL_OUT,127,21,10,XS,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,3,Áo dài Cát Điệp,,IN_STOCK,148,17,13,L,3
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,3,Áo dài Cát Điệp,,IN_STOCK,149,17,12,M,24
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,3,Áo dài Cát Điệp,,IN_STOCK,150,17,11,S,6
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,3,Áo dài Cát Điệp,,IN_STOCK,151,17,14,XL,19
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,3,Áo dài Cát Điệp,,IN_STOCK,152,17,10,XS,1
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,3,Áo dài Cát Điệp,,IN_STOCK,153,18,13,L,8
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,3,Áo dài Cát Điệp,,IN_STOCK,154,18,12,M,1
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,3,Áo dài Cát Điệp,,IN_STOCK,155,18,11,S,26
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,3,Áo dài Cát Điệp,,IN_STOCK,156,18,14,XL,23
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,3,Áo dài Cát Điệp,,IN_STOCK,157,18,10,XS,26
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,4,Áo dài Diệu Liên,,IN_STOCK,208,43,13,L,2
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,4,Áo dài Diệu Liên,,IN_STOCK,209,43,12,M,15
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,4,Áo dài Diệu Liên,,IN_STOCK,210,43,11,S,19
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,4,Áo dài Diệu Liên,,IN_STOCK,211,43,14,XL,27
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,4,Áo dài Diệu Liên,,IN_STOCK,212,43,10,XS,28
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,4,Áo dài Diệu Liên,,IN_STOCK,213,44,13,L,5
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,4,Áo dài Diệu Liên,,IN_STOCK,214,44,12,M,6
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,4,Áo dài Diệu Liên,,IN_STOCK,215,44,11,S,9
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,4,Áo dài Diệu Liên,,IN_STOCK,216,44,14,XL,22
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,4,Áo dài Diệu Liên,,IN_STOCK,217,44,10,XS,22
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,5,Áo dài Mãn Kim,,IN_STOCK,317,69,13,L,18
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,5,Áo dài Mãn Kim,,IN_STOCK,318,69,12,M,10
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,5,Áo dài Mãn Kim,,IN_STOCK,319,69,11,S,21
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,5,Áo dài Mãn Kim,,IN_STOCK,320,69,14,XL,15
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,5,Áo dài Mãn Kim,,IN_STOCK,321,69,10,XS,6
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,5,Áo dài Mãn Kim,,IN_STOCK,322,70,13,L,12
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,5,Áo dài Mãn Kim,,IN_STOCK,323,70,12,M,6
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,5,Áo dài Mãn Kim,,IN_STOCK,324,70,11,S,3
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,5,Áo dài Mãn Kim,,IN_STOCK,325,70,14,XL,7
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,5,Áo dài Mãn Kim,,IN_STOCK,326,70,10,XS,9
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,6,Áo dài Mãn Như,,PARTIAL_OUT,327,71,13,L,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,6,Áo dài Mãn Như,,PARTIAL_OUT,328,71,12,M,28
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,6,Áo dài Mãn Như,,PARTIAL_OUT,329,71,11,S,7
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,6,Áo dài Mãn Như,,PARTIAL_OUT,330,71,14,XL,14
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,6,Áo dài Mãn Như,,PARTIAL_OUT,331,71,10,XS,22
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,6,Áo dài Mãn Như,,PARTIAL_OUT,332,72,13,L,28
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,6,Áo dài Mãn Như,,PARTIAL_OUT,333,72,12,M,21
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,6,Áo dài Mãn Như,,PARTIAL_OUT,334,72,11,S,26
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,6,Áo dài Mãn Như,,PARTIAL_OUT,335,72,14,XL,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,6,Áo dài Mãn Như,,PARTIAL_OUT,336,72,10,XS,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,7,Áo dài Mãn Đào,,PARTIAL_OUT,337,67,13,L,21
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,7,Áo dài Mãn Đào,,PARTIAL_OUT,338,67,12,M,1
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,7,Áo dài Mãn Đào,,PARTIAL_OUT,339,67,11,S,3
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,7,Áo dài Mãn Đào,,PARTIAL_OUT,340,67,14,XL,23
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,7,Áo dài Mãn Đào,,PARTIAL_OUT,341,67,10,XS,14
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,7,Áo dài Mãn Đào,,PARTIAL_OUT,342,68,13,L,19
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,7,Áo dài Mãn Đào,,PARTIAL_OUT,343,68,12,M,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,7,Áo dài Mãn Đào,,PARTIAL_OUT,344,68,11,S,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,7,Áo dài Mãn Đào,,PARTIAL_OUT,345,68,14,XL,5
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,7,Áo dài Mãn Đào,,PARTIAL_OUT,346,68,10,XS,8
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,8,Áo dài Thư Bảo,,PARTIAL_OUT,541,114,13,L,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,8,Áo dài Thư Bảo,,PARTIAL_OUT,542,114,12,M,2
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,8,Áo dài Thư Bảo,,PARTIAL_OUT,543,114,11,S,22
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,8,Áo dài Thư Bảo,,PARTIAL_OUT,544,114,14,XL,22
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,8,Áo dài Thư Bảo,,PARTIAL_OUT,545,114,10,XS,22
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,8,Áo dài Thư Bảo,,PARTIAL_OUT,546,115,13,L,6
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,8,Áo dài Thư Bảo,,PARTIAL_OUT,547,115,12,M,16
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,8,Áo dài Thư Bảo,,PARTIAL_OUT,548,115,11,S,21
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,8,Áo dài Thư Bảo,,PARTIAL_OUT,549,115,14,XL,30
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,8,Áo dài Thư Bảo,,PARTIAL_OUT,550,115,10,XS,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,9,Áo dài Tiêu Hồng,,IN_STOCK,556,116,13,L,11
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,9,Áo dài Tiêu Hồng,,IN_STOCK,557,116,12,M,24
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,9,Áo dài Tiêu Hồng,,IN_STOCK,558,116,11,S,24
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,9,Áo dài Tiêu Hồng,,IN_STOCK,559,116,14,XL,11
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,9,Áo dài Tiêu Hồng,,IN_STOCK,560,116,10,XS,6
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,9,Áo dài Tiêu Hồng,,IN_STOCK,561,117,13,L,3
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,9,Áo dài Tiêu Hồng,,IN_STOCK,562,117,12,M,18
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,9,Áo dài Tiêu Hồng,,IN_STOCK,563,117,11,S,14
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,9,Áo dài Tiêu Hồng,,IN_STOCK,564,117,14,XL,28
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,9,Áo dài Tiêu Hồng,,IN_STOCK,565,117,10,XS,21
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,10,Áo dài Tú Điệp,,PARTIAL_OUT,590,122,13,L,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,10,Áo dài Tú Điệp,,PARTIAL_OUT,591,122,12,M,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,10,Áo dài Tú Điệp,,PARTIAL_OUT,592,122,11,S,30
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,10,Áo dài Tú Điệp,,PARTIAL_OUT,593,122,14,XL,26
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,10,Áo dài Tú Điệp,,PARTIAL_OUT,594,122,10,XS,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,10,Áo dài Tú Điệp,,PARTIAL_OUT,595,123,13,L,2
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,10,Áo dài Tú Điệp,,PARTIAL_OUT,596,123,12,M,14
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,10,Áo dài Tú Điệp,,PARTIAL_OUT,597,123,11,S,0
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,10,Áo dài Tú Điệp,,PARTIAL_OUT,598,123,14,XL,10
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,10,Áo dài Tú Điệp,,PARTIAL_OUT,599,123,10,XS,17
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,11,Áo dài Đan Niên,,IN_STOCK,654,33,13,L,27
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,11,Áo dài Đan Niên,,IN_STOCK,655,33,12,M,2
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,11,Áo dài Đan Niên,,IN_STOCK,656,33,11,S,13
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,11,Áo dài Đan Niên,,IN_STOCK,657,33,14,XL,22
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,11,Áo dài Đan Niên,,IN_STOCK,658,33,10,XS,8
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,11,Áo dài Đan Niên,,IN_STOCK,659,34,13,L,24
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,11,Áo dài Đan Niên,,IN_STOCK,660,34,12,M,9
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,11,Áo dài Đan Niên,,IN_STOCK,661,34,11,S,9
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,11,Áo dài Đan Niên,,IN_STOCK,662,34,14,XL,16
+1,Xéo Xọ Store,1,Cát Điền,cat-dien,11,Áo dài Đan Niên,,IN_STOCK,663,34,10,XS,1
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,12,Áo dài Chiêu Phụng,,IN_STOCK,88,28,13,L,22
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,12,Áo dài Chiêu Phụng,,IN_STOCK,89,28,12,M,20
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,12,Áo dài Chiêu Phụng,,IN_STOCK,90,28,11,S,21
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,12,Áo dài Chiêu Phụng,,IN_STOCK,91,28,14,XL,24
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,12,Áo dài Chiêu Phụng,,IN_STOCK,92,28,10,XS,11
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,12,Áo dài Chiêu Phụng,,IN_STOCK,93,29,13,L,6
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,12,Áo dài Chiêu Phụng,,IN_STOCK,94,29,12,M,30
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,12,Áo dài Chiêu Phụng,,IN_STOCK,95,29,11,S,16
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,12,Áo dài Chiêu Phụng,,IN_STOCK,96,29,14,XL,16
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,12,Áo dài Chiêu Phụng,,IN_STOCK,97,29,10,XS,26
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,13,Áo dài Châu Phụng,,PARTIAL_OUT,138,22,13,L,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,13,Áo dài Châu Phụng,,PARTIAL_OUT,139,22,12,M,13
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,13,Áo dài Châu Phụng,,PARTIAL_OUT,140,22,11,S,3
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,13,Áo dài Châu Phụng,,PARTIAL_OUT,141,22,14,XL,9
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,13,Áo dài Châu Phụng,,PARTIAL_OUT,142,22,10,XS,22
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,13,Áo dài Châu Phụng,,PARTIAL_OUT,143,23,13,L,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,13,Áo dài Châu Phụng,,PARTIAL_OUT,144,23,12,M,23
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,13,Áo dài Châu Phụng,,PARTIAL_OUT,145,23,11,S,16
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,13,Áo dài Châu Phụng,,PARTIAL_OUT,146,23,14,XL,19
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,13,Áo dài Châu Phụng,,PARTIAL_OUT,147,23,10,XS,9
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,14,Áo dài Hoàng Phụng,,IN_STOCK,223,48,13,L,1
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,14,Áo dài Hoàng Phụng,,IN_STOCK,224,48,12,M,11
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,14,Áo dài Hoàng Phụng,,IN_STOCK,225,48,11,S,6
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,14,Áo dài Hoàng Phụng,,IN_STOCK,226,48,14,XL,7
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,14,Áo dài Hoàng Phụng,,IN_STOCK,227,48,10,XS,4
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,14,Áo dài Hoàng Phụng,,IN_STOCK,228,49,13,L,15
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,14,Áo dài Hoàng Phụng,,IN_STOCK,229,49,12,M,19
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,14,Áo dài Hoàng Phụng,,IN_STOCK,230,49,11,S,19
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,14,Áo dài Hoàng Phụng,,IN_STOCK,231,49,14,XL,17
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,14,Áo dài Hoàng Phụng,,IN_STOCK,232,49,10,XS,20
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,15,Áo dài Hồ Phụng,,IN_STOCK,243,46,13,L,18
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,15,Áo dài Hồ Phụng,,IN_STOCK,244,46,12,M,11
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,15,Áo dài Hồ Phụng,,IN_STOCK,245,46,11,S,12
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,15,Áo dài Hồ Phụng,,IN_STOCK,246,46,14,XL,5
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,15,Áo dài Hồ Phụng,,IN_STOCK,247,46,10,XS,26
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,15,Áo dài Hồ Phụng,,IN_STOCK,248,47,13,L,15
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,15,Áo dài Hồ Phụng,,IN_STOCK,249,47,12,M,11
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,15,Áo dài Hồ Phụng,,IN_STOCK,250,47,11,S,15
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,15,Áo dài Hồ Phụng,,IN_STOCK,251,47,14,XL,19
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,15,Áo dài Hồ Phụng,,IN_STOCK,252,47,10,XS,30
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,16,Áo dài Hữu Phương,,IN_STOCK,268,53,13,L,2
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,16,Áo dài Hữu Phương,,IN_STOCK,269,53,12,M,17
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,16,Áo dài Hữu Phương,,IN_STOCK,270,53,11,S,4
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,16,Áo dài Hữu Phương,,IN_STOCK,271,53,14,XL,20
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,16,Áo dài Hữu Phương,,IN_STOCK,272,53,10,XS,16
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,16,Áo dài Hữu Phương,,IN_STOCK,273,54,13,L,12
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,16,Áo dài Hữu Phương,,IN_STOCK,274,54,12,M,25
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,16,Áo dài Hữu Phương,,IN_STOCK,275,54,11,S,16
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,16,Áo dài Hữu Phương,,IN_STOCK,276,54,14,XL,21
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,16,Áo dài Hữu Phương,,IN_STOCK,277,54,10,XS,21
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,17,Áo dài Mộc Thước,,IN_STOCK,372,77,13,L,4
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,17,Áo dài Mộc Thước,,IN_STOCK,373,77,12,M,27
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,17,Áo dài Mộc Thước,,IN_STOCK,374,77,11,S,12
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,17,Áo dài Mộc Thước,,IN_STOCK,375,77,14,XL,25
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,17,Áo dài Mộc Thước,,IN_STOCK,376,77,10,XS,12
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,17,Áo dài Mộc Thước,,IN_STOCK,377,78,13,L,26
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,17,Áo dài Mộc Thước,,IN_STOCK,378,78,12,M,17
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,17,Áo dài Mộc Thước,,IN_STOCK,379,78,11,S,9
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,17,Áo dài Mộc Thước,,IN_STOCK,380,78,14,XL,25
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,17,Áo dài Mộc Thước,,IN_STOCK,381,78,10,XS,6
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,18,Áo dài Nam Phụng,,FULL_OUT,397,82,8,L,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,18,Áo dài Nam Phụng,,FULL_OUT,398,82,7,M,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,18,Áo dài Nam Phụng,,FULL_OUT,399,82,6,S,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,18,Áo dài Nam Phụng,,FULL_OUT,400,82,9,XL,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,18,Áo dài Nam Phụng,,FULL_OUT,401,83,8,L,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,18,Áo dài Nam Phụng,,FULL_OUT,402,83,7,M,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,18,Áo dài Nam Phụng,,FULL_OUT,403,83,6,S,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,18,Áo dài Nam Phụng,,FULL_OUT,404,83,9,XL,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,19,Áo dài Nhu Phụng,,FULL_OUT,454,95,13,L,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,19,Áo dài Nhu Phụng,,FULL_OUT,455,95,12,M,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,19,Áo dài Nhu Phụng,,FULL_OUT,456,95,11,S,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,19,Áo dài Nhu Phụng,,FULL_OUT,457,95,14,XL,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,19,Áo dài Nhu Phụng,,FULL_OUT,458,95,10,XS,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,19,Áo dài Nhu Phụng,,FULL_OUT,459,96,13,L,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,19,Áo dài Nhu Phụng,,FULL_OUT,460,96,12,M,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,19,Áo dài Nhu Phụng,,FULL_OUT,461,96,11,S,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,19,Áo dài Nhu Phụng,,FULL_OUT,462,96,14,XL,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,19,Áo dài Nhu Phụng,,FULL_OUT,463,96,10,XS,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,20,Áo dài Thiên Thước,,PARTIAL_OUT,527,112,13,L,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,20,Áo dài Thiên Thước,,PARTIAL_OUT,528,112,12,M,18
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,20,Áo dài Thiên Thước,,PARTIAL_OUT,529,112,11,S,8
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,20,Áo dài Thiên Thước,,PARTIAL_OUT,530,112,14,XL,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,20,Áo dài Thiên Thước,,PARTIAL_OUT,531,112,10,XS,29
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,20,Áo dài Thiên Thước,,PARTIAL_OUT,532,113,13,L,4
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,20,Áo dài Thiên Thước,,PARTIAL_OUT,533,113,12,M,27
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,20,Áo dài Thiên Thước,,PARTIAL_OUT,534,113,11,S,5
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,20,Áo dài Thiên Thước,,PARTIAL_OUT,535,113,14,XL,27
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,20,Áo dài Thiên Thước,,PARTIAL_OUT,536,113,10,XS,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,21,Áo dài Yên Phụng,,PARTIAL_OUT,644,136,13,L,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,21,Áo dài Yên Phụng,,PARTIAL_OUT,645,136,12,M,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,21,Áo dài Yên Phụng,,PARTIAL_OUT,646,136,11,S,10
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,21,Áo dài Yên Phụng,,PARTIAL_OUT,647,136,14,XL,5
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,21,Áo dài Yên Phụng,,PARTIAL_OUT,648,136,10,XS,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,21,Áo dài Yên Phụng,,PARTIAL_OUT,649,137,13,L,14
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,21,Áo dài Yên Phụng,,PARTIAL_OUT,650,137,12,M,14
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,21,Áo dài Yên Phụng,,PARTIAL_OUT,651,137,11,S,28
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,21,Áo dài Yên Phụng,,PARTIAL_OUT,652,137,14,XL,26
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,21,Áo dài Yên Phụng,,PARTIAL_OUT,653,137,10,XS,7
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,22,Áo dài Đan Phụng,,PARTIAL_OUT,664,35,13,L,14
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,22,Áo dài Đan Phụng,,PARTIAL_OUT,665,35,12,M,20
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,22,Áo dài Đan Phụng,,PARTIAL_OUT,666,35,11,S,4
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,22,Áo dài Đan Phụng,,PARTIAL_OUT,667,35,14,XL,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,22,Áo dài Đan Phụng,,PARTIAL_OUT,668,35,10,XS,20
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,22,Áo dài Đan Phụng,,PARTIAL_OUT,669,36,13,L,1
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,22,Áo dài Đan Phụng,,PARTIAL_OUT,670,36,12,M,0
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,22,Áo dài Đan Phụng,,PARTIAL_OUT,671,36,11,S,7
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,22,Áo dài Đan Phụng,,PARTIAL_OUT,672,36,14,XL,6
+1,Xéo Xọ Store,2,Cảnh Giang,canh-giang,22,Áo dài Đan Phụng,,PARTIAL_OUT,673,36,10,XS,25
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,23,Áo Choàng Nhật Bình Yên Chi,,IN_STOCK,32,9,,,13
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,24,Áo choàng Tràng Ngọc Khê,,FULL_OUT,72,10,,,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,25,Áo dài Chu Phong,,IN_STOCK,108,32,13,L,3
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,25,Áo dài Chu Phong,,IN_STOCK,109,32,12,M,13
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,25,Áo dài Chu Phong,,IN_STOCK,110,32,11,S,21
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,25,Áo dài Chu Phong,,IN_STOCK,111,32,14,XL,7
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,25,Áo dài Chu Phong,,IN_STOCK,112,32,10,XS,7
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,26,Áo dài Châu Phượng,,FULL_OUT,128,24,13,L,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,26,Áo dài Châu Phượng,,FULL_OUT,129,24,12,M,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,26,Áo dài Châu Phượng,,FULL_OUT,130,24,11,S,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,26,Áo dài Châu Phượng,,FULL_OUT,131,24,14,XL,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,26,Áo dài Châu Phượng,,FULL_OUT,132,24,10,XS,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,26,Áo dài Châu Phượng,,FULL_OUT,133,25,13,L,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,26,Áo dài Châu Phượng,,FULL_OUT,134,25,12,M,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,26,Áo dài Châu Phượng,,FULL_OUT,135,25,11,S,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,26,Áo dài Châu Phượng,,FULL_OUT,136,25,14,XL,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,26,Áo dài Châu Phượng,,FULL_OUT,137,25,10,XS,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,27,Áo dài Cẩm Dao – Dao Phụng,,PARTIAL_OUT,158,12,13,L,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,27,Áo dài Cẩm Dao – Dao Phụng,,PARTIAL_OUT,159,12,12,M,30
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,27,Áo dài Cẩm Dao – Dao Phụng,,PARTIAL_OUT,160,12,11,S,21
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,27,Áo dài Cẩm Dao – Dao Phụng,,PARTIAL_OUT,161,12,14,XL,10
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,27,Áo dài Cẩm Dao – Dao Phụng,,PARTIAL_OUT,162,12,10,XS,8
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,27,Áo dài Cẩm Dao – Dao Phụng,,PARTIAL_OUT,163,13,13,L,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,27,Áo dài Cẩm Dao – Dao Phụng,,PARTIAL_OUT,164,13,12,M,23
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,27,Áo dài Cẩm Dao – Dao Phụng,,PARTIAL_OUT,165,13,11,S,29
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,27,Áo dài Cẩm Dao – Dao Phụng,,PARTIAL_OUT,166,13,14,XL,2
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,27,Áo dài Cẩm Dao – Dao Phụng,,PARTIAL_OUT,167,13,10,XS,11
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,27,Áo dài Cẩm Dao – Dao Phụng,,PARTIAL_OUT,168,14,13,L,23
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,27,Áo dài Cẩm Dao – Dao Phụng,,PARTIAL_OUT,169,14,12,M,25
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,27,Áo dài Cẩm Dao – Dao Phụng,,PARTIAL_OUT,170,14,11,S,13
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,27,Áo dài Cẩm Dao – Dao Phụng,,PARTIAL_OUT,171,14,14,XL,15
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,27,Áo dài Cẩm Dao – Dao Phụng,,PARTIAL_OUT,172,14,10,XS,29
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,28,Áo dài Dao Phụng – Liên Phụng,,IN_STOCK,183,37,13,L,3
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,28,Áo dài Dao Phụng – Liên Phụng,,IN_STOCK,184,37,12,M,23
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,28,Áo dài Dao Phụng – Liên Phụng,,IN_STOCK,185,37,11,S,27
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,28,Áo dài Dao Phụng – Liên Phụng,,IN_STOCK,186,37,14,XL,20
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,28,Áo dài Dao Phụng – Liên Phụng,,IN_STOCK,187,37,10,XS,23
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,28,Áo dài Dao Phụng – Liên Phụng,,IN_STOCK,188,38,13,L,16
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,28,Áo dài Dao Phụng – Liên Phụng,,IN_STOCK,189,38,12,M,12
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,28,Áo dài Dao Phụng – Liên Phụng,,IN_STOCK,190,38,11,S,16
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,28,Áo dài Dao Phụng – Liên Phụng,,IN_STOCK,191,38,14,XL,4
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,28,Áo dài Dao Phụng – Liên Phụng,,IN_STOCK,192,38,10,XS,1
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,28,Áo dài Dao Phụng – Liên Phụng,,IN_STOCK,193,39,13,L,9
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,28,Áo dài Dao Phụng – Liên Phụng,,IN_STOCK,194,39,12,M,24
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,28,Áo dài Dao Phụng – Liên Phụng,,IN_STOCK,195,39,11,S,8
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,28,Áo dài Dao Phụng – Liên Phụng,,IN_STOCK,196,39,14,XL,2
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,28,Áo dài Dao Phụng – Liên Phụng,,IN_STOCK,197,39,10,XS,25
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,29,Áo dài Hồng Ân – Hồng Duyên,,IN_STOCK,253,50,13,L,13
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,29,Áo dài Hồng Ân – Hồng Duyên,,IN_STOCK,254,50,12,M,21
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,29,Áo dài Hồng Ân – Hồng Duyên,,IN_STOCK,255,50,11,S,18
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,29,Áo dài Hồng Ân – Hồng Duyên,,IN_STOCK,256,50,14,XL,10
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,29,Áo dài Hồng Ân – Hồng Duyên,,IN_STOCK,257,50,10,XS,12
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,29,Áo dài Hồng Ân – Hồng Duyên,,IN_STOCK,258,51,13,L,21
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,29,Áo dài Hồng Ân – Hồng Duyên,,IN_STOCK,259,51,12,M,27
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,29,Áo dài Hồng Ân – Hồng Duyên,,IN_STOCK,260,51,11,S,17
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,29,Áo dài Hồng Ân – Hồng Duyên,,IN_STOCK,261,51,14,XL,11
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,29,Áo dài Hồng Ân – Hồng Duyên,,IN_STOCK,262,51,10,XS,25
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,29,Áo dài Hồng Ân – Hồng Duyên,,IN_STOCK,263,52,13,L,30
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,29,Áo dài Hồng Ân – Hồng Duyên,,IN_STOCK,264,52,12,M,1
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,29,Áo dài Hồng Ân – Hồng Duyên,,IN_STOCK,265,52,11,S,29
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,29,Áo dài Hồng Ân – Hồng Duyên,,IN_STOCK,266,52,14,XL,5
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,29,Áo dài Hồng Ân – Hồng Duyên,,IN_STOCK,267,52,10,XS,11
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,30,Áo dài Mộc Cẩn – Diêu Hà,,IN_STOCK,357,74,13,L,6
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,30,Áo dài Mộc Cẩn – Diêu Hà,,IN_STOCK,358,74,12,M,4
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,30,Áo dài Mộc Cẩn – Diêu Hà,,IN_STOCK,359,74,11,S,23
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,30,Áo dài Mộc Cẩn – Diêu Hà,,IN_STOCK,360,74,14,XL,11
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,30,Áo dài Mộc Cẩn – Diêu Hà,,IN_STOCK,361,74,10,XS,25
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,30,Áo dài Mộc Cẩn – Diêu Hà,,IN_STOCK,362,75,13,L,17
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,30,Áo dài Mộc Cẩn – Diêu Hà,,IN_STOCK,363,75,12,M,7
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,30,Áo dài Mộc Cẩn – Diêu Hà,,IN_STOCK,364,75,11,S,13
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,30,Áo dài Mộc Cẩn – Diêu Hà,,IN_STOCK,365,75,14,XL,24
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,30,Áo dài Mộc Cẩn – Diêu Hà,,IN_STOCK,366,75,10,XS,16
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,30,Áo dài Mộc Cẩn – Diêu Hà,,IN_STOCK,367,76,13,L,10
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,30,Áo dài Mộc Cẩn – Diêu Hà,,IN_STOCK,368,76,12,M,7
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,30,Áo dài Mộc Cẩn – Diêu Hà,,IN_STOCK,369,76,11,S,8
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,30,Áo dài Mộc Cẩn – Diêu Hà,,IN_STOCK,370,76,14,XL,14
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,30,Áo dài Mộc Cẩn – Diêu Hà,,IN_STOCK,371,76,10,XS,12
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,31,Áo dài Mộng Đan – Hồng Duyên,,IN_STOCK,382,79,13,L,9
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,31,Áo dài Mộng Đan – Hồng Duyên,,IN_STOCK,383,79,12,M,27
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,31,Áo dài Mộng Đan – Hồng Duyên,,IN_STOCK,384,79,11,S,29
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,31,Áo dài Mộng Đan – Hồng Duyên,,IN_STOCK,385,79,14,XL,21
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,31,Áo dài Mộng Đan – Hồng Duyên,,IN_STOCK,386,79,10,XS,20
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,31,Áo dài Mộng Đan – Hồng Duyên,,IN_STOCK,387,80,13,L,6
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,31,Áo dài Mộng Đan – Hồng Duyên,,IN_STOCK,388,80,12,M,25
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,31,Áo dài Mộng Đan – Hồng Duyên,,IN_STOCK,389,80,11,S,9
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,31,Áo dài Mộng Đan – Hồng Duyên,,IN_STOCK,390,80,14,XL,7
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,31,Áo dài Mộng Đan – Hồng Duyên,,IN_STOCK,391,80,10,XS,16
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,31,Áo dài Mộng Đan – Hồng Duyên,,IN_STOCK,392,81,13,L,17
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,31,Áo dài Mộng Đan – Hồng Duyên,,IN_STOCK,393,81,12,M,26
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,31,Áo dài Mộng Đan – Hồng Duyên,,IN_STOCK,394,81,11,S,26
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,31,Áo dài Mộng Đan – Hồng Duyên,,IN_STOCK,395,81,14,XL,30
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,31,Áo dài Mộng Đan – Hồng Duyên,,IN_STOCK,396,81,10,XS,19
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,32,Áo dài Ngọc Bảo – Mãn Duyên,,PARTIAL_OUT,410,84,13,L,16
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,32,Áo dài Ngọc Bảo – Mãn Duyên,,PARTIAL_OUT,411,84,12,M,13
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,32,Áo dài Ngọc Bảo – Mãn Duyên,,PARTIAL_OUT,412,84,11,S,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,32,Áo dài Ngọc Bảo – Mãn Duyên,,PARTIAL_OUT,413,84,14,XL,29
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,32,Áo dài Ngọc Bảo – Mãn Duyên,,PARTIAL_OUT,414,84,10,XS,22
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,32,Áo dài Ngọc Bảo – Mãn Duyên,,PARTIAL_OUT,415,85,13,L,26
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,32,Áo dài Ngọc Bảo – Mãn Duyên,,PARTIAL_OUT,416,85,12,M,29
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,32,Áo dài Ngọc Bảo – Mãn Duyên,,PARTIAL_OUT,417,85,11,S,20
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,32,Áo dài Ngọc Bảo – Mãn Duyên,,PARTIAL_OUT,418,85,14,XL,26
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,32,Áo dài Ngọc Bảo – Mãn Duyên,,PARTIAL_OUT,419,85,10,XS,25
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,32,Áo dài Ngọc Bảo – Mãn Duyên,,PARTIAL_OUT,420,86,13,L,6
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,32,Áo dài Ngọc Bảo – Mãn Duyên,,PARTIAL_OUT,421,86,12,M,3
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,32,Áo dài Ngọc Bảo – Mãn Duyên,,PARTIAL_OUT,422,86,11,S,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,32,Áo dài Ngọc Bảo – Mãn Duyên,,PARTIAL_OUT,423,86,14,XL,17
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,32,Áo dài Ngọc Bảo – Mãn Duyên,,PARTIAL_OUT,424,86,10,XS,14
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,33,Áo dài Thiên Hà,,PARTIAL_OUT,522,111,13,L,30
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,33,Áo dài Thiên Hà,,PARTIAL_OUT,523,111,12,M,0
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,33,Áo dài Thiên Hà,,PARTIAL_OUT,524,111,11,S,7
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,33,Áo dài Thiên Hà,,PARTIAL_OUT,525,111,14,XL,1
+1,Xéo Xọ Store,3,Dao Ngọc Các,dao-ngoc-cac,33,Áo dài Thiên Hà,,PARTIAL_OUT,526,111,10,XS,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,34,Quần Thục Khuê,,IN_STOCK,26,194,,,20
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,35,Áo Choàng Hoa Kim,,FULL_OUT,27,4,,,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,36,Áo Choàng Hoa Kiều,,IN_STOCK,28,3,,,2
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,37,Áo Choàng Hoa Nhiên,,FULL_OUT,29,5,,,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,38,Áo Choàng Hoa Nhu,,IN_STOCK,54,6,,,20
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,39,Áo Hạ Cẩm,,FULL_OUT,55,138,,,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,40,Áo Hạ Miên,,FULL_OUT,56,139,,,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,41,Áo Hạ Như,,IN_STOCK,57,140,,,10
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,42,Áo Hạ Sương,,IN_STOCK,684,141,4,L,8
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,42,Áo Hạ Sương,,IN_STOCK,685,141,3,M,19
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,42,Áo Hạ Sương,,IN_STOCK,686,141,2,S,11
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,42,Áo Hạ Sương,,IN_STOCK,687,141,5,XL,17
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,42,Áo Hạ Sương,,IN_STOCK,688,141,1,XS,13
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,43,Áo Thục Khuê,,PARTIAL_OUT,704,155,4,L,5
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,43,Áo Thục Khuê,,PARTIAL_OUT,705,155,3,M,21
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,43,Áo Thục Khuê,,PARTIAL_OUT,706,155,2,S,25
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,43,Áo Thục Khuê,,PARTIAL_OUT,707,155,5,XL,19
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,43,Áo Thục Khuê,,PARTIAL_OUT,708,155,1,XS,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,44,Đầm Châu Khuê,,PARTIAL_OUT,714,159,4,L,11
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,44,Đầm Châu Khuê,,PARTIAL_OUT,715,159,3,M,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,44,Đầm Châu Khuê,,PARTIAL_OUT,716,159,2,S,2
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,44,Đầm Châu Khuê,,PARTIAL_OUT,717,159,5,XL,27
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,44,Đầm Châu Khuê,,PARTIAL_OUT,718,159,1,XS,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,45,Đầm Lưu Mây,,PARTIAL_OUT,719,166,4,L,12
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,45,Đầm Lưu Mây,,PARTIAL_OUT,720,166,3,M,7
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,45,Đầm Lưu Mây,,PARTIAL_OUT,721,166,2,S,2
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,45,Đầm Lưu Mây,,PARTIAL_OUT,722,166,5,XL,5
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,45,Đầm Lưu Mây,,PARTIAL_OUT,723,166,1,XS,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,46,Đầm Lạc Hạ,,IN_STOCK,759,163,4,L,10
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,46,Đầm Lạc Hạ,,IN_STOCK,760,163,3,M,26
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,46,Đầm Lạc Hạ,,IN_STOCK,761,163,2,S,15
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,46,Đầm Lạc Hạ,,IN_STOCK,762,163,5,XL,23
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,46,Đầm Lạc Hạ,,IN_STOCK,763,163,1,XS,17
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,47,Đầm Miểu Vi,,PARTIAL_OUT,764,168,4,L,22
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,47,Đầm Miểu Vi,,PARTIAL_OUT,765,168,3,M,10
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,47,Đầm Miểu Vi,,PARTIAL_OUT,766,168,2,S,21
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,47,Đầm Miểu Vi,,PARTIAL_OUT,767,168,5,XL,20
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,47,Đầm Miểu Vi,,PARTIAL_OUT,768,168,1,XS,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,48,Đầm Thanh Tiêu,,IN_STOCK,769,175,4,L,18
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,48,Đầm Thanh Tiêu,,IN_STOCK,770,175,3,M,27
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,48,Đầm Thanh Tiêu,,IN_STOCK,771,175,2,S,7
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,48,Đầm Thanh Tiêu,,IN_STOCK,772,175,5,XL,16
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,48,Đầm Thanh Tiêu,,IN_STOCK,773,175,1,XS,30
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,49,Đầm Thii Châu,,IN_STOCK,774,176,4,L,28
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,49,Đầm Thii Châu,,IN_STOCK,775,176,3,M,17
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,49,Đầm Thii Châu,,IN_STOCK,776,176,2,S,20
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,49,Đầm Thii Châu,,IN_STOCK,777,176,5,XL,4
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,49,Đầm Thii Châu,,IN_STOCK,778,176,1,XS,24
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,50,Đầm Thii Huỳnh,,PARTIAL_OUT,779,179,4,L,4
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,50,Đầm Thii Huỳnh,,PARTIAL_OUT,780,179,3,M,6
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,50,Đầm Thii Huỳnh,,PARTIAL_OUT,781,179,2,S,4
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,50,Đầm Thii Huỳnh,,PARTIAL_OUT,782,179,5,XL,8
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,50,Đầm Thii Huỳnh,,PARTIAL_OUT,783,179,1,XS,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,51,Đầm Thii Hồng,,IN_STOCK,784,178,4,L,1
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,51,Đầm Thii Hồng,,IN_STOCK,785,178,3,M,4
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,51,Đầm Thii Hồng,,IN_STOCK,786,178,2,S,5
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,51,Đầm Thii Hồng,,IN_STOCK,787,178,5,XL,16
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,51,Đầm Thii Hồng,,IN_STOCK,788,178,1,XS,28
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,52,Đầm Thii Liên,,PARTIAL_OUT,789,180,4,L,28
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,52,Đầm Thii Liên,,PARTIAL_OUT,790,180,3,M,17
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,52,Đầm Thii Liên,,PARTIAL_OUT,791,180,2,S,1
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,52,Đầm Thii Liên,,PARTIAL_OUT,792,180,5,XL,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,52,Đầm Thii Liên,,PARTIAL_OUT,793,180,1,XS,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,53,Đầm Thii Mây,,IN_STOCK,794,181,4,L,14
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,53,Đầm Thii Mây,,IN_STOCK,795,181,3,M,14
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,53,Đầm Thii Mây,,IN_STOCK,796,181,2,S,13
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,53,Đầm Thii Mây,,IN_STOCK,797,181,5,XL,7
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,53,Đầm Thii Mây,,IN_STOCK,798,181,1,XS,16
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,54,Đầm Thii Mộng,,IN_STOCK,799,182,4,L,19
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,54,Đầm Thii Mộng,,IN_STOCK,800,182,3,M,16
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,54,Đầm Thii Mộng,,IN_STOCK,801,182,2,S,3
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,54,Đầm Thii Mộng,,IN_STOCK,802,182,5,XL,15
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,54,Đầm Thii Mộng,,IN_STOCK,803,182,1,XS,28
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,55,Đầm Thii Ngọc,,IN_STOCK,78,183,13,L,23
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,55,Đầm Thii Ngọc,,IN_STOCK,79,183,12,M,25
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,55,Đầm Thii Ngọc,,IN_STOCK,80,183,11,S,26
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,55,Đầm Thii Ngọc,,IN_STOCK,81,183,14,XL,2
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,55,Đầm Thii Ngọc,,IN_STOCK,82,183,10,XS,2
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,56,Đầm Thii Nhạn,,FULL_OUT,173,184,13,L,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,56,Đầm Thii Nhạn,,FULL_OUT,174,184,12,M,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,56,Đầm Thii Nhạn,,FULL_OUT,175,184,11,S,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,56,Đầm Thii Nhạn,,FULL_OUT,176,184,14,XL,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,56,Đầm Thii Nhạn,,FULL_OUT,177,184,10,XS,0
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,57,Đầm Thii Đan,,IN_STOCK,198,177,13,L,20
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,57,Đầm Thii Đan,,IN_STOCK,199,177,12,M,30
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,57,Đầm Thii Đan,,IN_STOCK,200,177,11,S,30
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,57,Đầm Thii Đan,,IN_STOCK,201,177,14,XL,29
+1,Xéo Xọ Store,4,Hạ Khuê,ha-khue,57,Đầm Thii Đan,,IN_STOCK,202,177,10,XS,23
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,58,Áo dài Chi Nhạn,,PARTIAL_OUT,233,26,13,L,4
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,58,Áo dài Chi Nhạn,,PARTIAL_OUT,234,26,12,M,29
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,58,Áo dài Chi Nhạn,,PARTIAL_OUT,235,26,11,S,8
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,58,Áo dài Chi Nhạn,,PARTIAL_OUT,236,26,14,XL,2
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,58,Áo dài Chi Nhạn,,PARTIAL_OUT,237,26,10,XS,7
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,58,Áo dài Chi Nhạn,,PARTIAL_OUT,83,27,13,L,10
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,58,Áo dài Chi Nhạn,,PARTIAL_OUT,84,27,12,M,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,58,Áo dài Chi Nhạn,,PARTIAL_OUT,85,27,11,S,7
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,58,Áo dài Chi Nhạn,,PARTIAL_OUT,86,27,14,XL,4
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,58,Áo dài Chi Nhạn,,PARTIAL_OUT,87,27,10,XS,27
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,58,Áo dài Chi Nhạn,,PARTIAL_OUT,238,27,13,L,8
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,58,Áo dài Chi Nhạn,,PARTIAL_OUT,239,27,12,M,15
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,58,Áo dài Chi Nhạn,,PARTIAL_OUT,240,27,11,S,22
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,58,Áo dài Chi Nhạn,,PARTIAL_OUT,241,27,14,XL,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,58,Áo dài Chi Nhạn,,PARTIAL_OUT,242,27,10,XS,2
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,59,Áo dài Cẩm Tuyền,,IN_STOCK,278,15,13,L,8
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,59,Áo dài Cẩm Tuyền,,IN_STOCK,279,15,12,M,11
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,59,Áo dài Cẩm Tuyền,,IN_STOCK,280,15,11,S,3
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,59,Áo dài Cẩm Tuyền,,IN_STOCK,281,15,14,XL,23
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,59,Áo dài Cẩm Tuyền,,IN_STOCK,282,15,10,XS,4
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,59,Áo dài Cẩm Tuyền,,IN_STOCK,178,16,13,L,1
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,59,Áo dài Cẩm Tuyền,,IN_STOCK,179,16,12,M,20
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,59,Áo dài Cẩm Tuyền,,IN_STOCK,180,16,11,S,24
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,59,Áo dài Cẩm Tuyền,,IN_STOCK,181,16,14,XL,5
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,59,Áo dài Cẩm Tuyền,,IN_STOCK,182,16,10,XS,30
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,59,Áo dài Cẩm Tuyền,,IN_STOCK,283,16,13,L,5
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,59,Áo dài Cẩm Tuyền,,IN_STOCK,284,16,12,M,21
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,59,Áo dài Cẩm Tuyền,,IN_STOCK,285,16,11,S,11
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,59,Áo dài Cẩm Tuyền,,IN_STOCK,286,16,14,XL,10
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,59,Áo dài Cẩm Tuyền,,IN_STOCK,287,16,10,XS,23
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,60,Áo dài Diên Kim,,IN_STOCK,288,41,13,L,9
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,60,Áo dài Diên Kim,,IN_STOCK,289,41,12,M,8
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,60,Áo dài Diên Kim,,IN_STOCK,290,41,11,S,28
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,60,Áo dài Diên Kim,,IN_STOCK,291,41,14,XL,5
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,60,Áo dài Diên Kim,,IN_STOCK,292,41,10,XS,6
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,60,Áo dài Diên Kim,,IN_STOCK,203,42,13,L,28
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,60,Áo dài Diên Kim,,IN_STOCK,204,42,12,M,29
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,60,Áo dài Diên Kim,,IN_STOCK,205,42,11,S,18
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,60,Áo dài Diên Kim,,IN_STOCK,206,42,14,XL,20
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,60,Áo dài Diên Kim,,IN_STOCK,207,42,10,XS,15
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,60,Áo dài Diên Kim,,IN_STOCK,293,42,13,L,6
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,60,Áo dài Diên Kim,,IN_STOCK,294,42,12,M,1
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,60,Áo dài Diên Kim,,IN_STOCK,295,42,11,S,24
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,60,Áo dài Diên Kim,,IN_STOCK,296,42,14,XL,9
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,60,Áo dài Diên Kim,,IN_STOCK,297,42,10,XS,21
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,61,Áo dài Huỳnh Dao,,PARTIAL_OUT,307,55,13,L,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,61,Áo dài Huỳnh Dao,,PARTIAL_OUT,308,55,12,M,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,61,Áo dài Huỳnh Dao,,PARTIAL_OUT,309,55,11,S,18
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,61,Áo dài Huỳnh Dao,,PARTIAL_OUT,310,55,14,XL,11
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,61,Áo dài Huỳnh Dao,,PARTIAL_OUT,311,55,10,XS,15
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,61,Áo dài Huỳnh Dao,,PARTIAL_OUT,312,56,13,L,27
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,61,Áo dài Huỳnh Dao,,PARTIAL_OUT,313,56,12,M,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,61,Áo dài Huỳnh Dao,,PARTIAL_OUT,314,56,11,S,1
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,61,Áo dài Huỳnh Dao,,PARTIAL_OUT,315,56,14,XL,22
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,61,Áo dài Huỳnh Dao,,PARTIAL_OUT,316,56,10,XS,15
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,62,Áo dài Kim Ánh,,IN_STOCK,444,57,13,L,24
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,62,Áo dài Kim Ánh,,IN_STOCK,445,57,12,M,21
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,62,Áo dài Kim Ánh,,IN_STOCK,446,57,11,S,12
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,62,Áo dài Kim Ánh,,IN_STOCK,447,57,14,XL,11
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,62,Áo dài Kim Ánh,,IN_STOCK,448,57,10,XS,7
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,62,Áo dài Kim Ánh,,IN_STOCK,449,58,13,L,11
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,62,Áo dài Kim Ánh,,IN_STOCK,450,58,12,M,17
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,62,Áo dài Kim Ánh,,IN_STOCK,451,58,11,S,8
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,62,Áo dài Kim Ánh,,IN_STOCK,452,58,14,XL,25
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,62,Áo dài Kim Ánh,,IN_STOCK,453,58,10,XS,14
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,63,Áo dài Lưu Ngọc,,IN_STOCK,468,61,13,L,27
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,63,Áo dài Lưu Ngọc,,IN_STOCK,469,61,12,M,2
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,63,Áo dài Lưu Ngọc,,IN_STOCK,470,61,11,S,10
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,63,Áo dài Lưu Ngọc,,IN_STOCK,471,61,14,XL,5
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,63,Áo dài Lưu Ngọc,,IN_STOCK,472,61,10,XS,24
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,63,Áo dài Lưu Ngọc,,IN_STOCK,473,62,13,L,26
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,63,Áo dài Lưu Ngọc,,IN_STOCK,474,62,12,M,24
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,63,Áo dài Lưu Ngọc,,IN_STOCK,475,62,11,S,23
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,63,Áo dài Lưu Ngọc,,IN_STOCK,476,62,14,XL,29
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,63,Áo dài Lưu Ngọc,,IN_STOCK,477,62,10,XS,25
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,64,Áo dài Mai Chiêu,,PARTIAL_OUT,482,65,13,L,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,64,Áo dài Mai Chiêu,,PARTIAL_OUT,483,65,12,M,30
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,64,Áo dài Mai Chiêu,,PARTIAL_OUT,484,65,11,S,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,64,Áo dài Mai Chiêu,,PARTIAL_OUT,485,65,14,XL,26
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,64,Áo dài Mai Chiêu,,PARTIAL_OUT,486,65,10,XS,23
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,64,Áo dài Mai Chiêu,,PARTIAL_OUT,487,66,13,L,30
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,64,Áo dài Mai Chiêu,,PARTIAL_OUT,488,66,12,M,2
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,64,Áo dài Mai Chiêu,,PARTIAL_OUT,489,66,11,S,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,64,Áo dài Mai Chiêu,,PARTIAL_OUT,490,66,14,XL,25
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,64,Áo dài Mai Chiêu,,PARTIAL_OUT,491,66,10,XS,9
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,65,Áo dài Ngọc Nhu,,IN_STOCK,512,91,13,L,2
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,65,Áo dài Ngọc Nhu,,IN_STOCK,513,91,12,M,11
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,65,Áo dài Ngọc Nhu,,IN_STOCK,514,91,11,S,27
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,65,Áo dài Ngọc Nhu,,IN_STOCK,515,91,14,XL,2
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,65,Áo dài Ngọc Nhu,,IN_STOCK,516,91,10,XS,6
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,65,Áo dài Ngọc Nhu,,IN_STOCK,517,92,13,L,26
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,65,Áo dài Ngọc Nhu,,IN_STOCK,518,92,12,M,26
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,65,Áo dài Ngọc Nhu,,IN_STOCK,519,92,11,S,17
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,65,Áo dài Ngọc Nhu,,IN_STOCK,520,92,14,XL,10
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,65,Áo dài Ngọc Nhu,,IN_STOCK,521,92,10,XS,16
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,66,Áo dài Phách Linh,,IN_STOCK,600,97,13,L,5
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,66,Áo dài Phách Linh,,IN_STOCK,601,97,12,M,22
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,66,Áo dài Phách Linh,,IN_STOCK,602,97,11,S,15
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,66,Áo dài Phách Linh,,IN_STOCK,603,97,14,XL,27
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,66,Áo dài Phách Linh,,IN_STOCK,604,97,10,XS,13
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,66,Áo dài Phách Linh,,IN_STOCK,605,98,13,L,24
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,66,Áo dài Phách Linh,,IN_STOCK,606,98,12,M,5
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,66,Áo dài Phách Linh,,IN_STOCK,607,98,11,S,30
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,66,Áo dài Phách Linh,,IN_STOCK,608,98,14,XL,6
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,66,Áo dài Phách Linh,,IN_STOCK,609,98,10,XS,6
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,67,Áo dài Sương Mai,,FULL_OUT,634,102,13,L,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,67,Áo dài Sương Mai,,FULL_OUT,635,102,12,M,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,67,Áo dài Sương Mai,,FULL_OUT,636,102,11,S,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,67,Áo dài Sương Mai,,FULL_OUT,637,102,14,XL,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,67,Áo dài Sương Mai,,FULL_OUT,638,102,10,XS,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,67,Áo dài Sương Mai,,FULL_OUT,639,103,13,L,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,67,Áo dài Sương Mai,,FULL_OUT,640,103,12,M,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,67,Áo dài Sương Mai,,FULL_OUT,641,103,11,S,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,67,Áo dài Sương Mai,,FULL_OUT,642,103,14,XL,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,67,Áo dài Sương Mai,,FULL_OUT,643,103,10,XS,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,68,Áo dài Thanh Kỳ,,PARTIAL_OUT,1,109,4,L,20
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,68,Áo dài Thanh Kỳ,,PARTIAL_OUT,2,109,3,M,29
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,68,Áo dài Thanh Kỳ,,PARTIAL_OUT,3,109,2,S,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,68,Áo dài Thanh Kỳ,,PARTIAL_OUT,4,109,5,XL,6
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,68,Áo dài Thanh Kỳ,,PARTIAL_OUT,5,109,1,XS,21
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,69,Áo dài Tố Nhu,,FULL_OUT,22,118,,,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,69,Áo dài Tố Nhu,,FULL_OUT,23,119,,,0
+1,Xéo Xọ Store,5,Kỳ Sa,ky-sa,70,Áo dài Vũ Nhiên,,IN_STOCK,60,133,,,17
+1,Xéo Xọ Store,6,La Khê,la-khe,71,Chân Váy Lam Khanh,,PARTIAL_OUT,429,158,13,L,0
+1,Xéo Xọ Store,6,La Khê,la-khe,71,Chân Váy Lam Khanh,,PARTIAL_OUT,430,158,12,M,16
+1,Xéo Xọ Store,6,La Khê,la-khe,71,Chân Váy Lam Khanh,,PARTIAL_OUT,431,158,11,S,27
+1,Xéo Xọ Store,6,La Khê,la-khe,71,Chân Váy Lam Khanh,,PARTIAL_OUT,432,158,14,XL,18
+1,Xéo Xọ Store,6,La Khê,la-khe,71,Chân Váy Lam Khanh,,PARTIAL_OUT,433,158,10,XS,0
+1,Xéo Xọ Store,6,La Khê,la-khe,72,Yếm Dạ Thư,,IN_STOCK,497,198,13,L,2
+1,Xéo Xọ Store,6,La Khê,la-khe,72,Yếm Dạ Thư,,IN_STOCK,498,198,12,M,13
+1,Xéo Xọ Store,6,La Khê,la-khe,72,Yếm Dạ Thư,,IN_STOCK,499,198,11,S,14
+1,Xéo Xọ Store,6,La Khê,la-khe,72,Yếm Dạ Thư,,IN_STOCK,500,198,14,XL,17
+1,Xéo Xọ Store,6,La Khê,la-khe,72,Yếm Dạ Thư,,IN_STOCK,501,198,10,XS,13
+1,Xéo Xọ Store,6,La Khê,la-khe,72,Yếm Dạ Thư,,IN_STOCK,502,199,13,L,29
+1,Xéo Xọ Store,6,La Khê,la-khe,72,Yếm Dạ Thư,,IN_STOCK,503,199,12,M,6
+1,Xéo Xọ Store,6,La Khê,la-khe,72,Yếm Dạ Thư,,IN_STOCK,504,199,11,S,18
+1,Xéo Xọ Store,6,La Khê,la-khe,72,Yếm Dạ Thư,,IN_STOCK,505,199,14,XL,27
+1,Xéo Xọ Store,6,La Khê,la-khe,72,Yếm Dạ Thư,,IN_STOCK,506,199,10,XS,20
+1,Xéo Xọ Store,6,La Khê,la-khe,73,Áo Lam Khanh,,PARTIAL_OUT,575,145,13,L,0
+1,Xéo Xọ Store,6,La Khê,la-khe,73,Áo Lam Khanh,,PARTIAL_OUT,576,145,12,M,15
+1,Xéo Xọ Store,6,La Khê,la-khe,73,Áo Lam Khanh,,PARTIAL_OUT,577,145,11,S,0
+1,Xéo Xọ Store,6,La Khê,la-khe,73,Áo Lam Khanh,,PARTIAL_OUT,578,145,14,XL,11
+1,Xéo Xọ Store,6,La Khê,la-khe,73,Áo Lam Khanh,,PARTIAL_OUT,579,145,10,XS,2
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,610,88,13,L,25
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,611,88,12,M,22
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,612,88,11,S,2
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,613,88,14,XL,26
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,614,88,10,XS,9
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,434,89,13,L,15
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,435,89,12,M,12
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,436,89,11,S,15
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,437,89,14,XL,19
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,438,89,10,XS,30
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,615,89,13,L,24
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,616,89,12,M,22
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,617,89,11,S,8
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,618,89,14,XL,4
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,619,89,10,XS,1
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,439,90,13,L,25
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,440,90,12,M,16
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,441,90,11,S,13
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,442,90,14,XL,26
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,443,90,10,XS,20
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,620,90,13,L,9
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,621,90,12,M,3
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,622,90,11,S,27
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,623,90,14,XL,26
+1,Xéo Xọ Store,6,La Khê,la-khe,74,Áo dài Ngọc Khê – Yên Hoàng,,IN_STOCK,624,90,10,XS,17
+1,Xéo Xọ Store,6,La Khê,la-khe,75,Áo dài Thanh Khê – Yên Lam,,FULL_OUT,809,106,4,L,0
+1,Xéo Xọ Store,6,La Khê,la-khe,75,Áo dài Thanh Khê – Yên Lam,,FULL_OUT,810,106,3,M,0
+1,Xéo Xọ Store,6,La Khê,la-khe,75,Áo dài Thanh Khê – Yên Lam,,FULL_OUT,811,106,2,S,0
+1,Xéo Xọ Store,6,La Khê,la-khe,75,Áo dài Thanh Khê – Yên Lam,,FULL_OUT,812,106,5,XL,0
+1,Xéo Xọ Store,6,La Khê,la-khe,75,Áo dài Thanh Khê – Yên Lam,,FULL_OUT,813,106,1,XS,0
+1,Xéo Xọ Store,6,La Khê,la-khe,75,Áo dài Thanh Khê – Yên Lam,,FULL_OUT,507,108,13,L,0
+1,Xéo Xọ Store,6,La Khê,la-khe,75,Áo dài Thanh Khê – Yên Lam,,FULL_OUT,508,108,12,M,0
+1,Xéo Xọ Store,6,La Khê,la-khe,75,Áo dài Thanh Khê – Yên Lam,,FULL_OUT,509,108,11,S,0
+1,Xéo Xọ Store,6,La Khê,la-khe,75,Áo dài Thanh Khê – Yên Lam,,FULL_OUT,510,108,14,XL,0
+1,Xéo Xọ Store,6,La Khê,la-khe,75,Áo dài Thanh Khê – Yên Lam,,FULL_OUT,511,108,10,XS,0
+1,Xéo Xọ Store,6,La Khê,la-khe,76,Áo dài Tú Khê – Yên Như,,PARTIAL_OUT,16,124,,,5
+1,Xéo Xọ Store,6,La Khê,la-khe,76,Áo dài Tú Khê – Yên Như,,PARTIAL_OUT,580,125,13,L,15
+1,Xéo Xọ Store,6,La Khê,la-khe,76,Áo dài Tú Khê – Yên Như,,PARTIAL_OUT,581,125,12,M,27
+1,Xéo Xọ Store,6,La Khê,la-khe,76,Áo dài Tú Khê – Yên Như,,PARTIAL_OUT,582,125,11,S,22
+1,Xéo Xọ Store,6,La Khê,la-khe,76,Áo dài Tú Khê – Yên Như,,PARTIAL_OUT,583,125,14,XL,12
+1,Xéo Xọ Store,6,La Khê,la-khe,76,Áo dài Tú Khê – Yên Như,,PARTIAL_OUT,584,125,10,XS,30
+1,Xéo Xọ Store,6,La Khê,la-khe,76,Áo dài Tú Khê – Yên Như,,PARTIAL_OUT,585,126,13,L,26
+1,Xéo Xọ Store,6,La Khê,la-khe,76,Áo dài Tú Khê – Yên Như,,PARTIAL_OUT,586,126,12,M,24
+1,Xéo Xọ Store,6,La Khê,la-khe,76,Áo dài Tú Khê – Yên Như,,PARTIAL_OUT,587,126,11,S,11
+1,Xéo Xọ Store,6,La Khê,la-khe,76,Áo dài Tú Khê – Yên Như,,PARTIAL_OUT,588,126,14,XL,11
+1,Xéo Xọ Store,6,La Khê,la-khe,76,Áo dài Tú Khê – Yên Như,,PARTIAL_OUT,589,126,10,XS,0
+1,Xéo Xọ Store,6,La Khê,la-khe,77,Áo dài Vân Khê – Yên Hải,,IN_STOCK,17,127,,,1
+1,Xéo Xọ Store,6,La Khê,la-khe,78,Đầm Uyên Đan,,IN_STOCK,18,186,,,21
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,79,Quần Đan Châu,,IN_STOCK,19,190,,,11
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,80,Quần Đan Cẩn,,IN_STOCK,20,189,,,3
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,81,Quần Đan Vân,,IN_STOCK,25,191,,,8
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,82,Set Hà Chi,,IN_STOCK,58,195,,,27
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,83,Set Hà Như,,IN_STOCK,59,196,,,24
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,84,Áo Bách Đơn,,IN_STOCK,63,2,,,7
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,85,Áo Hồng Đơn,,IN_STOCK,64,142,,,9
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,86,Áo Khuê Đơn,,IN_STOCK,65,144,,,13
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,87,Áo Quý Chiêu,,IN_STOCK,66,149,,,25
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,88,Áo Quý Châu,,FULL_OUT,67,148,,,0
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,89,Áo Quý Kim,,IN_STOCK,68,150,,,9
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,90,Áo Quý Lam,,IN_STOCK,69,151,,,23
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,91,Áo Quý Như,,PARTIAL_OUT,674,152,4,L,16
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,91,Áo Quý Như,,PARTIAL_OUT,675,152,3,M,10
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,91,Áo Quý Như,,PARTIAL_OUT,676,152,2,S,27
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,91,Áo Quý Như,,PARTIAL_OUT,677,152,5,XL,0
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,91,Áo Quý Như,,PARTIAL_OUT,678,152,1,XS,15
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,92,Áo Quý Sa,,FULL_OUT,679,153,4,L,0
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,92,Áo Quý Sa,,FULL_OUT,680,153,3,M,0
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,92,Áo Quý Sa,,FULL_OUT,681,153,2,S,0
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,92,Áo Quý Sa,,FULL_OUT,682,153,5,XL,0
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,92,Áo Quý Sa,,FULL_OUT,683,153,1,XS,0
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,93,Áo Quý Vân,,PARTIAL_OUT,699,154,4,L,15
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,93,Áo Quý Vân,,PARTIAL_OUT,700,154,3,M,12
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,93,Áo Quý Vân,,PARTIAL_OUT,701,154,2,S,18
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,93,Áo Quý Vân,,PARTIAL_OUT,702,154,5,XL,29
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,93,Áo Quý Vân,,PARTIAL_OUT,703,154,1,XS,0
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,94,Đầm Chi Huỳnh,,IN_STOCK,709,160,4,L,5
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,94,Đầm Chi Huỳnh,,IN_STOCK,710,160,3,M,21
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,94,Đầm Chi Huỳnh,,IN_STOCK,711,160,2,S,20
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,94,Đầm Chi Huỳnh,,IN_STOCK,712,160,5,XL,4
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,94,Đầm Chi Huỳnh,,IN_STOCK,713,160,1,XS,22
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,95,Đầm Chi Mạn,,IN_STOCK,724,161,4,L,14
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,95,Đầm Chi Mạn,,IN_STOCK,725,161,3,M,25
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,95,Đầm Chi Mạn,,IN_STOCK,726,161,2,S,20
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,95,Đầm Chi Mạn,,IN_STOCK,727,161,5,XL,8
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,95,Đầm Chi Mạn,,IN_STOCK,728,161,1,XS,25
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,96,Đầm Lưu Châu,,PARTIAL_OUT,729,165,4,L,14
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,96,Đầm Lưu Châu,,PARTIAL_OUT,730,165,3,M,15
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,96,Đầm Lưu Châu,,PARTIAL_OUT,731,165,2,S,30
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,96,Đầm Lưu Châu,,PARTIAL_OUT,732,165,5,XL,0
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,96,Đầm Lưu Châu,,PARTIAL_OUT,733,165,1,XS,2
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,97,Đầm Lưu Quỳnh,,IN_STOCK,734,167,4,L,15
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,97,Đầm Lưu Quỳnh,,IN_STOCK,735,167,3,M,28
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,97,Đầm Lưu Quỳnh,,IN_STOCK,736,167,2,S,24
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,97,Đầm Lưu Quỳnh,,IN_STOCK,737,167,5,XL,18
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,97,Đầm Lưu Quỳnh,,IN_STOCK,738,167,1,XS,5
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,98,Đầm Ngọc Tiêu,,PARTIAL_OUT,739,169,4,L,26
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,98,Đầm Ngọc Tiêu,,PARTIAL_OUT,740,169,3,M,26
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,98,Đầm Ngọc Tiêu,,PARTIAL_OUT,741,169,2,S,0
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,98,Đầm Ngọc Tiêu,,PARTIAL_OUT,742,169,5,XL,19
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,98,Đầm Ngọc Tiêu,,PARTIAL_OUT,743,169,1,XS,0
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,99,Đầm Nhã Quy,,IN_STOCK,13,170,,,10
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,100,Đầm Phù Ân,,IN_STOCK,14,172,,,6
+1,Xéo Xọ Store,7,Quý Chi,quy-chi,101,Đầm Phương Thanh,,IN_STOCK,30,173,,,24
+1,Xéo Xọ Store,8,Sắc Kỳ Hương,sac-ky-huong,102,Chân váy Hương Kiều,,IN_STOCK,31,157,,,13
+1,Xéo Xọ Store,8,Sắc Kỳ Hương,sac-ky-huong,103,Áo Hương Kiều,,IN_STOCK,61,143,,,3
+1,Xéo Xọ Store,8,Sắc Kỳ Hương,sac-ky-huong,104,Áo Thục Nghi,,IN_STOCK,62,156,,,7
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,105,Quần Mộng Chi,,PARTIAL_OUT,689,192,4,L,0
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,105,Quần Mộng Chi,,PARTIAL_OUT,690,192,3,M,19
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,105,Quần Mộng Chi,,PARTIAL_OUT,691,192,2,S,18
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,105,Quần Mộng Chi,,PARTIAL_OUT,692,192,5,XL,0
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,105,Quần Mộng Chi,,PARTIAL_OUT,693,192,1,XS,23
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,106,Quần Nhật Thư,,PARTIAL_OUT,694,193,4,L,22
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,106,Quần Nhật Thư,,PARTIAL_OUT,695,193,3,M,1
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,106,Quần Nhật Thư,,PARTIAL_OUT,696,193,2,S,0
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,106,Quần Nhật Thư,,PARTIAL_OUT,697,193,5,XL,12
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,106,Quần Nhật Thư,,PARTIAL_OUT,698,193,1,XS,0
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,107,Áo Choàng Hồng Mây,,FULL_OUT,744,7,4,L,0
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,107,Áo Choàng Hồng Mây,,FULL_OUT,745,7,3,M,0
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,107,Áo Choàng Hồng Mây,,FULL_OUT,746,7,2,S,0
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,107,Áo Choàng Hồng Mây,,FULL_OUT,747,7,5,XL,0
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,107,Áo Choàng Hồng Mây,,FULL_OUT,748,7,1,XS,0
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,108,Áo Choàng Ngọc Mây,,IN_STOCK,749,8,4,L,11
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,108,Áo Choàng Ngọc Mây,,IN_STOCK,750,8,3,M,27
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,108,Áo Choàng Ngọc Mây,,IN_STOCK,751,8,2,S,19
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,108,Áo Choàng Ngọc Mây,,IN_STOCK,752,8,5,XL,23
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,108,Áo Choàng Ngọc Mây,,IN_STOCK,753,8,1,XS,12
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,109,Áo Mộng Chi,,IN_STOCK,804,146,4,L,24
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,109,Áo Mộng Chi,,IN_STOCK,805,146,3,M,1
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,109,Áo Mộng Chi,,IN_STOCK,806,146,2,S,30
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,109,Áo Mộng Chi,,IN_STOCK,807,146,5,XL,26
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,109,Áo Mộng Chi,,IN_STOCK,808,146,1,XS,30
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,110,Áo Nhật Thư,,IN_STOCK,33,147,8,L,27
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,110,Áo Nhật Thư,,IN_STOCK,34,147,7,M,17
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,110,Áo Nhật Thư,,IN_STOCK,35,147,6,S,7
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,110,Áo Nhật Thư,,IN_STOCK,36,147,9,XL,20
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,111,Đầm Diệu Thanh,,IN_STOCK,37,162,8,L,19
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,111,Đầm Diệu Thanh,,IN_STOCK,38,162,7,M,7
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,111,Đầm Diệu Thanh,,IN_STOCK,39,162,6,S,14
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,111,Đầm Diệu Thanh,,IN_STOCK,40,162,9,XL,23
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,112,Đầm Lan Kiều,,IN_STOCK,41,164,8,L,6
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,112,Đầm Lan Kiều,,IN_STOCK,42,164,7,M,8
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,112,Đầm Lan Kiều,,IN_STOCK,43,164,6,S,17
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,112,Đầm Lan Kiều,,IN_STOCK,44,164,9,XL,7
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,113,Đầm Phấn Hy,,IN_STOCK,45,171,8,L,8
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,113,Đầm Phấn Hy,,IN_STOCK,46,171,7,M,12
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,113,Đầm Phấn Hy,,IN_STOCK,47,171,6,S,10
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,113,Đầm Phấn Hy,,IN_STOCK,48,171,9,XL,18
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,114,Đầm Thanh Quy,,IN_STOCK,49,174,8,L,20
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,114,Đầm Thanh Quy,,IN_STOCK,50,174,7,M,25
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,114,Đầm Thanh Quy,,IN_STOCK,51,174,6,S,12
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,114,Đầm Thanh Quy,,IN_STOCK,52,174,9,XL,25
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,115,Đầm Trúc Mây,,PARTIAL_OUT,73,185,13,L,21
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,115,Đầm Trúc Mây,,PARTIAL_OUT,74,185,12,M,23
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,115,Đầm Trúc Mây,,PARTIAL_OUT,75,185,11,S,5
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,115,Đầm Trúc Mây,,PARTIAL_OUT,76,185,14,XL,28
+1,Xéo Xọ Store,9,Thanh Xuân,thanh-xuan,115,Đầm Trúc Mây,,PARTIAL_OUT,77,185,10,XS,0
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,116,Hồng Sa,,PARTIAL_OUT,218,187,13,L,18
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,116,Hồng Sa,,PARTIAL_OUT,219,187,12,M,28
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,116,Hồng Sa,,PARTIAL_OUT,220,187,11,S,0
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,116,Hồng Sa,,PARTIAL_OUT,221,187,14,XL,0
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,116,Hồng Sa,,PARTIAL_OUT,222,187,10,XS,18
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,117,Mộng Kỳ,,FULL_OUT,298,188,8,L,0
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,117,Mộng Kỳ,,FULL_OUT,299,188,7,M,0
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,117,Mộng Kỳ,,FULL_OUT,300,188,6,S,0
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,117,Mộng Kỳ,,FULL_OUT,301,188,9,XL,0
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,118,Tinh Sa,,IN_STOCK,302,197,13,L,7
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,118,Tinh Sa,,IN_STOCK,303,197,12,M,8
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,118,Tinh Sa,,IN_STOCK,304,197,11,S,21
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,118,Tinh Sa,,IN_STOCK,305,197,14,XL,17
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,118,Tinh Sa,,IN_STOCK,306,197,10,XS,12
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,119,Ánh Diễm,,PARTIAL_OUT,347,1,13,L,21
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,119,Ánh Diễm,,PARTIAL_OUT,348,1,12,M,2
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,119,Ánh Diễm,,PARTIAL_OUT,349,1,11,S,0
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,119,Ánh Diễm,,PARTIAL_OUT,350,1,14,XL,19
+1,Xéo Xọ Store,10,Xuân Diệm Khai Hoa,xuan-diem-khai-hoa,119,Ánh Diễm,,PARTIAL_OUT,351,1,10,XS,0
+1,Xéo Xọ Store,11,ĐINH,dinh,120,Áo Dài Dao Vinh,,PARTIAL_OUT,352,40,13,L,3
+1,Xéo Xọ Store,11,ĐINH,dinh,120,Áo Dài Dao Vinh,,PARTIAL_OUT,353,40,12,M,0
+1,Xéo Xọ Store,11,ĐINH,dinh,120,Áo Dài Dao Vinh,,PARTIAL_OUT,354,40,11,S,0
+1,Xéo Xọ Store,11,ĐINH,dinh,120,Áo Dài Dao Vinh,,PARTIAL_OUT,355,40,14,XL,23
+1,Xéo Xọ Store,11,ĐINH,dinh,120,Áo Dài Dao Vinh,,PARTIAL_OUT,356,40,10,XS,29
+1,Xéo Xọ Store,11,ĐINH,dinh,121,Áo Dài Minh Tịnh,,IN_STOCK,405,73,13,L,7
+1,Xéo Xọ Store,11,ĐINH,dinh,121,Áo Dài Minh Tịnh,,IN_STOCK,406,73,12,M,16
+1,Xéo Xọ Store,11,ĐINH,dinh,121,Áo Dài Minh Tịnh,,IN_STOCK,407,73,11,S,15
+1,Xéo Xọ Store,11,ĐINH,dinh,121,Áo Dài Minh Tịnh,,IN_STOCK,408,73,14,XL,4
+1,Xéo Xọ Store,11,ĐINH,dinh,121,Áo Dài Minh Tịnh,,IN_STOCK,409,73,10,XS,7
+1,Xéo Xọ Store,11,ĐINH,dinh,122,Áo Dài Phong Tường,,PARTIAL_OUT,425,99,8,L,15
+1,Xéo Xọ Store,11,ĐINH,dinh,122,Áo Dài Phong Tường,,PARTIAL_OUT,426,99,7,M,16
+1,Xéo Xọ Store,11,ĐINH,dinh,122,Áo Dài Phong Tường,,PARTIAL_OUT,427,99,6,S,4
+1,Xéo Xọ Store,11,ĐINH,dinh,122,Áo Dài Phong Tường,,PARTIAL_OUT,428,99,9,XL,0
+1,Xéo Xọ Store,11,ĐINH,dinh,123,Áo Dài Vũ Lăng,,IN_STOCK,464,132,8,L,7
+1,Xéo Xọ Store,11,ĐINH,dinh,123,Áo Dài Vũ Lăng,,IN_STOCK,465,132,7,M,14
+1,Xéo Xọ Store,11,ĐINH,dinh,123,Áo Dài Vũ Lăng,,IN_STOCK,466,132,6,S,13
+1,Xéo Xọ Store,11,ĐINH,dinh,123,Áo Dài Vũ Lăng,,IN_STOCK,467,132,9,XL,12
+1,Xéo Xọ Store,11,ĐINH,dinh,124,Áo Dài Yên Lăng,,IN_STOCK,478,135,8,L,24
+1,Xéo Xọ Store,11,ĐINH,dinh,124,Áo Dài Yên Lăng,,IN_STOCK,479,135,7,M,21
+1,Xéo Xọ Store,11,ĐINH,dinh,124,Áo Dài Yên Lăng,,IN_STOCK,480,135,6,S,6
+1,Xéo Xọ Store,11,ĐINH,dinh,124,Áo Dài Yên Lăng,,IN_STOCK,481,135,9,XL,15
+1,Xéo Xọ Store,11,ĐINH,dinh,125,Áo dài Bách Hiên,,PARTIAL_OUT,492,11,13,L,0
+1,Xéo Xọ Store,11,ĐINH,dinh,125,Áo dài Bách Hiên,,PARTIAL_OUT,493,11,12,M,22
+1,Xéo Xọ Store,11,ĐINH,dinh,125,Áo dài Bách Hiên,,PARTIAL_OUT,494,11,11,S,5
+1,Xéo Xọ Store,11,ĐINH,dinh,125,Áo dài Bách Hiên,,PARTIAL_OUT,495,11,14,XL,21
+1,Xéo Xọ Store,11,ĐINH,dinh,125,Áo dài Bách Hiên,,PARTIAL_OUT,496,11,10,XS,16
+1,Xéo Xọ Store,11,ĐINH,dinh,126,Áo dài Gia Hỷ,,IN_STOCK,537,45,8,L,30
+1,Xéo Xọ Store,11,ĐINH,dinh,126,Áo dài Gia Hỷ,,IN_STOCK,538,45,7,M,6
+1,Xéo Xọ Store,11,ĐINH,dinh,126,Áo dài Gia Hỷ,,IN_STOCK,539,45,6,S,2
+1,Xéo Xọ Store,11,ĐINH,dinh,126,Áo dài Gia Hỷ,,IN_STOCK,540,45,9,XL,23
+1,Xéo Xọ Store,11,ĐINH,dinh,127,Áo dài Lục Nguyên,,IN_STOCK,551,59,13,L,27
+1,Xéo Xọ Store,11,ĐINH,dinh,127,Áo dài Lục Nguyên,,IN_STOCK,552,59,12,M,1
+1,Xéo Xọ Store,11,ĐINH,dinh,127,Áo dài Lục Nguyên,,IN_STOCK,553,59,11,S,27
+1,Xéo Xọ Store,11,ĐINH,dinh,127,Áo dài Lục Nguyên,,IN_STOCK,554,59,14,XL,4
+1,Xéo Xọ Store,11,ĐINH,dinh,127,Áo dài Lục Nguyên,,IN_STOCK,555,59,10,XS,9
+1,Xéo Xọ Store,11,ĐINH,dinh,128,Áo dài Lục Nhạn,,FULL_OUT,566,60,13,L,0
+1,Xéo Xọ Store,11,ĐINH,dinh,128,Áo dài Lục Nhạn,,FULL_OUT,567,60,12,M,0
+1,Xéo Xọ Store,11,ĐINH,dinh,128,Áo dài Lục Nhạn,,FULL_OUT,568,60,11,S,0
+1,Xéo Xọ Store,11,ĐINH,dinh,128,Áo dài Lục Nhạn,,FULL_OUT,569,60,14,XL,0
+1,Xéo Xọ Store,11,ĐINH,dinh,128,Áo dài Lục Nhạn,,FULL_OUT,570,60,10,XS,0
+1,Xéo Xọ Store,11,ĐINH,dinh,129,Áo dài Mạc Nguy,,PARTIAL_OUT,571,63,8,L,25
+1,Xéo Xọ Store,11,ĐINH,dinh,129,Áo dài Mạc Nguy,,PARTIAL_OUT,572,63,7,M,5
+1,Xéo Xọ Store,11,ĐINH,dinh,129,Áo dài Mạc Nguy,,PARTIAL_OUT,573,63,6,S,12
+1,Xéo Xọ Store,11,ĐINH,dinh,129,Áo dài Mạc Nguy,,PARTIAL_OUT,574,63,9,XL,0
+1,Xéo Xọ Store,11,ĐINH,dinh,130,Áo dài Mạc Trúc,,PARTIAL_OUT,625,64,8,L,15
+1,Xéo Xọ Store,11,ĐINH,dinh,130,Áo dài Mạc Trúc,,PARTIAL_OUT,626,64,7,M,2
+1,Xéo Xọ Store,11,ĐINH,dinh,130,Áo dài Mạc Trúc,,PARTIAL_OUT,627,64,6,S,0
+1,Xéo Xọ Store,11,ĐINH,dinh,130,Áo dài Mạc Trúc,,PARTIAL_OUT,628,64,9,XL,17
+1,Xéo Xọ Store,11,ĐINH,dinh,131,Áo dài Nguyên Phong,,IN_STOCK,629,93,13,L,9
+1,Xéo Xọ Store,11,ĐINH,dinh,131,Áo dài Nguyên Phong,,IN_STOCK,630,93,12,M,19
+1,Xéo Xọ Store,11,ĐINH,dinh,131,Áo dài Nguyên Phong,,IN_STOCK,631,93,11,S,23
+1,Xéo Xọ Store,11,ĐINH,dinh,131,Áo dài Nguyên Phong,,IN_STOCK,632,93,14,XL,9
+1,Xéo Xọ Store,11,ĐINH,dinh,131,Áo dài Nguyên Phong,,IN_STOCK,633,93,10,XS,28
+1,Xéo Xọ Store,11,ĐINH,dinh,132,Áo dài Ngọc Chẩm,,IN_STOCK,15,87,,,24
+1,Xéo Xọ Store,11,ĐINH,dinh,133,Áo dài Nhã Lam,,IN_STOCK,70,94,,,15
+1,Xéo Xọ Store,11,ĐINH,dinh,134,Áo dài Phụng Viên,,IN_STOCK,754,100,4,L,28
+1,Xéo Xọ Store,11,ĐINH,dinh,134,Áo dài Phụng Viên,,IN_STOCK,755,100,3,M,8
+1,Xéo Xọ Store,11,ĐINH,dinh,134,Áo dài Phụng Viên,,IN_STOCK,756,100,2,S,30
+1,Xéo Xọ Store,11,ĐINH,dinh,134,Áo dài Phụng Viên,,IN_STOCK,757,100,5,XL,28
+1,Xéo Xọ Store,11,ĐINH,dinh,134,Áo dài Phụng Viên,,IN_STOCK,758,100,1,XS,22
+1,Xéo Xọ Store,11,ĐINH,dinh,135,Áo dài Sắc Kỳ,,IN_STOCK,6,101,4,L,2
+1,Xéo Xọ Store,11,ĐINH,dinh,135,Áo dài Sắc Kỳ,,IN_STOCK,7,101,3,M,1
+1,Xéo Xọ Store,11,ĐINH,dinh,135,Áo dài Sắc Kỳ,,IN_STOCK,8,101,2,S,13
+1,Xéo Xọ Store,11,ĐINH,dinh,135,Áo dài Sắc Kỳ,,IN_STOCK,9,101,5,XL,9
+1,Xéo Xọ Store,11,ĐINH,dinh,135,Áo dài Sắc Kỳ,,IN_STOCK,10,101,1,XS,22
+1,Xéo Xọ Store,11,ĐINH,dinh,136,Áo dài Thái Vũ,,IN_STOCK,53,105,,,14
+1,Xéo Xọ Store,11,ĐINH,dinh,137,Áo dài Thạch Nhiên,,IN_STOCK,71,104,,,1
+1,Xéo Xọ Store,11,ĐINH,dinh,138,Áo dài Trường Lam,,FULL_OUT,11,120,,,0
+1,Xéo Xọ Store,11,ĐINH,dinh,139,Áo dài Trường Liên,,IN_STOCK,12,121,,,16
+1,Xéo Xọ Store,11,ĐINH,dinh,140,Áo dài Văn Lễ,,IN_STOCK,21,130,,,23
+1,Xéo Xọ Store,11,ĐINH,dinh,141,Áo dài Văn Phiến,,FULL_OUT,24,131,,,0

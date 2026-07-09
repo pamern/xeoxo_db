@@ -87,7 +87,7 @@ CREATE TABLE catalog.media (
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
 
     -- Thời gian cập nhật
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ,
 
     -- Chỉ cho phép IMAGE hoặc VIDEO
     CONSTRAINT chk_media_type
@@ -165,7 +165,7 @@ CREATE TABLE catalog.color (
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
 
     -- Thời gian cập nhật
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ,
 
     -- Khóa ngoại
     CONSTRAINT fk_color_media
@@ -217,7 +217,7 @@ COMMENT ON COLUMN catalog.color.color_name IS
 'Tên màu sắc.';
 
 COMMENT ON COLUMN catalog.color.color_code IS
-'Mã màu theo chuẩn HEX (ví dụ: #FFFFFF).';
+'Mã màu HEX canonical dùng để render swatch màu chuẩn trong hệ thống.';
 
 COMMENT ON COLUMN catalog.color.color_group IS
 'Nhóm màu phổ thông phục vụ tìm kiếm và lọc sản phẩm.';
@@ -345,6 +345,7 @@ CREATE TABLE catalog.collection (
     collection_id SERIAL PRIMARY KEY,
 
     collection_name VARCHAR(255) NOT NULL,
+    slug VARCHAR(255) NOT NULL UNIQUE,
     description TEXT,
 
     media_id BIGINT,
@@ -385,6 +386,9 @@ COMMENT ON COLUMN catalog.collection.collection_id IS
 COMMENT ON COLUMN catalog.collection.collection_name IS
 'Tên bộ sưu tập';
 
+COMMENT ON COLUMN catalog.collection.slug IS
+'Slug dùng để tạo URL thân thiện cho bộ sưu tập.';
+
 COMMENT ON COLUMN catalog.collection.description IS
 'Mô tả ngắn về bộ sưu tập';
 
@@ -421,6 +425,7 @@ CREATE TABLE catalog.product_line (
     material_id INT NOT NULL,
 
     line_name VARCHAR(255) NOT NULL,
+    slug VARCHAR(255) NOT NULL UNIQUE,
     description TEXT,
 
     design_style VARCHAR(500),
@@ -482,6 +487,9 @@ COMMENT ON COLUMN catalog.product_line.material_id IS
 
 COMMENT ON COLUMN catalog.product_line.line_name IS
 'Tên dòng sản phẩm';
+
+COMMENT ON COLUMN catalog.product_line.slug IS
+'Slug dùng để tạo URL thân thiện cho dòng sản phẩm.';
 
 COMMENT ON COLUMN catalog.product_line.description IS
 'Mô tả ngắn của dòng sản phẩm';
@@ -1103,7 +1111,7 @@ COMMENT ON COLUMN catalog.personal_color_result.created_at IS
 CREATE TABLE catalog.personal_color_result_color (
     result_id BIGINT NOT NULL,
     color_id INT NOT NULL,
-    match_score NUMERIC(5,2),
+    display_order SMALLINT,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
 
     PRIMARY KEY (result_id, color_id),
@@ -1120,10 +1128,10 @@ CREATE TABLE catalog.personal_color_result_color (
         ON UPDATE CASCADE
         ON DELETE CASCADE,
 
-    CONSTRAINT chk_personal_color_result_color_score
+    CONSTRAINT chk_personal_color_result_color_display_order
         CHECK (
-            match_score IS NULL
-            OR (match_score >= 0 AND match_score <= 100)
+            display_order IS NULL
+            OR display_order > 0
         )
 );
 
@@ -1136,8 +1144,8 @@ COMMENT ON COLUMN catalog.personal_color_result_color.result_id IS
 COMMENT ON COLUMN catalog.personal_color_result_color.color_id IS
 'Mã màu phù hợp được hệ thống đề xuất.';
 
-COMMENT ON COLUMN catalog.personal_color_result_color.match_score IS
-'Điểm tương đồng giữa kết quả personal color và màu trong hệ thống.';
+COMMENT ON COLUMN catalog.personal_color_result_color.display_order IS
+'Thứ tự hiển thị màu được đề xuất trong một kết quả personal color.';
 
 COMMENT ON COLUMN catalog.personal_color_result_color.created_at IS
 'Thời gian tạo.';

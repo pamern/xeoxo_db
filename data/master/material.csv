@@ -1,12 +1,12 @@
-﻿material_name,description
-Gấm,"Chất liệu có bề mặt dày dặn, đứng form, thường được dệt họa tiết nổi hoặc chìm, tạo cảm giác sang trọng và cổ điển."
-Lụa tổng hợp,"Chất liệu mềm, nhẹ, có độ rũ vừa phải, dễ tạo phom và phù hợp với các thiết kế cần sự thanh thoát."
-Lụa tổng hợp và Organza,"Sự kết hợp giữa độ mềm rũ của lụa tổng hợp và độ nhẹ, trong, bay của Organza, tạo hiệu ứng nhiều lớp tinh tế."
-Organza,"Chất liệu mỏng nhẹ, hơi trong, có độ phồng tự nhiên, thường tạo cảm giác thanh thoát và trang trọng."
-Organza và Lụa tổng hợp,"Sự kết hợp giữa lớp Organza nhẹ, trong và lớp lụa tổng hợp mềm mại, giúp sản phẩm vừa có độ bay vừa dễ mặc."
-Organza và Tơ tằm 70%,"Sự kết hợp giữa vẻ nhẹ, trong của Organza và độ mềm mịn, cao cấp của tơ tằm, tạo cảm giác tinh tế và sang trọng."
-Ren,"Chất liệu có bề mặt hoa văn xuyên thấu, tạo cảm giác nữ tính, mềm mại và giàu tính trang trí."
-Tencel,"Chất liệu mềm mịn, thoáng nhẹ, có độ rũ tự nhiên và mang lại cảm giác dễ chịu khi mặc."
-Tơ tằm 70%,"Chất liệu có thành phần tơ tằm cao, mềm mịn, nhẹ và có độ bóng tự nhiên, phù hợp với sản phẩm cao cấp."
-Tơ tổng hợp,"Chất liệu nhẹ, mềm, dễ ứng dụng trong nhiều kiểu dáng và có khả năng giữ màu, giữ phom ổn định."
-Vải tổng hợp,"Nhóm chất liệu linh hoạt, dễ tạo phom, bền màu và phù hợp với nhiều kỹ thuật dệt, in hoặc xử lý bề mặt."
+﻿material_name,description,media_filename
+Gấm,"Chất liệu có bề mặt dày dặn, đứng form, thường được dệt họa tiết nổi hoặc chìm, tạo cảm giác sang trọng và cổ điển.",gam.png
+Lụa tổng hợp,"Chất liệu mềm, nhẹ, có độ rũ vừa phải, dễ tạo phom và phù hợp với các thiết kế cần sự thanh thoát.",lua-tong-hop.png
+Lụa tổng hợp và Organza,"Sự kết hợp giữa độ mềm rũ của lụa tổng hợp và độ nhẹ, trong, bay của Organza, tạo hiệu ứng nhiều lớp tinh tế.",lua-det.png
+Organza,"Chất liệu mỏng nhẹ, hơi trong, có độ phồng tự nhiên, thường tạo cảm giác thanh thoát và trang trọng.",organza.png
+Organza và Lụa tổng hợp,"Sự kết hợp giữa lớp Organza nhẹ, trong và lớp lụa tổng hợp mềm mại, giúp sản phẩm vừa có độ bay vừa dễ mặc.",organza.png
+Organza và Tơ tằm 70%,"Sự kết hợp giữa vẻ nhẹ, trong của Organza và độ mềm mịn, cao cấp của tơ tằm, tạo cảm giác tinh tế và sang trọng.",to-tam-det.png
+Ren,"Chất liệu có bề mặt hoa văn xuyên thấu, tạo cảm giác nữ tính, mềm mại và giàu tính trang trí.",ren.png
+Tencel,"Chất liệu mềm mịn, thoáng nhẹ, có độ rũ tự nhiên và mang lại cảm giác dễ chịu khi mặc.",tencel.png
+Tơ tằm 70%,"Chất liệu có thành phần tơ tằm cao, mềm mịn, nhẹ và có độ bóng tự nhiên, phù hợp với sản phẩm cao cấp.",to-tam-thieu.png
+Tơ tổng hợp,"Chất liệu nhẹ, mềm, dễ ứng dụng trong nhiều kiểu dáng và có khả năng giữ màu, giữ phom ổn định.",to-tong-hop.png
+Vải tổng hợp,"Nhóm chất liệu linh hoạt, dễ tạo phom, bền màu và phù hợp với nhiều kỹ thuật dệt, in hoặc xử lý bề mặt.",vai-tong-hop.png

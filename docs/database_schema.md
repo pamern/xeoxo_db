@@ -6,9 +6,11 @@
 
 - customer_id (BIGSERIAL, PK, NOT NULL): Mã khách hàng
 - account_id (UUID, FK, UNIQUE, NULL): Mã tài khoản
-- customer_name (VARCHAR(255), NOT NULL): Tên khách hàng
-- email (VARCHAR(255), NOT NULL): Email
-- phone (VARCHAR(20), NOT NULL): Số điện thoại
+- customer_name (VARCHAR(255), NULL): Tên khách hàng
+- email (VARCHAR(255), NULL): Email
+- phone (VARCHAR(20), NULL): Số điện thoại
+- gender (VARCHAR(20), NULL): Giới tính khách hàng
+- birthday (DATE, NULL): Ngày sinh khách hàng
 - customer_type (VARCHAR/CHECK, NOT NULL): Loại khách hàng 
 - tier_id (VARCHAR(20), FK, NULL): Mã hạng thành viên
 - total_spent (NUMBERIC(14,2), NOT NULL, DEFAULT 0): Tổng chi tiêu
@@ -20,6 +22,7 @@
 **Ghi chú / Enum:**
 - customer_type = {MEMBER, GUEST}
 - email và phone trong CUSTOMER là thông tin liên hệ, không phải thông tin đăng nhập nên có thể không UNIQUE.
+- `total_spent` và `spent_in_year` có thể được hệ thống tự đồng bộ khi đơn hàng chuyển sang `COMPLETED`, và bị bù trừ ngược nếu đơn rời khỏi trạng thái `COMPLETED`.
 
 ## LOYALTY_TIER
 
@@ -91,8 +94,13 @@
 - province_id (SERIAL, PK, NOT NULL): Mã tỉnh/thành phố
 - province_name (VARCHAR(150), NOT NULL): Tên tỉnh/thành phố
 - region (VARCHAR(30), NOT NULL): Miền
+- ward (TEXT[], NOT NULL): Danh sách phường/xã/đặc khu thuộc tỉnh/thành phố
 - created_at (TIMESTAMPTZ, NOT NULL): Thời gian tạo
 - updated_at (TIMESTAMPTZ, NULL): Thời gian cập nhật
+
+**Ghi chú / Enum:**
+- region = {Miền Bắc, Miền Trung, Miền Nam}
+- `ward` lưu dạng mảng text để phục vụ chọn địa chỉ nhanh ở frontend/backend.
 
 ## STAFF
 
@@ -166,6 +174,8 @@
 
 **Ghi chú / Enum:**
 - status = {ACTIVE, INACTIVE}
+- Hệ thống có thể tự chuyển `product_line.status = INACTIVE` khi toàn bộ variant/size của dòng sản phẩm đều hết hàng trong `inventory.inventory`.
+- Nếu có ít nhất một variant có hàng trở lại, `product_line.status` có thể được đồng bộ về `ACTIVE`.
 
 ## LINE_CATEGORY
 
@@ -205,6 +215,8 @@
 
 **Ghi chú / Enum:**
 - status = {ACTIVE, INACTIVE, OUT_OF_STOCK, COMING_SOON, PREORDER}
+- Khi tổng tồn kho của một variant ở tất cả branch bằng `0`, hệ thống có thể tự đồng bộ sang `OUT_OF_STOCK`.
+- Nếu variant đang `OUT_OF_STOCK` và có hàng trở lại, hệ thống có thể tự đồng bộ về `ACTIVE`.
 
 ## COLOR
 
@@ -373,7 +385,7 @@
 
 - cart_id (BIGSERIAL, PK, NOT NULL): Mã giỏ hàng
 - customer_id (BIGINT, FK, NULL): Mã khách hàng
-- session_id (VARCHAR(255), NULL): Mã phiên khách vãng lai
+- session_id (UUID, NULL): Mã phiên khách vãng lai
 - cart_status (VARCHAR(20), NOT NULL): Trạng thái giỏ hàng
 - created_at (TIMESTAMPTZ, NOT NULL): Thời gian tạo
 - updated_at (TIMESTAMPTZ, NULL): Thời gian cập nhật
@@ -386,14 +398,20 @@
 
 - cart_item_id (BIGSERIAL, PK, NOT NULL): Mã dòng giỏ hàng
 - cart_id (BIGINT, FK, NOT NULL): Mã giỏ hàng
-- variant_id (INT, FK, NOT NULL): Mã biến thể sản phẩm
+- variant_id (INT, FK, NULL): Mã biến thể sản phẩm thường
+- customization_id (BIGINT, FK, NULL): Mã yêu cầu customize đang được thêm vào giỏ
+- item_type (VARCHAR(20), NOT NULL): Phân loại dòng giỏ hàng
 - quantity (INT, NOT NULL): Số lượng
-- unit_price (NUMERIC(14,2), NOT NULL): Đơn giá gốc 1 dòng tại thời điểm thêm vào giỏ hàng
+- unit_price (NUMERIC(14,2), NOT NULL): Đơn giá tại thời điểm thêm vào giỏ hàng, với hàng customize đây là giá đã tính phụ phí hiện tại
 - created_at (TIMESTAMPTZ, NOT NULL): Thời gian tạo
 - updated_at (TIMESTAMPTZ, NULL): Thời gian cập nhật
 
 **Ghi chú / Enum:**
 - UNIQUE (cart_id, variant_id)
+- UNIQUE (cart_id, customization_id)
+- item_type = {STANDARD, CUSTOMIZED}
+- Nếu item_type = STANDARD thì variant_id NOT NULL và customization_id NULL.
+- Nếu item_type = CUSTOMIZED thì variant_id NULL và customization_id NOT NULL.
 
 ## SALES_ORDER
 
@@ -413,6 +431,8 @@
 **Ghi chú / Enum:**
 - order_status tham chiếu ENUM ORDER_STATUS
 - payment_status tham chiếu ENUM PAYMENT_STATUS
+- Khi `order_status` chuyển sang `COMPLETED`, hệ thống có thể tự cộng chi tiêu cho `iam.customer`.
+- Nếu đơn đã `COMPLETED` nhưng sau đó chuyển sang `CANCELLED` hoặc `RETURNED`, hệ thống có thể tự trừ ngược phần chi tiêu tương ứng.
 
 ## ORDER_ITEM
 
@@ -532,8 +552,8 @@
 
 - customization_id (INT, PK, NOT NULL): Mã yêu cầu customize
 - customer_id (BIGINT, FK, NULL): Mã khách hàng
-- product_line_id (INT, FK, NOT NULL): Mã dòng sản phẩm cần customize
-- measurement_profile_id (INT, FK, NULL): Hồ sơ số đo sử dụng
+- component_id (INT, FK, NOT NULL): Mã component sản phẩm cần customize
+- source_profile_id (INT, FK, NULL): Hồ sơ số đo nguồn dùng để tạo snapshot
 - unit_price (NUMERIC(14,2), NOT NULL): Giá gốc sản phẩm
 - surcharge_percent (NUMERIC(5,2), NOT NULL): Tỷ lệ phụ phí
 - surcharge_amount (NUMERIC(14,2), NOT NULL): Số tiền phụ phí
@@ -546,12 +566,44 @@
 
 **Ghi chú / Enum:**
 - customization_status = {REQUESTED, MEASUREMENT_PENDING, MEASURED, CONFIRMED, IN_PROGRESS, COMPLETED, CANCELLED}
+- `customization_request` gắn với `component_id`, không gắn với `product_line_id`.
+- `source_profile_id` chỉ phục vụ truy vết request được tạo từ profile nào, không phải nguồn dữ liệu động để đọc lại số đo giao dịch.
+- Số đo dùng cho giao dịch nên được chụp snapshot riêng theo từng `customization_request`.
+
+## CUSTOMIZATION_MEASUREMENT_SNAPSHOT
+
+- snapshot_id (BIGSERIAL, PK, NOT NULL): Mã snapshot số đo của request
+- customization_id (INT, FK, UNIQUE, NOT NULL): Mã yêu cầu customize
+- source_profile_id (INT, FK, NULL): Hồ sơ số đo nguồn tại thời điểm chụp
+- measurement_source (VARCHAR(20), NOT NULL): Nguồn phát sinh snapshot
+- captured_at (TIMESTAMPTZ, NOT NULL): Thời điểm chụp snapshot
+- captured_by (INT, FK, NULL): Nhân viên hoặc actor thực hiện chụp
+- measurement_payload (JSONB, NULL): Payload số đo raw hoặc cache API
+- note (TEXT, NULL): Ghi chú snapshot
+- created_at (TIMESTAMPTZ, NOT NULL): Thời gian tạo
+
+**Ghi chú / Enum:**
+- measurement_source = {PROFILE, APPOINTMENT, MANUAL}
+- Mỗi `customization_request` có tối đa một snapshot số đo hiệu lực.
+- `measurement_payload` chỉ là dữ liệu hỗ trợ; source of truth vẫn nên nằm ở bảng detail.
+
+## CUSTOMIZATION_MEASUREMENT_SNAPSHOT_DETAIL
+
+- snapshot_detail_id (BIGSERIAL, PK, NOT NULL): Mã chi tiết snapshot
+- snapshot_id (BIGINT, FK, NOT NULL): Mã snapshot số đo
+- measurement_type_id (INT, FK, NOT NULL): Mã loại thông số đo
+- measurement_value (NUMERIC(10,2), NOT NULL): Giá trị số đo tại thời điểm chụp
+- created_at (TIMESTAMPTZ, NOT NULL): Thời gian tạo
+
+**Ghi chú / Enum:**
+- UNIQUE đề xuất: `(snapshot_id, measurement_type_id)`
+- Đây là bảng bất biến phục vụ giỏ hàng, đơn hàng, sản xuất và hậu kiểm.
 
 ## MEASUREMENT_APPOINTMENT
 
 - appointment_id (SERIAL, PK, NOT NULL): Mã lịch hẹn
-- customization_id (INT, FK, NOT NULL): Mã yêu cầu customize
 - customer_id (BIGINT, FK, NULL): Mã khách hàng
+- product_line_id (INT, FK, NULL): Dòng sản phẩm khách đang quan tâm khi đặt lịch đo
 - branch_id (INT, FK, NOT NULL): Mã chi nhánh hẹn đo
 - staff_id (INT, FK, NULL): Nhân viên phụ trách
 - appointment_date (DATE, NOT NULL): Ngày hẹn
@@ -566,6 +618,8 @@
 **Ghi chú / Enum:**
 - appointment_status = {PENDING, CONFIRMED, COMPLETED, CANCELLED, NO_SHOW}
 - Đối với start_time và end_time, mặc định diff là 30 phút. Ví dụ UI chọn 8:00 - 8:30 thì hệ thống tách start_time = 8:00 và end_time = 8:30.
+- `measurement_appointment` là nghiệp vụ lịch đo độc lập, khách có thể đặt lịch đo trước khi phát sinh `customization_request`.
+- `product_line_id` chỉ phản ánh sản phẩm khách đang quan tâm tại thời điểm đặt lịch, không đồng nghĩa đã tạo `customization_request`.
 
 ## MEASUREMENT_PROFILE
 
@@ -573,7 +627,6 @@
 - appointment_id (INT, FK, NULL): Mã lịch hẹn phát sinh số đo
 - customer_id (BIGINT, FK, NULL): Mã khách hàng
 - measured_by (INT, FK, NULL): Nhân viên đo
-- profile_type (VARCHAR(30), NOT NULL): Loại hồ sơ số đo
 - note (TEXT, NULL): Ghi chú số đo
 - is_active (BOOLEAN, NOT NULL): Trạng thái hồ sơ, có đang dùng không?
 - measurement_date (TIMESTAMPTZ, NOT NULL): Thời gian đo
@@ -581,8 +634,9 @@
 - updated_at (TIMESTAMPTZ, NULL): Thời gian cập nhật
 
 **Ghi chú / Enum:**
-- Dùng để lưu dữ liệu số đo cá nhân cho 2 trường hợp: khách hàng nhập số đo để hệ thống gợi ý size và khách hàng đặt lịch may đo cá nhân.
-- profile_type = {SIZE_RECOMMENDATION, CUSTOMER_MEASUREMENT}
+- `measurement_profile` là hồ sơ số đo cá nhân hiện hành của khách, phục vụ quản lý tài khoản, gợi ý size và làm nguồn tạo request mới.
+- Không nên dùng `measurement_profile` làm nguồn động để hiển thị lại số đo của giao dịch cũ.
+- Khi khách nhập/chỉnh sửa số đo, hệ thống có thể cập nhật trực tiếp hồ sơ đang active; dữ liệu giao dịch vẫn được giữ ở snapshot của `customization_request`.
 
 ## MEASUREMENT_PROFILE_DETAIL
 
@@ -699,11 +753,9 @@
 
 - result_id (BIGINT, PK, FK, NOT NULL): Mã kết quả tư vấn personal color.
 - color_id (INT, PK, FK, NOT NULL): Mã màu phù hợp được hệ thống đề xuất.
-- match_score (NUMERIC(5,2), NULL): Điểm tương đồng giữa kết quả personal color và màu trong hệ thống.
-- display_order (SMALLINT, NOT NULL): Thứ tự hiển thị màu được đề xuất.
+- display_order (SMALLINT, NULL): Thứ tự hiển thị màu được đề xuất.
 - created_at (TIMESTAMPTZ, NOT NULL): Thời gian tạo.
 
 **Ghi chú / Enum:**
 - Một kết quả personal color có thể đề xuất nhiều màu từ bảng COLOR.
-- match_score được tính dựa trên mức độ tương đồng giữa season_result và thuộc tính màu trong bảng COLOR.
 - Danh sách sản phẩm phù hợp được truy vấn động dựa trên các color_id đã được đề xuất.

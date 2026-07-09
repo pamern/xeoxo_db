@@ -1,0 +1,5 @@
+loyalty_tier_id,tier_name,min_accumulated_amount,maintain_amount,birthday_voucher_value,free_shipping_quota,free_tailor_quota,special_gift
+SILVER,Silver,20000000.00,6000000.00,200000.00,0,0,
+GOLD,Gold,50000000.00,10000000.00,500000.00,10,0,
+DIAMOND,Diamond,100000000.00,20000000.00,1000000.00,20,5,
+MVG,MVG,200000000.00,40000000.00,3000000.00,32767,10,Quà tặng dịp đặc biệt

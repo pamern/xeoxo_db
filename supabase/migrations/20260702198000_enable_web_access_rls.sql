@@ -14,14 +14,59 @@ $$;
 COMMENT ON FUNCTION util.current_customer_id() IS
 'Trả về customer_id của user hiện tại dựa trên auth.uid().';
 
+-- Module: service_backend
+-- Schema grant:
+-- - `catalog`, `iam`, `sales`, `customization`, `inventory`, `support`,
+--   `util`: `USAGE` cho `service_role`.
+-- Routine grant:
+-- - `util.current_customer_id()`: `EXECUTE` cho `service_role`.
+-- Table grant:
+-- - Toàn bộ bảng thuộc `catalog`, `iam`, `sales`, `customization`,
+--   `inventory`, `support`: `ALL` cho `service_role`.
+-- Sequence grant:
+-- - Toàn bộ sequence thuộc `catalog`, `iam`, `sales`, `customization`,
+--   `inventory`, `support`: `ALL` cho `service_role`.
+GRANT USAGE ON SCHEMA
+    catalog,
+    iam,
+    sales,
+    customization,
+    inventory,
+    support,
+    util
+TO service_role;
+GRANT EXECUTE ON FUNCTION util.current_customer_id() TO service_role;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA
+    catalog,
+    iam,
+    sales,
+    customization,
+    inventory,
+    support
+TO service_role;
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA
+    catalog,
+    iam,
+    sales,
+    customization,
+    inventory,
+    support
+TO service_role;
+
+-- Module: public_catalog
+-- Schema grant:
+-- - `catalog`: `USAGE` cho `anon`, `authenticated`.
+-- Table grant:
+-- - `catalog.category`, `catalog.collection`, `catalog.product_line`,
+--   `catalog.line_category`, `catalog.product_component`,
+--   `catalog.product_variant`, `catalog.color`, `catalog.material`,
+--   `catalog.size_chart`, `catalog.size_chart_category`,
+--   `catalog.size_option`, `catalog.size_measurement`,
+--   `catalog.measurement_type`, `catalog.media`,
+--   `catalog.product_line_media`: `SELECT` cho `anon`, `authenticated`.
+-- View grant:
+-- - `catalog.v_inventory_availability`: `SELECT` cho `anon`, `authenticated`.
 GRANT USAGE ON SCHEMA catalog TO anon, authenticated;
-GRANT USAGE ON SCHEMA iam TO authenticated;
-GRANT USAGE ON SCHEMA sales TO authenticated;
-GRANT USAGE ON SCHEMA customization TO authenticated;
-GRANT USAGE ON SCHEMA util TO authenticated;
-
-GRANT EXECUTE ON FUNCTION util.current_customer_id() TO authenticated;
-
 GRANT SELECT ON TABLE
     catalog.category,
     catalog.collection,
@@ -39,35 +84,134 @@ GRANT SELECT ON TABLE
     catalog.media,
     catalog.product_line_media
 TO anon, authenticated;
+GRANT SELECT ON TABLE catalog.v_inventory_availability TO anon, authenticated;
 
+-- Module: customer_identity
+-- Schema grant:
+-- - `iam`: `USAGE` cho `authenticated`.
+-- - `util`: `USAGE` cho `authenticated`.
+-- Routine grant:
+-- - `util.current_customer_id()`: `EXECUTE` cho `authenticated`.
+-- Table grant:
+-- - `iam.customer`: `SELECT`, `UPDATE` cho `authenticated`.
+-- - `iam.address`: `SELECT`, `INSERT`, `UPDATE`, `DELETE` cho `authenticated`.
+-- Sequence grant:
+-- - `iam.address_address_id_seq`: `USAGE`, `SELECT` cho `authenticated`.
+GRANT USAGE ON SCHEMA iam TO authenticated;
+GRANT USAGE ON SCHEMA util TO authenticated;
+GRANT EXECUTE ON FUNCTION util.current_customer_id() TO authenticated;
 GRANT SELECT, UPDATE ON TABLE iam.customer TO authenticated;
-GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE iam.address TO authenticated;
-GRANT SELECT ON TABLE iam.loyalty_reward, iam.reward_usage TO authenticated;
-GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE sales.cart, sales.cart_item TO authenticated;
-GRANT SELECT ON TABLE sales.sales_order, sales.order_item TO authenticated;
-GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE customization.measurement_profile, customization.measurement_profile_detail TO authenticated;
-GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE catalog.personal_color_result, catalog.personal_color_result_color TO authenticated;
-
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE
+    iam.address
+TO authenticated;
 GRANT USAGE, SELECT ON SEQUENCE
-    iam.address_address_id_seq,
+    iam.address_address_id_seq
+TO authenticated;
+
+-- Module: loyalty_rewards
+-- Schema grant:
+-- - dùng schema `iam` đã được cấp `USAGE` ở module `customer_identity`.
+-- Table grant:
+-- - `iam.loyalty_reward`, `iam.reward_usage`: `SELECT` cho `authenticated`.
+GRANT SELECT ON TABLE iam.loyalty_reward, iam.reward_usage TO authenticated;
+
+-- Module: shopping_cart_and_orders
+-- Schema grant:
+-- - `sales`: `USAGE` cho `authenticated`.
+-- Table grant:
+-- - `sales.cart`, `sales.cart_item`: `SELECT`, `INSERT`, `UPDATE`, `DELETE`
+--   cho `authenticated`.
+-- - `sales.sales_order`, `sales.order_item`: `SELECT` cho `authenticated`.
+-- - `sales.shipping`, `sales.payment`, `sales.refund`: `SELECT`
+--   cho `authenticated` để đọc order summary và tracking/refund state
+--   của chính mình.
+-- - `sales.review`: `SELECT` cho `authenticated`
+--   để kiểm tra trạng thái đã đánh giá của order item thuộc chính mình.
+-- Sequence grant:
+-- - `sales.cart_cart_id_seq`, `sales.cart_item_cart_item_id_seq`:
+--   `USAGE`, `SELECT` cho `authenticated`.
+GRANT USAGE ON SCHEMA sales TO authenticated;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE
+    sales.cart,
+    sales.cart_item
+TO authenticated;
+GRANT SELECT ON TABLE
+    sales.sales_order,
+    sales.order_item,
+    sales.shipping,
+    sales.payment,
+    sales.refund,
+    sales.review
+TO authenticated;
+GRANT USAGE, SELECT ON SEQUENCE
     sales.cart_cart_id_seq,
-    sales.cart_item_cart_item_id_seq,
+    sales.cart_item_cart_item_id_seq
+TO authenticated;
+
+-- Module: measurement_profiles
+-- Schema grant:
+-- - `customization`: `USAGE` cho `authenticated`.
+-- Table grant:
+-- - `customization.customization_request`: `SELECT` cho `authenticated`
+--   để đọc order summary có dòng customized của chính mình.
+-- - `customization.measurement_profile`,
+--   `customization.measurement_profile_detail`:
+--   `SELECT`, `INSERT`, `UPDATE`, `DELETE` cho `authenticated`.
+-- Sequence grant:
+-- - `customization.measurement_profile_measurement_profile_id_seq`,
+--   `customization.measurement_profile_detail_measurement_detail_id_seq`:
+--   `USAGE`, `SELECT` cho `authenticated`.
+GRANT USAGE ON SCHEMA customization TO authenticated;
+GRANT SELECT ON TABLE
+    customization.customization_request
+TO authenticated;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE
+    customization.measurement_profile,
+    customization.measurement_profile_detail
+TO authenticated;
+GRANT USAGE, SELECT ON SEQUENCE
     customization.measurement_profile_measurement_profile_id_seq,
-    customization.measurement_profile_detail_measurement_detail_id_seq,
+    customization.measurement_profile_detail_measurement_detail_id_seq
+TO authenticated;
+
+-- Module: personal_color
+-- Schema grant:
+-- - dùng schema `catalog` đã được cấp `USAGE` ở module `public_catalog`.
+-- Table grant:
+-- - `catalog.personal_color_result`,
+--   `catalog.personal_color_result_color`:
+--   `SELECT`, `INSERT`, `UPDATE`, `DELETE` cho `authenticated`.
+-- Sequence grant:
+-- - `catalog.personal_color_result_result_id_seq`:
+--   `USAGE`, `SELECT` cho `authenticated`.
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE
+    catalog.personal_color_result,
+    catalog.personal_color_result_color
+TO authenticated;
+GRANT USAGE, SELECT ON SEQUENCE
     catalog.personal_color_result_result_id_seq
 TO authenticated;
 
+-- Module: internal_only
+-- Schema/table exposure:
+-- - Không cấp quyền trực tiếp cho `anon`, `authenticated` trên các bảng nội bộ
+--   thuộc `iam`, `inventory`, `sales`, `support`.
+-- - Frontend muốn đọc tình trạng tồn kho phải đi qua
+--   `catalog.v_inventory_availability`, không đọc trực tiếp `inventory.inventory`.
+-- Table revoke:
+-- - Thu hồi toàn bộ quyền trên `iam.account`, `iam.staff`, `iam.branch`,
+--   `inventory.inventory`, `sales.return_request`, `sales.return_item`,
+--   `sales.review_media`, `support.chat_conversation`,
+--   `support.chat_message`, `support.chat_message_media`,
+--   `support.chat_assignment_history`, `support.chat_message_read`,
+--   `support.chat_tag`, `support.chat_conversation_tag`.
 REVOKE ALL ON TABLE
     iam.account,
     iam.staff,
     iam.branch,
     inventory.inventory,
-    sales.payment,
-    sales.refund,
-    sales.shipping,
     sales.return_request,
     sales.return_item,
-    sales.review,
     sales.review_media,
     support.chat_conversation,
     support.chat_message,
@@ -118,6 +262,7 @@ ALTER TABLE sales.review_media ENABLE ROW LEVEL SECURITY;
 
 ALTER TABLE customization.measurement_profile ENABLE ROW LEVEL SECURITY;
 ALTER TABLE customization.measurement_profile_detail ENABLE ROW LEVEL SECURITY;
+ALTER TABLE customization.customization_request ENABLE ROW LEVEL SECURITY;
 
 ALTER TABLE inventory.inventory ENABLE ROW LEVEL SECURITY;
 
@@ -396,6 +541,66 @@ USING (
     )
 );
 
+DROP POLICY IF EXISTS shipping_self_select ON sales.shipping;
+CREATE POLICY shipping_self_select
+ON sales.shipping
+FOR SELECT
+TO authenticated
+USING (
+    EXISTS (
+        SELECT 1
+        FROM sales.sales_order AS so
+        WHERE so.order_id = shipping.order_id
+          AND so.customer_id = util.current_customer_id()
+    )
+);
+
+DROP POLICY IF EXISTS payment_self_select ON sales.payment;
+CREATE POLICY payment_self_select
+ON sales.payment
+FOR SELECT
+TO authenticated
+USING (
+    EXISTS (
+        SELECT 1
+        FROM sales.sales_order AS so
+        WHERE so.order_id = payment.order_id
+          AND so.customer_id = util.current_customer_id()
+    )
+);
+
+DROP POLICY IF EXISTS refund_self_select ON sales.refund;
+CREATE POLICY refund_self_select
+ON sales.refund
+FOR SELECT
+TO authenticated
+USING (
+    EXISTS (
+        SELECT 1
+        FROM sales.payment AS p
+        INNER JOIN sales.sales_order AS so
+            ON so.order_id = p.order_id
+        WHERE p.payment_id = refund.payment_id
+          AND so.customer_id = util.current_customer_id()
+    )
+);
+
+DROP POLICY IF EXISTS review_self_select ON sales.review;
+CREATE POLICY review_self_select
+ON sales.review
+FOR SELECT
+TO authenticated
+USING (
+    EXISTS (
+        SELECT 1
+        FROM sales.order_item AS oi
+        INNER JOIN sales.sales_order AS so
+            ON so.order_id = oi.order_id
+        WHERE oi.order_item_id = review.order_item_id
+          AND so.customer_id = util.current_customer_id()
+    )
+);
+
 DROP POLICY IF EXISTS measurement_profile_self_all ON customization.measurement_profile;
 CREATE POLICY measurement_profile_self_all
 ON customization.measurement_profile
@@ -403,6 +608,13 @@ FOR ALL
 TO authenticated
 USING (customer_id = util.current_customer_id())
 WITH CHECK (customer_id = util.current_customer_id());
+
+DROP POLICY IF EXISTS customization_request_self_select ON customization.customization_request;
+CREATE POLICY customization_request_self_select
+ON customization.customization_request
+FOR SELECT
+TO authenticated
+USING (customer_id = util.current_customer_id());
 
 DROP POLICY IF EXISTS measurement_profile_detail_self_all ON customization.measurement_profile_detail;
 CREATE POLICY measurement_profile_detail_self_all

@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 from pathlib import Path
+import re
 import sys
+import unicodedata
 
 import pandas as pd
 
@@ -59,6 +61,19 @@ def normalize_bool(value: object) -> bool:
     return text.lower() in {"true", "1", "yes", "y"}
 
 
+def build_slug(value: object) -> str | None:
+    text = normalize_text(value)
+    if not text:
+        return None
+
+    normalized = unicodedata.normalize("NFD", text.lower().replace("đ", "d"))
+    without_accents = "".join(
+        char for char in normalized if unicodedata.category(char) != "Mn"
+    )
+    slug = re.sub(r"[^a-z0-9]+", "-", without_accents).strip("-")
+    return slug or None
+
+
 def read_master_product_lines(input_file: Path) -> pd.DataFrame:
     if not input_file.exists():
         raise FileNotFoundError(f"Input file not found: {input_file}")
@@ -84,6 +99,9 @@ def read_master_product_lines(input_file: Path) -> pd.DataFrame:
         )
 
     working_df = df.copy()
+    if "slug" not in working_df.columns:
+        working_df["slug"] = None
+
     for column in [
         "collection_name",
         "color_name",
@@ -97,18 +115,23 @@ def read_master_product_lines(input_file: Path) -> pd.DataFrame:
     ]:
         working_df[column] = working_df[column].map(normalize_text)
 
+    working_df["slug"] = working_df["slug"].map(normalize_text)
     working_df["status"] = working_df["status"].map(normalize_status)
     working_df["is_featured"] = working_df["is_featured"].map(normalize_bool)
+    working_df["slug"] = working_df.apply(
+        lambda row: normalize_text(row["slug"]) or build_slug(row["line_name"]),
+        axis=1,
+    )
 
     working_df = working_df.dropna(
-        subset=["collection_name", "line_name"]
+        subset=["collection_name", "line_name", "slug"]
     )
     working_df = (
         working_df.sort_values(
-            by=["collection_name", "line_name", "material_name"],
+            by=["collection_name", "line_name", "slug", "material_name"],
             kind="stable",
         )
-        .drop_duplicates(subset=["collection_name", "line_name"], keep="first")
+        .drop_duplicates(subset=["collection_name", "line_name", "slug"], keep="first")
         .reset_index(drop=True)
     )
 
@@ -117,6 +140,7 @@ def read_master_product_lines(input_file: Path) -> pd.DataFrame:
             "collection_name",
             "color_name",
             "line_name",
+            "slug",
             "description",
             "material_name",
             "design_style",
@@ -202,6 +226,7 @@ def fetch_existing_product_lines(connection: psycopg.Connection) -> dict[tuple[i
             collection_id,
             color_id,
             line_name,
+            slug,
             description,
             material_id,
             design_style,
@@ -240,6 +265,7 @@ def build_product_line_payload(
         "collection_id": collection_id,
         "color_id": color_id,
         "line_name": normalize_text(row["line_name"]),
+        "slug": normalize_text(row.get("slug")) or build_slug(row["line_name"]),
         "description": normalize_text(row["description"]),
         "material_id": material_id,
         "design_style": normalize_text(row["design_style"]),
@@ -279,6 +305,7 @@ def insert_product_line_batch(
             collection_id,
             color_id,
             line_name,
+            slug,
             description,
             material_id,
             design_style,
@@ -291,6 +318,7 @@ def insert_product_line_batch(
             %(collection_id)s,
             %(color_id)s,
             %(line_name)s,
+            %(slug)s,
             %(description)s,
             %(material_id)s,
             %(design_style)s,

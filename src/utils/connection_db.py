@@ -7,11 +7,13 @@ from supabase import Client, create_client
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 ENV_FILE = PROJECT_ROOT / ".env"
+ENV_LOCAL_FILE = PROJECT_ROOT / ".env.local"
 DEFAULT_BUCKET_NAME = "product-media"
 
 
 def load_env() -> None:
     load_dotenv(ENV_FILE)
+    load_dotenv(ENV_LOCAL_FILE, override=True)
 
 
 def _infer_project_ref() -> str | None:

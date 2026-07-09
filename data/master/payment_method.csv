@@ -1,0 +1,6 @@
+method_name,method_code,is_active
+Thanh toán khi nhận hàng,COD,true
+Ví MoMo,MOMO,true
+VNPay,VNPAY,true
+Thẻ ngân hàng,CARD,true
+Chuyển khoản ngân hàng,BANK_TRANSFER,true

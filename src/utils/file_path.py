@@ -57,6 +57,9 @@ PRODUCT_LINE_MEDIA_FILE = MASTER_DIR / "product_line_media.csv"
 
 BRANCH_FILE = MASTER_DIR / "branch.csv"
 INVENTORY_FILE = MASTER_DIR / "inventory.csv"
+PAYMENT_METHOD_FILE = MASTER_DIR / "payment_method.csv"
+LOYALTY_TIER_FILE = MASTER_DIR / "loyalty_tier.csv"
+PROVINCE_SQL_FILE = MASTER_DIR / "province.sql"
 
 
 # ==================================================

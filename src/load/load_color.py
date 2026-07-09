@@ -28,6 +28,10 @@ except ImportError as exc:  # pragma: no cover - runtime dependency guard
 
 INPUT_FILE = PROJECT_ROOT / "data" / "master" / "color.csv"
 BATCH_SIZE = 500
+ALLOWED_PERSONAL_COLOR_SEASONS = {"SPRING", "SUMMER", "AUTUMN", "WINTER"}
+ALLOWED_COLOR_TEMPERATURES = {"WARM", "COOL"}
+ALLOWED_COLOR_VALUES = {"LIGHT", "DEEP"}
+ALLOWED_COLOR_CHROMAS = {"CLEAR", "SOFT", "MUTED"}
 
 
 def normalize_text(value: object) -> str | None:
@@ -60,12 +64,38 @@ def normalize_color_code(value: object) -> str | None:
     return color_code
 
 
+def normalize_enum(
+    value: object,
+    field_name: str,
+    allowed_values: set[str],
+) -> str | None:
+    normalized = normalize_text(value)
+    if normalized is None:
+        return None
+
+    candidate = normalized.upper()
+    if candidate not in allowed_values:
+        raise ValueError(
+            f"Invalid {field_name}: {value!r}. Expected one of {sorted(allowed_values)}"
+        )
+
+    return candidate
+
+
 def read_master_colors(input_file: Path) -> pd.DataFrame:
     if not input_file.exists():
         raise FileNotFoundError(f"Input file not found: {input_file}")
 
     df = pd.read_csv(input_file)
-    required_columns = {"color_name", "color_group", "color_code"}
+    required_columns = {
+        "color_name",
+        "color_group",
+        "color_code",
+        "personal_color_season",
+        "color_temperature",
+        "color_value",
+        "color_chroma",
+    }
     missing_columns = required_columns - set(df.columns)
 
     if missing_columns:
@@ -81,6 +111,34 @@ def read_master_colors(input_file: Path) -> pd.DataFrame:
         if "color_code" in working_df.columns
         else None
     )
+    working_df["personal_color_season"] = working_df["personal_color_season"].map(
+        lambda value: normalize_enum(
+            value,
+            "personal_color_season",
+            ALLOWED_PERSONAL_COLOR_SEASONS,
+        )
+    )
+    working_df["color_temperature"] = working_df["color_temperature"].map(
+        lambda value: normalize_enum(
+            value,
+            "color_temperature",
+            ALLOWED_COLOR_TEMPERATURES,
+        )
+    )
+    working_df["color_value"] = working_df["color_value"].map(
+        lambda value: normalize_enum(
+            value,
+            "color_value",
+            ALLOWED_COLOR_VALUES,
+        )
+    )
+    working_df["color_chroma"] = working_df["color_chroma"].map(
+        lambda value: normalize_enum(
+            value,
+            "color_chroma",
+            ALLOWED_COLOR_CHROMAS,
+        )
+    )
     working_df["media_id"] = None
 
     working_df = working_df.dropna(subset=["color_name", "color_code"])
@@ -90,7 +148,18 @@ def read_master_colors(input_file: Path) -> pd.DataFrame:
         .reset_index(drop=True)
     )
 
-    return working_df[["color_name", "color_code", "color_group", "media_id"]]
+    return working_df[
+        [
+            "color_name",
+            "color_code",
+            "color_group",
+            "personal_color_season",
+            "color_temperature",
+            "color_value",
+            "color_chroma",
+            "media_id",
+        ]
+    ]
 
 
 def chunk_records(records: list[dict], size: int) -> list[list[dict]]:
@@ -102,6 +171,10 @@ def build_color_payload(row: dict) -> dict:
         "color_name": row["color_name"],
         "color_code": row["color_code"],
         "color_group": row["color_group"],
+        "personal_color_season": row["personal_color_season"],
+        "color_temperature": row["color_temperature"],
+        "color_value": row["color_value"],
+        "color_chroma": row["color_chroma"],
         "media_id": row["media_id"],
     }
 
@@ -113,6 +186,10 @@ def fetch_existing_colors(connection: psycopg.Connection) -> dict[str, dict]:
             color_name,
             color_code,
             color_group,
+            personal_color_season,
+            color_temperature,
+            color_value,
+            color_chroma,
             media_id
         FROM catalog.color
     """
@@ -158,12 +235,20 @@ def insert_color_batch(
             color_name,
             color_code,
             color_group,
+            personal_color_season,
+            color_temperature,
+            color_value,
+            color_chroma,
             media_id
         )
         VALUES (
             %(color_name)s,
             %(color_code)s,
             %(color_group)s,
+            %(personal_color_season)s,
+            %(color_temperature)s,
+            %(color_value)s,
+            %(color_chroma)s,
             %(media_id)s
         )
     """

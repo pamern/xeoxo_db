@@ -10,6 +10,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
+from src.utils.file_path import BRANCH_FILE
 from src.utils.load_connection import (
     add_loader_connection_args,
     build_connection_kwargs,
@@ -25,12 +26,7 @@ except ImportError as exc:  # pragma: no cover - runtime dependency guard
     ) from exc
 
 
-INPUT_FILE = PROJECT_ROOT / "data" / "master" / "material.csv"
 BATCH_SIZE = 500
-DEFAULT_CARE_INSTRUCTION = (
-    "Giặt tay hoặc giặt khô, hạn chế vắt mạnh. "
-    "Ủi ở nhiệt độ thấp và bảo quản nơi khô thoáng để giữ độ bền của chất liệu gấm."
-)
 
 
 def normalize_text(value: object) -> str | None:
@@ -47,12 +43,23 @@ def normalize_text(value: object) -> str | None:
     return text
 
 
-def read_master_materials(input_file: Path) -> pd.DataFrame:
+def normalize_bool(value: object) -> bool:
+    if isinstance(value, bool):
+        return value
+
+    text = normalize_text(value)
+    if text is None:
+        return True
+
+    return text.lower() in {"true", "1", "yes", "y"}
+
+
+def read_master_branches(input_file: Path) -> pd.DataFrame:
     if not input_file.exists():
         raise FileNotFoundError(f"Input file not found: {input_file}")
 
     df = pd.read_csv(input_file)
-    required_columns = {"material_name", "description"}
+    required_columns = {"branch_name", "address", "phone", "is_active"}
     missing_columns = required_columns - set(df.columns)
 
     if missing_columns:
@@ -61,48 +68,43 @@ def read_master_materials(input_file: Path) -> pd.DataFrame:
         )
 
     working_df = df.copy()
-    working_df["material_name"] = working_df["material_name"].map(normalize_text)
-    working_df["description"] = working_df["description"].map(normalize_text)
-    working_df["care_instruction"] = DEFAULT_CARE_INSTRUCTION
-    working_df["media_id"] = None
-    working_df["is_active"] = True
+    working_df["branch_name"] = working_df["branch_name"].map(normalize_text)
+    working_df["address"] = working_df["address"].map(normalize_text)
+    working_df["phone"] = working_df["phone"].map(normalize_text)
+    working_df["is_active"] = working_df["is_active"].map(normalize_bool)
 
-    working_df = working_df.dropna(subset=["material_name"])
+    working_df = working_df.dropna(subset=["branch_name", "address", "phone"])
     working_df = (
-        working_df.sort_values(by="material_name", kind="stable")
-        .drop_duplicates(subset=["material_name"], keep="first")
+        working_df.sort_values(by=["branch_name", "address"], kind="stable")
+        .drop_duplicates(subset=["branch_name"], keep="first")
         .reset_index(drop=True)
     )
 
-    return working_df[
-        ["material_name", "description", "care_instruction", "media_id", "is_active"]
-    ]
+    return working_df[["branch_name", "address", "phone", "is_active"]]
 
 
 def chunk_records(records: list[dict], size: int) -> list[list[dict]]:
     return [records[index : index + size] for index in range(0, len(records), size)]
 
 
-def build_material_payload(row: dict) -> dict:
+def build_branch_payload(row: dict) -> dict:
     return {
-        "material_name": row["material_name"],
-        "description": row["description"],
-        "care_instruction": row["care_instruction"],
-        "media_id": row["media_id"],
-        "is_active": row["is_active"],
+        "branch_name": normalize_text(row["branch_name"]),
+        "address": normalize_text(row["address"]),
+        "phone": normalize_text(row["phone"]),
+        "is_active": normalize_bool(row["is_active"]),
     }
 
 
-def fetch_existing_materials(connection: psycopg.Connection) -> dict[str, dict]:
+def fetch_existing_branches(connection: psycopg.Connection) -> dict[str, dict]:
     query = """
         SELECT
-            material_id,
-            material_name,
-            description,
-            care_instruction,
-            media_id,
+            branch_id,
+            branch_name,
+            address,
+            phone,
             is_active
-        FROM catalog.material
+        FROM iam.branch
     """
 
     with connection.cursor(row_factory=dict_row) as cursor:
@@ -111,24 +113,21 @@ def fetch_existing_materials(connection: psycopg.Connection) -> dict[str, dict]:
 
     existing_by_name: dict[str, dict] = {}
     for row in rows:
-        material_name = normalize_text(row.get("material_name"))
-        if material_name and material_name not in existing_by_name:
-            existing_by_name[material_name] = row
+        branch_name = normalize_text(row.get("branch_name"))
+        if branch_name and branch_name not in existing_by_name:
+            existing_by_name[branch_name] = row
 
     return existing_by_name
 
 
 def build_update_payload(incoming: dict, existing: dict) -> dict | None:
-    payload = build_material_payload(incoming)
     changed_fields: dict = {}
 
-    for key, value in payload.items():
+    for key, value in incoming.items():
         existing_value = (
-            normalize_text(existing.get(key))
-            if key != "is_active"
-            else existing.get(key)
+            existing.get(key) if key == "is_active" else normalize_text(existing.get(key))
         )
-        incoming_value = normalize_text(value) if key != "is_active" else value
+        incoming_value = value if key == "is_active" else normalize_text(value)
 
         if existing_value != incoming_value:
             changed_fields[key] = value
@@ -136,26 +135,21 @@ def build_update_payload(incoming: dict, existing: dict) -> dict | None:
     return changed_fields or None
 
 
-def insert_material_batch(
-    connection: psycopg.Connection,
-    records: list[dict],
-) -> int:
+def insert_branch_batch(connection: psycopg.Connection, records: list[dict]) -> int:
     if not records:
         return 0
 
     query = """
-        INSERT INTO catalog.material (
-            material_name,
-            description,
-            care_instruction,
-            media_id,
+        INSERT INTO iam.branch (
+            branch_name,
+            address,
+            phone,
             is_active
         )
         VALUES (
-            %(material_name)s,
-            %(description)s,
-            %(care_instruction)s,
-            %(media_id)s,
+            %(branch_name)s,
+            %(address)s,
+            %(phone)s,
             %(is_active)s
         )
     """
@@ -166,100 +160,103 @@ def insert_material_batch(
     return len(records)
 
 
-def update_material(
+def update_branch(
     connection: psycopg.Connection,
-    material_id: int,
+    branch_id: int,
     update_payload: dict,
 ) -> None:
     assignments = ", ".join(f"{column} = %({column})s" for column in update_payload)
     query = f"""
-        UPDATE catalog.material
+        UPDATE iam.branch
         SET {assignments}, updated_at = NOW()
-        WHERE material_id = %(material_id)s
+        WHERE branch_id = %(branch_id)s
     """
 
     params = dict(update_payload)
-    params["material_id"] = material_id
+    params["branch_id"] = branch_id
 
     with connection.cursor() as cursor:
         cursor.execute(query, params)
 
 
-def sync_materials(
-    materials_df: pd.DataFrame,
+def sync_branches(
+    branches_df: pd.DataFrame,
     connection_kwargs: dict[str, str | int],
 ) -> tuple[int, int, int]:
     with psycopg.connect(**connection_kwargs) as connection:
-        existing_by_name = fetch_existing_materials(connection)
+        existing_by_name = fetch_existing_branches(connection)
 
         inserts: list[dict] = []
         updates: list[tuple[int, dict]] = []
 
-        for record in materials_df.to_dict(orient="records"):
-            material_name = record["material_name"]
-            existing = existing_by_name.get(material_name)
+        for record in branches_df.to_dict(orient="records"):
+            payload = build_branch_payload(record)
+            existing = existing_by_name.get(payload["branch_name"])
 
             if existing is None:
-                inserts.append(build_material_payload(record))
+                inserts.append(payload)
                 continue
 
-            update_payload = build_update_payload(record, existing)
+            update_payload = build_update_payload(payload, existing)
             if update_payload is not None:
-                updates.append((existing["material_id"], update_payload))
+                updates.append((existing["branch_id"], update_payload))
 
         inserted_count = 0
         updated_count = 0
 
         for insert_batch in chunk_records(inserts, BATCH_SIZE):
-            inserted_count += insert_material_batch(connection, insert_batch)
+            inserted_count += insert_branch_batch(connection, insert_batch)
 
-        for material_id, update_payload in updates:
-            update_material(connection, material_id, update_payload)
+        for branch_id, update_payload in updates:
+            update_branch(connection, branch_id, update_payload)
             updated_count += 1
 
         connection.commit()
 
-    skipped_count = len(materials_df) - inserted_count - updated_count
+    skipped_count = len(branches_df) - inserted_count - updated_count
     return inserted_count, updated_count, skipped_count
 
 
 def print_summary(
-    materials_df: pd.DataFrame,
+    branches_df: pd.DataFrame,
     connection_label: str,
     inserted_count: int,
     updated_count: int,
     skipped_count: int,
 ) -> None:
-    print(f"Input file: {INPUT_FILE}")
     print(f"Target database: {connection_label}")
-    print(f"Total master materials: {len(materials_df)}")
+    print(f"Input file: {BRANCH_FILE}")
+    print(f"Total master branches: {len(branches_df)}")
     print(f"Inserted: {inserted_count}")
     print(f"Updated: {updated_count}")
     print(f"Skipped: {skipped_count}")
 
-    if not materials_df.empty:
+    if not branches_df.empty:
         print("\nPreview:")
-        print(materials_df.head(10).to_string(index=False))
+        print(branches_df.head(10).to_string(index=False))
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Insert/update master materials into catalog.material."
+        description="Insert/update master branches into iam.branch."
     )
     add_loader_connection_args(parser)
     return parser.parse_args()
 
 
 def main() -> None:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
     args = parse_args()
     connection_kwargs = build_connection_kwargs(args)
-    materials_df = read_master_materials(INPUT_FILE)
-    inserted_count, updated_count, skipped_count = sync_materials(
-        materials_df,
+    branches_df = read_master_branches(BRANCH_FILE)
+    inserted_count, updated_count, skipped_count = sync_branches(
+        branches_df,
         connection_kwargs,
     )
     print_summary(
-        materials_df=materials_df,
+        branches_df=branches_df,
         connection_label=describe_connection(connection_kwargs),
         inserted_count=inserted_count,
         updated_count=updated_count,

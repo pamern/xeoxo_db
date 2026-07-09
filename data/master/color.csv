@@ -1,38 +1,38 @@
-﻿color_name,color_group,color_code
-Be,Be,#D8C3A5
-Cam,Cam,#F28C28
-Hồng cam,Cam,#F4A08A
-Hồng,Hồng,#E88DA1
-Hồng nhạt,Hồng,#F6C1CC
-Hồng phấn,Hồng,#F4B6C2
-Hồng phấn nhạt,Hồng,#F8D7DF
-Hồng sen,Hồng,#D96C8A
-Hồng đậm,Hồng,#C75A7C
-Kem,Kem,#F3E5C8
-Trắng kem,Kem,#F8F1E3
-Vàng nâu,Nâu,#B88A3B
-Trắng,Trắng,#FFFFFF
-Trắng xám,Trắng,#E5E5E0
-Hồng tím,Tím,#C97BB8
-Tím,Tím,#8E6BBE
-Tím nhạt,Tím,#C8B4E3
-Vàng,Vàng,#E3B23C
-Vàng kem,Vàng,#F0D98A
-Vàng nhạt,Vàng,#F6E27A
-Xanh,Xanh,#3F7FBF
-Xanh biển,Xanh,#2F6FA3
-Xanh biển nhạt,Xanh,#8CBFD9
-Xanh coban,Xanh,#0047AB
-Xanh cốm,Xanh,#9DC183
-Xanh lam,Xanh,#1F5AA6
-Xanh lá,Xanh,#4F8A3C
-Xanh lục,Xanh,#2E8B57
-Xanh ngọc,Xanh,#48A9A6
-Xanh oliu,Xanh,#708238
-Xanh xám,Xám,#7E8F99
-Xám bạc,Xám,#BFC5CC
-Đen,Đen,#1F1F1F
-Hồng đỗ,Đỏ,#A63D57
-Đỏ,Đỏ,#C62828
-Đỏ mận,Đỏ,#7B1E3A
-Đỏ đậm,Đỏ,#8B1E2D
+color_name,color_group,color_code,personal_color_season,color_temperature,color_value,color_chroma
+Be,Be,#D8C3A5,AUTUMN,WARM,LIGHT,MUTED
+Cam,Cam,#F28C28,SPRING,WARM,LIGHT,CLEAR
+Hồng cam,Cam,#F4A08A,SPRING,WARM,LIGHT,CLEAR
+Hồng,Hồng,#E88DA1,SUMMER,COOL,LIGHT,SOFT
+Hồng nhạt,Hồng,#F6C1CC,SUMMER,COOL,LIGHT,SOFT
+Hồng phấn,Hồng,#F4B6C2,SUMMER,COOL,LIGHT,SOFT
+Hồng phấn nhạt,Hồng,#F8D7DF,SUMMER,COOL,LIGHT,SOFT
+Hồng sen,Hồng,#D96C8A,WINTER,COOL,DEEP,CLEAR
+Hồng đậm,Hồng,#C75A7C,WINTER,COOL,DEEP,CLEAR
+Kem,Kem,#F3E5C8,SPRING,WARM,LIGHT,SOFT
+Trắng kem,Kem,#F8F1E3,SPRING,WARM,LIGHT,SOFT
+Vàng nâu,Nâu,#B88A3B,AUTUMN,WARM,DEEP,MUTED
+Trắng,Trắng,#FFFFFF,WINTER,COOL,LIGHT,CLEAR
+Trắng xám,Trắng,#E5E5E0,SUMMER,COOL,LIGHT,SOFT
+Hồng tím,Tím,#C97BB8,WINTER,COOL,DEEP,CLEAR
+Tím,Tím,#8E6BBE,WINTER,COOL,DEEP,CLEAR
+Tím nhạt,Tím,#C8B4E3,SUMMER,COOL,LIGHT,SOFT
+Vàng,Vàng,#E3B23C,SPRING,WARM,LIGHT,CLEAR
+Vàng kem,Vàng,#F0D98A,SPRING,WARM,LIGHT,SOFT
+Vàng nhạt,Vàng,#F6E27A,SPRING,WARM,LIGHT,CLEAR
+Xanh,Xanh,#3F7FBF,WINTER,COOL,DEEP,CLEAR
+Xanh biển,Xanh,#2F6FA3,WINTER,COOL,DEEP,CLEAR
+Xanh biển nhạt,Xanh,#8CBFD9,SUMMER,COOL,LIGHT,SOFT
+Xanh coban,Xanh,#0047AB,WINTER,COOL,DEEP,CLEAR
+Xanh cốm,Xanh,#9DC183,SPRING,WARM,LIGHT,SOFT
+Xanh lam,Xanh,#1F5AA6,WINTER,COOL,DEEP,CLEAR
+Xanh lá,Xanh,#4F8A3C,AUTUMN,WARM,DEEP,MUTED
+Xanh lục,Xanh,#2E8B57,WINTER,COOL,DEEP,CLEAR
+Xanh ngọc,Xanh,#48A9A6,SUMMER,COOL,LIGHT,SOFT
+Xanh oliu,Xanh,#708238,AUTUMN,WARM,DEEP,MUTED
+Xanh xám,Xám,#7E8F99,SUMMER,COOL,LIGHT,SOFT
+Xám bạc,Xám,#BFC5CC,SUMMER,COOL,LIGHT,SOFT
+Đen,Đen,#1F1F1F,WINTER,COOL,DEEP,CLEAR
+Hồng đỗ,Đỏ,#A63D57,WINTER,COOL,DEEP,MUTED
+Đỏ,Đỏ,#C62828,WINTER,COOL,DEEP,CLEAR
+Đỏ mận,Đỏ,#7B1E3A,WINTER,COOL,DEEP,CLEAR
+Đỏ đậm,Đỏ,#8B1E2D,AUTUMN,WARM,DEEP,MUTED

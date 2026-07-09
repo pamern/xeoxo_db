@@ -19,7 +19,7 @@ Tài liệu kế hoạch nằm ở [web_access_plan.md](/home/ngocmypzg/Projects
 Các migration đã được thêm cho lớp truy cập web:
 
 - [20260702195000_create_web_access_indexes.sql](/home/ngocmypzg/Projects/xeoxo_db/supabase/migrations/20260702195000_create_web_access_indexes.sql)
-- [20260702196000_enable_web_access_rls.sql](/home/ngocmypzg/Projects/xeoxo_db/supabase/migrations/20260702196000_enable_web_access_rls.sql)
+- [20260702198000_enable_web_access_rls.sql](/home/ngocmypzg/Projects/xeoxo_db/supabase/migrations/20260702198000_enable_web_access_rls.sql)
 - [20260702197000_create_web_access_views.sql](/home/ngocmypzg/Projects/xeoxo_db/supabase/migrations/20260702197000_create_web_access_views.sql)
 
 Smoke test đi kèm:
@@ -317,6 +317,7 @@ Shape dữ liệu:
 
 - `product_line_id`
 - `line_name`
+- `slug`
 - `collection_id`
 - `collection_name`
 - `color_id`

@@ -86,6 +86,32 @@ def build_master_material(df: pd.DataFrame) -> pd.DataFrame:
     return master_df
 
 
+def merge_existing_media_mapping(master_df: pd.DataFrame, output_file: Path) -> pd.DataFrame:
+    if not output_file.exists():
+        master_df["media_filename"] = None
+        return master_df
+
+    existing_df = pd.read_csv(output_file)
+    if "material_name" not in existing_df.columns or "media_filename" not in existing_df.columns:
+        master_df["media_filename"] = None
+        return master_df
+
+    existing_mapping = existing_df[["material_name", "media_filename"]].copy()
+    existing_mapping["material_name"] = existing_mapping["material_name"].map(normalize_text)
+    existing_mapping["media_filename"] = existing_mapping["media_filename"].map(normalize_text)
+    existing_mapping = existing_mapping.dropna(subset=["material_name"]).drop_duplicates(
+        subset=["material_name"],
+        keep="first",
+    )
+
+    merged_df = master_df.merge(
+        existing_mapping,
+        on="material_name",
+        how="left",
+    )
+    return merged_df
+
+
 def save_master_material(df: pd.DataFrame, output_file: Path) -> None:
     output_file.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(output_file, index=False, encoding="utf-8-sig")
@@ -103,6 +129,7 @@ def print_summary(df: pd.DataFrame, output_file: Path) -> None:
 def main() -> None:
     transformed_df = read_transformed_product_lines(INPUT_FILE)
     master_df = build_master_material(transformed_df)
+    master_df = merge_existing_media_mapping(master_df, OUTPUT_FILE)
     save_master_material(master_df, OUTPUT_FILE)
     print_summary(master_df, OUTPUT_FILE)
 

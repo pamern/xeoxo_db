@@ -1,25 +1,28 @@
-﻿category_name,description,parent_name,department,slug,is_active
-Áo sơ mi,"Danh mục các thiết kế áo sơ mi mang phong cách thanh lịch, dễ phối trong nhiều hoàn cảnh.",,Women,ao-so-mi,True
-Áo choàng,"Danh mục áo choàng dùng để khoác ngoài, tạo điểm nhấn mềm mại và sang trọng cho trang phục.",,Women,ao-choang,True
-Áo dài,"Danh mục chính gồm các thiết kế áo dài truyền thống và cách tân, tôn vinh vẻ đẹp Á Đông.",,Women,ao-dai,True
-Áo yếm,"Danh mục áo yếm lấy cảm hứng từ trang phục truyền thống, phù hợp với phong cách nữ tính và duyên dáng.",,Women,ao-yem,True
-Đầm dài,"Danh mục các mẫu đầm dài nhẹ nhàng, thanh lịch, phù hợp cho dạo phố, sự kiện hoặc dịp đặc biệt.",,Women,dam-dai,True
-Đầm 2 dây,"Danh mục đầm hai dây với phom dáng mềm mại, thoải mái và phù hợp với phong cách nữ tính hiện đại.",,Women,dam-2-day,True
-Đầm dạ hội,"Danh mục đầm dành cho tiệc, sự kiện và những dịp cần vẻ ngoài nổi bật, sang trọng.",,Women,dam-da-hoi,True
-Đầm dạo phố,"Danh mục đầm mặc hàng ngày, ưu tiên sự thoải mái, tinh tế và dễ ứng dụng.",,Women,dam-dao-pho,True
-Quần,"Danh mục các mẫu quần phối cùng áo dài, áo sơ mi hoặc các thiết kế khác trong bộ sưu tập.",,Women,quan,True
-Chân váy,"Danh mục chân váy mang tinh thần nữ tính, dễ phối cùng áo sơ mi, áo yếm hoặc áo kiểu.",,Women,chan-vay,True
-Áo dài chiết eo,"Thiết kế áo dài có phần eo được xử lý gọn gàng, giúp tôn dáng và tạo vẻ thanh thoát.",Áo dài,Women,ao-dai-chiet-eo,True
-Áo dài tay ngắn,"Thiết kế áo dài tay ngắn trẻ trung, thoải mái, phù hợp với thời tiết ấm và nhu cầu mặc hàng ngày.",Áo dài,Women,ao-dai-tay-ngan,True
-Áo dài suông tay loe dài,"Thiết kế áo dài dáng suông với tay loe dài, tạo cảm giác mềm mại, bay bổng và trang nhã.",Áo dài,Women,ao-dai-suong-tay-loe-dai,True
-Áo dài suông tay loe lửng,"Thiết kế áo dài dáng suông với tay loe lửng, cân bằng giữa nét truyền thống và sự tiện dụng.",Áo dài,Women,ao-dai-suong-tay-loe-lung,True
-Áo dài 2 tà,"Dòng áo dài hai tà quen thuộc, giữ tinh thần truyền thống và phù hợp với nhiều dịp sử dụng.",Áo dài,Women,ao-dai-2-ta,True
-Áo dài 4 tà,"Thiết kế áo dài bốn tà tạo độ chuyển động mềm mại, tăng chiều sâu và sự nổi bật cho trang phục.",Áo dài,Women,ao-dai-4-ta,True
-Áo dài 2 lớp,"Thiết kế áo dài hai lớp tạo hiệu ứng thị giác tinh tế, tăng độ mềm mại và sang trọng.",Áo dài,Women,ao-dai-2-lop,True
-Áo dài ngắn cúc lệnh,"Thiết kế áo dài ngắn với hàng cúc lệch, mang hơi hướng cách tân nhưng vẫn giữ nét duyên truyền thống.",Áo dài,Men,ao-dai-ngan-cuc-lenh,True
-Áo dài ngắn cúc thẳng,"Thiết kế áo dài ngắn với hàng cúc thẳng, tạo cảm giác gọn gàng, hiện đại và dễ mặc.",Áo dài,Men,ao-dai-ngan-cuc-thang,True
-Áo dài cúc lệch,"Thiết kế áo dài có chi tiết cúc lệch làm điểm nhấn, tạo nét mềm mại và khác biệt.",Áo dài,Men,ao-dai-cuc-lech,True
-Áo dài vạt chéo,"Thiết kế áo dài với phần vạt chéo tạo hiệu ứng thị giác độc đáo, phù hợp với phong cách cách tân.",Áo dài,Men,ao-dai-vat-cheo,True
-Áo dài cưới nữ,"Danh mục áo dài cưới dành cho nữ, phù hợp với lễ cưới, lễ hỏi và các dịp trọng đại.",Áo dài,Women,ao-dai-cuoi-nu,True
-Áo dài cưới nam,"Danh mục áo dài cưới dành cho nam, thường được thiết kế đồng điệu với trang phục nữ trong ngày cưới.",Áo dài,Men,ao-dai-cuoi-nam,True
-Áo dài đôi,"Danh mục áo dài đôi dành cho nam và nữ, phù hợp với chụp ảnh, lễ cưới, lễ hỏi hoặc sự kiện đặc biệt.",Áo dài,,ao-dai-doi,True
+category_name,description,parent_name,department,slug,is_active
+Áo sơ mi,"Danh mục các thiết kế áo sơ mi mang phong cách thanh lịch, dễ phối trong nhiều hoàn cảnh.",,Women,ao-so-mi,true
+Áo choàng,"Danh mục áo choàng dùng để khoác ngoài, tạo điểm nhấn mềm mại và sang trọng cho trang phục.",,Women,ao-choang,true
+Áo đầm - chân váy,"Danh mục tổng hợp các thiết kế áo, đầm và chân váy mang tinh thần nữ tính, mềm mại và dễ ứng dụng.",,Women,ao-dam-chan-vay,true
+Áo dài,"Danh mục tổng hợp các thiết kế áo dài dành cho nam, nữ và các dòng phối đôi cho nhiều dịp sử dụng.",,,ao-dai,true
+Áo dài nữ,"Danh mục chính gồm các thiết kế áo dài nữ truyền thống và cách tân, tôn vinh vẻ đẹp Á Đông.",Áo dài,Women,ao-dai-nu,true
+Áo dài nam,"Danh mục chính gồm các thiết kế áo dài nam truyền thống và cách tân, phù hợp cho sự kiện, lễ nghi và dịp đặc biệt.",Áo dài,Men,ao-dai-nam,true
+Áo yếm,"Danh mục áo yếm lấy cảm hứng từ trang phục truyền thống, phù hợp với phong cách nữ tính và duyên dáng.",Áo đầm - chân váy,Women,ao-yem,true
+Đầm dài,"Danh mục các mẫu đầm dài nhẹ nhàng, thanh lịch, phù hợp cho dạo phố, sự kiện hoặc dịp đặc biệt.",Áo đầm - chân váy,Women,dam-dai,true
+Đầm 2 dây,"Danh mục đầm hai dây với phom dáng mềm mại, thoải mái và phù hợp với phong cách nữ tính hiện đại.",Áo đầm - chân váy,Women,dam-2-day,true
+Đầm dạ hội,"Danh mục đầm dành cho tiệc, sự kiện và những dịp cần vẻ ngoài nổi bật, sang trọng.",Áo đầm - chân váy,Women,dam-da-hoi,true
+Đầm dạo phố,"Danh mục đầm mặc hàng ngày, ưu tiên sự thoải mái, tinh tế và dễ ứng dụng.",Áo đầm - chân váy,Women,dam-dao-pho,true
+Quần,"Danh mục các mẫu quần phối cùng áo dài, áo sơ mi hoặc các thiết kế khác trong bộ sưu tập.",,Women,quan,true
+Chân váy,"Danh mục chân váy mang tinh thần nữ tính, dễ phối cùng áo sơ mi, áo yếm hoặc áo kiểu.",Áo đầm - chân váy,Women,chan-vay,true
+Áo dài chiết eo,"Thiết kế áo dài có phần eo được xử lý gọn gàng, giúp tôn dáng và tạo vẻ thanh thoát.",Áo dài nữ,Women,ao-dai-chiet-eo,true
+Áo dài tay ngắn,"Thiết kế áo dài tay ngắn trẻ trung, thoải mái, phù hợp với thời tiết ấm và nhu cầu mặc hàng ngày.",Áo dài nữ,Women,ao-dai-tay-ngan,true
+Áo dài suông tay loe dài,"Thiết kế áo dài dáng suông với tay loe dài, tạo cảm giác mềm mại, bay bổng và trang nhã.",Áo dài nữ,Women,ao-dai-suong-tay-loe-dai,true
+Áo dài suông tay loe lửng,"Thiết kế áo dài dáng suông với tay loe lửng, cân bằng giữa nét truyền thống và sự tiện dụng.",Áo dài nữ,Women,ao-dai-suong-tay-loe-lung,true
+Áo dài 2 tà,"Dòng áo dài hai tà quen thuộc, giữ tinh thần truyền thống và phù hợp với nhiều dịp sử dụng.",Áo dài nữ,Women,ao-dai-2-ta,true
+Áo dài 4 tà,"Thiết kế áo dài bốn tà tạo độ chuyển động mềm mại, tăng chiều sâu và sự nổi bật cho trang phục.",Áo dài nữ,Women,ao-dai-4-ta,true
+Áo dài 2 lớp,"Thiết kế áo dài hai lớp tạo hiệu ứng thị giác tinh tế, tăng độ mềm mại và sang trọng.",Áo dài nữ,Women,ao-dai-2-lop,true
+Áo dài ngắn cúc lệnh,"Thiết kế áo dài ngắn với hàng cúc lệch, mang hơi hướng cách tân nhưng vẫn giữ nét duyên truyền thống.",Áo dài nam,Men,ao-dai-ngan-cuc-lenh,true
+Áo dài ngắn cúc thẳng,"Thiết kế áo dài ngắn với hàng cúc thẳng, tạo cảm giác gọn gàng, hiện đại và dễ mặc.",Áo dài nam,Men,ao-dai-ngan-cuc-thang,true
+Áo dài cúc lệch,"Thiết kế áo dài có chi tiết cúc lệch làm điểm nhấn, tạo nét mềm mại và khác biệt.",Áo dài nam,Men,ao-dai-cuc-lech,true
+Áo dài vạt chéo,"Thiết kế áo dài với phần vạt chéo tạo hiệu ứng thị giác độc đáo, phù hợp với phong cách cách tân.",Áo dài nam,Men,ao-dai-vat-cheo,true
+Áo dài cưới nữ,"Danh mục áo dài cưới dành cho nữ, phù hợp với lễ cưới, lễ hỏi và các dịp trọng đại.",Áo dài nữ,Women,ao-dai-cuoi-nu,true
+Áo dài cưới nam,"Danh mục áo dài cưới dành cho nam, thường được thiết kế đồng điệu với trang phục nữ trong ngày cưới.",Áo dài nam,Men,ao-dai-cuoi-nam,true
+Áo dài đôi,"Danh mục áo dài đôi dành cho nam và nữ, phù hợp với chụp ảnh, lễ cưới, lễ hỏi hoặc sự kiện đặc biệt.",Áo dài,,ao-dai-doi,true

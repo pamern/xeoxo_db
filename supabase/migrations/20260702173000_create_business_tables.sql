@@ -42,8 +42,11 @@ CREATE TABLE iam.province (
     province_id SERIAL PRIMARY KEY,
     province_name VARCHAR(150) NOT NULL,
     region VARCHAR(30) NOT NULL,
+    ward TEXT[] NOT NULL DEFAULT ARRAY[]::TEXT[],
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    updated_at TIMESTAMPTZ
+    updated_at TIMESTAMPTZ,
+    CONSTRAINT chk_province_region
+        CHECK (region IN ('Miền Bắc', 'Miền Trung', 'Miền Nam'))
 );
 
 CREATE TABLE iam.customer (
@@ -51,9 +54,11 @@ CREATE TABLE iam.customer (
     account_id UUID UNIQUE
         REFERENCES iam.account(account_id)
         ON DELETE SET NULL,
-    customer_name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL,
-    phone VARCHAR(20) NOT NULL,
+    customer_name VARCHAR(255),
+    email VARCHAR(255),
+    phone VARCHAR(20),
+    gender VARCHAR(20),
+    birthday DATE,
     customer_type VARCHAR(20) NOT NULL,
     tier_id VARCHAR(20)
         REFERENCES iam.loyalty_tier(loyalty_tier_id)
@@ -161,14 +166,11 @@ CREATE TABLE customization.measurement_profile (
     measured_by INT
         REFERENCES iam.staff(staff_id)
         ON DELETE SET NULL,
-    profile_type VARCHAR(30) NOT NULL,
     note TEXT,
     is_active BOOLEAN NOT NULL DEFAULT TRUE,
     measurement_date TIMESTAMPTZ NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-    updated_at TIMESTAMPTZ,
-    CONSTRAINT chk_measurement_profile_type
-        CHECK (profile_type IN ('SIZE_RECOMMENDATION', 'CUSTOMER_MEASUREMENT'))
+    updated_at TIMESTAMPTZ
 );
 
 CREATE TABLE customization.customization_request (
@@ -176,8 +178,8 @@ CREATE TABLE customization.customization_request (
     customer_id BIGINT
         REFERENCES iam.customer(customer_id)
         ON DELETE SET NULL,
-    product_line_id INT NOT NULL
-        REFERENCES catalog.product_line(product_line_id)
+    component_id INT NOT NULL
+        REFERENCES catalog.product_component(component_id)
         ON DELETE RESTRICT,
     measurement_profile_id INT
         REFERENCES customization.measurement_profile(measurement_profile_id)
@@ -207,11 +209,11 @@ CREATE TABLE customization.customization_request (
 
 CREATE TABLE customization.measurement_appointment (
     appointment_id SERIAL PRIMARY KEY,
-    customization_id BIGINT NOT NULL
-        REFERENCES customization.customization_request(customization_id)
-        ON DELETE CASCADE,
     customer_id BIGINT
         REFERENCES iam.customer(customer_id)
+        ON DELETE SET NULL,
+    product_line_id INT
+        REFERENCES catalog.product_line(product_line_id)
         ON DELETE SET NULL,
     branch_id INT NOT NULL
         REFERENCES iam.branch(branch_id)
@@ -272,7 +274,7 @@ CREATE TABLE sales.cart (
     customer_id BIGINT
         REFERENCES iam.customer(customer_id)
         ON DELETE SET NULL,
-    session_id VARCHAR(255),
+    session_id UUID,
     cart_status VARCHAR(20) NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMPTZ,
@@ -285,17 +287,30 @@ CREATE TABLE sales.cart_item (
     cart_id BIGINT NOT NULL
         REFERENCES sales.cart(cart_id)
         ON DELETE CASCADE,
-    variant_id INT NOT NULL
+    variant_id INT
         REFERENCES catalog.product_variant(variant_id)
         ON DELETE RESTRICT,
+    customization_id BIGINT
+        REFERENCES customization.customization_request(customization_id)
+        ON DELETE CASCADE,
+    item_type VARCHAR(20) NOT NULL,
     quantity INT NOT NULL,
     unit_price NUMERIC(14, 2) NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMPTZ,
     CONSTRAINT uq_cart_item_variant
         UNIQUE (cart_id, variant_id),
+    CONSTRAINT uq_cart_item_customization
+        UNIQUE (cart_id, customization_id),
+    CONSTRAINT chk_cart_item_type
+        CHECK (item_type IN ('STANDARD', 'CUSTOMIZED')),
     CONSTRAINT chk_cart_item_quantity
-        CHECK (quantity > 0)
+        CHECK (quantity > 0),
+    CONSTRAINT chk_cart_item_reference
+        CHECK (
+            (item_type = 'STANDARD' AND variant_id IS NOT NULL AND customization_id IS NULL)
+            OR (item_type = 'CUSTOMIZED' AND variant_id IS NULL AND customization_id IS NOT NULL)
+        )
 );
 
 CREATE TABLE sales.sales_order (

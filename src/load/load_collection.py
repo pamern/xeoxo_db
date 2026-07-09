@@ -274,6 +274,7 @@ def fetch_existing_collections(connection: psycopg.Connection) -> dict[str, dict
         SELECT
             collection_id,
             collection_name,
+            slug,
             description,
             media_id,
             content_json,
@@ -302,6 +303,7 @@ def build_collection_payload(
 ) -> dict:
     return {
         "collection_name": normalize_text(row["collection_name"]),
+        "slug": normalize_text(row["slug"]),
         "description": normalize_text(row["description"]),
         "media_id": media_id,
         "content_json": Jsonb(row["content_json"]) if row["content_json"] is not None else None,
@@ -346,6 +348,7 @@ def insert_collection_batch(
     query = """
         INSERT INTO catalog.collection (
             collection_name,
+            slug,
             description,
             media_id,
             content_json,
@@ -355,6 +358,7 @@ def insert_collection_batch(
         )
         VALUES (
             %(collection_name)s,
+            %(slug)s,
             %(description)s,
             %(media_id)s,
             %(content_json)s,

@@ -26,6 +26,12 @@ LOAD_STEPS = [
     LoadStep("media", "src.load.load_media", "Load catalog.media"),
     LoadStep("color", "src.load.load_color", "Load catalog.color"),
     LoadStep("materials", "src.load.load_materials", "Load catalog.material"),
+    LoadStep(
+        "material_media",
+        "src.load.load_media_materials",
+        "Upload material media to Supabase Storage and sync catalog.media/material.media_id",
+        depends_on=("materials",),
+    ),
     LoadStep("category", "src.load.load_category", "Load catalog.category"),
     LoadStep("collection", "src.load.load_collection", "Load catalog.collection"),
     LoadStep(
@@ -41,6 +47,12 @@ LOAD_STEPS = [
         depends_on=("product_line",),
     ),
     LoadStep("size_chart", "src.load.load_size_chart", "Load catalog.size_chart"),
+    LoadStep(
+        "size_chart_category",
+        "src.load.load_size_chart_category",
+        "Assign matching categories to catalog.size_chart",
+        depends_on=("size_chart", "line_category"),
+    ),
     LoadStep("size_option", "src.load.load_size_option", "Load catalog.size_option"),
     LoadStep(
         "measurement_type",
@@ -69,6 +81,38 @@ LOAD_STEPS = [
         "src.load.load_product_line_media",
         "Load catalog.product_line_media",
         depends_on=("product_line",),
+    ),
+    LoadStep(
+        "payment_method",
+        "src.load.load_payment_method",
+        "Load sales.payment_method",
+    ),
+    LoadStep(
+        "loyalty_tier",
+        "src.load.load_loyalty_tier",
+        "Load iam.loyalty_tier",
+    ),
+    LoadStep(
+        "province",
+        "src.load.load_province",
+        "Load iam.province from SQL seed",
+    ),
+    LoadStep(
+        "branch",
+        "src.load.load_branch",
+        "Load iam.branch",
+    ),
+    LoadStep(
+        "staff",
+        "src.load.load_staff",
+        "Seed one sample iam.staff",
+        depends_on=("branch",),
+    ),
+    LoadStep(
+        "inventory",
+        "src.load.add_inventory",
+        "Seed inventory.inventory from existing product variants and active branches",
+        depends_on=("product_variant", "branch"),
     ),
 ]
 
