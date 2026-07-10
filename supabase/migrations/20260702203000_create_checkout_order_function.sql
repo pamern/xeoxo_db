@@ -38,6 +38,7 @@ DECLARE
     v_has_customized_item BOOLEAN := FALSE;
     v_custom_surcharge_total NUMERIC(14, 2) := 0;
     v_reward_used_amount NUMERIC(14, 2) := 0;
+    v_effective_unit_price NUMERIC(14, 2) := 0;
 BEGIN
     IF COALESCE(auth.role(), 'anon') = 'anon' THEN
         RAISE EXCEPTION 'Ban can dang nhap de checkout';
@@ -109,14 +110,18 @@ BEGIN
             ci.item_type,
             ci.variant_id,
             ci.customization_id,
+            ci.customization_snapshot,
             ci.quantity,
             ci.unit_price,
+            pv.price AS variant_price,
             pv.status AS variant_status,
             pc.product_line_id AS variant_product_line_id,
             plv.status AS variant_product_line_status,
             cr.customer_id AS customization_customer_id,
             cr.customization_status,
             cr.component_id AS customization_component_id,
+            cr.measurement_snapshot,
+            cr.custom_price,
             cr.surcharge_amount,
             cpc.product_line_id AS customization_product_line_id,
             plc.status AS customization_product_line_status
@@ -138,14 +143,16 @@ BEGIN
         FOR UPDATE OF ci
     LOOP
         v_validated_count := v_validated_count + 1;
-        v_subtotal := v_subtotal + (v_item.unit_price * v_item.quantity);
 
         IF v_item.item_type = 'STANDARD' THEN
             IF v_item.variant_id IS NULL
                OR v_item.variant_status IS DISTINCT FROM 'ACTIVE'
-               OR v_item.variant_product_line_status IS DISTINCT FROM 'ACTIVE' THEN
+               OR v_item.variant_product_line_status IS DISTINCT FROM 'ACTIVE'
+               OR COALESCE(v_item.variant_price, 0) <= 0 THEN
                 RAISE EXCEPTION 'San pham thuong % khong con hop le de checkout', v_item.cart_item_id;
             END IF;
+
+            v_effective_unit_price := v_item.variant_price;
 
             IF (
                 SELECT COALESCE(SUM(i.quantity), 0)::INT
@@ -158,22 +165,26 @@ BEGIN
             v_has_customized_item := TRUE;
 
             IF v_item.customization_id IS NULL
-               OR v_item.customization_customer_id IS DISTINCT FROM p_customer_id
+               OR (
+                    v_item.customization_customer_id IS NOT NULL
+                    AND v_item.customization_customer_id IS DISTINCT FROM p_customer_id
+               )
+               OR v_item.customization_component_id IS NULL
                OR v_item.customization_product_line_status IS DISTINCT FROM 'ACTIVE'
-               OR v_item.customization_status NOT IN (
-                    'REQUESTED',
-                    'MEASUREMENT_PENDING',
-                    'MEASURED',
-                    'CONFIRMED'
-               ) THEN
+               OR COALESCE(v_item.customization_snapshot, v_item.measurement_snapshot) IS NULL
+               OR COALESCE(v_item.custom_price, 0) <= 0
+               OR v_item.customization_status IN ('CANCELLED', 'COMPLETED') THEN
                 RAISE EXCEPTION 'Yeu cau customize % khong con hop le de checkout', v_item.customization_id;
             END IF;
 
+            v_effective_unit_price := v_item.custom_price;
             v_custom_surcharge_total := v_custom_surcharge_total
                 + (COALESCE(v_item.surcharge_amount, 0) * v_item.quantity);
         ELSE
             RAISE EXCEPTION 'Loai cart item khong ho tro: %', v_item.item_type;
         END IF;
+
+        v_subtotal := v_subtotal + (v_effective_unit_price * v_item.quantity);
     END LOOP;
 
     IF v_validated_count <> v_requested_count THEN
@@ -218,7 +229,7 @@ BEGIN
         order_code,
         customer_id,
         order_date,
-        reward_dicount_amount,
+        reward_discount_amount,
         shipping_fee,
         total_amount,
         order_status,
@@ -248,20 +259,33 @@ BEGIN
             ci.item_type,
             ci.variant_id,
             ci.customization_id,
+            ci.customization_snapshot,
             ci.quantity,
             ci.unit_price,
+            pv.price AS variant_price,
+            cr.custom_price,
+            cr.measurement_snapshot,
             cr.customization_status
         FROM sales.cart_item AS ci
+        LEFT JOIN catalog.product_variant AS pv
+            ON pv.variant_id = ci.variant_id
         LEFT JOIN customization.customization_request AS cr
             ON cr.customization_id = ci.customization_id
         WHERE ci.cart_id = p_cart_id
           AND ci.cart_item_id = ANY(p_cart_item_ids)
         ORDER BY ci.cart_item_id
     LOOP
+        v_effective_unit_price := CASE
+            WHEN v_item.item_type = 'STANDARD' THEN COALESCE(v_item.variant_price, 0)
+            WHEN v_item.item_type = 'CUSTOMIZED' THEN COALESCE(v_item.custom_price, 0)
+            ELSE 0
+        END;
+
         INSERT INTO sales.order_item (
             order_id,
             variant_id,
             customization_id,
+            customization_snapshot,
             item_type,
             quantity,
             unit_price,
@@ -273,11 +297,15 @@ BEGIN
             v_order_id,
             v_item.variant_id,
             v_item.customization_id,
+            CASE
+                WHEN v_item.item_type = 'CUSTOMIZED' THEN COALESCE(v_item.customization_snapshot, v_item.measurement_snapshot)
+                ELSE NULL
+            END,
             v_item.item_type,
             v_item.quantity,
-            v_item.unit_price,
+            v_effective_unit_price,
             0,
-            v_item.unit_price * v_item.quantity,
+            v_effective_unit_price * v_item.quantity,
             NOW()
         );
 
@@ -309,7 +337,7 @@ BEGIN
                 RAISE EXCEPTION 'Ton kho thay doi, vui long thu lai';
             END IF;
         ELSIF v_item.item_type = 'CUSTOMIZED'
-           AND v_item.customization_status IN ('REQUESTED', 'MEASURED') THEN
+           AND v_item.customization_status IN ('REQUESTED', 'MEASUREMENT_PENDING', 'MEASURED') THEN
             UPDATE customization.customization_request
             SET
                 customization_status = 'CONFIRMED',

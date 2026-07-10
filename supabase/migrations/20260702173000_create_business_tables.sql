@@ -173,6 +173,10 @@ CREATE TABLE customization.measurement_profile (
     updated_at TIMESTAMPTZ
 );
 
+CREATE UNIQUE INDEX IF NOT EXISTS _measurement_profile_customer_active
+ON customization.measurement_profile (customer_id)
+WHERE is_active = TRUE;
+
 CREATE TABLE customization.customization_request (
     customization_id BIGSERIAL PRIMARY KEY,
     customer_id BIGINT
@@ -188,6 +192,7 @@ CREATE TABLE customization.customization_request (
     surcharge_percent NUMERIC(5, 2) NOT NULL,
     surcharge_amount NUMERIC(14, 2) NOT NULL,
     custom_price NUMERIC(14, 2) NOT NULL,
+    measurement_snapshot JSONB,
     customization_status VARCHAR(30) NOT NULL,
     customer_note TEXT,
     staff_note TEXT,
@@ -293,6 +298,7 @@ CREATE TABLE sales.cart_item (
     customization_id BIGINT
         REFERENCES customization.customization_request(customization_id)
         ON DELETE CASCADE,
+    customization_snapshot JSONB,
     item_type VARCHAR(20) NOT NULL,
     quantity INT NOT NULL,
     unit_price NUMERIC(14, 2) NOT NULL,
@@ -320,7 +326,7 @@ CREATE TABLE sales.sales_order (
         REFERENCES iam.customer(customer_id)
         ON DELETE SET NULL,
     order_date TIMESTAMPTZ NOT NULL,
-    reward_dicount_amount NUMERIC(14, 2) NOT NULL DEFAULT 0,
+    reward_discount_amount NUMERIC(14, 2) NOT NULL DEFAULT 0,
     shipping_fee NUMERIC(14, 2) NOT NULL,
     total_amount NUMERIC(14, 2) NOT NULL,
     order_status VARCHAR(30) NOT NULL,
@@ -367,6 +373,7 @@ CREATE TABLE sales.order_item (
     customization_id BIGINT
         REFERENCES customization.customization_request(customization_id)
         ON DELETE SET NULL,
+    customization_snapshot JSONB,
     item_type VARCHAR(20) NOT NULL,
     quantity INT NOT NULL,
     unit_price NUMERIC(14, 2) NOT NULL,
@@ -383,6 +390,32 @@ CREATE TABLE sales.order_item (
             OR (item_type = 'CUSTOMIZED' AND customization_id IS NOT NULL)
         )
 );
+
+CREATE OR REPLACE FUNCTION sales.set_cart_item_customization_snapshot()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+AS $$
+BEGIN
+    IF NEW.item_type = 'CUSTOMIZED' AND NEW.customization_id IS NOT NULL THEN
+        IF NEW.customization_snapshot IS NULL THEN
+            SELECT cr.measurement_snapshot
+            INTO NEW.customization_snapshot
+            FROM customization.customization_request AS cr
+            WHERE cr.customization_id = NEW.customization_id;
+        END IF;
+    ELSE
+        NEW.customization_snapshot := NULL;
+    END IF;
+
+    RETURN NEW;
+END;
+$$;
+
+CREATE TRIGGER trg_cart_item_set_customization_snapshot
+BEFORE INSERT OR UPDATE OF customization_id, customization_snapshot, item_type
+ON sales.cart_item
+FOR EACH ROW
+EXECUTE FUNCTION sales.set_cart_item_customization_snapshot();
 
 CREATE TABLE sales.payment (
     payment_id BIGSERIAL PRIMARY KEY,

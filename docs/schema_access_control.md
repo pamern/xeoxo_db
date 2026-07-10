@@ -258,7 +258,7 @@ Phạm vi tài liệu bám theo các bảng hiện có trong đặc tả databas
 
 - `authenticated` được thao tác với `cart`, `cart_item`, `sales_order`, `review`, `return_request` của chính mình.
 - Không cho khách tự cập nhật trạng thái đơn hàng, thanh toán, giao hàng, hoàn tiền.
-- Các cột nhạy cảm như `order_status`, `payment_status`, `shipping_status`, `refund_status`, `reward_discount_amount` chỉ nên cập nhật qua backend.
+- Các cột nhạy cảm như `order_status`, `payment_status`, `shipping_status`, `refund_status`, `reward_discount_amount`, `customization_snapshot` chỉ nên cập nhật qua backend.
 
 ---
 
@@ -274,6 +274,7 @@ Phạm vi tài liệu bám theo các bảng hiện có trong đặc tả databas
 **Ghi chú:**
 
 - Dữ liệu số đo cá nhân chỉ được đọc bởi chủ sở hữu và backend.
+- Snapshot số đo của request/cart/order nên được chụp qua backend hoặc trigger DB, không để frontend sửa trực tiếp sau khi đã chốt.
 - Nhân viên xử lý lịch hẹn thông qua API/backend, không cần role database riêng.
 
 ---
@@ -406,6 +407,8 @@ Các cột không nên cho frontend cập nhật trực tiếp:
 - `customer.spent_in_year`
 - `customer.tier_id`
 - `sales_order.reward_discount_amount`
+- `customization_request.measurement_snapshot`
+- `cart_item.customization_snapshot`
+- `order_item.customization_snapshot`
 
 ---
-

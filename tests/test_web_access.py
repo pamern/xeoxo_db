@@ -35,6 +35,7 @@ EXPECTED_INDEXES = {
     "idx_cart_item_cart",
     "idx_sales_order_customer_created_at",
     "idx_address_customer_default_created",
+    "_measurement_profile_customer_active",
 }
 
 EXPECTED_VIEWS = {
@@ -127,7 +128,7 @@ class WebAccessSmokeTest(unittest.TestCase):
         query = """
             SELECT indexname
             FROM pg_indexes
-            WHERE schemaname IN ('catalog', 'iam', 'sales')
+            WHERE schemaname IN ('catalog', 'iam', 'sales', 'customization')
         """
         with self.connection.cursor() as cursor:
             cursor.execute(query)

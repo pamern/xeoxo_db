@@ -92,6 +92,13 @@ Các index dưới đây là `index bổ sung` phục vụ frontend. Chúng khô
   - cột: `(cart_id)`
   - mục đích: load toàn bộ cart item theo cart
 
+### customization
+
+- `_measurement_profile_customer_active`
+  - bảng: `customization.measurement_profile`
+  - cột: `(customer_id)` với partial condition `WHERE is_active = true`
+  - mục đích: đảm bảo mỗi customer chỉ có tối đa một profile số đo active
+
 - `idx_sales_order_customer_created_at`
   - bảng: `sales.sales_order`
   - cột: `(customer_id, created_at DESC)`

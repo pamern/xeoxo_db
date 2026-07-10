@@ -13,8 +13,8 @@
 - birthday (DATE, NULL): Ngày sinh khách hàng
 - customer_type (VARCHAR/CHECK, NOT NULL): Loại khách hàng 
 - tier_id (VARCHAR(20), FK, NULL): Mã hạng thành viên
-- total_spent (NUMBERIC(14,2), NOT NULL, DEFAULT 0): Tổng chi tiêu
-- spent_in_year (NUMBERIC(14,2), NOT NULL, DEFAULT 0): Tổng chi tiêu trong năm
+- total_spent (NUMERIC(14,2), NOT NULL, DEFAULT 0): Tổng chi tiêu
+- spent_in_year (NUMERIC(14,2), NOT NULL, DEFAULT 0): Tổng chi tiêu trong năm
 - last_tier_updated_at(TIMESTAMPTZ, NULL): Lần cập nhập hạng thành viên gần nhất
 - created_at (TIMESTAMPTZ, NOT NULL): Thời gian tạo
 - updated_at (TIMESTAMPTZ, NULL): Thời gian cập nhật
@@ -79,7 +79,7 @@
 - recipient_name (VARCHAR(255), NOT NULL): Tên người nhận
 - recipient_phone (CHAR(20), NOT NULL): Số điện thoại người nhận
 - province_id (INT, FK, NOT NULL): Mã tỉnh/thành phố
-- district_name (CHECKIN, NOT NULL): Quận
+- district_name (VARCHAR(255), NOT NULL): Quận
 - address_detail (TEXT, NOT NULL): Địa chỉ chi tiết
 - is_default (BOOLEAN, NOT NULL): Có phải địa chỉ mặc định không?
 - is_active (BOOLEAN, NOT NULL): Trạng thái hoạt động
@@ -400,6 +400,7 @@
 - cart_id (BIGINT, FK, NOT NULL): Mã giỏ hàng
 - variant_id (INT, FK, NULL): Mã biến thể sản phẩm thường
 - customization_id (BIGINT, FK, NULL): Mã yêu cầu customize đang được thêm vào giỏ
+- customization_snapshot (JSONB, NULL): Snapshot thông tin customize tại thời điểm thêm vào giỏ
 - item_type (VARCHAR(20), NOT NULL): Phân loại dòng giỏ hàng
 - quantity (INT, NOT NULL): Số lượng
 - unit_price (NUMERIC(14,2), NOT NULL): Đơn giá tại thời điểm thêm vào giỏ hàng, với hàng customize đây là giá đã tính phụ phí hiện tại
@@ -412,6 +413,7 @@
 - item_type = {STANDARD, CUSTOMIZED}
 - Nếu item_type = STANDARD thì variant_id NOT NULL và customization_id NULL.
 - Nếu item_type = CUSTOMIZED thì variant_id NULL và customization_id NOT NULL.
+- `customization_snapshot` nên được chụp từ `customization_request.measurement_snapshot` khi item customize được thêm vào giỏ.
 
 ## SALES_ORDER
 
@@ -419,7 +421,7 @@
 - order_code (VARCHAR(50), UNIQUE, NOT NULL): Mã đơn hàng nghiệp vụ
 - customer_id (BIGINT, FK, NULL): Mã khách hàng
 - order_date (TIMESTAMPTZ, NOT NULL): Thời gian đặt hàng
-- reward_dicount_amount (NUMERIC(14,2), NOT NULL, DEFAULT 0): Tổng số tiền giảm từ quyền lợi thành viên
+- reward_discount_amount (NUMERIC(14,2), NOT NULL, DEFAULT 0): Tổng số tiền giảm từ quyền lợi thành viên
 - shipping_fee (NUMERIC(14,2), NOT NULL): Phí vận chuyển
 - total_amount (NUMERIC(14,2), NOT NULL): Tổng số tiền thanh toán
 - order_status (VARCHAR(30), NOT NULL): Trạng thái đơn hàng
@@ -440,6 +442,7 @@
 - order_id (BIGINT, FK, NOT NULL): Mã đơn hàng
 - variant_id (INT, FK, NULL): Mã biến thể sản phẩm
 - customization_id (BIGINT, FK, NULL): Mã may đo cá nhân
+- customization_snapshot (JSONB, NULL): Snapshot customize tại thời điểm checkout
 - item_type (VARCHAR(20), NOT NULL): Phân loại sản phẩm
 - quantity (INT, NOT NULL): Số lượng mua
 - unit_price (NUMERIC(14,2), NOT NULL): Đơn giá tại thời điểm mua
@@ -450,6 +453,7 @@
 **Ghi chú / Enum:**
 - item_type = {STANDARD, CUSTOMIZED}
 - Nếu item_type = CUSTOMIZED thì variant_id NULL và customization_id NOT NULL.
+- Với item customize, `customization_snapshot` nên được copy từ `sales.cart_item.customization_snapshot` để dữ liệu đơn hàng không bị trôi theo thay đổi về sau.
 
 ## PAYMENT
 
@@ -553,11 +557,12 @@
 - customization_id (INT, PK, NOT NULL): Mã yêu cầu customize
 - customer_id (BIGINT, FK, NULL): Mã khách hàng
 - component_id (INT, FK, NOT NULL): Mã component sản phẩm cần customize
-- source_profile_id (INT, FK, NULL): Hồ sơ số đo nguồn dùng để tạo snapshot
+- measurement_profile_id (INT, FK, NULL): Hồ sơ số đo nguồn gần nhất dùng để tạo request
 - unit_price (NUMERIC(14,2), NOT NULL): Giá gốc sản phẩm
 - surcharge_percent (NUMERIC(5,2), NOT NULL): Tỷ lệ phụ phí
 - surcharge_amount (NUMERIC(14,2), NOT NULL): Số tiền phụ phí
 - custom_price (NUMERIC(14,2), NOT NULL): Giá sau khi cộng phụ phí
+- measurement_snapshot (JSONB, NULL): Snapshot số đo tại thời điểm tạo request
 - customization_status (VARCHAR(30), NOT NULL): Trạng thái customize
 - customer_note (TEXT, NULL): Ghi chú yêu cầu của khách
 - staff_note (TEXT, NULL): Ghi chú xử lý của nhân viên
@@ -567,37 +572,9 @@
 **Ghi chú / Enum:**
 - customization_status = {REQUESTED, MEASUREMENT_PENDING, MEASURED, CONFIRMED, IN_PROGRESS, COMPLETED, CANCELLED}
 - `customization_request` gắn với `component_id`, không gắn với `product_line_id`.
-- `source_profile_id` chỉ phục vụ truy vết request được tạo từ profile nào, không phải nguồn dữ liệu động để đọc lại số đo giao dịch.
-- Số đo dùng cho giao dịch nên được chụp snapshot riêng theo từng `customization_request`.
-
-## CUSTOMIZATION_MEASUREMENT_SNAPSHOT
-
-- snapshot_id (BIGSERIAL, PK, NOT NULL): Mã snapshot số đo của request
-- customization_id (INT, FK, UNIQUE, NOT NULL): Mã yêu cầu customize
-- source_profile_id (INT, FK, NULL): Hồ sơ số đo nguồn tại thời điểm chụp
-- measurement_source (VARCHAR(20), NOT NULL): Nguồn phát sinh snapshot
-- captured_at (TIMESTAMPTZ, NOT NULL): Thời điểm chụp snapshot
-- captured_by (INT, FK, NULL): Nhân viên hoặc actor thực hiện chụp
-- measurement_payload (JSONB, NULL): Payload số đo raw hoặc cache API
-- note (TEXT, NULL): Ghi chú snapshot
-- created_at (TIMESTAMPTZ, NOT NULL): Thời gian tạo
-
-**Ghi chú / Enum:**
-- measurement_source = {PROFILE, APPOINTMENT, MANUAL}
-- Mỗi `customization_request` có tối đa một snapshot số đo hiệu lực.
-- `measurement_payload` chỉ là dữ liệu hỗ trợ; source of truth vẫn nên nằm ở bảng detail.
-
-## CUSTOMIZATION_MEASUREMENT_SNAPSHOT_DETAIL
-
-- snapshot_detail_id (BIGSERIAL, PK, NOT NULL): Mã chi tiết snapshot
-- snapshot_id (BIGINT, FK, NOT NULL): Mã snapshot số đo
-- measurement_type_id (INT, FK, NOT NULL): Mã loại thông số đo
-- measurement_value (NUMERIC(10,2), NOT NULL): Giá trị số đo tại thời điểm chụp
-- created_at (TIMESTAMPTZ, NOT NULL): Thời gian tạo
-
-**Ghi chú / Enum:**
-- UNIQUE đề xuất: `(snapshot_id, measurement_type_id)`
-- Đây là bảng bất biến phục vụ giỏ hàng, đơn hàng, sản xuất và hậu kiểm.
+- `measurement_profile_id` chỉ phục vụ truy vết request được tạo từ profile nào, không phải nguồn dữ liệu động để đọc lại số đo giao dịch.
+- `measurement_snapshot` là nguồn dữ liệu bất biến cho request tại thời điểm tạo.
+- Khi item được thêm vào giỏ hoặc tạo đơn, snapshot này nên tiếp tục được copy sang `sales.cart_item` và `sales.order_item`.
 
 ## MEASUREMENT_APPOINTMENT
 
@@ -637,6 +614,7 @@
 - `measurement_profile` là hồ sơ số đo cá nhân hiện hành của khách, phục vụ quản lý tài khoản, gợi ý size và làm nguồn tạo request mới.
 - Không nên dùng `measurement_profile` làm nguồn động để hiển thị lại số đo của giao dịch cũ.
 - Khi khách nhập/chỉnh sửa số đo, hệ thống có thể cập nhật trực tiếp hồ sơ đang active; dữ liệu giao dịch vẫn được giữ ở snapshot của `customization_request`.
+- Mỗi customer chỉ nên có tối đa một profile đang `is_active = true`.
 
 ## MEASUREMENT_PROFILE_DETAIL
 

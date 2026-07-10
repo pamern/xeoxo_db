@@ -261,7 +261,6 @@ Không làm ngay các index sau:
 - `catalog.product_variant(size_option_id)`
 - `catalog.size_chart_category(category_id, size_chart_id)`
 - `catalog.size_option(size_chart_id, size_name)`
-- `customization.measurement_profile(customer_id, created_at DESC)`
 - `catalog.media(storage_key)` nếu mục tiêu chỉ là frontend query
 - `catalog.media(bucket_name, media_type)`
 - `iam.customer(email)`
