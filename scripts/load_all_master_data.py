@@ -114,6 +114,13 @@ LOAD_STEPS = [
         "Seed inventory.inventory from existing product variants and active branches",
         depends_on=("product_variant", "branch"),
     ),
+    LoadStep(
+        "review",
+        "src.load.load_review",
+        "Seed fake sales.review data backed by real or synthetic completed order items",
+        unsafe=True,
+        depends_on=("product_variant", "payment_method", "province"),
+    ),
 ]
 
 
